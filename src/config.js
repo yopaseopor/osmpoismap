@@ -16,6 +16,7 @@ var config = {
 	},
 	i18n: {
 		layersLabel: 'Layers',
+		completeWith: 'Complete with:',
 		editWith: 'Edit with:',
 		openWith: 'Open with:',
 		checkTools: 'Validation:',
@@ -26,11 +27,11 @@ var config = {
 	},
 	overpassApi: function(){
 		// https://overpass-turbo.eu/
-		var proxyOverpassApi = false;
+		var proxyOverpassApi = true;
 		var overpassApi = 'https://overpass-api.de/api/interpreter';
 		if (proxyOverpassApi)
 		{
-			overpassApi = 'https://mijndev.openstreetmap.nl/~ligfietser/fiets/api/interpreter/';
+			overpassApi = 'https://overpass.kumi.systems/api/interpreter';
 		}
 		return overpassApi;
 	},
@@ -42,30 +43,21 @@ var config = {
 			source: new ol.source.OSM()
 		}),
 		new ol.layer.Tile({
-			title: 'OpenStreetMap B&W',
+			title: 'OpenStreetMap DE',
 			iconSrc: imgSrc + 'osmbw_logo-layer.png',
+			maxZoom: 18,
 			source: new ol.source.XYZ({
-				attributions: '&copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>',
-				//url: 'https://toolserver.org/tiles/bw-mapnik/{z}/{x}/{y}.png'
-				url: 'https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png'
+				attributions: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+				url: 'https://{a-c}.tile.openstreetmap.de/{z}/{x}/{y}.png'
 			}),
 			visible: false
 		}),
 		new ol.layer.Tile({// OpenStreetMap France https://openstreetmap.fr
-			title: 'OpenStreetMap France',
+			title: 'OpenStreetMap FR',
 			iconSrc: imgSrc + 'osmfr_logo-layer.png',
 			source: new ol.source.OSM({
 				attributions: '&copy; <a href="https://www.openstreetmap.fr/" target="_blank">OpenStreetMap France</a>',
 				url: 'https://{a-c}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png'
-			}),
-			visible: false
-		}),
-		new ol.layer.Tile({
-			title: 'OpenMapSurfer',
-			iconSrc: imgSrc + 'openroute_logo_layer.png',
-			source: new ol.source.XYZ({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>, powered by <a href="https://mapsurfernet.com/" target="_blank">MapSurfer.NET</a>',
-				url: 'https://maps.heigit.org/openmapsurfer/tiles/roads/webmercator/{z}/{x}/{y}.png'
 			}),
 			visible: false
 		}),
@@ -122,745 +114,28 @@ var config = {
 				url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
 			}),
 			visible: false
-}),
+		}),
+		new ol.layer.Tile({
+			title: 'ES_IGN - PNOA - Actual',
+			iconSrc: imgSrc + 'logo_ign.png',
+			source: new ol.source.TileWMS({
+				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; IGN &mdash; Source: IGN',
+				url: 'http://www.ign.es/wms-inspire/pnoa-ma?',
+				params: {'LAYERS': 'OI.OrthoimageCoverage', 'VERSION': '1.3.0'}
+			}),
+			visible: false
+		}),
+		
+				new ol.layer.Tile({
+			title: 'ES_CAT_ICGC - Actual',
+			iconSrc: imgSrc + 'logo_icgc.png',
+			source: new ol.source.TileWMS({
+				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; ICGC &mdash; Source: ICGC',
+				url: 'https://geoserveis.icgc.cat/icc_mapesbase/wms/service?',
+				params: {'LAYERS': 'orto25c', 'VERSION': '1.1.1'}
+			}),
+			visible: false
 
-		new ol.layer.Tile({
-			title: 'Ortoimágenes 1956 JCyL',
-			iconSrc: imgSrc + 'jcyl.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; JCyL &mdash; Source: JCyL',
-				url: 'http://orto.wms.itacyl.es/erdas-iws/ogc/wms/p1?',
-				params: {'LAYERS': 'Ortofoto_1956', 'VERSION': '1.3.0'}
-			}),
-			visible: false
-		}),
-
-		new ol.layer.Tile({
-			title: 'Ortoimágenes 2021 JCyL',
-			iconSrc: imgSrc + 'jcyl.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; JCyL &mdash; Source: JCyL',
-				url: 'http://orto.wms.itacyl.es/erdas-iws/ogc/wms/p1?',
-				params: {'LAYERS': 'Ortofoto_CyL', 'VERSION': '1.3.0'}
-			}),
-			visible: false
-		}),
-
-		new ol.layer.Tile({
-			title: '1870-1950 ES_IGN 0 Planimetrías (Minutas cartográficas)',
-			iconSrc: imgSrc + 'logo_ign.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; IGN &mdash; Source: IGN',
-				url: 'https://www.ign.es/wms/minutas-cartograficas?',
-				params: {'LAYERS': 'Minutas'}
-			}),
-			visible: false
-		}),
-
-		new ol.layer.Tile({
-			title: '1915 ES_IGN 0 Edición MTN50 (Catastrones)',
-			iconSrc: imgSrc + 'logo_ign.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; IGN &mdash; Source: IGN',
-				url: 'https://www.ign.es/wms/primera-edicion-mtn?',
-				params: {'LAYERS': 'catastrones'}
-			}),
-			visible: false
-		}),
-
-		new ol.layer.Tile({
-			title: 'ES_IGN 1a Edición MTN25',
-			iconSrc: imgSrc + 'logo_ign.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; IGN &mdash; Source: IGN',
-				url: 'https://www.ign.es/wms/primera-edicion-mtn?',
-				params: {'LAYERS': 'MTN25'}
-			}),
-			visible: false
-		}),
-
-		new ol.layer.Tile({
-			title: 'ES_IGN 1a Edición MTN50',
-			iconSrc: imgSrc + 'logo_ign.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; IGN &mdash; Source: IGN',
-				url: 'https://www.ign.es/wms/primera-edicion-mtn?',
-				params: {'LAYERS': 'MTN50'}
-			}),
-			visible: false
-		}),
-
-		new ol.layer.Tile({
-			title: '1945-1946 ES_IGN - Vol AMS Sèrie A',
-			iconSrc: imgSrc + 'logo_ign.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; IGN &mdash; Source: IGN',
-				url: 'https://fototeca.cnig.es/wms/fototeca.dll?',
-				params: {'LAYERS': 'americano_serie_a'}
-			}),
-			visible: false
-		}),
-
-		new ol.layer.Tile({
-			title: '1956-1957 ES_IGN - Vol AMS Sèrie B',
-			iconSrc: imgSrc + 'logo_ign.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; IGN &mdash; Source: IGN',
-				url: 'https://www.ign.es/wms/pnoa-historico?',
-				params: {'LAYERS': 'AMS_1956-1957'}
-			}),
-			visible: false
-		}),
-		new ol.layer.Tile({
-			title: '1973-1986 ES_IGN - Interministerial',
-			iconSrc: imgSrc + 'logo_ign.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; IGN &mdash; Source: IGN',
-				url: 'https://www.ign.es/wms/pnoa-historico?',
-				params: {'LAYERS': 'Interministerial_1973-1986'}
-			}),
-			visible: false
-		}),
-		new ol.layer.Tile({
-			title: '1981-1986 ES_IGN - Nacional',
-			iconSrc: imgSrc + 'logo_ign.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; IGN &mdash; Source: IGN',
-				url: 'https://www.ign.es/wms/pnoa-historico?',
-				params: {'LAYERS': 'Nacional_1981-1986'}
-			}),
-			visible: false
-		}),
-		new ol.layer.Tile({
-			title: '1997-1998 ES_IGN - Olistat',
-			iconSrc: imgSrc + 'logo_ign.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; IGN &mdash; Source: IGN',
-				url: 'https://www.ign.es/wms/pnoa-historico?',
-				params: {'LAYERS': 'OLISTAT'}
-			}),
-			visible: false
-		}),
-		new ol.layer.Tile({
-			title: '1997-2003 ES_IGN - Sigpac',
-			iconSrc: imgSrc + 'logo_ign.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; IGN &mdash; Source: IGN',
-				url: 'https://www.ign.es/wms/pnoa-historico?',
-				params: {'LAYERS': 'SIGPAC'}
-			}),
-			visible: false
-		}),
-		new ol.layer.Tile({
-			title: '2004 ES_IGN - PNOA',
-			iconSrc: imgSrc + 'logo_ign.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; IGN &mdash; Source: IGN',
-				url: 'https://www.ign.es/wms/pnoa-historico?',
-				params: {'LAYERS': 'PNOA2004'}
-			}),
-			visible: false
-		}),
-		new ol.layer.Tile({
-			title: '2005 ES_IGN - PNOA',
-			iconSrc: imgSrc + 'logo_ign.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; IGN &mdash; Source: IGN',
-				url: 'https://www.ign.es/wms/pnoa-historico?',
-				params: {'LAYERS': 'PNOA2005'}
-			}),
-			visible: false
-		}),
-		new ol.layer.Tile({
-			title: '2006 ES_IGN - PNOA',
-			iconSrc: imgSrc + 'logo_ign.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; IGN &mdash; Source: IGN',
-				url: 'https://www.ign.es/wms/pnoa-historico?',
-				params: {'LAYERS': 'PNOA2006'}
-			}),
-			visible: false
-		}),
-		new ol.layer.Tile({
-			title: '2007 ES_IGN - PNOA',
-			iconSrc: imgSrc + 'logo_ign.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; IGN &mdash; Source: IGN',
-				url: 'https://www.ign.es/wms/pnoa-historico?',
-				params: {'LAYERS': 'PNOA2007'}
-			}),
-			visible: false
-		}),
-		new ol.layer.Tile({
-			title: '2008 ES_IGN - PNOA',
-			iconSrc: imgSrc + 'logo_ign.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; IGN &mdash; Source: IGN',
-				url: 'https://www.ign.es/wms/pnoa-historico?',
-				params: {'LAYERS': 'PNOA2008'}
-			}),
-			visible: false
-		}),
-		new ol.layer.Tile({
-			title: '2009 ES_IGN - PNOA',
-			iconSrc: imgSrc + 'logo_ign.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; IGN &mdash; Source: IGN',
-				url: 'https://www.ign.es/wms/pnoa-historico?',
-				params: {'LAYERS': 'PNOA2009'}
-			}),
-			visible: false
-		}),
-		new ol.layer.Tile({
-			title: '2010 ES_IGN - PNOA',
-			iconSrc: imgSrc + 'logo_ign.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; IGN &mdash; Source: IGN',
-				url: 'https://www.ign.es/wms/pnoa-historico?',
-				params: {'LAYERS': 'PNOA2010'}
-			}),
-			visible: false
-		}),
-		new ol.layer.Tile({
-			title: '2011 ES_IGN - PNOA',
-			iconSrc: imgSrc + 'logo_ign.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; IGN &mdash; Source: IGN',
-				url: 'https://www.ign.es/wms/pnoa-historico?',
-				params: {'LAYERS': 'PNOA2011'}
-			}),
-			visible: false
-		}),
-		new ol.layer.Tile({
-			title: '2012 ES_IGN - PNOA',
-			iconSrc: imgSrc + 'logo_ign.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; IGN &mdash; Source: IGN',
-				url: 'https://www.ign.es/wms/pnoa-historico?',
-				params: {'LAYERS': 'PNOA2012'}
-			}),
-			visible: false
-		}),
-		new ol.layer.Tile({
-			title: '2013 ES_IGN - PNOA',
-			iconSrc: imgSrc + 'logo_ign.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; IGN &mdash; Source: IGN',
-				url: 'https://www.ign.es/wms/pnoa-historico?',
-				params: {'LAYERS': 'PNOA2013'}
-			}),
-			visible: false
-		}),
-		new ol.layer.Tile({
-			title: '2014 ES_IGN - PNOA',
-			iconSrc: imgSrc + 'logo_ign.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; IGN &mdash; Source: IGN',
-				url: 'https://www.ign.es/wms/pnoa-historico?',
-				params: {'LAYERS': 'PNOA2014'}
-			}),
-			visible: false
-		}),
-		new ol.layer.Tile({
-			title: '2015 ES_IGN - PNOA',
-			iconSrc: imgSrc + 'logo_ign.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; IGN &mdash; Source: IGN',
-				url: 'https://www.ign.es/wms/pnoa-historico?',
-				params: {'LAYERS': 'PNOA2015'}
-			}),
-			visible: false
-		}),
-		new ol.layer.Tile({
-			title: '2016 ES_IGN - PNOA',
-			iconSrc: imgSrc + 'logo_ign.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; IGN &mdash; Source: IGN',
-				url: 'https://www.ign.es/wms/pnoa-historico?',
-				params: {'LAYERS': 'PNOA2016'}
-			}),
-			visible: false
-		}),
-		new ol.layer.Tile({
-			title: '2017 ES_IGN - PNOA',
-			iconSrc: imgSrc + 'logo_ign.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; IGN &mdash; Source: IGN',
-				url: 'https://www.ign.es/wms/pnoa-historico?',
-				params: {'LAYERS': 'PNOA2017'}
-			}),
-			visible: false
-		}),
-		new ol.layer.Tile({
-			title: '2018 ES_IGN - PNOA',
-			iconSrc: imgSrc + 'logo_ign.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; IGN &mdash; Source: IGN',
-				url: 'https://www.ign.es/wms/pnoa-historico?',
-				params: {'LAYERS': 'PNOA2018'}
-			}),
-			visible: false
-		}),
-		new ol.layer.Tile({
-			title: '2019 ES_IGN - PNOA',
-			iconSrc: imgSrc + 'logo_ign.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; IGN &mdash; Source: IGN',
-				url: 'https://www.ign.es/wms/pnoa-historico?',
-				params: {'LAYERS': 'PNOA2019'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1945-1946 ES_CAT_ICGC - Vol AMS Sèrie A',
-			iconSrc: imgSrc + 'logo_icgc.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; ICGC &mdash; Source: ICGC',
-				url: 'https://geoserveis.icgc.cat/icc_ortohistorica/wms/service?',
-				params: {'LAYERS': 'ovaa10m', 'VERSION': '1.1.1'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1983 ES_CAT_ICGC - 1:5000',
-			iconSrc: imgSrc + 'logo_icgc.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; ICGC &mdash; Source: ICGC',
-				url: 'https://geoserveis.icgc.cat/icc_ortohistorica/wms/service?',
-				params: {'LAYERS': 'orto5m1983', 'VERSION': '1.1.1'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1984 ES_CAT_ICGC - 1:5000',
-			iconSrc: imgSrc + 'logo_icgc.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; ICGC &mdash; Source: ICGC',
-				url: 'https://geoserveis.icgc.cat/icc_ortohistorica/wms/service?',
-				params: {'LAYERS': 'orto5m1984', 'VERSION': '1.1.1'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1986 ES_CAT_ICGC - 1:5000',
-			iconSrc: imgSrc + 'logo_icgc.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; ICGC &mdash; Source: ICGC',
-				url: 'https://geoserveis.icgc.cat/icc_ortohistorica/wms/service?',
-				params: {'LAYERS': 'orto5m1986', 'VERSION': '1.1.1'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1987 ES_CAT_ICGC - 1:5000',
-			iconSrc: imgSrc + 'logo_icgc.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; ICGC &mdash; Source: ICGC',
-				url: 'https://geoserveis.icgc.cat/icc_ortohistorica/wms/service?',
-				params: {'LAYERS': 'orto5m1987', 'VERSION': '1.1.1'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1988 ES_CAT_ICGC - 1:5000',
-			iconSrc: imgSrc + 'logo_icgc.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; ICGC &mdash; Source: ICGC',
-				url: 'https://geoserveis.icgc.cat/icc_ortohistorica/wms/service?',
-				params: {'LAYERS': 'orto5m1988', 'VERSION': '1.1.1'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1989 ES_CAT_ICGC - 1:5000',
-			iconSrc: imgSrc + 'logo_icgc.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; ICGC &mdash; Source: ICGC',
-				url: 'https://geoserveis.icgc.cat/icc_ortohistorica/wms/service?',
-				params: {'LAYERS': 'orto5m1989', 'VERSION': '1.1.1'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1990 ES_CAT_ICGC - 1:5000',
-			iconSrc: imgSrc + 'logo_icgc.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; ICGC &mdash; Source: ICGC',
-				url: 'https://geoserveis.icgc.cat/icc_ortohistorica/wms/service?',
-				params: {'LAYERS': 'orto5m1990', 'VERSION': '1.1.1'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1991 ES_CAT_ICGC - 1:5000',
-			iconSrc: imgSrc + 'logo_icgc.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; ICGC &mdash; Source: ICGC',
-				url: 'https://geoserveis.icgc.cat/icc_ortohistorica/wms/service?',
-				params: {'LAYERS': 'orto5m1991', 'VERSION': '1.1.1'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1992 ES_CAT_ICGC - 1:5000',
-			iconSrc: imgSrc + 'logo_icgc.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; ICGC &mdash; Source: ICGC',
-				url: 'https://geoserveis.icgc.cat/icc_ortohistorica/wms/service?',
-				params: {'LAYERS': 'orto5m1992', 'VERSION': '1.1.1'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1994 ES_CAT_ICGC - 1:5000',
-			iconSrc: imgSrc + 'logo_icgc.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; ICGC &mdash; Source: ICGC',
-				url: 'https://geoserveis.icgc.cat/icc_ortohistorica/wms/service?',
-				params: {'LAYERS': 'orto5m1994', 'VERSION': '1.1.1'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1995 ES_CAT_ICGC - 1:5000',
-			iconSrc: imgSrc + 'logo_icgc.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; ICGC &mdash; Source: ICGC',
-				url: 'https://geoserveis.icgc.cat/icc_ortohistorica/wms/service?',
-				params: {'LAYERS': 'orto5m1995', 'VERSION': '1.1.1'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1996 ES_CAT_ICGC - 1:5000',
-			iconSrc: imgSrc + 'logo_icgc.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; ICGC &mdash; Source: ICGC',
-				url: 'https://geoserveis.icgc.cat/icc_ortohistorica/wms/service?',
-				params: {'LAYERS': 'orto5m1996', 'VERSION': '1.1.1'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1997 ES_CAT_ICGC - 1:5000',
-			iconSrc: imgSrc + 'logo_icgc.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; ICGC &mdash; Source: ICGC',
-				url: 'https://geoserveis.icgc.cat/icc_ortohistorica/wms/service?',
-				params: {'LAYERS': 'orto5m1997', 'VERSION': '1.1.1'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1998 ES_CAT_ICGC - 1:5000',
-			iconSrc: imgSrc + 'logo_icgc.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; ICGC &mdash; Source: ICGC',
-				url: 'https://geoserveis.icgc.cat/icc_ortohistorica/wms/service?',
-				params: {'LAYERS': 'orto5m1998', 'VERSION': '1.1.1'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1999 ES_CAT_ICGC - 1:5000',
-			iconSrc: imgSrc + 'logo_icgc.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; ICGC &mdash; Source: ICGC',
-				url: 'https://geoserveis.icgc.cat/icc_ortohistorica/wms/service?',
-				params: {'LAYERS': 'orto5m1999', 'VERSION': '1.1.1'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '2000 ES_CAT_ICGC - 1:5000',
-			iconSrc: imgSrc + 'logo_icgc.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; ICGC &mdash; Source: ICGC',
-				url: 'https://geoserveis.icgc.cat/icc_ortohistorica/wms/service?',
-				params: {'LAYERS': 'orto5m2000', 'VERSION': '1.1.1'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '2000 ES_CAT_ICGC - 1:5000',
-			iconSrc: imgSrc + 'logo_icgc.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; ICGC &mdash; Source: ICGC',
-				url: 'https://geoserveis.icgc.cat/icc_ortohistorica/wms/service?',
-				params: {'LAYERS': 'orto5m2000', 'VERSION': '1.1.1'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '2001 ES_CAT_ICGC - 1:5000',
-			iconSrc: imgSrc + 'logo_icgc.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; ICGC &mdash; Source: ICGC',
-				url: 'https://geoserveis.icgc.cat/icc_ortohistorica/wms/service?',
-				params: {'LAYERS': 'orto5m2001', 'VERSION': '1.1.1'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '2002 ES_CAT_ICGC - 1:5000',
-			iconSrc: imgSrc + 'logo_icgc.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; ICGC &mdash; Source: ICGC',
-				url: 'https://geoserveis.icgc.cat/icc_ortohistorica/wms/service?',
-				params: {'LAYERS': 'orto5m2002', 'VERSION': '1.1.1'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '2003 ES_CAT_ICGC - 1:5000',
-			iconSrc: imgSrc + 'logo_icgc.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; ICGC &mdash; Source: ICGC',
-				url: 'https://geoserveis.icgc.cat/icc_ortohistorica/wms/service?',
-				params: {'LAYERS': 'orto5m2003', 'VERSION': '1.1.1'}
-			}),
-		}),
-		
-				new ol.layer.Tile({
-			title: '2004 ES_CAT_ICGC - 1:5000',
-			iconSrc: imgSrc + 'logo_icgc.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; ICGC &mdash; Source: ICGC',
-				url: 'https://geoserveis.icgc.cat/icc_ortohistorica/wms/service?',
-				params: {'LAYERS': 'orto5m2004', 'VERSION': '1.1.1'}
-			}),
-			visible: false
-		}),
-
-				new ol.layer.Tile({
-			title: '1712 - Plano de la ciudad, castillo - Zaragoza',
-			iconSrc: imgSrc + 'osmbw_logo-layer.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; Archivo Municipal del <a href="https://www.zaragoza.es/" target="_blank">Ayuntamiento de Zaragoza</a>',
-				url: 'http://idezar.zaragoza.es/geoserver/historicos/wms?',
-				params: {'LAYERS': 'AMZ_4-2_0024', 'VERSION': '1.3.0'}
-			}),
-			visible: false
-		}),
-		
-		
-				new ol.layer.Tile({
-			title: '1769 - Vista de Zaragoza por Septentrión - Carlos Casanova - Zaragoza',
-			iconSrc: imgSrc + 'osmbw_logo-layer.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; Archivo Municipal del <a href="https://www.zaragoza.es/" target="_blank">Ayuntamiento de Zaragoza</a>',
-				url: 'http://idezar.zaragoza.es/geoserver/historicos/wms?',
-				params: {'LAYERS': 'AMZ_4-2_0696', 'VERSION': '1.3.0'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1809 - Plano topográfico - Clemente Noguera - Zaragoza',
-			iconSrc: imgSrc + 'osmbw_logo-layer.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; Archivo Municipal del <a href="https://www.zaragoza.es/" target="_blank">Ayuntamiento de Zaragoza</a>',
-				url: 'http://idezar.zaragoza.es/geoserver/historicos/wms?',
-				params: {'LAYERS': 'AMZ_4-2_0005', 'VERSION': '1.3.0'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1852 - Plano de Zaragoza - Yarza y Gironza - Zaragoza',
-			iconSrc: imgSrc + 'osmbw_logo-layer.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; Archivo Municipal del <a href="https://www.zaragoza.es/" target="_blank">Ayuntamiento de Zaragoza</a>',
-				url: 'http://idezar.zaragoza.es/geoserver/historicos/wms?',
-				params: {'LAYERS': 'AMZ_4-2_0275', 'VERSION': '1.3.0'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1861 - Plano de Zaragoza - Yarza y Gironza - Zaragoza',
-			iconSrc: imgSrc + 'osmbw_logo-layer.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; Archivo Municipal del <a href="https://www.zaragoza.es/" target="_blank">Ayuntamiento de Zaragoza</a>',
-				url: 'http://idezar.zaragoza.es/geoserver/historicos/wms?',
-				params: {'LAYERS': 'AMZ_4-2_0274', 'VERSION': '1.3.0'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1863 - Plano de Zaragoza - Imprenta y litografía de Agustín Peiró - Zaragoza',
-			iconSrc: imgSrc + 'osmbw_logo-layer.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; Archivo Municipal del <a href="https://www.zaragoza.es/" target="_blank">Ayuntamiento de Zaragoza</a>',
-				url: 'http://idezar.zaragoza.es/geoserver/historicos/wms?',
-				params: {'LAYERS': 'AMZ_4-2_0697', 'VERSION': '1.3.0'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1872 - Plano de Zaragoza - Estado Mayor del Ejército - Zaragoza',
-			iconSrc: imgSrc + 'osmbw_logo-layer.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; Archivo Municipal del <a href="https://www.zaragoza.es/" target="_blank">Ayuntamiento de Zaragoza</a>',
-				url: 'http://idezar.zaragoza.es/geoserver/historicos/wms?',
-				params: {'LAYERS': 'AMZ_4-2_0459', 'VERSION': '1.3.0'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1880 - Plano de Zaragoza - Dionisio Casañal y Zapatero - Zaragoza',
-			iconSrc: imgSrc + 'osmbw_logo-layer.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; Archivo Municipal del <a href="https://www.zaragoza.es/" target="_blank">Ayuntamiento de Zaragoza</a>',
-				url: 'http://idezar.zaragoza.es/geoserver/historicos/wms?',
-				params: {'LAYERS': 'AMZ_4-2_0075', 'VERSION': '1.3.0'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1899 - Plano de Zaragoza - Dionisio Casañal y Zapatero - Zaragoza',
-			iconSrc: imgSrc + 'osmbw_logo-layer.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; Archivo Municipal del <a href="https://www.zaragoza.es/" target="_blank">Ayuntamiento de Zaragoza</a>',
-				url: 'http://idezar.zaragoza.es/geoserver/historicos/wms?',
-				params: {'LAYERS': 'AMZ_4-2_0072', 'VERSION': '1.3.0'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1900 - Plano de Zaragoza - A. Martín editor - Zaragoza',
-			iconSrc: imgSrc + 'osmbw_logo-layer.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; Archivo Municipal del <a href="https://www.zaragoza.es/" target="_blank">Ayuntamiento de Zaragoza</a>',
-				url: 'http://idezar.zaragoza.es/geoserver/historicos/wms?',
-				params: {'LAYERS': 'AMZ_4-2_0751', 'VERSION': '1.3.0'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1908 - Plano de Zaragoza - Dionisio Casañal y Zapatero - Zaragoza',
-			iconSrc: imgSrc + 'osmbw_logo-layer.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; Archivo Municipal del <a href="https://www.zaragoza.es/" target="_blank">Ayuntamiento de Zaragoza</a>',
-				url: 'http://idezar.zaragoza.es/geoserver/historicos/wms?',
-				params: {'LAYERS': 'AMZ_4-2_0080', 'VERSION': '1.3.0'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1925 - Plano parcelario de Zaragoza - Miguel Ángel Navarro y Pérez - Zaragoza',
-			iconSrc: imgSrc + 'osmbw_logo-layer.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; Archivo Municipal del <a href="https://www.zaragoza.es/" target="_blank">Ayuntamiento de Zaragoza</a>',
-				url: 'http://idezar.zaragoza.es/geoserver/historicos/wms?',
-				params: {'LAYERS': 'AMZ_4-2_0476', 'VERSION': '1.3.0'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1935 - Plano-guía de plano parcelario de Zaragoza - Instituto Geográfico y Catastral - Zaragoza',
-			iconSrc: imgSrc + 'osmbw_logo-layer.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; Archivo Municipal del <a href="https://www.zaragoza.es/" target="_blank">Ayuntamiento de Zaragoza</a>',
-				url: 'http://idezar.zaragoza.es/geoserver/historicos/wms?',
-				params: {'LAYERS': 'AMZ_4-2_0451', 'VERSION': '1.3.0'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1938 - Plano de Zaragoza - Regino Borobio y José Beltrán - Zaragoza',
-			iconSrc: imgSrc + 'osmbw_logo-layer.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; Archivo Municipal del <a href="https://www.zaragoza.es/" target="_blank">Ayuntamiento de Zaragoza</a>',
-				url: 'http://idezar.zaragoza.es/geoserver/historicos/wms?',
-				params: {'LAYERS': 'AMZ_4-2_0565', 'VERSION': '1.3.0'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1950 - Plano gráfico informativo - Ayuntamiento y Antonio Margalé - Zaragoza',
-			iconSrc: imgSrc + 'osmbw_logo-layer.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; Archivo Municipal del <a href="https://www.zaragoza.es/" target="_blank">Ayuntamiento de Zaragoza</a>',
-				url: 'http://idezar.zaragoza.es/geoserver/historicos/wms?',
-				params: {'LAYERS': 'Planimetria-42', 'VERSION': '1.3.0'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1958 - Plano Guía del plano de Zaragoza - José Beltrán Navarro - Zaragoza',
-			iconSrc: imgSrc + 'osmbw_logo-layer.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; Archivo Municipal del <a href="https://www.zaragoza.es/" target="_blank">Ayuntamiento de Zaragoza</a>',
-				url: 'http://idezar.zaragoza.es/geoserver/historicos/wms?',
-				params: {'LAYERS': 'AMZ_4-2_0421', 'VERSION': '1.3.0'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1977 - Plano-Guía de arquitectura - Juan Antonio Carmona - Zaragoza',
-			iconSrc: imgSrc + 'osmbw_logo-layer.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; Archivo Municipal del <a href="https://www.zaragoza.es/" target="_blank">Ayuntamiento de Zaragoza</a>',
-				url: 'http://idezar.zaragoza.es/geoserver/historicos/wms?',
-				params: {'LAYERS': 'BMZ_F00021-38_0001', 'VERSION': '1.3.0'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '1993 - Callejero - Ayuntamiento - Zaragoza',
-			iconSrc: imgSrc + 'osmbw_logo-layer.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; Archivo Municipal del <a href="https://www.zaragoza.es/" target="_blank">Ayuntamiento de Zaragoza</a>',
-				url: 'http://idezar.zaragoza.es/geoserver/historicos/wms?',
-				params: {'LAYERS': 'AMZ_4-2_0649', 'VERSION': '1.3.0'}
-			}),
-			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: '2004 - Callejero - Ayuntamiento - Zaragoza',
-			iconSrc: imgSrc + 'osmbw_logo-layer.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; Archivo Municipal del <a href="https://www.zaragoza.es/" target="_blank">Ayuntamiento de Zaragoza</a>',
-				url: 'http://idezar.zaragoza.es/geoserver/historicos/wms?',
-				params: {'LAYERS': 'AMZ_4-2_0926', 'VERSION': '1.3.0'}
-			}),
-			visible: false
 		}),
 
 		new ol.layer.Tile({
@@ -8858,6 +8133,13 @@ var vectorLayer = new ol.layer.Vector({
 	//Es crida sempre que es fa click sobre el mapa
 	onClickEvent: function(evt, view, coordinateLL) {
 
+		var complete = $('<div>').html(config.i18n.completeWith);
+//Mapcomplete editor
+		complete.append($('<a>').css('marginLeft', 5).attr({title: 'Mapcomplete limits', href: 'https://mapcomplete.osm.be/index.html?z=' + view.getZoom() +'&lat='+ coordinateLL[1] +'&lon='+ coordinateLL[0] +'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmain%2Flimits.json&language=en#welcome', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones/maxspeed_question.svg', height: 20, width: 20})));
+		complete.append($('<a>').css('marginLeft', 5).attr({title: 'OSM Hydrants', href: 'https://www.osmhydrant.org/en/#zoom=' + view.getZoom() +'&lat='+ coordinateLL[1] +'&lon='+ coordinateLL[0], target: '_blank'}).html($('<img>').attr({src: imgSrc + 'osmhydrant_logo.png', height: 20, width: 20})));
+		complete.append($('<a>').css('marginLeft', 5).attr({title: 'Mapcomplete hydrants', href: 'https://mapcomplete.osm.be//hailhydrant.html?z=' + view.getZoom() +'&lat='+ coordinateLL[1] +'&lon='+ coordinateLL[0] +'&language=en&background=osm', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'mapcomplete_logo.png', height: 20, width: 20})));
+		complete.append($('<a>').css('marginLeft', 5).attr({title: 'Mapcomplete track type', href: 'https://mapcomplete.osm.be/index.html?z=' + view.getZoom() +'&lat='+ coordinateLL[1] +'&lon='+ coordinateLL[0] +'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmain%2Ftracktype.json&language=en#welcome', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones/no_tracktype.svg', height: 20, width: 20})));
+		
 		var edit = $('<div>').html(config.i18n.editWith);
 		//ID editor
 		edit.append($('<a>').css('marginLeft', 5).attr({title: 'iD', href: 'https://www.openstreetmap.org/edit?editor=id&lon=' + coordinateLL[0] + '&lat=' + coordinateLL[1] + '&zoom=' + view.getZoom(), target: '_blank'}).html($('<img>').attr({src: imgSrc + 'ID.svg', height: 20, width: 20})));
@@ -8884,7 +8166,7 @@ var vectorLayer = new ol.layer.Vector({
 		//Geofabrik Tools
 		tool.append($('<a>').css('marginLeft', 5).attr({title: 'Geofabrik Tools', href: 'https://tools.geofabrik.de/osmi/?lon=' + coordinateLL[0] + '&lat=' + coordinateLL[1] + '&zoom=' + Math.min(view.getZoom(), 18) + '&view=tagging', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'geofabrik.png', height: 20, width: 20})));
 
-		return $.merge($.merge(edit, open), tool);
+		return $.merge($.merge(complete, edit, open), tool);
 	},
 
 	//Es crida per cada element trobat al fer click
