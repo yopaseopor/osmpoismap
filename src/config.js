@@ -8606,7 +8606,7 @@ style: function (feature) {
 				var fill = new ol.style.Fill({
 					color: 'rgba(117,63,79,0.4)'
 				});
-				var stroke = new ol.style.Stroke(
+				var stroke = new ol.style.Stroke({
 					color: 'rgba(117,63,79,1)',
 					width: 1
 				});
