@@ -174,31 +174,7 @@ var config = {
 				
 		
 		{
-			group: 'Per date',
-			title: 'Exact date',
-			query: '(nwr[~"^name:....-..-..$"~"."]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'base/circle.svg',
-			iconStyle: 'background-color:#3aff00',
-			style: function () {
-				var fill = new ol.style.Fill({
-					color: 'rgba(0,255,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: '#3aff00',
-					width: 1.25
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Circle({
-						fill: fill,
-						stroke: stroke,
-						radius: 5
-					}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-group: 'Limits',
+			group: 'Limits',
 			title: 'Vies amb "maxspeed"',
 			query: '(way[highway=motorway][maxspeed]({{bbox}});node(w);way[highway=trunk][maxspeed]({{bbox}});node(w);way[highway=primary][maxspeed]({{bbox}});node(w);way[highway=secondary][maxspeed]({{bbox}});node(w);way[highway=tertiary][maxspeed]({{bbox}});node(w);way[highway=unclassified][maxspeed]({{bbox}});node(w);way[highway=track][maxspeed]({{bbox}});node(w);way[highway=living_street][maxspeed]({{bbox}});node(w);way[highway=pedestrian][maxspeed]({{bbox}});node(w);way[highway=residential][maxspeed]({{bbox}});node(w);way[highway=service][maxspeed]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed.svg',
