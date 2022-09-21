@@ -29,76 +29,75 @@ $(function () {
 		var layerGroup = overlay['group'],
 				vectorProperties = overlay,
 				vector;
-				
+
 		if (overlay['geojson'] !== undefined) {
       var vectorSource = new ol.source.Vector({
         format: new ol.format.GeoJSON(),
         url: overlay['geojson']
       })
     } else {
-		  var vectorSource = new ol.source.Vector({
-			  format: new ol.format.OSMXML2(),
-			  loader: function (extent, resolution, projection) {
-				  loading.show();
-				  var me = this;
-				  var epsg4326Extent = ol.proj.transformExtent(extent, projection, 'EPSG:4326');
-				  var query = '[maxsize:536870912];' + overlay['query']; // Memory limit 512 MiB
-				  //var query = layerQuery;
-				  query = query.replace(/{{bbox}}/g, epsg4326Extent[1] + ',' + epsg4326Extent[0] + ',' + epsg4326Extent[3] + ',' + epsg4326Extent[2]);
+			var vectorSource = new ol.source.Vector({ 
+			format: new ol.format.OSMXML2(),
+			loader: function (extent, resolution, projection) {
+				loading.show();
+				var me = this;
+				var epsg4326Extent = ol.proj.transformExtent(extent, projection, 'EPSG:4326');
+				var query = '[maxsize:536870912];' + overlay['query']; // Memory limit 512 MiB
+				//var query = layerQuery;
+				query = query.replace(/{{bbox}}/g, epsg4326Extent[1] + ',' + epsg4326Extent[0] + ',' + epsg4326Extent[3] + ',' + epsg4326Extent[2]);
 
-				  var client = new XMLHttpRequest();
-				  client.open('POST', config.overpassApi());
-				  client.onloadend = function () {
-					  loading.hide();
-				  };
-				  client.onerror = function () {
-					  console.error('[' + client.status + '] Error loading data.');
-					  me.removeLoadedExtent(extent);
-					  vector.setVisible(false);
-				  };
-				  client.onload = function () {
-					  if (client.status === 200) {
-						  var xmlDoc = $.parseXML(client.responseText),
-								  xml = $(xmlDoc),
-								  remark = xml.find('remark'),
-								  nodosLength = xml.find('node').length;
+				var client = new XMLHttpRequest();
+				client.open('POST', config.overpassApi());
+				client.onloadend = function () {
+					loading.hide();
+				};
+				client.onerror = function () {
+					console.error('[' + client.status + '] Error loading data.');
+					me.removeLoadedExtent(extent);
+					vector.setVisible(false);
+				};
+				client.onload = function () {
+					if (client.status === 200) {
+						var xmlDoc = $.parseXML(client.responseText),
+								xml = $(xmlDoc),
+								remark = xml.find('remark'),
+								nodosLength = xml.find('node').length;
 
-						  if (remark.length !== 0) {
-							  console.error('Error:', remark.text());
-							  $('<div>').html(remark.text()).dialog({
-								  modal: true,
-								  title: 'Error',
-								  close: function () {
-									  $(this).dialog('destroy');
-								  }
-							  });
-							  client.onerror.call(this);
-						  } else {
-							  console.log('Nodes Found:', nodosLength);
-							  if (nodosLength === 0) {
-								  $('<div>').html(config.i18n.noNodesFound).dialog({
-									  modal: true,
-									  //title: 'Error',
-									  close: function () {
-										  $(this).dialog('destroy');
-									  }
-								  });
-							  }
-							  var features = new ol.format.OSMXML2().readFeatures(xmlDoc, {
-								  featureProjection: map.getView().getProjection()
-							  });
-							  me.addFeatures(features);
-						  }
-					  } else {
-						  client.onerror.call(this);
-					  }
-				  };
-				  client.send(query);
-			  },
-			  strategy: ol.loadingstrategy.bbox
-		  });
-		}
-
+						if (remark.length !== 0) {
+							console.error('Error:', remark.text());
+							$('<div>').html(remark.text()).dialog({
+								modal: true,
+								title: 'Error',
+								close: function () {
+									$(this).dialog('destroy');
+								}
+							});
+							client.onerror.call(this);
+						} else {
+							console.log('Nodes Found:', nodosLength);
+							if (nodosLength === 0) {
+								$('<div>').html(config.i18n.noNodesFound).dialog({
+									modal: true,
+									//title: 'Error',
+									close: function () {
+										$(this).dialog('destroy');
+									}
+								});
+							}
+							var features = new ol.format.OSMXML2().readFeatures(xmlDoc, {
+								featureProjection: map.getView().getProjection()
+							});
+							me.addFeatures(features);
+						}
+					} else {
+						client.onerror.call(this);
+					}
+				};
+				client.send(query);
+			},
+			strategy: ol.loadingstrategy.bbox
+		});
+	}
 		vectorProperties['source'] = vectorSource;
 		vectorProperties['visible'] = false;
 
@@ -332,13 +331,24 @@ $(function () {
 	// Info Control
 	var infoControlBuild = function () {
 		var container = $('<div>').addClass('ol-control ol-unselectable osmcat-infobutton').html($('<button type="button"><i class="fa fa-info-circle"></i></button>').on('click', function () {
-			window.location.href = 'https://github.com/yopaseopor/osmhistoricmap';
+			window.location.href = 'https://github.com/yopaseopor/osmffmap';
 		}));
 		return container[0];
 	};
 	map.addControl(new ol.control.Control({
 		element: infoControlBuild()
 	}));
+	
+		// Info Control2
+	//var infoControlBuild2 = function () {
+	//	var container = $('<div>').addClass('ol-control ol-unselectable osmcat-infobutton2').html($('<button type="button"><i class="fa fa-search-plus"></i></button>').on('click', function () {
+	//		window.location.href = 'https://mapcomplete.osm.be/index.html?userlayout=https://raw.githubusercontent.com/yopaseopor/mcquests/master/limits.json';
+	//	}));
+	//	return container[0];
+	//};
+	//map.addControl(new ol.control.Control({
+	//	element: infoControlBuild2()
+	//}));
 
 	// Copy permalink button
 	var permalinkControlBuild = function () {
