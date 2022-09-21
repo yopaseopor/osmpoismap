@@ -174,6 +174,8 @@ var config = {
 				
 		
 		{
+			
+			
 			group: 'Limits',
 			title: 'Vies amb "maxspeed"',
 			query: '(way[highway=motorway][maxspeed]({{bbox}});node(w);way[highway=trunk][maxspeed]({{bbox}});node(w);way[highway=primary][maxspeed]({{bbox}});node(w);way[highway=secondary][maxspeed]({{bbox}});node(w);way[highway=tertiary][maxspeed]({{bbox}});node(w);way[highway=unclassified][maxspeed]({{bbox}});node(w);way[highway=track][maxspeed]({{bbox}});node(w);way[highway=living_street][maxspeed]({{bbox}});node(w);way[highway=pedestrian][maxspeed]({{bbox}});node(w);way[highway=residential][maxspeed]({{bbox}});node(w);way[highway=service][maxspeed]({{bbox}});node(w););out meta;',
@@ -2836,32 +2838,6 @@ style: function (feature) {
 				return style;
 			}
 },
-		{
-			group: 'Per date',
-			title: 'Exact year',
-			query: '(nwr[~"^name:....$"~"."]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'base/circle.svg',
-			iconStyle: 'background-color:#0000ff',
-			style: function () {
-				var fill = new ol.style.Fill({
-					color: 'rgba(0,0,255,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: '#0000ff',
-					width: 1.25
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Circle({
-						fill: fill,
-						stroke: stroke,
-						radius: 5
-					}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-		},
 		{
 			group: 'Test',
 			title: 'Exact year',
