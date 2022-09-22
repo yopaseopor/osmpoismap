@@ -244,7 +244,7 @@ style: function (feature) {
 				});
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
-							src: imgSrc + 'icones/hydrant_sign.svg',
+							src: imgSrc + 'base/circle.svg',
 							scale:0.07
 						}),
 							text: new ol.style.Text({
