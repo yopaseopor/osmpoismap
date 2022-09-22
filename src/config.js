@@ -243,10 +243,11 @@ style: function (feature) {
 					width: 1
 				});
 				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: imgSrc + 'base/circle.svg',
-							scale:0.07
-						}),
+					image: new ol.style.Circle({
+						fill: fill,
+						stroke: stroke,
+						radius: 5
+					}),
 							text: new ol.style.Text({
 								text: name,
 								offsetX : 7,
