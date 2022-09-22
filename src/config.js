@@ -228,7 +228,7 @@ var config = {
 		{
 			group: 'Test',
 			title: 'Fire hydrant',
-			query: '(nwr["highway"="track"]({{bbox}});node(w););out meta;',
+			query: '(nwr["shop"="supermarket"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/fire_hydrant.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
