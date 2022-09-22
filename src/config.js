@@ -174,62 +174,10 @@ var config = {
 				
 		
 		{
-			group: 'Per date',
-			title: 'Exact date',
-			query: '(nwr[~"^name:....-..-..$"~"."]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'base/circle.svg',
-			iconStyle: 'background-color:#3aff00',
-			style: function () {
-				var fill = new ol.style.Fill({
-					color: 'rgba(0,255,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: '#3aff00',
-					width: 1.25
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Circle({
-						fill: fill,
-						stroke: stroke,
-						radius: 5
-					}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-		},
-		{
-			group: 'Per date',
-			title: 'Exact year',
-			query: '(nwr[~"^name:....$"~"."]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'base/circle.svg',
-			iconStyle: 'background-color:#0000ff',
-			style: function () {
-				var fill = new ol.style.Fill({
-					color: 'rgba(0,0,255,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: '#0000ff',
-					width: 1.25
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Circle({
-						fill: fill,
-						stroke: stroke,
-						radius: 5
-					}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-  },
-		{
 			group: 'Tiendas',
 			title: 'Supermercados',
 			query: '(nwr["shop"="supermarket"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'icones/fire_hydrant.svg',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
 				var key_regex = /^name$/
@@ -240,6 +188,42 @@ style: function (feature) {
 				});
 				var stroke = new ol.style.Stroke({
 					color: 'rgba(117,63,79,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -8,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Tiendas',
+			title: 'Ropa',
+			query: '(nwr["shop"="clothes"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
 					width: 1
 				});
 				var style = new ol.style.Style({
