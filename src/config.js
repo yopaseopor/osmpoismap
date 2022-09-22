@@ -226,8 +226,8 @@ var config = {
 			}
   },
 		{
-			group: 'Test',
-			title: 'Fire hydrant',
+			group: 'Tiendas',
+			title: 'Supermercados',
 			query: '(nwr["shop"="supermarket"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/fire_hydrant.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -243,11 +243,10 @@ style: function (feature) {
 					width: 1
 				});
 				var style = new ol.style.Style({
-					image: new ol.style.Circle({
-						fill: fill,
-						stroke: stroke,
-						radius: 5
-					}),
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.07
+						}),
 							text: new ol.style.Text({
 								text: name,
 								offsetX : 7,
