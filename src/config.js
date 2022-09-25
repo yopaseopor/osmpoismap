@@ -499,6 +499,42 @@ style: function (feature) {
 		},
 		{
 			group: 'Alimentación',
+			title: 'Caridad',
+			query: '(nwr["office"="charity"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Alimentación',
 			title: 'Heladería',
 			query: '(nwr["shop"="ice_cream"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -2191,6 +2227,78 @@ style: function (feature) {
 				},
 		{
 			group: 'Casa',
+			title: 'Constructores',
+			query: '(nwr["office"="construction_company"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Casa',
+			title: 'Mudanzas',
+			query: '(nwr["office"="moving_company"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Casa',
 			title: 'Puertas',
 			query: '(nwr["shop"="doors"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -2229,6 +2337,42 @@ style: function (feature) {
 			group: 'Casa',
 			title: 'Inmobiliaria',
 			query: '(nwr["office"="estate_agent"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Casa',
+			title: 'Inmobiliaria (oficina)',
+			query: '(nwr["office"="property_management"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
@@ -3234,6 +3378,42 @@ style: function (feature) {
 			}
 				},
 		{
+			group: 'Natural',
+			title: 'Forestal (oficina)',
+			query: '(nwr["office"="forestry"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
 			group: 'Ropa',
 			title: 'Peletería',
 			query: '(nwr["shop"="leather"]({{bbox}});node(w););out meta;',
@@ -3559,6 +3739,42 @@ style: function (feature) {
 				},
 		{
 			group: 'Salud',
+			title: 'Oficinas fisio',
+			query: '(nwr["office"="physician"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Salud',
 			title: 'Audición',
 			query: '(nwr["shop"="hearing_aids"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -3669,6 +3885,42 @@ style: function (feature) {
 			group: 'Turismo',
 			title: 'Souvenirs',
 			query: '(nwr["shop"="gift"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Turismo',
+			title: 'Guías',
+			query: '(nwr["office"="guide"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
@@ -4099,8 +4351,80 @@ style: function (feature) {
 				},
 		{
 			group: 'Vida diaria',
+			title: 'Seguridad privada',
+			query: '(nwr["office"="security"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Vida diaria',
 			title: 'Sedes partidos políticos',
 			query: '(nwr["office"="political_party"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Vida diaria',
+			title: 'Sindicatos',
+			query: '(nwr["office"="union"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
@@ -5035,8 +5359,80 @@ style: function (feature) {
 				},
 		{
 			group: 'Vida diaria',
+			title: 'Consigna recogida',
+			query: '(nwr["amenity"="parcel_locker"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Vida diaria',
 			title: 'Logística',
 			query: '(nwr["office"="logistics"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Vida diaria',
+			title: 'Transportistas',
+			query: '(nwr["office"="courier"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
@@ -5253,6 +5649,78 @@ style: function (feature) {
 			group: 'Tiendas',
 			title: 'Anticuarios',
 			query: '(nwr["shop"="antiques"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Economía',
+			title: 'Bancos',
+			query: '(nwr["amenity"="bank"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Economía',
+			title: 'Cajeros automáticos',
+			query: '(nwr["amenity"="atm"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
