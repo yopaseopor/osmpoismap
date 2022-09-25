@@ -175,7 +175,7 @@ var config = {
 		
 		{
 			group: 'Alimentación',
-			title: 'Supermercados2',
+			title: 'Supermercados',
 			query: '(nwr["shop"="supermarket"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
