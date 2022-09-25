@@ -1111,78 +1111,6 @@ style: function (feature) {
 		},
 		{
 			group: 'Movilidad',
-			title: 'Autoescuelas',
-			query: '(nwr["amenity"="driving_school"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: imgSrc + 'icones/maxspeed_empty.svg',
-							scale:0.03
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-		},
-		{
-			group: 'Movilidad',
-			title: 'Contenedor grava',
-			query: '(nwr["amenity"="grit_bin"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: imgSrc + 'icones/maxspeed_empty.svg',
-							scale:0.03
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-		},
-		{
-			group: 'Movilidad',
 			title: 'Terminales de ferris',
 			query: '(nwr["amenity"="ferry_terminal"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -4928,7 +4856,7 @@ style: function (feature) {
 		{
 			group: 'Movilidad',
 			title: 'Aparcamiento para motos',
-			query: '(nwr["amenity"="motorcycle_parking"]({{bbox}});node(w););out meta;',
+			query: '(nwr["amenity"="bicycle_parking"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
@@ -6295,42 +6223,6 @@ style: function (feature) {
 				},
 		{
 			group: 'Ocio',
-			title: 'Duchas',
-			query: '(nwr["amenity"="shower"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: imgSrc + 'icones/maxspeed_empty.svg',
-							scale:0.03
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
-			group: 'Ocio',
 			title: 'Barbacoas',
 			query: '(nwr["amenity"="bbq"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -6367,7 +6259,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Ocio',
-			title: 'Armerías',
+			title: 'Armas',
 			query: '(nwr["shop"="weapons"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -7881,42 +7773,6 @@ style: function (feature) {
 			group: 'Economía',
 			title: 'Prestamistas',
 			query: '(nwr["shop"="money_lender"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: imgSrc + 'icones/maxspeed_empty.svg',
-							scale:0.03
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
-			group: 'Administración',
-			title: 'Juzgados',
-			query: '(nwr["amenity"="court_house"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
