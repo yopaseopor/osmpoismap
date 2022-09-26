@@ -7269,7 +7269,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Calle',
-			title: 'Contenedores <b> <a href="https://yopaseopor.github.io/osmrecyclingmap/#map=8/41.69689/1.59647/0" Ampliar</a></b>',
+			title: 'Contenedores <b> <a href="https://yopaseopor.github.io/osmrecyclingmap/#map=8/41.69689/1.59647/0"> Ampliar</a></b>',
 			query: '(nwr["amenity"="recycling"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
