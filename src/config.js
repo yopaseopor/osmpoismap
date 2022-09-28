@@ -3273,7 +3273,7 @@ style: function (feature) {
 		},
 		{
 			group: 'Calle',
-			title: 'Stops',
+			title: 'Stops <b><a href="https://yopaseopor.github.io/traffic_signs_map">Ampliar</a></b>',
 			query: '(nwr["highway"="stop"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -3309,7 +3309,7 @@ style: function (feature) {
 		},
 		{
 			group: 'Calle',
-			title: 'Ceda el paso',
+			title: 'Ceda el paso <b><a href="https://yopaseopor.github.io/traffic_signs_map">Ampliar</a></b>',
 			query: '(nwr["highway"="give_way"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -3345,7 +3345,7 @@ style: function (feature) {
 		},
 		{
 			group: 'Calle',
-			title: 'Semáforos',
+			title: 'Semáforos <b><a href="https://yopaseopor.github.io/traffic_signs_map">Ampliar</a></b>',
 			query: '(nwr["highway"="traffic_signals"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -5181,7 +5181,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Cultura',
-			title: 'Biblioteca',
+			title: 'Biblioteca <b><a href="https://yopaseopor.github.io/osmlibrarymap">Ampliar</a></b>',
 			query: '(nwr["amenity"="library"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -5829,7 +5829,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Calle',
-			title: 'Farolas',
+			title: 'Farolas <b><a href="https://yopaseopor.github.io/osmlitmap">Ampliar</a></b>',
 			query: '(nwr["highway"="street_lamp"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -8601,7 +8601,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Vida diaria',
-			title: 'Bomberos',
+			title: 'Bomberos <b><a href="https://yopaseopor.github.io/osmffmap">Ampliar</a></b>',
 			query: '(nwr["amenity"="fire_station"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
