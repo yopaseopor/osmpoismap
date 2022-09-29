@@ -19,8 +19,8 @@ var config = {
 		completeWith: 'Completar con:',
 		editWith: 'Editar con:',
 		openWith: 'Abrir con:',
-		showWith: 'Muestra con:',
-		checkTools: 'Validar con::',
+		showWith: 'Mostrar con:',
+		checkTools: 'Validar con:',
 		copyDialog: 'S\'ha copiat l\'enllaç al porta-retalls.Enlace copiado. Link has been copied',
 		nodeLabel: 'Nodo:',
 		noNodesFound: 'No se ha encontrado información.',
@@ -10156,7 +10156,7 @@ style: function (feature) {
 				
 		show.append($('<a>').css('marginLeft', 5).attr({title: 'Geofabrik Tools', href: 'https://tools.geofabrik.de/osmi/?lon=' + coordinateLL[0] + '&lat=' + coordinateLL[1] + '&zoom=' + Math.min(view.getZoom(), 18) + '&view=tagging', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'geofabrik.png', height: 20, width: 20})));
 
-		return $.merge($.merge(complete, edit, open, show), tool);
+		return $.merge($.merge(complete, edit, open), show, tool);
 	},
 
 	//Es crida per cada element trobat al fer click
