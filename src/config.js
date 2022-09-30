@@ -10154,9 +10154,9 @@ style: function (feature) {
 		var show = $('<div>').html(config.i18n.showTools);
 		//Geofabrik Tools
 				
-		open.append($('<a>').css('marginLeft', 5).attr({title: 'Geofabrik Tools', href: 'https://tools.geofabrik.de/osmi/?lon=' + coordinateLL[0] + '&lat=' + coordinateLL[1] + '&zoom=' + Math.min(view.getZoom(), 18) + '&view=tagging', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'geofabrik.png', height: 20, width: 20})));
+		show.append($('<a>').css('marginLeft', 5).attr({title: 'Geofabrik Tools', href: 'https://tools.geofabrik.de/osmi/?lon=' + coordinateLL[0] + '&lat=' + coordinateLL[1] + '&zoom=' + Math.min(view.getZoom(), 18) + '&view=tagging', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'geofabrik.png', height: 20, width: 20})));
 
-		return $.merge($.merge(edit, open, show, tool), complete);
+		return $.merge(show, $.merge(complete, $.merge(edit, tool)), complete);
 	},
 
 	//Es crida per cada element trobat al fer click
