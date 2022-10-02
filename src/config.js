@@ -10144,7 +10144,7 @@ style: function (feature) {
 		//Apple
 		open.append($('<a>').css('marginLeft', 5).attr({title: 'Apple Maps', href: 'https://duckduckgo.com/?t=ffab&q=' + coordinateLL[1] + ',' + coordinateLL[0] + '+Show+on+Map&ia=maps&iaxm=maps,' + Math.min(view.getZoom(), 21), target: '_blank'}).html($('<img>').attr({src: imgSrc + 'applemaps_logo.png', height: 20, width: 20})));
 		//Bing
-		open.append($('<a>').css('marginLeft', 5).attr({title: 'Bing Maps', href: 'https://www.bing.com/maps?' + coordinateLL[1] + ',' + coordinateLL[0]), target: '_blank'}).html($('<img>').attr({src: imgSrc + 'bing_logo.png', height: 20, width: 20})));
+		open.append($('<a>').css('marginLeft', 5).attr({title: 'Bing Maps', href: 'https://www.bing.com/maps?' + coordinateLL[1] + ',' + coordinateLL[0], target: '_blank'}).html($('<img>').attr({src: imgSrc + 'bing_logo.png', height: 20, width: 20})));
 		
 		var tool = $('<div>').html(config.i18n.checkTools);
 		//Notes a OSM
