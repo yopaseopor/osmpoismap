@@ -10121,10 +10121,10 @@ style: function (feature) {
 
 		var complete = $('<div>').html(config.i18n.completeWith);
 //Mapcomplete editor
-		complete.append($('<a>').css('marginLeft', 5).attr({title: 'Mapcomplete limits', href: 'https://mapcomplete.osm.be/index.html?z=' + view.getZoom() +'&lat='+ coordinateLL[1] +'&lon='+ coordinateLL[0] +'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmain%2Flimits.json&language=en#welcome', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones/maxspeed_question.svg', height: 20, width: 20})));
-		complete.append($('<a>').css('marginLeft', 5).attr({title: 'OSM Hydrants', href: 'https://www.osmhydrant.org/en/#zoom=' + view.getZoom() +'&lat='+ coordinateLL[1] +'&lon='+ coordinateLL[0], target: '_blank'}).html($('<img>').attr({src: imgSrc + 'osmhydrant_logo.png', height: 20, width: 20})));
+		complete.append($('<a>').css('marginLeft', 5).attr({title: 'Mapcomplete limits', href: 'https://mapcomplete.osm.be/index.html?z=' + view.getZoom() +'&lat='+ coordinateLL[1] +'&lon='+ coordinateLL[0] +'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmain%2Flimits.json&language=en#welcome', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones/mc_checkdate.svg', height: 20, width: 20})));
+		complete.append($('<a>').css('marginLeft', 5).attr({title: 'OSM Hydrants', href: 'https://www.osmhydrant.org/en/#zoom=' + view.getZoom() +'&lat='+ coordinateLL[1] +'&lon='+ coordinateLL[0], target: '_blank'}).html($('<img>').attr({src: imgSrc + 'mc_operationalstatusdate.svg', height: 20, width: 20})));
 		complete.append($('<a>').css('marginLeft', 5).attr({title: 'Mapcomplete hydrants', href: 'https://mapcomplete.osm.be//hailhydrant.html?z=' + view.getZoom() +'&lat='+ coordinateLL[1] +'&lon='+ coordinateLL[0] +'&language=en&background=osm', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'mapcomplete_logo.png', height: 20, width: 20})));
-		complete.append($('<a>').css('marginLeft', 5).attr({title: 'Mapcomplete track type', href: 'https://mapcomplete.osm.be/index.html?z=' + view.getZoom() +'&lat='+ coordinateLL[1] +'&lon='+ coordinateLL[0] +'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmain%2Ftracktype.json&language=en#welcome', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones/no_tracktype.svg', height: 20, width: 20})));
+		complete.append($('<a>').css('marginLeft', 5).attr({title: 'Mapcomplete track type', href: 'https://mapcomplete.osm.be/index.html?z=' + view.getZoom() +'&lat='+ coordinateLL[1] +'&lon='+ coordinateLL[0] +'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmain%2Ftracktype.json&language=en#welcome', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones/mc_surveydate.svg', height: 20, width: 20})));
 		
 		var edit = $('<div>').html(config.i18n.editWith);
 		//ID editor
@@ -10138,7 +10138,7 @@ style: function (feature) {
 		//OSM
 		open.append($('<a>').css('marginLeft', 5).attr({title: 'OSM', href: 'https://www.openstreetmap.org/?lon=' + coordinateLL[0] + '&lat=' + coordinateLL[1] + '&zoom=' + view.getZoom(), target: '_blank'}).html($('<img>').attr({src: imgSrc + 'osm_logo-layer.svg', height: 20, width: 20})));
 		//Here WeGo
-		open.append($('<a>').css('marginLeft', 5).attr({title: 'HERE', href: 'https://wego.here.com/?map=' + coordinateLL[1] + ',' + coordinateLL[0] + ',' + Math.min(view.getZoom(), 18) + ',transit', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'here_logo.png', height: 20, width: 20})));
+		open.append($('<a>').css('marginLeft', 5).attr({title: 'HERE WeGo', href: 'https://wego.here.com/?map=' + coordinateLL[1] + ',' + coordinateLL[0] + ',' + Math.min(view.getZoom(), 18) + ',transit', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'here_logo.png', height: 20, width: 20})));
 		//Google
 		open.append($('<a>').css('marginLeft', 5).attr({title: 'Google Maps', href: 'https://maps.google.es/maps?ll=' + coordinateLL[1] + ',' + coordinateLL[0] + '&z=' + Math.min(view.getZoom(), 21), target: '_blank'}).html($('<img>').attr({src: imgSrc + 'gmaps_logo_layer.png', height: 20, width: 20})));
 		//Apple
