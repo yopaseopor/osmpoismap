@@ -7307,6 +7307,42 @@ style: function (feature) {
 				},
 		{
 			group: 'Turismo',
+			title: 'Parque acuático',
+			query: '(nwr["leisure"="water_park"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Turismo',
 			title: 'Zoo',
 			query: '(nwr["tourism"="zoo"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -7453,6 +7489,42 @@ style: function (feature) {
 			group: 'Turismo',
 			title: 'Bodegas',
 			query: '(nwr["tourism"="wine_cellar"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Turismo',
+			title: 'Sauna',
+			query: '(nwr["tourism"="sauna"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
@@ -7739,8 +7811,224 @@ style: function (feature) {
 				},
 		{
 			group: 'Turismo',
+			title: 'Parque',
+			query: '(nwr["leisure"="park"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Turismo',
+			title: 'Parque pequeño',
+			query: '(nwr["landuse"="recreational_ground"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Turismo',
+			title: 'Parque perros',
+			query: '(nwr["leisure"="dog_park"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Turismo',
+			title: 'Jardín',
+			query: '(nwr["leisure"="garden"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Turismo',
+			title: 'Parque infantil',
+			query: '(nwr["leisure"="playground"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Turismo',
 			title: 'Pícnic',
 			query: '(nwr["tourism"="picnic_site"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Turismo',
+			title: 'Pícnic (mesa)',
+			query: '(nwr["leisure"="picnic_table"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
@@ -7957,6 +8245,42 @@ style: function (feature) {
 			group: 'Turismo',
 			title: 'Techado',
 			query: '(nwr["amenity"="shelter"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Turismo',
+			title: 'Reserva natural',
+			query: '(nwr["tourism"="nature_reserve"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
@@ -8422,6 +8746,366 @@ style: function (feature) {
 			}
 				},
 		{
+			group: 'Turismo',
+			title: 'Terrazas',
+			query: '(nwr["leisure"="outdoor_seating"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Turismo',
+			title: 'Marina',
+			query: '(nwr["leisure"="marina"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Turismo',
+			title: 'Pesca',
+			query: '(nwr["leisure"="fishing"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Turismo',
+			title: 'Resort',
+			query: '(nwr["leisure"="resort"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Turismo',
+			title: 'Resort (playa)',
+			query: '(nwr["leisure"="beach_resort"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Turismo',
+			title: 'Minigolf',
+			query: '(nwr["leisure"="miniature_golf"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Turismo',
+			title: 'Pista de hielo',
+			query: '(nwr["leisure"="ice_rink"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Turismo',
+			title: 'Boleras',
+			query: '(nwr["leisure"="bowling_alley"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Turismo',
+			title: 'Sala de videojuegos',
+			query: '(nwr["leisure"="amusement_arcade"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Turismo',
+			title: 'Escaperooms',
+			query: '(nwr["leisure"="escape_game"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
 			group: 'Movilidad',
 			title: 'Aparcamiento para bicis <b><a href="https://osm-es.github.io/osmparkingmap">Ampliar</a></b>',
 			query: '(nwr["amenity"="bicycle_parking"]({{bbox}});node(w););out meta;',
@@ -8675,6 +9359,258 @@ style: function (feature) {
 				},
 		{
 			group: 'Deportes',
+			title: 'Estadios',
+			query: '(nwr["leisure"="stadium"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Deportes',
+			title: 'Campos / Pistas',
+			query: '(nwr["leisure"="pitch"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Deportes',
+			title: 'Pistas de atletismo',
+			query: '(nwr["leisure"="track"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Deportes',
+			title: 'Centro deportivo',
+			query: '(nwr["leisure"="sports_centre"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Deportes',
+			title: 'Gimnasio',
+			query: '(nwr["leisure"="fitness_centre"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Deportes',
+			title: 'Fitness exterior',
+			query: '(nwr["leisure"="fitness_station"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Deportes',
+			title: 'Piscinas',
+			query: '(nwr["leisure"="swimming_pool"][!"access"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Deportes',
 			title: 'Tienda bicicletas',
 			query: '(nwr["shop"="bicycle"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -8747,8 +9683,80 @@ style: function (feature) {
 				},
 		{
 			group: 'Deportes',
-			title: 'Excursionismo',
+			title: 'Tiendas excursionismo',
 			query: '(nwr["shop"="outdoor"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Deportes',
+			title: 'Campo de golf',
+			query: '(nwr["leisure"="golf_course"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Deportes',
+			title: 'Montar a caballo',
+			query: '(nwr["leisure"="horse_riding"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
@@ -10876,6 +11884,10 @@ style: function (feature) {
 	onClickEvent: function(evt, view, coordinateLL) {
 
 		var complete = $('<div>').html(config.i18n.completeWith);
+		
+		//Mapcomplete direcciones
+		complete.append($('<a>').css('marginLeft', 5).attr({title: 'Direcciones', href: 'https://mapcomplete.osm.be/index.html?z=' + view.getZoom() +'&lat='+ coordinateLL[1] +'&lon='+ coordinateLL[0] +'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmain%2Fwherethestreetshavenonumber.json&language=en#welcome', target: '_blank'}).html($('<img>').attr({src:'https://raw.githubusercontent.com/yopaseopor/mcquests/master/images/icones_adreces/casa_plena.svg', height: 20, width: 20})));
+		
 		//Mapcomplete editor
 		complete.append($('<a>').css('marginLeft', 5).attr({title: 'Mapcomplete limits', href: 'https://mapcomplete.osm.be/index.html?z=' + view.getZoom() +'&lat='+ coordinateLL[1] +'&lon='+ coordinateLL[0] +'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmain%2Flimits.json&language=en#welcome', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones/mc_checkdate.svg', height: 20, width: 20})));
 		
