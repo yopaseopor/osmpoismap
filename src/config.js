@@ -11974,7 +11974,7 @@ style: function (feature) {
 		//OpenRouteService
 		show.append($('<a>').css('marginLeft', 5).attr({title: 'OpenRouteService', href: 'https://maps.openrouteservice.org/#/place/@' + coordinateLL[0] + ',' + coordinateLL[1] + ',' + Math.min(view.getZoom(), 18) + '&view=tagging', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'ors_logo.svg', height: 20, width: 20})));
 		//OpenLevelUp
-		show.append($('<a>').css('marginLeft', 5).attr({title: 'OpenLevelUp!', href: 'https://openlevelup.net/#' + Math.min(view.getZoom(), 18 + '/' + coordinateLL[0] + '/' + coordinateLL[1] , target: '_blank'}).html($('<img>').attr({src: imgSrc + 'openlevelup_logo.svg', height: 20, width: 20})));
+		show.append($('<a>').css('marginLeft', 5).attr({title: 'OpenLevelUp!', href: 'https://openlevelup.net/#' + Math.min(view.getZoom(), 18) + '/' + coordinateLL[0] + '/' + coordinateLL[1] , target: '_blank'}).html($('<img>').attr({src: imgSrc + 'openlevelup_logo.svg', height: 20, width: 20})));
 		
 		var show2 = $('<div>').html(config.i18n.show2With);
 		
