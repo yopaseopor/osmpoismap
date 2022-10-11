@@ -231,7 +231,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Logo_Correos_2019.svg/220px-Logo_Correos_2019.svg.png',
-							scale:0.03
+							scale:1
 						}),
 							text: new ol.style.Text({
 								text: name,
