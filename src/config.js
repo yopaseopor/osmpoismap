@@ -267,7 +267,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/BSabadell_Logo.svg/220px-BSabadell_Logo.svg.png',
-							scale:0.30
+							scale:0.20
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -303,7 +303,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/BBVA_2019.svg/220px-BBVA_2019.svg.png',
-							scale:0.30
+							scale:0.20
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -339,7 +339,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Logo_CaixaBank.svg/220px-Logo_CaixaBank.svg.png',
-							scale:0.30
+							scale:0.20
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -411,7 +411,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Ibercajawordmark.svg/220px-Ibercajawordmark.svg.png',
-							scale:0.30
+							scale:0.20
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -843,7 +843,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Dia_2019.svg/220px-Dia_2019.svg.png',
-							scale:0.30
+							scale:0.20
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -879,7 +879,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Eroski_logo.svg/220px-Eroski_logo.svg.png',
-							scale:0.30
+							scale:0.20
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -951,7 +951,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Mercadona_logo.svg/218px-Mercadona_logo.svg.png',
-							scale:0.30
+							scale:0.20
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -1023,7 +1023,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Repsol_logo.svg/220px-Repsol_logo.svg.png',
-							scale:0.30
+							scale:0.20
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -1059,7 +1059,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Banco_Santander_Logotipo.svg/220px-Banco_Santander_Logotipo.svg.png',
-							scale:0.30
+							scale:0.20
 						}),
 							text: new ol.style.Text({
 								text: name,
