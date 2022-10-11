@@ -231,7 +231,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Burger_King_2020.svg/220px-Burger_King_2020.svg.png',
-							scale:0.20
+							scale:0.10
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -267,7 +267,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/BSabadell_Logo.svg/220px-BSabadell_Logo.svg.png',
-							scale:0.20
+							scale:0.30
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -339,7 +339,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Logo_CaixaBank.svg/220px-Logo_CaixaBank.svg.png',
-							scale:0.20
+							scale:0.30
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -555,7 +555,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Bp_textlogo.svg/220px-Bp_textlogo.svg.png',
-							scale:0.20
+							scale:0.10
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -699,7 +699,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Logo_Correos_2019.svg/220px-Logo_Correos_2019.svg.png',
-							scale:0.20
+							scale:0.10
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -735,7 +735,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/220px-McDonald%27s_Golden_Arches.svg.png',
-							scale:0.20
+							scale:0.10
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -915,7 +915,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Lidl-Logo.svg/220px-Lidl-Logo.svg.png',
-							scale:0.20
+							scale:0.10
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -951,7 +951,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Mercadona_logo.svg/218px-Mercadona_logo.svg.png',
-							scale:0.20
+							scale:0.30
 						}),
 							text: new ol.style.Text({
 								text: name,
