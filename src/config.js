@@ -357,6 +357,42 @@ style: function (feature) {
 				},
 		{
 			group: 'Marcas',
+			title: 'Caixa d`Enginyers',
+			query: '(nwr["brand:wikidata"="Q8254967"]({{bbox}});node(w););out meta;',
+			iconSrc: 'https://www.caixaenginyers.com/documents/20143/693294/Logo_Caja_Ingenieros_55a_CA.jpg/a6940b19-a18a-4686-4c81-2308c211f1a1?t=1665070571476',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://www.caixaenginyers.com/documents/20143/693294/Logo_Caja_Ingenieros_55a_CA.jpg/a6940b19-a18a-4686-4c81-2308c211f1a1?t=1665070571476',
+							scale:0.20
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas',
 			title: 'Caja Rural',
 			query: '(nwr["brand:wikidata"="Q3649971"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Caja_Rural.png/220px-Caja_Rural.png',
@@ -1185,6 +1221,42 @@ style: function (feature) {
 				},
 		{
 			group: 'Marcas',
+			title: 'Mas y mas',
+			query: '(nwr["brand:wikidata"="Q11936008"]({{bbox}});node(w););out meta;',
+			iconSrc: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fyt3.ggpht.com%2Fa%2FAATXAJx5tO0SEYUL1XhsSE9UzA_FQf_I4ciFvY1mUQ%3Ds900-c-k-c0xffffffff-no-rj-mo&f=1&nofb=1&ipt=10ca34f003b937b33427fdd6d01dbe7b70d542fc514f560f34cc26474f7b3673&ipo=images',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fyt3.ggpht.com%2Fa%2FAATXAJx5tO0SEYUL1XhsSE9UzA_FQf_I4ciFvY1mUQ%3Ds900-c-k-c0xffffffff-no-rj-mo&f=1&nofb=1&ipt=10ca34f003b937b33427fdd6d01dbe7b70d542fc514f560f34cc26474f7b3673&ipo=images',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas',
 			title: 'Mercadona',
 			query: '(nwr["brand:wikidata"="Q377705"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Mercadona_logo.svg/218px-Mercadona_logo.svg.png',
@@ -1204,6 +1276,42 @@ style: function (feature) {
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Mercadona_logo.svg/218px-Mercadona_logo.svg.png',
 							scale:0.30
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas',
+			title: 'Sorli Discau',
+			query: '(nwr["brand:wikidata"="Q20103935"]({{bbox}});node(w););out meta;',
+			iconSrc: 'https://www.sorli.com/wp-content/uploads/2017/05/logo-sorli.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://www.sorli.com/wp-content/uploads/2017/05/logo-sorli.png',
+							scale:0.20
 						}),
 							text: new ol.style.Text({
 								text: name,
