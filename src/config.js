@@ -249,7 +249,7 @@ style: function (feature) {
 				},
 			
 		{
-			group: 'Marcas',
+			group: 'Marcas & Economía',
 			title: 'Banco Sabadell',
 			query: '(nwr["brand:wikidata"="Q762330"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/BSabadell_Logo.svg/220px-BSabadell_Logo.svg.png',
@@ -286,7 +286,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Marcas',
-			title: 'BBVA',
+			title: 'BBVA & Economía',
 			query: '(nwr["brand:wikidata"="Q806189"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/BBVA_2019.svg/220px-BBVA_2019.svg.png',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -321,7 +321,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas',
+			group: 'Marcas & Economía',
 			title: 'Caixabank',
 			query: '(nwr["brand:wikidata"="Q847225"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Logo_CaixaBank.svg/220px-Logo_CaixaBank.svg.png',
@@ -357,7 +357,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas',
+			group: 'Marcas & Economía',
 			title: 'Caixa d`Enginyers',
 			query: '(nwr["brand:wikidata"="Q8254967"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.caixaenginyers.com/documents/20143/693294/Logo_Caja_Ingenieros_55a_CA.jpg/a6940b19-a18a-4686-4c81-2308c211f1a1?t=1665070571476',
@@ -393,7 +393,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas',
+			group: 'Marcas & Economía',
 			title: 'Caja Rural',
 			query: '(nwr["brand:wikidata"="Q3649971"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Caja_Rural.png/220px-Caja_Rural.png',
@@ -429,7 +429,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas',
+			group: 'Marcas & Economía',
 			title: 'Ibercaja',
 			query: '(nwr["brand:wikidata"="Q5907815"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Ibercajawordmark.svg/220px-Ibercajawordmark.svg.png',
@@ -465,7 +465,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas',
+			group: 'Marcas & Economía',
 			title: 'Kutxabank',
 			query: '(nwr["brand:wikidata"="Q5139377"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Kutxabank.svg/220px-Kutxabank.svg.png',
@@ -501,7 +501,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas',
+			group: 'Marcas & Economía',
 			title: 'Liberbank',
 			query: '(nwr["brand:wikidata"="Q2891018"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Liberbank_logo.svg/220px-Liberbank_logo.svg.png',
@@ -537,7 +537,7 @@ style: function (feature) {
 			}
 },
 		{
-			group: 'Marcas',
+			group: 'Marcas & Economía',
 			title: 'Santander',
 			query: '(nwr["brand:wikidata"="Q6496310"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Banco_Santander_Logotipo.svg/220px-Banco_Santander_Logotipo.svg.png',
@@ -573,7 +573,7 @@ style: function (feature) {
 			}
 },
 		{
-			group: 'Marcas',
+			group: 'Marcas & Economía',
 			title: 'Unicaja',
 			query: '(nwr["brand:wikidata"="Q2543704"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Unicaja_logo.svg/220px-Unicaja_logo.svg.png',
@@ -609,7 +609,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas',
+			group: 'Marcas & Movilidad',
 			title: 'BP',
 			query: '(nwr["brand:wikidata"="Q152057"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Bp_textlogo.svg/220px-Bp_textlogo.svg.png',
@@ -645,7 +645,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas',
+			group: 'Marcas & Movilidad',
 			title: 'Cepsa',
 			query: '(nwr["brand:wikidata"="Q608819"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Cepsa.svg/220px-Cepsa.svg.png',
@@ -681,7 +681,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas',
+			group: 'Marcas & Movilidad',
 			title: 'DISA',
 			query: '(nwr["brand:wikidata"="Q5797102"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.disagrupo.es/assets/img/logodisa2014.png',
@@ -717,7 +717,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas',
+			group: 'Marcas & Movilidad',
 			title: 'Galp',
 			query: '(nwr["brand:wikidata"="Q1492739"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Galp.png/220px-Galp.png',
@@ -753,7 +753,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas',
+			group: 'Marcas & Movilidad',
 			title: 'Repsol',
 			query: '(nwr["brand:wikidata"="Q174747"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Repsol_logo.svg/220px-Repsol_logo.svg.png',
@@ -789,7 +789,7 @@ style: function (feature) {
 			}
 },
 		{
-			group: 'Marcas',
+			group: 'Marcas & Logística',
 			title: 'Correos',
 			query: '(nwr["brand:wikidata"="Q776605"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Logo_Correos_2019.svg/220px-Logo_Correos_2019.svg.png',
@@ -825,7 +825,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas',
+			group: 'Marcas & Restauración',
 			title: 'McDonalds',
 			query: '(nwr["brand:wikidata"="Q38076"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/220px-McDonald%27s_Golden_Arches.svg.png',
@@ -861,7 +861,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas',
+			group: 'Marcas & Restauración',
 			title: 'Pans&Company',
 			query: '(nwr["brand:wikidata"="Q11697586"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.pansandcompany.com/bundles/pans/images/logo.png',
@@ -897,7 +897,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas',
+			group: 'Marcas & Restauración',
 			title: 'Viena',
 			query: '(nwr["brand:wikidata"="Q11954717"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.viena.es/wp-content/themes/viena/images/viena-logo.svg',
@@ -933,7 +933,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas',
+			group: 'Marcas & Alimentación',
 			title: 'BonÀrea',
 			query: '(nwr["brand:wikidata"="Q11924743"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.bonarea-agrupa.com/Content/img/logo-caixa-guissona-agrupa.png',
@@ -969,7 +969,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas',
+			group: 'Marcas & Alimentación',
 			title: 'BonPreu/Esclat',
 			query: '(nwr["brand:wikidata"="Q11924747"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Bon_Preu_Group_logo.svg/220px-Bon_Preu_Group_logo.svg.png',
@@ -1005,7 +1005,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas',
+			group: 'Marcas & Alimentación',
 			title: 'Consum',
 			query: '(nwr["brand:wikidata"="Q8350308"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Consum_Cooperativa.jpg/220px-Consum_Cooperativa.jpg',
@@ -1293,7 +1293,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas',
+			group: 'Marcas & ',
 			title: 'Sorli Discau',
 			query: '(nwr["brand:wikidata"="Q20103935"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.sorli.com/wp-content/uploads/2017/05/logo-sorli.png',
@@ -1329,7 +1329,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas',
+			group: 'Marcas - Supermercados',
 			title: 'Spar',
 			query: '(nwr["brand:wikidata"="Q610492"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Spar-logo.svg/220px-Spar-logo.svg.png',
@@ -1366,7 +1366,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas',
+			group: 'Marcas - Otras',
 			title: 'ONCE',
 			query: '(nwr["brand:wikidata"="Q1750397"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.once.es/logo.png',
