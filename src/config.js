@@ -1008,7 +1008,7 @@ style: function (feature) {
 		{
 			group: 'Marcas & Alimentación',
 			title: 'Carrefour',
-			query: '(nwr["brand:wikidata"="Q3117359"]({{bbox}});node(w););out meta;',
+			query: '(nwr["brand:wikidata"="Q217599"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Carrefour_logo.svg/220px-Carrefour_logo.svg.png',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
