@@ -899,6 +899,42 @@ style: function (feature) {
 				},
 		{
 			group: 'Marcas & Alimentación',
+			title: 'Alimerka',
+			query: '(nwr["brand:wikidata"="Q16482738"]({{bbox}});node(w););out meta;',
+			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Alimerka_logo.svg/220px-Alimerka_logo.svg.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Alimerka_logo.svg/220px-Alimerka_logo.svg.png',
+							scale:0.20
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Alimentación',
 			title: 'BonÀrea',
 			query: '(nwr["brand:wikidata"="Q11924743"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.bonarea-agrupa.com/Content/img/logo-caixa-guissona-agrupa.png',
@@ -953,6 +989,78 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Bon_Preu_Group_logo.svg/220px-Bon_Preu_Group_logo.svg.png',
+							scale:0.20
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Alimentación',
+			title: 'Carrefour',
+			query: '(nwr["brand:wikidata"="Q3117359"]({{bbox}});node(w););out meta;',
+			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Carrefour_logo.svg/220px-Carrefour_logo.svg.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Carrefour_logo.svg/220px-Carrefour_logo.svg.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Alimentación',
+			title: 'Condis',
+			query: '(nwr["brand:wikidata"="Q57417581"]({{bbox}});node(w););out meta;',
+			iconSrc: 'https://www.condis.es/images/header/logo.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://www.condis.es/images/header/logo.png',
 							scale:0.20
 						}),
 							text: new ol.style.Text({
@@ -1061,7 +1169,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Dia_2019.svg/220px-Dia_2019.svg.png',
-							scale:0.20
+							scale:0.10
 						}),
 							text: new ol.style.Text({
 								text: name,
