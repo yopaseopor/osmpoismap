@@ -176,7 +176,7 @@ var config = {
 				
 		
 		{	
-			group: 'Marcas',
+			group: 'Marcas & Restauración',
 			title: 'Burger King',
 			query: '(nwr["brand:wikidata"="Q177054"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Burger_King_2020.svg/220px-Burger_King_2020.svg.png',
@@ -285,8 +285,8 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas',
-			title: 'BBVA & Economía',
+			group: 'Marcas & Economía',
+			title: 'BBVA',
 			query: '(nwr["brand:wikidata"="Q806189"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/BBVA_2019.svg/220px-BBVA_2019.svg.png',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -1041,7 +1041,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas',
+			group: 'Marcas & Alimentación',
 			title: 'Covirán',
 			query: '(nwr["brand:wikidata"="Q61070539"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.coviran.es/SiteAssets/logo.png',
@@ -1077,7 +1077,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas',
+			group: 'Marcas & Alimentación',
 			title: 'Dia',
 			query: '(nwr["brand:wikidata"="Q925132"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Dia_2019.svg/220px-Dia_2019.svg.png',
@@ -1113,7 +1113,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas',
+			group: 'Marcas & Alimentación',
 			title: 'Eroski',
 			query: '(nwr["brand:wikidata"="Q1361349"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Eroski_logo.svg/220px-Eroski_logo.svg.png',
@@ -1149,7 +1149,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas',
+			group: 'Marcas & Alimentación',
 			title: 'La Sirena',
 			query: '(nwr["brand:wikidata"="Q21034458"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://web-cdne-lasirena-prod.azureedge.net/themes/lasirena/img/logo-header-la-sirena.svg',
@@ -1185,7 +1185,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas',
+			group: 'Marcas & Alimentación',
 			title: 'Lidl',
 			query: '(nwr["brand:wikidata"="Q151954"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Lidl-Logo.svg/220px-Lidl-Logo.svg.png',
@@ -1221,7 +1221,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas',
+			group: 'Marcas & Alimentación',
 			title: 'Mas y mas',
 			query: '(nwr["brand:wikidata"="Q11936008"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fyt3.ggpht.com%2Fa%2FAATXAJx5tO0SEYUL1XhsSE9UzA_FQf_I4ciFvY1mUQ%3Ds900-c-k-c0xffffffff-no-rj-mo&f=1&nofb=1&ipt=10ca34f003b937b33427fdd6d01dbe7b70d542fc514f560f34cc26474f7b3673&ipo=images',
@@ -1257,7 +1257,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas',
+			group: 'Marcas & Alimentación',
 			title: 'Mercadona',
 			query: '(nwr["brand:wikidata"="Q377705"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Mercadona_logo.svg/218px-Mercadona_logo.svg.png',
@@ -1293,7 +1293,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & ',
+			group: 'Marcas & Alimentación',
 			title: 'Sorli Discau',
 			query: '(nwr["brand:wikidata"="Q20103935"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.sorli.com/wp-content/uploads/2017/05/logo-sorli.png',
@@ -1329,7 +1329,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas - Supermercados',
+			group: 'Marcas & Alimentación',
 			title: 'Spar',
 			query: '(nwr["brand:wikidata"="Q610492"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Spar-logo.svg/220px-Spar-logo.svg.png',
@@ -1366,7 +1366,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas - Otras',
+			group: 'Marcas & Otros',
 			title: 'ONCE',
 			query: '(nwr["brand:wikidata"="Q1750397"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.once.es/logo.png',
