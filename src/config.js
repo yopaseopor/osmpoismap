@@ -1981,6 +1981,42 @@ style: function (feature) {
 				},
 		{
 			group: 'Marcas & Moda',
+			title: 'Zeeman',
+			query: '(nwr["brand:wikidata"="Q184399"]({{bbox}});node(w););out meta;',
+			iconSrc: 'https://www.zeeman.com/static/version1666246096/frontend/Zeeman/default/es_ES/images/logo.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://www.zeeman.com/static/version1666246096/frontend/Zeeman/default/es_ES/images/logo.svg',
+							scale:0.20
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Moda',
 			title: 'Tous',
 			query: '(nwr["brand:wikidata"="Q3815128"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://static.tous.com/21202/pub/directus/7f19acb0-66c5-4e91-90c7-1ad9b723d323.png',
@@ -2295,7 +2331,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Logo_actuel_de_Norauto.png/220px-Logo_actuel_de_Norauto.png',
-							scale:0.10
+							scale:0.20
 						}),
 							text: new ol.style.Text({
 								text: name,
