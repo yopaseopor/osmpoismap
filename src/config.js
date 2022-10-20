@@ -1927,7 +1927,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Stradivarius_logo.svg/220px-Stradivarius_logo.svg.png',
-							scale:0.20
+							scale:0.30
 						}),
 							text: new ol.style.Text({
 								text: name,
