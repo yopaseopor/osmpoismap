@@ -1999,7 +1999,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://www.zeeman.com/media/wysiwyg/Pers/Zeemanlogo.jpg',
-							scale:0.20
+							scale:0.05
 						}),
 							text: new ol.style.Text({
 								text: name,
