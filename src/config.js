@@ -899,6 +899,42 @@ style: function (feature) {
 				},
 		{
 			group: 'Marcas & Alimentación',
+			title: 'Alcampo',
+			query: '(nwr["brand:wikidata"="Q2832081"]({{bbox}});node(w););out meta;',
+			iconSrc: 'https://www.alcampo.es/media/images/h2d/h66/9470439555102.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://www.alcampo.es/media/images/h2d/h66/9470439555102.png',
+							scale:0.05
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Alimentación',
 			title: 'Alimerka',
 			query: '(nwr["brand:wikidata"="Q16482738"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Alimerka_logo.svg/220px-Alimerka_logo.svg.png',
@@ -1439,9 +1475,9 @@ style: function (feature) {
 				},
 		{
 			group: 'Marcas & Moda',
-			title: 'Zara',
-			query: '(nwr["brand:wikidata"="Q147662"]({{bbox}});node(w););out meta;',
-			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Zara_Logo.svg/220px-Zara_Logo.svg.png',
+			title: 'C&A',
+			query: '(nwr["brand:wikidata"="Q701338"]({{bbox}});node(w););out meta;',
+			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/C%26A_logo.svg/220px-C%26A_logo.svg.png',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
 				var key_regex = /^name$/
@@ -1456,8 +1492,45 @@ style: function (feature) {
 				});
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Zara_Logo.svg/220px-Zara_Logo.svg.png',
-							scale:0.20
+							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/C%26A_logo.svg/220px-C%26A_logo.svg.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+
+				},
+		{
+			group: 'Marcas & Moda',
+			title: 'H&M',
+			query: '(nwr["brand:wikidata"="Q188326"]({{bbox}});node(w););out meta;',
+			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/H%26M-Logo.svg/220px-H%26M-Logo.svg.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/H%26M-Logo.svg/220px-H%26M-Logo.svg.png',
+							scale:0.10
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -1511,9 +1584,9 @@ style: function (feature) {
 				},
 		{
 			group: 'Marcas & Moda',
-			title: 'H&M',
-			query: '(nwr["brand:wikidata"="Q188326"]({{bbox}});node(w););out meta;',
-			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/H%26M-Logo.svg/220px-H%26M-Logo.svg.png',
+			title: 'Zara',
+			query: '(nwr["brand:wikidata"="Q147662"]({{bbox}});node(w););out meta;',
+			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Zara_Logo.svg/220px-Zara_Logo.svg.png',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
 				var key_regex = /^name$/
@@ -1528,44 +1601,8 @@ style: function (feature) {
 				});
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/H%26M-Logo.svg/220px-H%26M-Logo.svg.png',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
-			group: 'Marcas & Moda',
-			title: 'C&A',
-			query: '(nwr["brand:wikidata"="Q701338"]({{bbox}});node(w););out meta;',
-			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/C%26A_logo.svg/220px-C%26A_logo.svg.png',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/C%26A_logo.svg/220px-C%26A_logo.svg.png',
-							scale:0.10
+							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Zara_Logo.svg/220px-Zara_Logo.svg.png',
+							scale:0.20
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -1585,7 +1622,7 @@ style: function (feature) {
 			group: 'Marcas & Moda',
 			title: 'Tous',
 			query: '(nwr["brand:wikidata"="Q3815128"]({{bbox}});node(w););out meta;',
-			iconSrc: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmarcas-logos.net%2Fwp-content%2Fuploads%2F2021%2F07%2FTous-logo-1536x864.png&f=1&nofb=1&ipt=af64665723ee1fde585585f5927dce87084412d4484a9d44b998e1972729d947&ipo=images',
+			iconSrc: 'https://static.tous.com/21202/pub/directus/7f19acb0-66c5-4e91-90c7-1ad9b723d323.png',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
 				var key_regex = /^name$/
@@ -1600,8 +1637,8 @@ style: function (feature) {
 				});
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmarcas-logos.net%2Fwp-content%2Fuploads%2F2021%2F07%2FTous-logo-1536x864.png&f=1&nofb=1&ipt=af64665723ee1fde585585f5927dce87084412d4484a9d44b998e1972729d947&ipo=images',
-							scale:0.10
+							src: 'https://static.tous.com/21202/pub/directus/7f19acb0-66c5-4e91-90c7-1ad9b723d323.png',
+							scale:0.05
 						}),
 							text: new ol.style.Text({
 								text: name,
