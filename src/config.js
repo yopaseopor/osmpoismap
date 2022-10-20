@@ -809,7 +809,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Dominos_pizza_logo.svg/220px-Dominos_pizza_logo.svg.png',
-							scale:0.05
+							scale:0.10
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -845,7 +845,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://fostershollywood.es/sites/all/themes/custom/fh_zen/logo_fosters.svg',
-							scale:0.10
+							scale:0.20
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -1025,7 +1025,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Logo_telepizza.svg/220px-Logo_telepizza.svg.png',
-							scale:0.10
+							scale:0.20
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -1727,6 +1727,43 @@ style: function (feature) {
 				},
 		{
 			group: 'Marcas & Moda',
+			title: 'Bershka',
+			query: '(nwr["brand:wikidata"="Q827258"]({{bbox}});node(w););out meta;',
+			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Bershka_logo.svg/220px-Bershka_logo.svg.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Bershka_logo.svg/220px-Bershka_logo.svg.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+
+				},
+		{
+			group: 'Marcas & Moda',
 			title: 'C&A',
 			query: '(nwr["brand:wikidata"="Q701338"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/C%26A_logo.svg/220px-C%26A_logo.svg.png',
@@ -1854,6 +1891,42 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Mango-logo.jpg/220px-Mango-logo.jpg',
+							scale:0.20
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Moda',
+			title: 'Stradivarius',
+			query: '(nwr["brand:wikidata"="Q3322945"]({{bbox}});node(w););out meta;',
+			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Stradivarius_logo.svg/220px-Stradivarius_logo.svg.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Stradivarius_logo.svg/220px-Stradivarius_logo.svg.png',
 							scale:0.20
 						}),
 							text: new ol.style.Text({
