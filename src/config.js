@@ -1983,7 +1983,7 @@ style: function (feature) {
 			group: 'Marcas & Moda',
 			title: 'Zeeman',
 			query: '(nwr["brand:wikidata"="Q184399"]({{bbox}});node(w););out meta;',
-			iconSrc: 'https://www.zeeman.com/static/version1666246096/frontend/Zeeman/default/es_ES/images/logo.svg',
+			iconSrc: 'https://www.zeeman.com/media/wysiwyg/Pers/Zeemanlogo.jpg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
 				var key_regex = /^name$/
@@ -1998,7 +1998,7 @@ style: function (feature) {
 				});
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://www.zeeman.com/static/version1666246096/frontend/Zeeman/default/es_ES/images/logo.svg',
+							src: 'https://www.zeeman.com/media/wysiwyg/Pers/Zeemanlogo.jpg',
 							scale:0.20
 						}),
 							text: new ol.style.Text({
