@@ -1765,6 +1765,80 @@ style: function (feature) {
 		
 		{
 			group: 'Marcas & Otros',
+			title: 'El Corte Inglés',
+			query: '(nwr["brand:wikidata"="Q623133"]({{bbox}});node(w););out meta;',
+			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Logo_Corte_Ingl%C3%A9s.svg/220px-Logo_Corte_Ingl%C3%A9s.svg.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Logo_Corte_Ingl%C3%A9s.svg/220px-Logo_Corte_Ingl%C3%A9s.svg.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Otros',
+			title: 'MediaMarkt',
+			query: '(nwr["brand:wikidata"="Q2381223"]({{bbox}});node(w););out meta;',
+			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Media_Markt_logo.svg/220px-Media_Markt_logo.svg.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Media_Markt_logo.svg/220px-Media_Markt_logo.svg.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Otros',
 			title: 'ONCE',
 			query: '(nwr["brand:wikidata"="Q1750397"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.once.es/logo.png',
