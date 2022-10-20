@@ -1765,6 +1765,43 @@ style: function (feature) {
 		
 		{
 			group: 'Marcas & Otros',
+			title: 'Decathlon',
+			query: '(nwr["brand:wikidata"="Q509349"]({{bbox}});node(w););out meta;',
+			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Decathlon_Logo.svg/220px-Decathlon_Logo.svg.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Decathlon_Logo.svg/220px-Decathlon_Logo.svg.png',
+							scale:0.20
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Otros',
 			title: 'El Corte Inglés',
 			query: '(nwr["brand:wikidata"="Q623133"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Logo_Corte_Ingl%C3%A9s.svg/220px-Logo_Corte_Ingl%C3%A9s.svg.png',
@@ -1783,6 +1820,43 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Logo_Corte_Ingl%C3%A9s.svg/220px-Logo_Corte_Ingl%C3%A9s.svg.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Otros',
+			title: 'Flying Tiger',
+			query: '(nwr["brand:wikidata"="Q2786319"]({{bbox}});node(w););out meta;',
+			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Fliyingtiger.svg/220px-Fliyingtiger.svg.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Fliyingtiger.svg/220px-Fliyingtiger.svg.png',
 							scale:0.10
 						}),
 							text: new ol.style.Text({
@@ -1857,6 +1931,43 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://www.once.es/logo.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Otros',
+			title: 'TEDi',
+			query: '(nwr["brand:wikidata"="Q1364603"]({{bbox}});node(w););out meta;',
+			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/TEDi-Logo.svg/220px-TEDi-Logo.svg.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/TEDi-Logo.svg/220px-TEDi-Logo.svg.png',
 							scale:0.10
 						}),
 							text: new ol.style.Text({
