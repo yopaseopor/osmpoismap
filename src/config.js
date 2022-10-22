@@ -1097,7 +1097,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://www.alcampo.es/media/images/h2d/h66/9470439555102.png',
-							scale:0.05
+							scale:0.02
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -1133,7 +1133,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Alimerka_logo.svg/220px-Alimerka_logo.svg.png',
-							scale:0.20
+							scale:0.30
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -1169,7 +1169,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://www.bonarea-agrupa.com/Content/img/logo-caixa-guissona-agrupa.png',
-							scale:0.20
+							scale:0.30
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -1205,7 +1205,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Bon_Preu_Group_logo.svg/220px-Bon_Preu_Group_logo.svg.png',
-							scale:0.20
+							scale:0.30
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -1241,7 +1241,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Caprabo_logo.svg/220px-Caprabo_logo.svg.png',
-							scale:0.20
+							scale:0.30
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -1277,7 +1277,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Carrefour_logo.svg/220px-Carrefour_logo.svg.png',
-							scale:0.10
+							scale:0.20
 						}),
 							text: new ol.style.Text({
 								text: name,
