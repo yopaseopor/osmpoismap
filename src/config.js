@@ -1189,7 +1189,7 @@ style: function (feature) {
 			group: 'Marcas & Alimentación',
 			title: 'BonPreu/Esclat',
 			query: '(nwr["brand:wikidata"="Q11924747"]({{bbox}});node(w););out meta;',
-			iconSrc: 'https://pbs.twimg.com/profile_images/1103993935419068416/f8FkyYcp_400x400.png,
+			iconSrc: 'https://pbs.twimg.com/profile_images/1103993935419068416/f8FkyYcp_400x400.png',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
 				var key_regex = /^name$/
