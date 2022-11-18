@@ -1205,7 +1205,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://pbs.twimg.com/profile_images/1103993935419068416/f8FkyYcp_400x400.png',
-							scale:0.30
+							scale:0.10
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -1637,7 +1637,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Logo_Mercadona_%28color-300-alpha%29.png/640px-Logo_Mercadona_%28color-300-alpha%29.png',
-							scale:0.30
+							scale:0.10
 						}),
 							text: new ol.style.Text({
 								text: name,
