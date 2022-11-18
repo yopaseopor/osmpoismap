@@ -1189,7 +1189,7 @@ style: function (feature) {
 			group: 'Marcas & Alimentación',
 			title: 'BonPreu/Esclat',
 			query: '(nwr["brand:wikidata"="Q11924747"]({{bbox}});node(w););out meta;',
-			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Bon_Preu_Group_logo.svg/220px-Bon_Preu_Group_logo.svg.png',
+			iconSrc: 'https://pbs.twimg.com/profile_images/1103993935419068416/f8FkyYcp_400x400.png,
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
 				var key_regex = /^name$/
@@ -1204,7 +1204,7 @@ style: function (feature) {
 				});
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Bon_Preu_Group_logo.svg/220px-Bon_Preu_Group_logo.svg.png',
+							src: 'https://pbs.twimg.com/profile_images/1103993935419068416/f8FkyYcp_400x400.png',
 							scale:0.30
 						}),
 							text: new ol.style.Text({
@@ -1621,7 +1621,7 @@ style: function (feature) {
 			group: 'Marcas & Alimentación',
 			title: 'Mercadona',
 			query: '(nwr["brand:wikidata"="Q377705"]({{bbox}});node(w););out meta;',
-			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Mercadona_logo.svg/218px-Mercadona_logo.svg.png',
+			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Logo_Mercadona_%28color-300-alpha%29.png/640px-Logo_Mercadona_%28color-300-alpha%29.png',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
 				var key_regex = /^name$/
@@ -1636,7 +1636,7 @@ style: function (feature) {
 				});
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Mercadona_logo.svg/218px-Mercadona_logo.svg.png',
+							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Logo_Mercadona_%28color-300-alpha%29.png/640px-Logo_Mercadona_%28color-300-alpha%29.png',
 							scale:0.30
 						}),
 							text: new ol.style.Text({
