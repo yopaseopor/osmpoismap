@@ -14163,12 +14163,12 @@ style: function (feature) {
  {
 
    group: 'Test BCN',
-   title: 'ES:B1a',
-   geojson: 'https://opendata-ajuntament.barcelona.cat/data/dataset/62fb990e-4cc3-457a-aea1-497604e15659/resource/495c434e-b005-416e-b760-dc79f56dff3a/download/2019_censcomercialbcn_detall.geojson',
+   title: 'Citroen',
+   geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/src/test_bcn.geojson',
    iconSrc:'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_B1a.png',
    iconStyle: 'background-color:rgba(255,255,255,0.4)',
    style: function (feature) {
-    var key_regex = /^traffic_sign/
+    var key_regex = /^Nom_Local/
     var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
     var name = feature.get(name_key) || '';
     var styles = {
