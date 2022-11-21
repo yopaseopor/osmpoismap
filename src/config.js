@@ -14173,7 +14173,7 @@ style: function (feature) {
     var name = feature.get(name_key) || '';
     var styles = {
      'Nom_Local': {
-      'CITROEN': new ol.style.Style({
+      'Citroen': new ol.style.Style({
        image: new ol.style.Icon({
        src: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_B1a.png',
        rotation: 0,
