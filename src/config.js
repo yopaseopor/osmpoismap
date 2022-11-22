@@ -14252,13 +14252,13 @@ style: function (feature) {
        scale: 0.10
       }),
        text: new ol.style.Text({
-								text: name,
+        text: name,
 								offsetX : 7,
 								offsetY : -12,
 								fill: new ol.style.Fill({
                             color: 'rgba(0,0,0,1)'
                         })
-					
+       })
       })
      },
      'traffic_sign:backward': {
