@@ -14252,7 +14252,11 @@ style: function (feature) {
        scale: 0.10
       }),
        text: new ol.style.Text({
-        text: name
+        text: name,
+		offsetX : 7,
+		offsetY : -12,
+		fill: new ol.style.Fill({
+        color: 'rgba(0,0,0,1)'
        })
       })
      },
@@ -14303,7 +14307,7 @@ style: function (feature) {
    iconSrc:'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/build.svg',
    iconStyle: 'background-color:rgba(255,255,255,0.4)',
    style: function (feature) {
-    var key_regex = /^Nom_Activitat/
+    var key_regex = /^Nom_Local/
     var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
     var name = feature.get(name_key) || '';
     var styles = {
@@ -14313,10 +14317,17 @@ style: function (feature) {
        src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/build.svg',
        rotation: 0,
        scale: 0.10
-      })
+      }),
+       text: new ol.style.Text({
+        text: name,
+		offsetX : 7,
+		offsetY : -12,
+		fill: new ol.style.Fill({
+        color: 'rgba(0,255,0,1)'
+       })
       })
      },
-     'Nom_Activitat': {
+     'Nom_Local': {
       '.*': new ol.style.Style({
        image: new ol.style.Icon({
        src: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_B1a.png',
