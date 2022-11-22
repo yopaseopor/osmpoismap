@@ -14257,7 +14257,7 @@ style: function (feature) {
 		offsetY : -12,
 		fill: new ol.style.Fill({
         color: 'rgba(0,0,0,1)'
-       })
+       }),
       })
      },
      'traffic_sign:backward': {
@@ -14324,7 +14324,7 @@ style: function (feature) {
 		offsetY : -12,
 		fill: new ol.style.Fill({
         color: 'rgba(0,255,0,1)'
-       })
+       }),
       })
      },
      'Nom_Local': {
