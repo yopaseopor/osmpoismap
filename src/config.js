@@ -14256,7 +14256,7 @@ style: function (feature) {
      'traffic_sign:backward': {
       'ES:B1a': new ol.style.Style({
        image: new ol.style.Icon({
-       src: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_ES_B1a.png',
+       src: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_B1a.png',
        rotation:9.4,
        scale: 0.30
       })
@@ -14316,7 +14316,7 @@ style: function (feature) {
      'Nom_Activitat': {
       '.*': new ol.style.Style({
        image: new ol.style.Icon({
-       src: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_ES_B1a.png',
+       src: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_B1a.png',
        rotation:9.4,
        scale: 0.30
       })
