@@ -14235,7 +14235,7 @@ style: function (feature) {
  {
 
    group: 'BCN (CC 4.0 Dades Ajuntament BCN)',
-   title: 'Test',
+   title: 'Test2',
    geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/test_bcn.geojson',
    iconSrc:'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_B1a.png',
    iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -14250,7 +14250,10 @@ style: function (feature) {
        src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Citroen_2022.svg/1024px-Citroen_2022.svg.png',
        rotation: 0,
        scale: 0.10
-      })
+      }),
+       text: new ol.style.Text({
+        text: name
+       })
       })
      },
      'traffic_sign:backward': {
