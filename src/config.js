@@ -1655,6 +1655,42 @@ style: function (feature) {
 				},
 		{
 			group: 'Marcas & Alimentación',
+			title: 'Suma',
+			query: '(nwr["brand:wikidata"="Q58012362"]({{bbox}});node(w););out meta;',
+			iconSrc: 'https://www.sumasupermercados.es/sites/all/themes/custom/img/logo_suma_es.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://www.sumasupermercados.es/sites/all/themes/custom/img/logo_suma_es.png',
+							scale:0.30
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Alimentación',
 			title: 'Sorli Discau',
 			query: '(nwr["brand:wikidata"="Q20103935"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.sorli.com/wp-content/uploads/2017/05/logo-sorli.png',
@@ -14163,7 +14199,7 @@ style: function (feature) {
  {
 
    group: 'Test BCN',
-   title: 'BCN',
+   title: 'BCN (CC 4.0 Dades Ajuntament BCN)',
    geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/test_bcn.geojson',
    iconSrc:'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_B1a.png',
    iconStyle: 'background-color:rgba(255,255,255,0.4)',
