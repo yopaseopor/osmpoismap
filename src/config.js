@@ -14211,9 +14211,9 @@ style: function (feature) {
      'Nom_Local': {
       'Citroen': new ol.style.Style({
        image: new ol.style.Icon({
-       src: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_B1a.png',
+       src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Citroen_2022.svg/1024px-Citroen_2022.svg.png',
        rotation: 0,
-       scale: 0.30
+       scale: 0.10
       })
       })
      },
