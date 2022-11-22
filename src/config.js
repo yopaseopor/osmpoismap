@@ -14235,7 +14235,7 @@ style: function (feature) {
  {
 
    group: 'BCN (CC 4.0 Dades Ajuntament BCN)',
-   title: 'Test3',
+   title: 'Test2',
    geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/test_bcn.geojson',
    iconSrc:'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_B1a.png',
    iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -14257,7 +14257,7 @@ style: function (feature) {
 		offsetY : -12,
 		fill: new ol.style.Fill({
         color: 'rgba(0,0,0,1)'
-       }),
+       })
       })
      },
      'traffic_sign:backward': {
@@ -14307,7 +14307,7 @@ style: function (feature) {
    iconSrc:'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/build.svg',
    iconStyle: 'background-color:rgba(255,255,255,0.4)',
    style: function (feature) {
-    var key_regex = /^Nom_Local/
+    var key_regex = /^Nom_Activitat/
     var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
     var name = feature.get(name_key) || '';
     var styles = {
@@ -14323,11 +14323,11 @@ style: function (feature) {
 		offsetX : 7,
 		offsetY : -12,
 		fill: new ol.style.Fill({
-        color: 'rgba(0,255,0,1)'
-       }),
+        color: 'rgba(0,0,0,1)'
+       })
       })
      },
-     'Nom_Local': {
+     'Nom_Activitat': {
       '.*': new ol.style.Style({
        image: new ol.style.Icon({
        src: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_B1a.png',
