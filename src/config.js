@@ -14257,7 +14257,7 @@ style: function (feature) {
 								offsetY : -12,
 								fill: new ol.style.Fill({
                             color: 'rgba(0,0,0,1)'
-                        }),
+                        })
 					
       })
      },
