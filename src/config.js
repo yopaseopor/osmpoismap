@@ -14317,14 +14317,7 @@ style: function (feature) {
        src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/build.svg',
        rotation: 0,
        scale: 0.10
-      }),
-       text: new ol.style.Text({
-        text: name,
-		offsetX : 7,
-		offsetY : -12,
-		fill: new ol.style.Fill({
-        color: 'rgba(0,0,0,1)'
-       })
+      })
       })
      },
      'Nom_Activitat': {
