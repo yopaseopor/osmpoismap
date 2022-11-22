@@ -14252,8 +14252,13 @@ style: function (feature) {
        scale: 0.10
       }),
        text: new ol.style.Text({
-        text: name
-       })
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+					
       })
      },
      'traffic_sign:backward': {
@@ -14319,11 +14324,12 @@ style: function (feature) {
        })
       })
      },
-     'Nom_Activitat': {
+     'Nom_Local': {
       '.*': new ol.style.Style({
        image: new ol.style.Icon({
        src: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_B1a.png',
        rotation:9.4,
+	   scale: 0.10
        }),
        text: new ol.style.Text({
         text: name
