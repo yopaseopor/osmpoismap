@@ -14308,7 +14308,7 @@ style: function (feature) {
    iconSrc:'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/build.svg',
    iconStyle: 'background-color:rgba(255,255,255,0.4)',
    style: function (feature) {
-    var key_regex = /^Nom_Activitat/
+    var key_regex = /^Nom_Local/
     var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
     var name = feature.get(name_key) || '';
     var styles = {
