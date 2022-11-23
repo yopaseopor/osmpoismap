@@ -14427,7 +14427,7 @@ style: function (feature) {
                         })
 					})
 				})
-			},
+	/*		},
 					'Nom_Activitat': {
 						'Locals buits en venda i lloguer': new ol.style.Style({
 							image: new ol.style.Icon({
@@ -14477,7 +14477,7 @@ style: function (feature) {
                             color: 'rgba(0,0,0,1)'
                         })
 					})
-				})
+				}) */
 			},
 					'traffic_sign': {
 						'ES:R2': new ol.style.Style({
