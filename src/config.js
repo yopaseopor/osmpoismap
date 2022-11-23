@@ -14394,10 +14394,10 @@ style: function (feature) {
 				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
 				var name = feature.get(name_key) || '';
 				var styles = {
-					'Nom_Local': {
+					'Nom_Activitat': {
 						'Citroen': new ol.style.Style({
 							image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_B1a.png',
+							src: 'Activitats de la construcció',
 							rotation: 0,
 							scale: 1
       }),
