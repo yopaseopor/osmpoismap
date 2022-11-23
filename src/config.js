@@ -14387,7 +14387,7 @@ style: function (feature) {
 			group: 'Test',
 			title: 'ES:R2',
 			geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/test_bcn.geojson',
-			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_R2.png',
+			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/closed.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 			style: function (feature) {
 				var key_regex = /^Nom_Local/
@@ -14395,9 +14395,9 @@ style: function (feature) {
 				var name = feature.get(name_key) || '';
 				var styles = {
 					'Nom_Activitat': {
-						'Activitats de la construcció': new ol.style.Style({
+						'Sense informació - Havia tingut activitat (rètol)': new ol.style.Style({
 							image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/build.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/closed.svg',
 							rotation: 0,
 							scale: 1
       }),
@@ -14411,12 +14411,63 @@ style: function (feature) {
 					})
 				})
 			},
-					'Nom_Local': {
-						'Sn': new ol.style.Style({
+					'Nom_Activitat': {
+						'Sense informació': new ol.style.Style({
 							image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_R2.png',
-							rotation:9.4,
-						scale: 1
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/noinfo.svg',
+							rotation: 0,
+							scale: 1
+      }),
+       text: new ol.style.Text({
+        text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        })
+					})
+				})
+			},
+					'Nom_Activitat': {
+						'Locals buits en venda i lloguer': new ol.style.Style({
+							image: new ol.style.Icon({
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/rent_sell.svg',
+							rotation: 0,
+							scale: 1
+      }),
+       text: new ol.style.Text({
+        text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        })
+					})
+				})
+			},
+					'Nom_Activitat': {
+						'Locals buits en venda': new ol.style.Style({
+							image: new ol.style.Icon({
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/sell.svg',
+							rotation: 0,
+							scale: 1
+      }),
+       text: new ol.style.Text({
+        text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        })
+					})
+				})
+			},
+					'Nom_Activitat': {
+						'Locals buits en lloguer': new ol.style.Style({
+							image: new ol.style.Icon({
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/rent.svg',
+							rotation: 0,
+							scale: 1
       }),
        text: new ol.style.Text({
         text: name,
