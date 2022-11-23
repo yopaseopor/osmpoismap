@@ -5,7 +5,7 @@
    viewBox="0 0 20 20"
    version="1.1"
    id="svg1633"
-   sodipodi:docname="rent.svg"
+   sodipodi:docname="rent_sell.svg"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -38,7 +38,7 @@
      style="fill:#ff0000"
      sodipodi:nodetypes="sssssssssccccccccccccc" />
   <rect
-     style="fill:#0000ff;stroke-width:56.7058;stroke-linecap:round"
+     style="fill:#008000;stroke-width:56.7058;stroke-linecap:round"
      id="rect1639"
      width="2.9472864"
      height="11.287482"
@@ -46,7 +46,7 @@
      y="8.4411411"
      transform="matrix(0.71981912,-0.69416168,0.71545715,0.69865662,0,0)" />
   <rect
-     style="fill:#0000ff;stroke-width:56.7058;stroke-linecap:round"
+     style="fill:#008000;stroke-width:56.7058;stroke-linecap:round"
      id="rect1639-3"
      width="2.9472864"
      height="11.287482"
