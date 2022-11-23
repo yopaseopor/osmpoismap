@@ -14385,7 +14385,7 @@ style: function (feature) {
 },
 		{	
 			group: 'Test',
-			title: 'ES:R2',
+			title: 'Closed',
 			geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/test_bcn.geojson',
 			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/closed.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
