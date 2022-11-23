@@ -14310,7 +14310,7 @@ style: function (feature) {
 },
 		{	
 			group: 'Test',
-			title: 'ES:R2',
+			title: 'ES:R22',
 			query: '(nwr[~"^traffic_sign"~"ES:R2"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_R2.png',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -14324,10 +14324,18 @@ style: function (feature) {
 							image: new ol.style.Icon({
 							src: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_R2.png',
 							rotation: 0,
-							scale: 0.30
-						})
-						})
-					},
+							scale: 0.10
+      }),
+       text: new ol.style.Text({
+        text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        })
+       })
+      })
+     },
 					'traffic_sign:backward': {
 						'ES:R2': new ol.style.Style({
 							image: new ol.style.Icon({
