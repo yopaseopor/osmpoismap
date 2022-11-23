@@ -14341,10 +14341,18 @@ style: function (feature) {
 							image: new ol.style.Icon({
 							src: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_R2.png',
 							rotation:9.4,
-							scale: 0.30
-						})
-						})
-					},
+scale: 1
+      }),
+       text: new ol.style.Text({
+        text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        })
+       })
+      })
+     },
 					'traffic_sign': {
 						'ES:R2': new ol.style.Style({
 							zIndex: 100,
