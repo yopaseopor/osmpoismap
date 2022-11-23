@@ -14369,7 +14369,7 @@ style: function (feature) {
  {
 
    group: 'BCN (CC 4.0 Dades Ajuntament BCN)',
-   title: 'Ja no existeixen',
+   title: 'Ja no existeixen2',
    geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/test_bcn.geojson',
    iconSrc:'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/closed.svg',
    iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -14382,7 +14382,6 @@ style: function (feature) {
       'Sense informació - Havia tingut activitat (rètol)': new ol.style.Style({
        image: new ol.style.Icon({
        src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/closed.svg',
-       rotation: 0,
        scale: 1
       }),
        text: new ol.style.Text({
@@ -14394,7 +14393,6 @@ style: function (feature) {
       'Sense informació': new ol.style.Style({
        image: new ol.style.Icon({
        src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/noinfo.svg',
-       rotation: 0,
        scale: 1
        }),
        text: new ol.style.Text({
@@ -14406,7 +14404,6 @@ style: function (feature) {
       'Locals buits en venda i lloguer': new ol.style.Style({
        image: new ol.style.Icon({
        src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/rent_sell.svg',
-       rotation: 0,
        scale: 1
        }),
        text: new ol.style.Text({
@@ -14418,7 +14415,6 @@ style: function (feature) {
       'Locals buits en venda': new ol.style.Style({
        image: new ol.style.Icon({
        src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/sell.svg',
-       rotation: 0,
        scale: 1
        }),
        text: new ol.style.Text({
@@ -14430,7 +14426,6 @@ style: function (feature) {
       'Locals buits en lloguer': new ol.style.Style({
        image: new ol.style.Icon({
        src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/rent.svg',
-       rotation: 0,
        scale: 1
        }),
        text: new ol.style.Text({
