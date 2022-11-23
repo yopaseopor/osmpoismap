@@ -14235,7 +14235,7 @@ style: function (feature) {
  {
 
    group: 'BCN (CC 4.0 Dades Ajuntament BCN)',
-   title: 'Test2',
+   title: 'Test',
    geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/test_bcn.geojson',
    iconSrc:'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_B1a.png',
    iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -14261,13 +14261,21 @@ style: function (feature) {
        })
       })
      },
-     'traffic_sign:backward': {
-      'ES:B1a': new ol.style.Style({
+     'Nom_Local': {
+      'Sn': new ol.style.Style({
        image: new ol.style.Icon({
        src: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_B1a.png',
        rotation:9.4,
-       scale: 0.30
-      })
+              scale: 0.9
+      }),
+       text: new ol.style.Text({
+        text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        })
+       })
       })
      },
      'traffic_sign': {
