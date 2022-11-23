@@ -14387,7 +14387,7 @@ style: function (feature) {
 			group: 'Test',
 			title: 'ES:R2',
 			geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/test_bcn.geojson',
-			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/closed.svg',
+			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_R2.png',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 			style: function (feature) {
 				var key_regex = /^Nom_Local/
@@ -14395,7 +14395,7 @@ style: function (feature) {
 				var name = feature.get(name_key) || '';
 				var styles = {
 					'Nom_Activitat': {
-						'Sense informació - Havia tingut activitat (rètol)': new ol.style.Style({
+						'Activitats de la construcció': new ol.style.Style({
 							image: new ol.style.Icon({
 							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/build.svg',
 							rotation: 0,
@@ -14411,8 +14411,8 @@ style: function (feature) {
 					})
 				})
 			},
-					'Nom_Activitat': {
-						'Locals buits en lloguer': new ol.style.Style({
+					'Nom_Local': {
+						'Sn': new ol.style.Style({
 							image: new ol.style.Icon({
 							src: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_R2.png',
 							rotation:9.4,
