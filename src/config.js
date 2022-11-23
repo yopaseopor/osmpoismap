@@ -14333,15 +14333,15 @@ style: function (feature) {
 								fill: new ol.style.Fill({
                             color: 'rgba(0,0,0,1)'
                         })
-       })
-      })
-     },
+					})
+				})
+			},
 					'traffic_sign:backward': {
 						'ES:R2': new ol.style.Style({
 							image: new ol.style.Icon({
 							src: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_R2.png',
 							rotation:9.4,
-scale: 1
+						scale: 1
       }),
        text: new ol.style.Text({
         text: name,
@@ -14350,9 +14350,84 @@ scale: 1
 								fill: new ol.style.Fill({
                             color: 'rgba(0,0,0,1)'
                         })
-       })
-      })
-     },
+					})
+				})
+			},
+					'traffic_sign': {
+						'ES:R2': new ol.style.Style({
+							zIndex: 100,
+							stroke: new ol.style.Stroke({
+								color: 'rgba(246, 99, 79, 1.0)',
+								width: 1
+							}),
+							fill: new ol.style.Fill({
+								color: 'rgba(246, 99, 79, 0.3)'
+							}),
+							text: new ol.style.Text({
+								text: name
+							})
+						})
+					}
+				};
+				for (var key in styles) {
+					var value = feature.get(key);
+					if (value !== undefined) {
+						for (var regexp in styles[key]) {
+							if (new RegExp(regexp).test(value)) {
+								return styles[key][regexp];
+							}
+						}
+					}
+				}
+				return null;
+			} 
+		 
+},
+		{	
+			group: 'Test',
+			title: 'ES:R2',
+			geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/test_bcn.geojson',
+			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_R2.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+			style: function (feature) {
+				var key_regex = /^Nom_Local/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var styles = {
+					'Nom_Local': {
+						'Citroen': new ol.style.Style({
+							image: new ol.style.Icon({
+							src: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_B1a.png',
+							rotation: 0,
+							scale: 1
+      }),
+       text: new ol.style.Text({
+        text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        })
+					})
+				})
+			},
+					'Nom_Local': {
+						'Sn': new ol.style.Style({
+							image: new ol.style.Icon({
+							src: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_R2.png',
+							rotation:9.4,
+						scale: 1
+      }),
+       text: new ol.style.Text({
+        text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        })
+					})
+				})
+			},
 					'traffic_sign': {
 						'ES:R2': new ol.style.Style({
 							zIndex: 100,
