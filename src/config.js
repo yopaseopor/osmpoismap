@@ -14366,6 +14366,93 @@ style: function (feature) {
    } 
    
 },
+ {
+
+   group: 'BCN (CC 4.0 Dades Ajuntament BCN)',
+   title: 'Ja no existeixen',
+   geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/test_bcn.geojson',
+   iconSrc:'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/closed.svg',
+   iconStyle: 'background-color:rgba(255,255,255,0.4)',
+   style: function (feature) {
+    var key_regex = /^Nom_Local/
+    var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+    var name = feature.get(name_key) || '';
+    var styles = {
+     'Nom_Activitat': {
+      'Sense informació - Havia tingut activitat (rètol)': new ol.style.Style({
+       image: new ol.style.Icon({
+       src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/closed.svg',
+       rotation: 0,
+       scale: 1
+      }),
+       text: new ol.style.Text({
+        text: name
+       })
+      })
+     },
+     'Nom_Activitat': {
+      'Sense informació': new ol.style.Style({
+       image: new ol.style.Icon({
+       src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/noinfo.svg',
+       rotation: 0,
+       scale: 1
+       }),
+       text: new ol.style.Text({
+        text: name
+       })
+      })
+       },
+     'Nom_Activitat': {
+      'Locals buits en venda i lloguer': new ol.style.Style({
+       image: new ol.style.Icon({
+       src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/rent_sell.svg',
+       rotation: 0,
+       scale: 1
+       }),
+       text: new ol.style.Text({
+        text: name
+       })
+      })
+       },
+     'Nom_Activitat': {
+      'Locals buits en venda': new ol.style.Style({
+       image: new ol.style.Icon({
+       src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/sell.svg',
+       rotation: 0,
+       scale: 1
+       }),
+       text: new ol.style.Text({
+        text: name
+       })
+      })
+     },
+     'Nom_Activitat': {
+      'Locals buits en lloguer': new ol.style.Style({
+       image: new ol.style.Icon({
+       src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/rent.svg',
+       rotation: 0,
+       scale: 1
+       }),
+       text: new ol.style.Text({
+        text: name
+       })
+      })
+     }
+    };
+    for (var key in styles) {
+     var value = feature.get(key);
+     if (value !== undefined) {
+      for (var regexp in styles[key]) {
+       if (new RegExp(regexp).test(value)) {
+        return styles[key][regexp];
+       }
+      }
+     }
+    }
+    return null;
+   } 
+   
+},
 
 		{
 			group: 'Tiendas',
