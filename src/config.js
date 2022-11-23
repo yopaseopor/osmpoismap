@@ -14395,9 +14395,9 @@ style: function (feature) {
 				var name = feature.get(name_key) || '';
 				var styles = {
 					'Nom_Activitat': {
-						'Citroen': new ol.style.Style({
+						'Activitats de la construcció': new ol.style.Style({
 							image: new ol.style.Icon({
-							src: 'Activitats de la construcció',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/build.svg',
 							rotation: 0,
 							scale: 1
       }),
