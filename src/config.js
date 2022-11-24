@@ -14428,8 +14428,8 @@ style: function (feature) {
 					})
 				})
 			},
-					'traffic_sign': {
-						'ES:R2': new ol.style.Style({
+					'Nom_Activitat': {
+						'Fabricació tèxtil': new ol.style.Style({
 							zIndex: 100,
 							stroke: new ol.style.Stroke({
 								color: 'rgba(246, 99, 79, 1.0)',
