@@ -14397,7 +14397,7 @@ style: function (feature) {
 					'Nom_Activitat': {
 						'Activitats de la construcció': new ol.style.Style({
 							image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/build.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/closed.svg',
 							rotation: 0,
 							scale: 1
       }),
@@ -14414,7 +14414,7 @@ style: function (feature) {
 					'Nom_Local': {
 						'Sn': new ol.style.Style({
 							image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_R2.png',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/noinfo.svg',
 							rotation:9.4,
 						scale: 1
       }),
