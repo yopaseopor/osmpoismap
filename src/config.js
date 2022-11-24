@@ -14411,8 +14411,8 @@ style: function (feature) {
 					})
 				})
 			},
-					'Nom_Activitat': {
-						'Fabricació tèxtil': new ol.style.Style({
+					'Nom_Local': {
+						'Sn': new ol.style.Style({
 							image: new ol.style.Icon({
 							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/noinfo.svg',
 							rotation:9.4,
