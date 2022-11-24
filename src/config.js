@@ -14395,7 +14395,7 @@ style: function (feature) {
 				var name = feature.get(name_key) || '';
 				var styles = {
 					'Nom_Activitat': {
-						'Sense informació - Havia tingut activitat (rètol)': new ol.style.Style({
+						'Locals buits en venda i lloguer': new ol.style.Style({
 							image: new ol.style.Icon({
 							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/closed.svg',
 							rotation: 0,
