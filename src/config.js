@@ -14429,6 +14429,23 @@ style: function (feature) {
 				})
 			},
 					'Nom_Activitat': {
+						'Locals buits en lloguer': new ol.style.Style({
+							image: new ol.style.Icon({
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/noinfo.svg',
+							rotation:9.4,
+						scale: 1
+      }),
+       text: new ol.style.Text({
+        text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        })
+					})
+				})
+			},
+					'Nom_Activitat': {
 						'Fabricació tèxtil': new ol.style.Style({
 							image: new ol.style.Icon({
 							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/sell.svg',
