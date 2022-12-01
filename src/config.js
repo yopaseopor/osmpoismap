@@ -14385,7 +14385,7 @@ style: function (feature) {
 },
 		{	
 			group: 'Test',
-			title: 'ES:R22',
+			title: 'ES:R2',
 			geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/test_bcn.geojson',
 			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/noinfo.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -14411,21 +14411,23 @@ style: function (feature) {
 					})
 				})
 			},
-					'building': {
-						'.*': new ol.style.Style({
-							zIndex: 100,
-							stroke: new ol.style.Stroke({
-								color: 'rgba(246, 99, 79, 1.0)',
-								width: 1
-							}),
-							fill: new ol.style.Fill({
-								color: 'rgba(246, 99, 79, 0.3)'
-							}),
-							text: new ol.style.Text({
-								text: name
-							})
-						})
-					},
+					'Nom_Activitat': {
+						'Locals buits en lloguer': new ol.style.Style({
+							image: new ol.style.Icon({
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/rent.svg',
+							rotation: 0,
+							scale: 1
+      }),
+       text: new ol.style.Text({
+        text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        })
+					})
+				})
+			},
 					'highway': {
 						'service': new ol.style.Style({
 							stroke: new ol.style.Stroke({
