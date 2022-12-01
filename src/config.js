@@ -14411,19 +14411,19 @@ style: function (feature) {
 					},
 					'Nom_Activitat': {
 						'Locals buits en lloguer': new ol.style.Style({
-							stroke: new ol.style.Stroke({
-								color: 'rgba(255, 255, 255, 1.0)',
-								width: 2
-							}),
+					image: new ol.style.Icon({
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/noinfo.svg',
+							scale:1
+						}),
 							text: new ol.style.Text({
 								text: name
 							})
 						}),
 						'Serveis a les empreses i oficines': new ol.style.Style({
-							stroke: new ol.style.Stroke({
-								color: 'rgba(255, 255, 0, 1.0)',
-								width: 3
-							}),
+					image: new ol.style.Icon({
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/rent.svg',
+							scale:1
+						}),
 							text: new ol.style.Text({
 								text: name
 							})
