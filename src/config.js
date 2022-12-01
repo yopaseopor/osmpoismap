@@ -14394,21 +14394,6 @@ style: function (feature) {
 				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
 				var name = feature.get(name_key) || '';
 				var styles = {
-					'building': {
-						'.*': new ol.style.Style({
-							zIndex: 100,
-							stroke: new ol.style.Stroke({
-								color: 'rgba(246, 99, 79, 1.0)',
-								width: 1
-							}),
-							fill: new ol.style.Fill({
-								color: 'rgba(246, 99, 79, 0.3)'
-							}),
-							text: new ol.style.Text({
-								text: name
-							})
-						})
-					},
 					'Nom_Activitat': {
 						'Locals buits en lloguer': new ol.style.Style({
 					image: new ol.style.Icon({
@@ -14422,6 +14407,15 @@ style: function (feature) {
 						'Serveis a les empreses i oficines': new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/rent.svg',
+							scale:1
+						}),
+							text: new ol.style.Text({
+								text: name
+							})
+						}),
+						'Altres': new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/sell.svg',
 							scale:1
 						}),
 							text: new ol.style.Text({
