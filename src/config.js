@@ -14411,49 +14411,61 @@ style: function (feature) {
 					})
 				})
 			},
-					'Nom_Local': {
-						'Sn': new ol.style.Style({
-							image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/noinfo.svg',
-							rotation:9.4,
-						scale: 1
-      }),
-       text: new ol.style.Text({
-        text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        })
-					})
-				})
-			},
-					'Nom_Activitat': {
-						'Locals buits en lloguer': new ol.style.Style({
-							image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/noinfo.svg',
-							rotation:9.4,
-						scale: 1
-      }),
-       text: new ol.style.Text({
-        text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        })
-					})
-				})
-			},
-					'Nom_Activitat': {
-						'Fabricació tèxtil': new ol.style.Style({
-							image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/sell.svg',
-							rotation:9.4,
-						scale: 1
-      }),
+					'building': {
+						'.*': new ol.style.Style({
+							zIndex: 100,
+							stroke: new ol.style.Stroke({
+								color: 'rgba(246, 99, 79, 1.0)',
+								width: 1
+							}),
+							fill: new ol.style.Fill({
+								color: 'rgba(246, 99, 79, 0.3)'
+							}),
 							text: new ol.style.Text({
 								text: name
+							})
+						})
+					},
+					'highway': {
+						'service': new ol.style.Style({
+							stroke: new ol.style.Stroke({
+								color: 'rgba(255, 255, 255, 1.0)',
+								width: 2
+							}),
+							text: new ol.style.Text({
+								text: name,
+								placement: 'line'
+							})
+						}),
+						'.*': new ol.style.Style({
+							stroke: new ol.style.Stroke({
+								color: 'rgba(255, 255, 255, 1.0)',
+								width: 3
+							}),
+							text: new ol.style.Text({
+								text: name
+							})
+						})
+					},
+					'landuse': {
+						'forest|grass|allotments': new ol.style.Style({
+							stroke: new ol.style.Stroke({
+								color: 'rgba(140, 208, 95, 1.0)',
+								width: 1
+							}),
+							fill: new ol.style.Fill({
+								color: 'rgba(140, 208, 95, 0.3)'
+							})
+						})
+					},
+					'natural': {
+						'tree': new ol.style.Style({
+							image: new ol.style.Circle({
+								radius: 2,
+								fill: new ol.style.Fill({
+									color: 'rgba(140, 208, 95, 1.0)'
+								}),
+								stroke: null
 							})
 						})
 					}
