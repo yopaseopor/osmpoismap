@@ -14498,6 +14498,7 @@ style: function (feature) {
        image: new ol.style.Icon({
        src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/build.svg',
        rotation: 0,
+	   attributions: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap2</a> contributors',
        scale: 0.10
       }),
        text: new ol.style.Text({
