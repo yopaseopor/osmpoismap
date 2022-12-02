@@ -14397,16 +14397,25 @@ style: function (feature) {
 					'Nom_Activitat': {
 						'Locals buits en lloguer': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/noinfo.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/rent.svg',
 							scale:1
 						}),
 							text: new ol.style.Text({
 								text: name
 							})
 						}),
-						'Serveis a les empreses i oficines': new ol.style.Style({
+						'Locals buits en venda': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/rent.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/sell.svg',
+							scale:1
+						}),
+							text: new ol.style.Text({
+								text: name
+							})
+						}),
+						'Sense informació - Havia tingut activitat (rètol)': new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/noinfo.svg',
 							scale:1
 						}),
 							text: new ol.style.Text({
