@@ -14401,7 +14401,12 @@ style: function (feature) {
 							scale:1
 						}),
 							text: new ol.style.Text({
-								text: name
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(255,0,0,1)'
+                        }),
 							})
 						}),
 						'Locals buits en venda': new ol.style.Style({
@@ -14410,7 +14415,12 @@ style: function (feature) {
 							scale:1
 						}),
 							text: new ol.style.Text({
-								text: name
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,255,0,1)'
+                        }),
 							})
 						}),
 						'Sense informació - Havia tingut activitat (rètol)': new ol.style.Style({
@@ -14419,7 +14429,12 @@ style: function (feature) {
 							scale:1
 						}),
 							text: new ol.style.Text({
-								text: name
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,255,1)'
+                        }),
 							})
 						}),
 						'Altres': new ol.style.Style({
@@ -14428,7 +14443,12 @@ style: function (feature) {
 							scale:1
 						}),
 							text: new ol.style.Text({
-								text: name
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,0.5)'
+                        }),
 							})
 						})
 					},
