@@ -14436,7 +14436,7 @@ style: function (feature) {
                             color: 'rgba(0,0,0,1)'
                         }),
 							})
-						}),
+						})
 					}
 				};
 				for (var key in styles) {
