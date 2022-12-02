@@ -14465,28 +14465,6 @@ style: function (feature) {
                         }),
 							})
 						})
-					},
-					'landuse': {
-						'forest|grass|allotments': new ol.style.Style({
-							stroke: new ol.style.Stroke({
-								color: 'rgba(140, 208, 95, 1.0)',
-								width: 1
-							}),
-							fill: new ol.style.Fill({
-								color: 'rgba(140, 208, 95, 0.3)'
-							})
-						})
-					},
-					'natural': {
-						'tree': new ol.style.Style({
-							image: new ol.style.Circle({
-								radius: 2,
-								fill: new ol.style.Fill({
-									color: 'rgba(140, 208, 95, 1.0)'
-								}),
-								stroke: null
-							})
-						})
 					}
 				};
 				for (var key in styles) {
