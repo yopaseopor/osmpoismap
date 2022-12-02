@@ -14395,9 +14395,9 @@ style: function (feature) {
 				var name = feature.get(name_key) || '';
 				var styles = {
 					'Nom_Activitat': {
-						'Locals buits en lloguer': new ol.style.Style({
+						'Locals buits en venda i lloguer': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/rent_sell.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/rent.svg',
 							scale:1
 						}),
 							text: new ol.style.Text({
@@ -14451,9 +14451,9 @@ style: function (feature) {
                         }),
 							})
 						}),
-						'Locals buits en venda i lloguer': new ol.style.Style({
+						'Locals buits en lloguer': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/rent.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/rent_sell.svg',
 							scale:1
 						}),
 							text: new ol.style.Text({
