@@ -14385,7 +14385,7 @@ style: function (feature) {
 },
 		{	
 			group: 'BCN (CC 4.0 Dades Ajuntament BCN)',
-			title: 'Industrial-Construcció-Maquinària',
+			title: 'Industrial|Construcció|Maquinària',
 			geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/test_bcn.geojson',
 			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/industrial.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -14397,7 +14397,7 @@ style: function (feature) {
 					'Nom_Activitat': {
 						'Maquinària': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/build.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/industrial_wheel.svg',
 							scale:1
 						}),
 							text: new ol.style.Text({
@@ -14425,7 +14425,7 @@ style: function (feature) {
 						}),
 						'Activitats de la construcció': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/industrial_wheel.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/build.svg',
 							scale:1
 						}),
 							text: new ol.style.Text({
