@@ -14395,7 +14395,7 @@ style: function (feature) {
 				var name = feature.get(name_key) || '';
 				var styles = {
 					'Nom_Activitat': {
-						'Activitats de la construcció': new ol.style.Style({
+						'Maquinària': new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/build.svg',
 							scale:1
@@ -14423,7 +14423,7 @@ style: function (feature) {
                         }),
 							})
 						}),
-						'Maquinària': new ol.style.Style({
+						'Activitats de la construcció': new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/industrial_wheel.svg',
 							scale:1
