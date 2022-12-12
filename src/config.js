@@ -14458,7 +14458,7 @@ style: function (feature) {
 },
 		{	
 			group: 'BCN (CC 4.0 Dades Ajuntament BCN)',
-			title: 'Restauració2',
+			title: 'Restauració3',
 			geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/test_bcn.geojson',
 			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/eat_drink.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -14471,7 +14471,7 @@ style: function (feature) {
 						'Bars   / CIBERCAFÈ': new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/cafe2.svg',
-							scale:1
+							scale: 1
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -14485,7 +14485,7 @@ style: function (feature) {
 						'Bars especials amb actuació / Bars musicals / Discoteques /PUB': new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/drink2.svg',
-							scale:1
+							scale: 1
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -14499,7 +14499,7 @@ style: function (feature) {
 						'Restaurants': new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/restaurant.svg',
-							scale:1
+							scale: 1
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -14510,10 +14510,10 @@ style: function (feature) {
                         }),
 							})
 						}),
-						'serveis d\'allotjament': new ol.style.Style({
+						"serveis d'allotjament": new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/hotel.svg',
-							scale:1
+							scale: 1
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -14527,7 +14527,7 @@ style: function (feature) {
 						'Xocolateries / Geladeries / Degustació': new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/ice_cream.svg',
-							scale:1
+							scale: 1
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -14541,7 +14541,7 @@ style: function (feature) {
 						'Serveis de menjar take away MENJAR RÀPID': new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/fast_food.svg',
-							scale:1
+							scale: 1
 						}),
 							text: new ol.style.Text({
 								text: name,
