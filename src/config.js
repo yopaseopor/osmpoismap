@@ -14200,6 +14200,9 @@ style: function (feature) {
 			group: 'Salud',
 			title: 'Clínicas',
 			query: '(nwr["amenity"="clinic"]({{bbox}});node(w););out meta;',
+			source: new ol.source.OSM({
+				attributions: '&copy; <a href="https://www.openstreetmap.fr/" target="_blank">OpenStreetMap France</a>'
+			}),
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
@@ -14478,11 +14481,66 @@ style: function (feature) {
                             color: 'rgba(0,0,0,1)'
                         }),
 							})
-						
+						}),
+						'Bars especials amb actuació / Bars musicals / Discoteques /PUB': new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/drink2.svg',
+							scale:1
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+							})
+						}),
+						'Restaurants': new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/restaurant.svg',
+							scale:1
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+							})
+						}),
+						'serveis d\'allotjament': new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/hotel.svg',
+							scale:1
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+							})
+}),
+						'Xocolateries / Geladeries / Degustació': new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/ice_cream.svg',
+							scale:1
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+							})
 						}),
 						'Serveis de menjar take away MENJAR RÀPID': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/drink2.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/fast_food.svg',
 							scale:1
 						}),
 							text: new ol.style.Text({
