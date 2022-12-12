@@ -14200,9 +14200,6 @@ style: function (feature) {
 			group: 'Salud',
 			title: 'Clínicas',
 			query: '(nwr["amenity"="clinic"]({{bbox}});node(w););out meta;',
-			source: new ol.source.OSM({
-				attributions: '&copy; <a href="https://www.openstreetmap.fr/" target="_blank">OpenStreetMap France</a>'
-			}),
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
