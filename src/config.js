@@ -14455,7 +14455,7 @@ style: function (feature) {
 },
 		{	
 			group: 'BCN (CC 4.0 Dades Ajuntament BCN)',
-			title: 'Restauració2',
+			title: 'Restauració',
 			geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/test_bcn.geojson',
 			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/eat_drink.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -14467,7 +14467,7 @@ style: function (feature) {
 					'Nom_Activitat': {
 						'Bars   / CIBERCAFÈ': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/cafe.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/cafe2.svg',
 							scale:1
 						}),
 							text: new ol.style.Text({
@@ -14482,7 +14482,7 @@ style: function (feature) {
 						}),
 						'Serveis de menjar take away MENJAR RÀPID': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/fast_food.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/drink2.svg',
 							scale:1
 						}),
 							text: new ol.style.Text({
