@@ -14198,8 +14198,11 @@ style: function (feature) {
 				},
 		{
 			group: 'Salud',
-			title: 'Clínicas2',
+			title: 'Clínicas',
 			query: '(nwr["amenity"="clinic"]({{bbox}});node(w););out meta;',
+			source: new ol.source.OSM({
+				attributions: '&copy; <a href="https://www.openstreetmap.fr/" target="_blank">OpenStreetMap France</a>'
+			}),
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
@@ -14216,10 +14219,6 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: imgSrc + 'icones/maxspeed_empty.svg',
-							source: new ol.source.OSM({
-				attributions: '&copy; <a href="https://www.openstreetmap.fr/" target="_blank">OpenStreetMap France</a>',
-				url: 'https://{a-c}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png'
-			}),
 							scale:0.03
 						}),
 							text: new ol.style.Text({
