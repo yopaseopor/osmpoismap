@@ -14458,7 +14458,7 @@ style: function (feature) {
 },
 		{	
 			group: 'BCN (CC 4.0 Dades Ajuntament BCN)',
-			title: 'Restauració3',
+			title: 'Restauració',
 			geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/test_bcn.geojson',
 			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/eat_drink.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -14510,7 +14510,7 @@ style: function (feature) {
                         }),
 							})
 						}),
-						"serveis d'allotjament": new ol.style.Style({
+						"serveis allotjament": new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/hotel.svg',
 							scale: 1
