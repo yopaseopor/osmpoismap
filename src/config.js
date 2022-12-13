@@ -14484,7 +14484,7 @@ style: function (feature) {
 						}),
 						'Bars especials amb actuació / Bars musicals / Discoteques /PUB': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/drink2.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/drink2.png',
 							scale: 1
 						}),
 							text: new ol.style.Text({
