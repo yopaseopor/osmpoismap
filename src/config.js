@@ -14482,7 +14482,7 @@ style: function (feature) {
                         }),
 							})
 						}),
-						'Bars especials amb actuació / Bars musicals / Discoteques /PUB': new ol.style.Style({
+						'Restaurants': new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/drink3.svg',
 							scale: 1
