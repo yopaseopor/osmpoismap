@@ -577,7 +577,7 @@ style: function (feature) {
 			group: 'Marcas & Movilidad',
 			title: 'Citroën',
 			query: '(nwr["brand:wikidata"="Q6746"]({{bbox}});node(w););out meta;',
-			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/logos/citroen.png',
+			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/logos/citroen.png',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
 				var key_regex = /^name$/
@@ -592,7 +592,7 @@ style: function (feature) {
 				});
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/logos/citroen.png',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/logos/citroen.png',
 							scale:0.03
 						}),
 							text: new ol.style.Text({
@@ -14239,7 +14239,7 @@ style: function (feature) {
 
    group: 'BCN (CC 4.0 Dades Ajuntament BCN)',
    title: 'Test',
-   geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/test_bcn.geojson',
+   geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/test_bcn.geojson',
    iconSrc:'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_B1a.png',
    iconStyle: 'background-color:rgba(255,255,255,0.4)',
    style: function (feature) {
@@ -14389,8 +14389,8 @@ style: function (feature) {
 		{	
 			group: 'BCN (CC 4.0 Dades Ajuntament BCN)',
 			title: 'Industrial|Construcció|Maquinària',
-			geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/test_bcn.geojson',
-			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/industrial.svg',
+			geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/test_bcn.geojson',
+			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/industrial.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 			style: function (feature) {
 				var key_regex = /^Nom_Local/
@@ -14400,7 +14400,7 @@ style: function (feature) {
 					'Nom_Activitat': {
 						'Maquinària': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/industrial_wheel.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/industrial_wheel.svg',
 							scale:1
 						}),
 							text: new ol.style.Text({
@@ -14414,7 +14414,7 @@ style: function (feature) {
 						}),
 						'Activitats industrials': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/industrial.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/industrial.svg',
 							scale:1
 						}),
 							text: new ol.style.Text({
@@ -14428,7 +14428,7 @@ style: function (feature) {
 						}),
 						'Activitats de la construcció': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/build.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/build.svg',
 							scale:1
 						}),
 							text: new ol.style.Text({
@@ -14460,8 +14460,8 @@ style: function (feature) {
 		{	
 			group: 'BCN (CC 4.0 Dades Ajuntament BCN)',
 			title: 'Restauració',
-			geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/test_bcn.geojson',
-			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/closed.svg',
+			geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/test_bcn.geojson',
+			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/closed.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 			style: function (feature) {
 				var key_regex = /^Nom_Local/
@@ -14471,7 +14471,7 @@ style: function (feature) {
 					'Nom_Activitat': {
 						'Xocolateries / Geladeries / Degustació': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/rent_sell.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/rent_sell.svg',
 							scale:1
 						}),
 							text: new ol.style.Text({
@@ -14485,7 +14485,7 @@ style: function (feature) {
 						}),
 						'Serveis de menjar take away MENJAR RÀPID': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/sell.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/sell.svg',
 							scale:1
 						}),
 							text: new ol.style.Text({
@@ -14499,7 +14499,7 @@ style: function (feature) {
 						}),
 						'serveis de menjar i begudes': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/noinfo.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/noinfo.svg',
 							scale:1
 						}),
 							text: new ol.style.Text({
@@ -14513,7 +14513,7 @@ style: function (feature) {
 						}),
 						'Restaurants': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/ncafe2.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/cafe2.svg',
 							scale:1
 						}),
 							text: new ol.style.Text({
@@ -14527,7 +14527,7 @@ style: function (feature) {
 						}),
 						'Bars   / CIBERCAFÈ': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/cafe.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/cafe.svg',
 							scale:1
 						}),
 							text: new ol.style.Text({
@@ -14541,7 +14541,7 @@ style: function (feature) {
 						}),
 						'Bars especials amb actuació / Bars musicals / Discoteques /PUB': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/bar.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/bar.svg',
 							scale: 1
 						}),
 							text: new ol.style.Text({
@@ -14573,8 +14573,8 @@ style: function (feature) {
 		{	
 			group: 'BCN (CC 4.0 Dades Ajuntament BCN)',
 			title: 'Ja sense activitat',
-			geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/test_bcn.geojson',
-			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/closed.svg',
+			geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/test_bcn.geojson',
+			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/closed.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 			style: function (feature) {
 				var key_regex = /^Nom_Local/
@@ -14584,7 +14584,7 @@ style: function (feature) {
 					'Nom_Activitat': {
 						'Locals buits en venda i lloguer': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/rent_sell.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/rent_sell.svg',
 							scale:1
 						}),
 							text: new ol.style.Text({
@@ -14598,7 +14598,7 @@ style: function (feature) {
 						}),
 						'Locals buits en venda': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/sell.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/sell.svg',
 							scale:1
 						}),
 							text: new ol.style.Text({
@@ -14612,7 +14612,7 @@ style: function (feature) {
 						}),
 						'Sense informació': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/noinfo.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/noinfo.svg',
 							scale:1
 						}),
 							text: new ol.style.Text({
@@ -14626,7 +14626,7 @@ style: function (feature) {
 						}),
 						'Sense informació - Havia tingut activitat (rètol)': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/noinfo.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/noinfo.svg',
 							scale:1
 						}),
 							text: new ol.style.Text({
@@ -14640,7 +14640,7 @@ style: function (feature) {
 						}),
 						'Locals buits en lloguer': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/rent.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/rent.svg',
 							scale:1
 						}),
 							text: new ol.style.Text({
@@ -14672,8 +14672,8 @@ style: function (feature) {
 
    group: 'BCN (CC 4.0 Dades Ajuntament BCN)',
    title: 'Test Construcció',
-   geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/test_bcn.geojson',
-   iconSrc:'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/build.svg',
+   geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/test_bcn.geojson',
+   iconSrc:'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/build.svg',
    iconStyle: 'background-color:rgba(255,255,255,0.4)',
    style: function (feature) {
     var key_regex = /^Nom_Local/
@@ -14683,7 +14683,7 @@ style: function (feature) {
      'Nom_Activitat': {
       'Activitats de la construcció': new ol.style.Style({
        image: new ol.style.Icon({
-       src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/build.svg',
+       src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/build.svg',
        rotation: 0,
        scale: 0.10
       }),
