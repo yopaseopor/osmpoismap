@@ -14472,7 +14472,7 @@ style: function (feature) {
 						'Xocolateries / Geladeries / Degustació': new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/rent_sell.svg',
-							scale:1
+							scale: 10
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -14500,7 +14500,7 @@ style: function (feature) {
 						'serveis de menjar i begudes': new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/noinfo.svg',
-							scale:1
+							scale: 10
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -14514,7 +14514,7 @@ style: function (feature) {
 						'Restaurants': new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/cafe2.svg',
-							scale: 0.1
+							scale: 10
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -14528,7 +14528,7 @@ style: function (feature) {
 						'Bars   / CIBERCAFÈ': new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/cafe.svg',
-							scale:1
+							scale: 10
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -14542,7 +14542,7 @@ style: function (feature) {
 						'Bars especials amb actuació / Bars musicals / Discoteques /PUB': new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/bar.svg',
-							scale: 1
+							scale: 10
 						}),
 							text: new ol.style.Text({
 								text: name,
