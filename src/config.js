@@ -14459,7 +14459,7 @@ style: function (feature) {
 
 		{	
 			group: 'BCN (CC 4.0 Dades Ajuntament BCN)',
-			title: 'Restauració2',
+			title: 'Restauració3',
 			geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/test_bcn.geojson',
 			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/closed.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
