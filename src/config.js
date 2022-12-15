@@ -14456,11 +14456,12 @@ style: function (feature) {
 			} 
 		 
 },
+
 		{	
 			group: 'BCN (CC 4.0 Dades Ajuntament BCN)',
-			title: 'Restauració2',
+			title: 'Restauració',
 			geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/test_bcn.geojson',
-			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/eat_drink.svg',
+			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/closed.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 			style: function (feature) {
 				var key_regex = /^Nom_Local/
@@ -14468,66 +14469,10 @@ style: function (feature) {
 				var name = feature.get(name_key) || '';
 				var styles = {
 					'Nom_Activitat': {
-						'Bars   / CIBERCAFÈ': new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/cafe2.svg',
-							scale: 1
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-							})
-						}),
-						'Bars especials amb actuació / Bars musicals / Discoteques /PUB': new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/closed.svg',
-							scale: 1
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-							})
-						}),
-						'Restaurants': new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/drink3.svg',
-							scale: 1
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-							})
-						}),
-						"serveis allotjament": new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/hotel.svg',
-							scale: 1
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-							})
-}),
 						'Xocolateries / Geladeries / Degustació': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/ice_cream.svg',
-							scale: 1
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/rent_sell.svg',
+							scale:1
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -14540,8 +14485,64 @@ style: function (feature) {
 						}),
 						'Serveis de menjar take away MENJAR RÀPID': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/fast_food.svg',
-							scale: 1
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/sell.svg',
+							scale:1
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+							})
+						}),
+						'serveis de menjar i begudes': new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/noinfo.svg',
+							scale:1
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+							})
+						}),
+						'Restaurants': new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/noinfo.svg',
+							scale:1
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+							})
+						}),
+						'Bars   / CIBERCAFÈ': new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/noinfo.svg',
+							scale:1
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+							})
+						}),
+						'Bars especials amb actuació / Bars musicals / Discoteques /PUB': new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/master/src/img/icones/rent.svg',
+							scale:1
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -14568,6 +14569,7 @@ style: function (feature) {
 			} 
 		 
 },
+
 		{	
 			group: 'BCN (CC 4.0 Dades Ajuntament BCN)',
 			title: 'Ja sense activitat',
