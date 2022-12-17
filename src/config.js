@@ -14471,7 +14471,7 @@ style: function (feature) {
 					'Nom_Activitat': {
 						'Xocolateries / Geladeries / Degustació': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/rent_sell.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/ice_cream.svg',
 							scale: 1
 						}),
 							text: new ol.style.Text({
@@ -14485,7 +14485,7 @@ style: function (feature) {
 						}),
 						'Serveis de menjar take away MENJAR RÀPID': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/drink3.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/fast_food.svg',
 							scale: 1
 						}),
 							text: new ol.style.Text({
@@ -14499,7 +14499,7 @@ style: function (feature) {
 						}),
 						'serveis de menjar i begudes': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/noinfo.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/eat_drink.svg',
 							scale: 1
 						}),
 							text: new ol.style.Text({
@@ -14513,7 +14513,7 @@ style: function (feature) {
 						}),
 						'Restaurants': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/cafe2.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/restaurant.svg',
 							scale: 1
 						}),
 							text: new ol.style.Text({
@@ -14541,7 +14541,7 @@ style: function (feature) {
 						}),
 						'Bars especials amb actuació / Bars musicals / Discoteques /PUB': new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/bar.svg',
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/drink.svg',
 							scale: 1
 						}),
 							text: new ol.style.Text({
