@@ -14238,7 +14238,7 @@ style: function (feature) {
 		{
 			group: 'Comunitat Catalana',
 			title: 'Capitania marítima',
-			query: '(nwr["office"="harbour_master"]({{bbox}});node(w);nwr["historic"="lavoir"]({{bbox}});node(w););out meta;',
+			query: '(nwr["office"="harbour_master"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
