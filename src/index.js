@@ -197,7 +197,45 @@ $(function () {
 
 				container.find('.osmcat-overlay').hide();
 				container.find('.' + overlaySelected.val()).show();
-			//	
+			
+			}),
+			overlayDiv = $('<div>').hide().addClass('osmcat-layer').append($('<div>').append(overlaySelect)),
+			label = $('<div>').html('<b>&equiv; ' + config.i18n.layersLabel + '</b>').on('click', function () {
+				content.toggle();
+			}),
+			content = $('<div>').addClass('osmcat-content');
+
+		config.layers.forEach(layer => {
+			if (layer.get('type') === 'overlay') {
+				var title = layer.get('title'),
+					layerButton = $('<h3>').html(title),
+					overlayDivContent = $('<div>').addClass('osmcat-content osmcat-overlay overlay' + overlayIndex);
+
+				overlaySelect.append($('<option>').val('overlay' + overlayIndex).text(title));
+
+				layer.getLayers().forEach(overlay => {
+					var overlaySrc = overlay.get('iconSrc'),
+						overlayIconStyle = overlay.get('iconStyle') || '',
+						title = (overlaySrc ? '<img src="' + overlaySrc + '" height="16" style="' + overlayIconStyle + '"/> ' : '') + overlay.get('title'),
+						overlayButton = $('<div>').html(title).on('click', function () {
+							var visible = overlay.getVisible();
+							overlay.setVisible(!visible);
+							updatePermalink();
+						});
+					overlayDivContent.append(overlayButton);
+					if (overlay.getVisible()) {
+						overlayButton.addClass('active');
+					}
+					overlay.on('change:visible', function () {
+						if (overlay.getVisible()) {
+							overlayButton.addClass('active');
+						} else {
+							overlayButton.removeClass('active');
+						}
+					});
+				});
+				
+				//	
 			{
   const olview = new ol.View({
     center: [0, 0],
@@ -236,42 +274,6 @@ $(function () {
     }, 3000);
   });
   //
-			}),
-			overlayDiv = $('<div>').hide().addClass('osmcat-layer').append($('<div>').append(overlaySelect)),
-			label = $('<div>').html('<b>&equiv; ' + config.i18n.layersLabel + '</b>').on('click', function () {
-				content.toggle();
-			}),
-			content = $('<div>').addClass('osmcat-content');
-
-		config.layers.forEach(layer => {
-			if (layer.get('type') === 'overlay') {
-				var title = layer.get('title'),
-					layerButton = $('<h3>').html(title),
-					overlayDivContent = $('<div>').addClass('osmcat-content osmcat-overlay overlay' + overlayIndex);
-
-				overlaySelect.append($('<option>').val('overlay' + overlayIndex).text(title));
-
-				layer.getLayers().forEach(overlay => {
-					var overlaySrc = overlay.get('iconSrc'),
-						overlayIconStyle = overlay.get('iconStyle') || '',
-						title = (overlaySrc ? '<img src="' + overlaySrc + '" height="16" style="' + overlayIconStyle + '"/> ' : '') + overlay.get('title'),
-						overlayButton = $('<div>').html(title).on('click', function () {
-							var visible = overlay.getVisible();
-							overlay.setVisible(!visible);
-							updatePermalink();
-						});
-					overlayDivContent.append(overlayButton);
-					if (overlay.getVisible()) {
-						overlayButton.addClass('active');
-					}
-					overlay.on('change:visible', function () {
-						if (overlay.getVisible()) {
-							overlayButton.addClass('active');
-						} else {
-							overlayButton.removeClass('active');
-						}
-					});
-				});
 
 				overlayDiv.append(overlayDivContent);
 				overlayDiv.show();
