@@ -382,7 +382,7 @@ searchNominatim.on('select', function(e)
 	// Info Control
 	var infoControlBuild = function () {
 		var container = $('<div>').addClass('ol-control ol-unselectable osmcat-infobutton').html($('<button type="button"><i class="fa fa-info-circle"></i></button>').on('click', function () {
-			window.location.href = 'https://github.com/yopaseopor/osmffmap';
+			window.location.href = 'https://github.com/yopaseopor/osmpoismap';
 		}));
 		return container[0];
 	};
