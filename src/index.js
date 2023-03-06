@@ -378,7 +378,7 @@ searchNominatim.on('select', function(e)
             zoom: Math.max (map.getView().getZoom(),16)
         });
     }
-}
+});
 	var infoControlBuild = function () {
 		var container = $('<div>').addClass('ol-control ol-unselectable osmcat-infobutton').html($('<button type="button"><i class="fa fa-info-circle"></i></button>').on('click', function () {
 			window.location.href = 'javascript:searchNominatim.select()';
