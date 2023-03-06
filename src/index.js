@@ -23,9 +23,6 @@ $(function () {
 		}
 	};
 	loading.init();
-	
-
-
 
 	var overlaysTemp = {};
 	$.each(config.overlays, function (index, overlay) {
@@ -197,7 +194,6 @@ $(function () {
 
 				container.find('.osmcat-overlay').hide();
 				container.find('.' + overlaySelected.val()).show();
-			
 			}),
 			overlayDiv = $('<div>').hide().addClass('osmcat-layer').append($('<div>').append(overlaySelect)),
 			label = $('<div>').html('<b>&equiv; ' + config.i18n.layersLabel + '</b>').on('click', function () {
@@ -234,8 +230,6 @@ $(function () {
 						}
 					});
 				});
-				
-				
 
 				overlayDiv.append(overlayDivContent);
 				overlayDiv.show();
@@ -304,56 +298,6 @@ $(function () {
 	map.addControl(new ol.control.ScaleLine({units: config.initialConfig.units}));
 	map.addControl(new ol.control.ZoomSlider());
 
-// Set the search control 
-var searchNominatim = new ol.control.SearchNominatim (
-{   
-    //  polygon: $("#polygon").prop("checked"),
-        reverse: true,
-        polygon: false,
-        position: true, // Search, with priority to geo position
-        title: "Busca",
-        reverseTitle: "Clique no mapa...",
-        placeholder: "Busca...",
-//      target: $("#address > div").get(0)
-});
-var requestData = searchNominatim.requestData.bind(searchNominatim);
-searchNominatim.requestData = function (s) {
-    var data = requestData(s);
-    data.countrycodes = 'br';
-    data.citt
-    return data;
-};
-map.addControl (searchNominatim);
-
-// Select feature when click on the reference index
-searchNominatim.on('select', function(e)
-{   
-//  sLayer.getSource().clear();
-    // Check if we get a geojson to describe the search
-    if (e.search.geojson) {
-        var format = new ol.format.GeoJSON();
-        var f = format.readFeature(e.search.geojson, { dataProjection: "EPSG:4326", featureProjection: map.getView().getProjection() });
-    //  sLayer.getSource().addFeature(f);
-        var view = map.getView();
-        var resolution = view.getResolutionForExtent(f.getGeometry().getExtent(), map.getSize());
-        var zoom = view.getZoomForResolution(resolution);
-        var center = ol.extent.getCenter(f.getGeometry().getExtent());
-        // redraw before zoom
-        setTimeout(function(){
-                view.animate({
-                center: center,
-                zoom: Math.min (zoom, 16)
-            });
-        }, 100);
-    }
-    else {
-        map.getView().animate({
-            center:e.coordinate,
-            zoom: Math.max (map.getView().getZoom(),16)
-        });
-    }
-});
-
 	// Geolocation Control
 	// In some browsers, this feature is available only in secure contexts (HTTPS)
 	var geolocationControlBuild = function () {
@@ -387,7 +331,7 @@ searchNominatim.on('select', function(e)
 	// Info Control
 	var infoControlBuild = function () {
 		var container = $('<div>').addClass('ol-control ol-unselectable osmcat-infobutton').html($('<button type="button"><i class="fa fa-info-circle"></i></button>').on('click', function () {
-			window.location.href = 'https://github.com/yopaseopor/osmpoismap';
+			window.location.href = 'https://github.com/yopaseopor/osmffmap';
 		}));
 		return container[0];
 	};
@@ -395,16 +339,16 @@ searchNominatim.on('select', function(e)
 		element: infoControlBuild()
 	}));
 	
-		Info Control2
-	var infoControlBuild2 = function () {
-	var container = $('<div>').addClass('ol-control ol-unselectable osmcat-infobutton2').html($('<button type="button"><i class="fa fa-search-plus"></i></button>').on('click', function () {
-			window.location.href = 'javascript:searchNominatim.select()';
-		}));
-		return container[0];
-	};
-	map.addControl(new ol.control.Control({
-		element: infoControlBuild2()
-	}));
+		// Info Control2
+	//var infoControlBuild2 = function () {
+	//	var container = $('<div>').addClass('ol-control ol-unselectable osmcat-infobutton2').html($('<button type="button"><i class="fa fa-search-plus"></i></button>').on('click', function () {
+	//		window.location.href = 'https://mapcomplete.osm.be/index.html?userlayout=https://raw.githubusercontent.com/yopaseopor/mcquests/master/limits.json';
+	//	}));
+	//	return container[0];
+	//};
+	//map.addControl(new ol.control.Control({
+	//	element: infoControlBuild2()
+	//}));
 
 	// Copy permalink button
 	var permalinkControlBuild = function () {

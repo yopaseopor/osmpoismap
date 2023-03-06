@@ -14924,7 +14924,6 @@ style: function (feature) {
 		}
 	],
 
-
 	//Es crida sempre que es fa click sobre el mapa
 	onClickEvent: function(evt, view, coordinateLL) {
 
