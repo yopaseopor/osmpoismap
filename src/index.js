@@ -303,8 +303,11 @@ $(function () {
 	}));
 	map.addControl(new ol.control.ScaleLine({units: config.initialConfig.units}));
 	map.addControl(new ol.control.ZoomSlider());
+	//
+	map.addControl(geocoder);
+    map.addOverlay(popup);
 	
-//
+
   const popup = new ol.Overlay.Popup();
 
   // Instantiate with some options and add the Control
@@ -317,8 +320,7 @@ $(function () {
     keepOpen: false,
   });
 
-  map.addControl(geocoder);
-  map.addOverlay(popup);
+
 
   // Listen when an address is chosen
   geocoder.on('addresschosen', (evt) => {
