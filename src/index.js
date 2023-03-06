@@ -304,23 +304,7 @@ $(function () {
 	map.addControl(new ol.control.ScaleLine({units: config.initialConfig.units}));
 	map.addControl(new ol.control.ZoomSlider());
 	
-	//	
-			{
-  const olview = new ol.View({
-    center: [0, 0],
-    zoom: 3,
-    minZoom: 2,
-    maxZoom: 20,
-  });
-
-  const baseLayer = new ol.layer.Tile({
-    source: new ol.source.OSM(),
-  });
-  const map = new ol.Map({
-    target: doc.querySelector('#map'),
-    view: olview,
-    layers: [baseLayer],
-  });
+//
   const popup = new ol.Overlay.Popup();
 
   // Instantiate with some options and add the Control
