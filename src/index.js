@@ -305,11 +305,6 @@ $(function () {
 	map.addControl(new ol.control.ZoomSlider());
 	//
 	map.addControl(geocoder);
-    map.addOverlay(popup);
-	
-
-  const popup = new ol.Overlay.Popup();
-
   // Instantiate with some options and add the Control
   const geocoder = new Geocoder('nominatim', {
     provider: 'osm',
