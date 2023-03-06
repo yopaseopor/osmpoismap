@@ -303,27 +303,6 @@ $(function () {
 	}));
 	map.addControl(new ol.control.ScaleLine({units: config.initialConfig.units}));
 	map.addControl(new ol.control.ZoomSlider());
-	//
-	map.addControl(geocoder);
-  // Instantiate with some options and add the Control
-  const geocoder = new Geocoder('nominatim', {
-    provider: 'osm',
-    targetType: 'text-input',
-    lang: 'en',
-    placeholder: 'Search for ...',
-    limit: 5,
-    keepOpen: false,
-  });
-
-
-
-  // Listen when an address is chosen
-  geocoder.on('addresschosen', (evt) => {
-    window.setTimeout(() => {
-      popup.show(evt.coordinate, evt.address.formatted);
-    }, 3000);
-  });
-  //
 
 	// Geolocation Control
 	// In some browsers, this feature is available only in secure contexts (HTTPS)
