@@ -14926,8 +14926,8 @@ style: function (feature) {
 	
 	// Set the search control 
 var searchNominatim = new ol.control.SearchNominatim (
-    {   //target: $(".options").get(0),
-    //  polygon: $("#polygon").prop("checked"),
+    {   target: $(".options").get(0),
+      polygon: $("#polygon").prop("checked"),
         reverse: true,
         position: true, // Search, with priority to geo position
         title: "Busca",
