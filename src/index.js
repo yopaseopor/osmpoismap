@@ -24,7 +24,7 @@ $(function () {
 	};
 	loading.init();
 	
-	((win, doc) => {
+{
   const olview = new ol.View({
     center: [0, 0],
     zoom: 3,
@@ -61,7 +61,7 @@ $(function () {
       popup.show(evt.coordinate, evt.address.formatted);
     }, 3000);
   });
-})(window, document);
+
 
 	var overlaysTemp = {};
 	$.each(config.overlays, function (index, overlay) {
