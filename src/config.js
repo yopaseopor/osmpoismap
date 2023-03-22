@@ -14923,6 +14923,22 @@ style: function (feature) {
 			}
 		}
 	],
+	
+	// Crear el control del buscador
+var searchControl = new ol.control.SearchNominatim({
+  // Configurar el proveedor de búsqueda
+  provider: 'nominatim',
+  // Añadir un evento para que el mapa se centre en la ubicación buscada
+  onLocationFound: function(result) {
+    map.getView().animate({
+      center: result.coordinate,
+      zoom: 14
+    });
+  }
+});
+
+// Añadir el control al mapa
+overlay.addControl(searchControl);
 
 	//Es crida sempre que es fa click sobre el mapa
 	onClickEvent: function(evt, view, coordinateLL) {
