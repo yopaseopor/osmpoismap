@@ -1,4 +1,4 @@
-import SearchNominatim from './SearchNominatim.js';
+import SearchNominatim from 'searchnominatim.js';
 
 var search = new SearchNominatim({
   position: 'topright', // Posición del buscador
