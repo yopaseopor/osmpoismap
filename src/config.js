@@ -1,24 +1,4 @@
-import SearchNominatim from 'searchnominatim.js';
 
-var search = new SearchNominatim({
-  position: 'topright', // Posición del buscador
-  className: 'search-nominatim', // Clase CSS del contenedor del buscador
-  placeholder: 'Buscar', // Texto de ejemplo en el campo de búsqueda
-  size: 200, // Ancho del campo de búsqueda en píxeles
-  source: 'nominatim', // Motor de búsqueda (en este caso, Nominatim)
-  target: overlay, // Capa donde se mostrarán los resultados de búsqueda
-  limit: 10, // Número máximo de resultados de búsqueda a mostrar
-  countrycodes: 'es', // Código del país para limitar la búsqueda (en este caso, España)
-  lang: 'es', // Idioma de la respuesta de búsqueda (en este caso, español)
-  keepOpen: false, // Mantener abierto el cuadro de búsqueda después de seleccionar un resultado
-  autoCollapse: true, // Cerrar el cuadro de búsqueda automáticamente después de realizar una búsqueda
-  autoCollapseTime: 1000, // Tiempo en milisegundos antes de cerrar automáticamente el cuadro de búsqueda
-  minLength: 3, // Longitud mínima de la cadena de búsqueda antes de comenzar a buscar
-  marker: false, // Mostrar o no un marcador en el mapa para la ubicación seleccionada
-  typology: 'location', // Tipo de resultado de búsqueda (en este caso, ubicación)
-  position: true, // Mostrar o no la posición del resultado en la lista de resultados
-  zoom: 18 // Nivel de zoom después de seleccionar un resultado
-});
 
 
 /**
@@ -15143,4 +15123,3 @@ style: function (feature) {
 	}
 };
 
-map.addControl(search);
