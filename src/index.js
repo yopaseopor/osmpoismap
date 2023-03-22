@@ -339,7 +339,6 @@ $(function () {
 		element: infoControlBuild()
 	}));
 	
-		map.addControl(searchControl);
 	
 	
 	
