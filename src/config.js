@@ -14922,23 +14922,27 @@ style: function (feature) {
 				return style;
 			}
 		}
+		
+		// Crear el controlador de búsqueda basado en Nominatim
+var searchControl = new ol.control.SearchNominatim({
+    // Configurar la URL del servicio Nominatim
+    url: 'https://nominatim.openstreetmap.org/search?format=json&addressdetails=1&limit=3&q={s}',
+    // Configurar el nombre del parámetro de búsqueda
+    paramName: 'q',
+    // Configurar el límite de resultados de búsqueda
+    limit: 3,
+    // Configurar el estilo del marcador de posición de búsqueda
+    markerStyle: new ol.style.Style({
+        image: new ol.style.Icon({
+            src: 'https://cdn.rawgit.com/openlayers/ol3/master/examples/data/dot.png',
+            anchor: [0.5, 1]
+        })
+    })
+});
 	],
 	
-	// Crear el control del buscador
-var searchControl = new ol.control.SearchNominatim({
-  // Configurar el proveedor de búsqueda
-  provider: 'nominatim',
-  // Añadir un evento para que el mapa se centre en la ubicación buscada
-  onLocationFound: function(result) {
-    map.getView().animate({
-      center: result.coordinate,
-      zoom: 14
-    });
-  }
-});
 
-// Añadir el control al mapa
-overlay.addControl(searchControl);
+	
 
 	//Es crida sempre que es fa click sobre el mapa
 	onClickEvent: function(evt, view, coordinateLL) {
