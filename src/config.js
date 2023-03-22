@@ -14925,18 +14925,7 @@ style: function (feature) {
 		
 	],
 	
-var searchControl = new ol.control.SearchNominatim({
-    url: 'https://nominatim.openstreetmap.org/search?format=json&addressdetails=1&limit=3&q={s}',
-    paramName: 'q',
-    limit: 3,
-    markerStyle: new ol.style.Style({
-        image: new ol.style.Icon({
-            src: 'https://cdn.rawgit.com/openlayers/ol3/master/examples/data/dot.png',
-            anchor: [0.5, 1]
-        })
-    })
-});	
-map.addControl(searchControl);
+
 	
 
 	//Es crida sempre que es fa click sobre el mapa
