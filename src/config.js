@@ -1695,7 +1695,7 @@ style: function (feature) {
 			group: 'Marcas & Alimentación',
 			title: 'Suma',
 			query: '(nwr["brand:wikidata"="Q58012362"]({{bbox}});node(w););out meta;',
-			iconSrc: 'https://www.sumasupermercados.es/sites/all/themes/custom/img/logo_suma_es.png',
+			iconSrc: 'logos/suma.png',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
 				var key_regex = /^name$/
