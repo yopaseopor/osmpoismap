@@ -1695,7 +1695,7 @@ style: function (feature) {
 			group: 'Marcas & Alimentación',
 			title: 'Suma',
 			query: '(nwr["brand:wikidata"="Q58012362"]({{bbox}});node(w););out meta;',
-			iconSrc: 'logos/suma.png',
+			iconSrc: 'src/img/logos/suma.png',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
 				var key_regex = /^name$/
@@ -1710,7 +1710,7 @@ style: function (feature) {
 				});
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'logos/suma.png',
+							src: 'src/img/logos/suma.png',
 							scale:0.30
 						}),
 							text: new ol.style.Text({
