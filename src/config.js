@@ -1710,7 +1710,7 @@ style: function (feature) {
 				});
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://www.sumasupermercados.es/sites/all/themes/custom/img/logo_suma_es.png',
+							src: 'logos/suma.png',
 							scale:0.30
 						}),
 							text: new ol.style.Text({
