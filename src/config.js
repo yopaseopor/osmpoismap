@@ -7,15 +7,6 @@
 
 var imgSrc = 'src/img/';
 
-var geocoder = new Geocoder('nominatim', {
-  provider: 'osm',
-  lang: 'en-US',
-  placeholder: 'Search for ...',
-  targetType: 'text-input',
-  limit: 5,
-  keepOpen: true
-});
-
 var config = {
 	initialConfig: {
 		lon: 1.59647,
