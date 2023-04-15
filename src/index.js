@@ -297,6 +297,7 @@ $(function () {
 	}));
 	map.addControl(new ol.control.ScaleLine({units: config.initialConfig.units}));
 	map.addControl(new ol.control.ZoomSlider());
+	map.addControl(geocoder);
 
 	// Geolocation Control
 	// In some browsers, this feature is available only in secure contexts (HTTPS)
