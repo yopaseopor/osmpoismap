@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OSM POI Map</title>
+    <title>OSM POI Map2</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.7.0/css/ol.css" type="text/css">
     <style>
         .map {
@@ -71,13 +71,10 @@
                 input.addEventListener('input', (event) => {
                     const searchTerm = event.target.value;
                     if (searchTerm.length > 2) {
-                        fetch(nominatimUrl.replace('{searchTerm}', encodeURIComponent(searchTerm)), {
-                            headers: {
-                                'User-Agent': user_agent,
-                            },
-                        })
-                            .then((response) => response.json())
-                            .then((data) => {
+                        const xhr = new XMLHttpRequest();
+                        xhr.onreadystatechange = function() {
+                            if (xhr.readyState === 4 && xhr.status === 200) {
+                                const data = JSON.parse(xhr.responseText);
                                 const features = data.map((result) => {
                                     const coords = ol.proj.fromLonLat([parseFloat(result.lon), parseFloat(result.lat)]);
                                     const feature = new ol.Feature({
@@ -99,7 +96,12 @@
                                     });
                                     resultList.appendChild(li);
                                 });
-                            });
+                            }
+                        };
+
+                        xhr.open('GET', nominatimUrl.replace('{searchTerm}', encodeURIComponent(searchTerm)), true);
+                        xhr.setRequestHeader('User-Agent', user_agent);
+                        xhr.send();
                     } else {
                         resultList.innerHTML = '';
                     }
