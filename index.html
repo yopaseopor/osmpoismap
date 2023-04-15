@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.7.0/css/ol.css" type="text/css">
     <style>
         .map {
-            height: 100%;
+            height: 100vh;
             width: 100%;
         }
 
@@ -52,7 +52,7 @@
                 })
             ],
             view: new ol.View({
-                center: ol.proj.fromLonLat([37.41, 8.82]),
+                center: ol.proj.fromLonLat([8.82, 37.41]),
                 zoom: 4
             })
         });
