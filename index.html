@@ -1,27 +1,125 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ca">
+<html lang="en">
 <head>
-	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-	<title>OpenStreetMap POIs Map</title>
-	<meta content="OpenStreetMap POIs Map" name="description"/>
-	<link rel="stylesheet" href="src/api/jquery-ui-1.12.1.custom/jquery-ui.min.css" type="text/css"/>
-	<link rel="stylesheet" href="src/api/openlayers/v6.2.2-custom/ol.css" type="text/css"/>
-	<link rel="stylesheet" href="src/css/font-awesome.css" type="text/css"/>
-	<link rel="stylesheet" href="src/css/index.css" type="text/css"/>
-		<link href="https://cdn.jsdelivr.net/npm/ol-geocoder@latest/dist/ol-geocoder.min.css" rel="stylesheet">
-	<link rel="icon" href="favicon.ico"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSM POI Map</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.7.0/css/ol.css" type="text/css">
+    <style>
+        .map {
+            height: 100%;
+            width: 100%;
+        }
+
+        .nominatim-search {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+        }
+
+        .nominatim-search input {
+            width: 200px;
+        }
+
+        .nominatim-search ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+
+        .nominatim-search li {
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .nominatim-search li:hover {
+            background-color: #eee;
+        }
+    </style>
 </head>
 <body>
-	<div class="flex-row">
-		<div id="map" class="map">Loading... You need Javascript...Cargando necesitas Javascript...Carregant...necessites Javascript</div>
-		<div id="menu" class="menu"></div>
-	</div>
-	<script src="src/api/jquery/3.4.1/jquery.min.js" defer=""></script>
-	<script src="src/api/jquery-ui-1.12.1.custom/jquery-ui.min.js" defer=""></script>
-	<script src="src/api/openlayers/v6.2.2-custom/ol.js" defer=""></script>
-	<script src="src/config.js" defer=""></script>
-	<script src="src/index.js" defer=""></script>
-<script src="https://cdn.jsdelivr.net/npm/ol-geocoder"></script>
+    <div id="map" class="map"></div>
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.7.0/build/ol.js"></script>
+    <script>
+        var map = new ol.Map({
+            target: 'map',
+            layers: [
+                new ol.layer.Tile({
+                    source: new ol.source.OSM()
+                })
+            ],
+            view: new ol.View({
+                center: ol.proj.fromLonLat([37.41, 8.82]),
+                zoom: 4
+            })
+        });
+
+        class NominatimSearchControl extends ol.control.Control {
+            constructor() {
+                const container = document.createElement('div');
+                container.className = 'nominatim-search';
+
+                const input = document.createElement('input');
+                const resultList = document.createElement('ul');
+
+                container.appendChild(input);
+                container.appendChild(resultList);
+
+                input.addEventListener('input', (event) => {
+                    const searchTerm = event.target.value;
+                    if (searchTerm.length > 2) {
+                        fetch(nominatimUrl.replace('{searchTerm}', encodeURIComponent(searchTerm)), {
+                            headers: {
+                                'User-Agent': user_agent,
+                            },
+                        })
+                            .then((response) => response.json())
+                            .then((data) => {
+                                const features = data.map((result) => {
+                                    const coords = ol.proj.fromLonLat([parseFloat(result.lon), parseFloat(result.lat)]);
+                                    const feature = new ol.Feature({
+                                        geometry: new ol.geom.Point(coords),
+                                    });
+                                    return feature;
+                                });
+
+                                searchResultLayer.getSource().clear();
+                                searchResultLayer.getSource().addFeatures(features);
+
+                                resultList.innerHTML = '';
+                                data.forEach((result, index) => {
+                                    const li = document.createElement('li');
+                                    li.textContent = result.display_name;
+                                    li.addEventListener('click', () => {
+                                        const coords = ol.proj.fromLonLat([parseFloat(result.lon), parseFloat(result.lat)]);
+                                        map.getView().animate({ center: coords, zoom: 14 });
+                                    });
+                                    resultList.appendChild(li);
+                                });
+                            });
+                    }
+                });
+
+                super({
+                    element: container,
+                });
+            }
+        }
+
+        const nominatimUrl = 'https://nominatim.openstreetmap.org/search?format=json&limit=5&q={searchTerm}';
+        const user_agent = 'OSMPOISMAP/1.0 yopaseopor@gmail.com';
+
+        const searchResultLayer = new ol.layer.Vector({
+            source: new ol.source.Vector(),
+        });
+
+        map.addLayer(searchResultLayer);
+
+        const searchControl = new NominatimSearchControl();
+        map.addControl(searchControl);
+    </script>
 </body>
 </html>
