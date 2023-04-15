@@ -3,15 +3,6 @@ $(function () {
 	$('#map').empty(); // Remove Javascript required message
 	var baseLayerIndex = 0;
 	
-	var geocoder = new Geocoder('nominatim', {
-  provider: 'osm',
-  lang: 'en-US',
-  placeholder: 'Search for ...',
-  targetType: 'text-input',
-  limit: 5,
-  keepOpen: true
-});
-
 	//Object to manage the spinner layer
 	var loading = {
 		init: function () {
@@ -306,7 +297,6 @@ $(function () {
 	}));
 	map.addControl(new ol.control.ScaleLine({units: config.initialConfig.units}));
 	map.addControl(new ol.control.ZoomSlider());
-	map.addControl(geocoder);
 
 	// Geolocation Control
 	// In some browsers, this feature is available only in secure contexts (HTTPS)
