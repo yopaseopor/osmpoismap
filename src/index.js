@@ -2,6 +2,15 @@
 $(function () {
 	$('#map').empty(); // Remove Javascript required message
 	var baseLayerIndex = 0;
+	
+	var geocoder = new Geocoder('nominatim', {
+  provider: 'osm',
+  lang: 'en-US',
+  placeholder: 'Search for ...',
+  targetType: 'text-input',
+  limit: 5,
+  keepOpen: true
+});
 
 	//Object to manage the spinner layer
 	var loading = {
