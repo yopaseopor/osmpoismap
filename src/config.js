@@ -4,9 +4,10 @@
  * OSM Cat config
  */
 
-
+//@ Ruta de imágenes
 var imgSrc = 'src/img/';
 
+//@Coordenadas LONgitud LATitud Rotación Zoom, Zoom de la geolocalización, unidades
 var config = {
 	initialConfig: {
 		lon: 1.59647,

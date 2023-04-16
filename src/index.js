@@ -327,6 +327,18 @@ $(function () {
 	map.addControl(new ol.control.Control({
 		element: geolocationControlBuild()
 	}));
+	
+	
+	// Como crear un control
+	//@@ poner un número extra a la var | var infoControlBuild2 = function () {
+	//@@ revisar osmcat-infobutton2 	var container = $('<div>').addClass('ol-control ol-unselectable osmcat-infobutton2').html($('<button type="button"><i class="fa fa-search-plus"></i></button>').on('click', function () {
+	//		window.location.href = 'https://mapcomplete.osm.be/index.html?userlayout=https://raw.githubusercontent.com/yopaseopor/mcquests/master/limits.json';
+	//	}));
+	//	return container[0];
+	//};
+	//map.addControl(new ol.control.Control({
+	//	element: infoControlBuild2()
+	//}));
 
 	// Info Control
 	var infoControlBuild = function () {
@@ -339,20 +351,6 @@ $(function () {
 		element: infoControlBuild()
 	}));
 	
-	
-	
-	
-		// Info Control2
-	//var infoControlBuild2 = function () {
-	//	var container = $('<div>').addClass('ol-control ol-unselectable osmcat-infobutton2').html($('<button type="button"><i class="fa fa-search-plus"></i></button>').on('click', function () {
-	//		window.location.href = 'https://mapcomplete.osm.be/index.html?userlayout=https://raw.githubusercontent.com/yopaseopor/mcquests/master/limits.json';
-	//	}));
-	//	return container[0];
-	//};
-	//map.addControl(new ol.control.Control({
-	//	element: infoControlBuild2()
-	//}));
-
 	// Copy permalink button
 	var permalinkControlBuild = function () {
 		var container = $('<div>').addClass('ol-control ol-unselectable osmcat-sharebutton').html($('<button type="button"><i class="fa fa-share-alt-square"></i></button>').on('click', function () {
