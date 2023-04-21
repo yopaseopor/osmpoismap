@@ -4,10 +4,10 @@
  * OSM Cat config
  */
 
-//@ Ruta de imágenes
+//@@ Ruta de imágenes
 var imgSrc = 'src/img/';
 
-//@Coordenadas LONgitud LATitud Rotación Zoom, Zoom de la geolocalización, unidades
+//@@Coordenadas LONgitud LATitud Rotación Zoom, Zoom de la geolocalización, unidades
 var config = {
 	initialConfig: {
 		lon: 1.59647,
@@ -18,6 +18,7 @@ var config = {
 		units: 'metric'
 	},
 	i18n: {
+		//@@ Textos entre comillas.
 		layersLabel: 'Capas',
 		completeWith: 'Completar con:',
 		editWith: 'Editar con:',
@@ -31,7 +32,7 @@ var config = {
 		wayLabel: 'Vía:'
 	},
 	overpassApi: function(){
-		// https://overpass-turbo.eu/
+		//@@posibilidad de cambiar el servidor de overpass https://overpass-turbo.eu/
 		var proxyOverpassApi = true;
 		var overpassApi = 'https://overpass-api.de/api/interpreter';
 		if (proxyOverpassApi)
@@ -40,23 +41,23 @@ var config = {
 		}
 		return overpassApi;
 	},
-	// Base layers
+	//@@ Mapas de fondo
 	layers: [
 		new ol.layer.Tile({
 			title: 'OpenStreetMap',
 			iconSrc: imgSrc + 'osm_logo-layer.svg',
 			source: new ol.source.OSM()
-		}),
-		new ol.layer.Tile({
-			title: 'OpenStreetMap DE',
-			iconSrc: imgSrc + 'osmbw_logo-layer.png',
-			maxZoom: 18,
-			source: new ol.source.XYZ({
-				attributions: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-				url: 'https://{a-c}.tile.openstreetmap.de/{z}/{x}/{y}.png'
-			}),
-			visible: false
-		}),
+/*@@ inicio de copia */			}),
+								new ol.layer.Tile({
+/*@@ título */					title: 'OpenStreetMap DE',
+/*@@ icono */					iconSrc: imgSrc + 'osmbw_logo-layer.png',
+/*@@ zoom máximo */				maxZoom: 18,
+								source: new ol.source.XYZ({
+/*@@ atribución */				attributions: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+/*@@ url */						url: 'https://{a-c}.tile.openstreetmap.de/{z}/{x}/{y}.png'
+								}),
+/*@@ visible de inicio */		visible: false
+/*@@ final de copia */			}),
 		new ol.layer.Tile({// OpenStreetMap France https://openstreetmap.fr
 			title: 'OpenStreetMap FR',
 			iconSrc: imgSrc + 'osmfr_logo-layer.png',
