@@ -216,45 +216,46 @@ style: function (feature) {
 			}
 
 /*@@ inicio-fin de copia */			},
-/*   abrir */						{
+/*   abrir */							{
 /*@@ nombre del grupo al que pertenecen */	group: 'Test',
 /*@@ título de la opción */					title: 'Banco Sabadell',
 /*@@ consulta overpass */					query: '(nwr["brand:wikidata"="Q762330"]({{bbox}});node(w););out meta;',
 /*@@ ruta del icono (URL o relativa) */		iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/BSabadell_Logo.svg/220px-BSabadell_Logo.svg.png',
 /*@@ color del fondo del icono (r,g,b,a) */	iconStyle: 'background-color:rgba(255,255,255,0.4)',
 											style: function (feature) {
-/*@@ etiqueta para texto entre barras / / */var key_regex = /^name:ca$/
-											var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-											var name = feature.get(name_key) || '';
-											var fill = new ol.style.Fill({
-/*@@ color del relleno (r,g,b,a) */			color: 'rgba(255,0,0,0.4)'
-/*   cerrar */						});
-/*subrallado*/								var stroke = new ol.style.Stroke({
-/*@@ color de la línea (r,g,b,a) */			color: 'rgba(255,0,0,1)',
-/*@@ anchura de la línea */					width: 1
-/*   cerrar */						});
-											var style = new ol.style.Style({
-/*   icono */								image: new ol.style.Icon({
-/*@@ ruta del icono (URL o relativa) */		src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/BSabadell_Logo.svg/220px-BSabadell_Logo.svg.png',		
-/*@@ rotación */							rotation:0.9,
-/*@@ tamaño (en relativo) */				scale:0.30
-/*   cerrar */						}),
-/*   texto */								text: new ol.style.Text({
-											text: name,
-/*@@ posición x texto relativa al punto */	offsetX : 7,
-/*@@ posición y texto relativa al punto */	offsetY : -12,
-/* "relleno" del texto */					fill: new ol.style.Fill({
-/*@@ color del texto (r,g,b,a) */           color: 'rgba(255,255,255,1)'
-/*   cerrar */						}),
-/*   cerrar */						}),
-											fill: fill,
-											stroke: stroke
-/*   cerrar */						});
+/*@@ etiqueta para texto entre barras / / */	var key_regex = /^name:ca$/
+												var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+												var name = feature.get(name_key) || '';
+												var fill = new ol.style.Fill({
+/*@@ color del relleno (r,g,b,a) */					color: 'rgba(255,0,0,0.4)'
+/*   cerrar */									});
+/*subrallado*/									var stroke = new ol.style.Stroke({
+/*@@ color de la línea (r,g,b,a) */					color: 'rgba(255,0,0,1)',
+/*@@ anchura de la línea */							width: 1
+/*   cerrar */									});
+												var style = new ol.style.Style({
+/*   icono */										image: new ol.style.Icon({
+/*@@ ruta del icono (URL o relativa) */					src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/BSabadell_Logo.svg/220px-BSabadell_Logo.svg.png',		
+/*@@ rotación */										rotation:0.9,
+/*@@ tamaño (en relativo) */							scale:0.30
+/*   cerrar */										}),
+/*   texto */												text: new ol.style.Text({
+																text: name,
+/*@@ tamaño y tipo de texto */									font: 'bold 13px Arial, Verdana, Helvetica, sans-serif',
+/*@@ posición x texto relativa al punto */						offsetX : 7,
+/*@@ posición y texto relativa al punto */						offsetY : -12,
+/* "relleno" del texto */										fill: new ol.style.Fill({
+/*@@ color del texto (r,g,b,a) */           						color: 'rgba(255,255,255,1)'
+/*   cerrar */														}),
+/*   cerrar */												}),
+													fill: fill,
+													stroke: stroke
+/*   cerrar */									});
 											return style;
-/*   cerrar */						}
+/*   cerrar */								}
 
 /*@@ fin-inicio de copia */			},
-/*   abrir */						{	
+/*   abrir */							{	
 			group: 'Test',
 			title: 'Ja sense activitat',
 			geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/test_bcn.geojson',
