@@ -252,17 +252,27 @@ style: function (feature) {
 /*@@ color del texto (r,g,b,a) */           						color: 'rgba(255,255,255,1)'
 /*   cerrar */														}),
 /*   cerrar */												}),
+/*   texto */										fill: fill,
+													stroke: stroke
+/*   cerrar */									});
+											return style;
+																							var style2 = new ol.style.Style({
+/*   icono */										image: new ol.style.Icon({
+/*@@ ruta del icono (URL o relativa) */					src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/BSabadell_Logo.svg/220px-BSabadell_Logo.svg.png',		
+/*@@ rotación */										rotation:0.9,
+/*@@ tamaño (en relativo) */							scale:0.30
+/*   cerrar */										}),
 /*   texto */												text: new ol.style.Text({
 																text: name2,
-/*@@ peso,tamaño y cuerpo del texto */							font: 'bold 20px Arial, Verdana, Helvetica, sans-serif',
-/*@@ rotación del texto */										rotation:0.5,
+/*@@ peso,tamaño y cuerpo del texto */							font: 'bold 13px Arial, Verdana, Helvetica, sans-serif',
+/*@@ rotación del texto */										rotation:0.9,
 /*@@ posición x texto relativa al punto */						offsetX : 7,
-/*@@ posición y texto relativa al punto */						offsetY : -5,
+/*@@ posición y texto relativa al punto */						offsetY : -12,
 /* "relleno" del texto */										fill: new ol.style.Fill({
-/*@@ color del texto (r,g,b,a) */           						color: 'rgba(255,0,255,1)'
+/*@@ color del texto (r,g,b,a) */           						color: 'rgba(255,255,255,1)'
 /*   cerrar */														}),
 /*   cerrar */												}),
-													fill: fill,
+/*   texto */										fill: fill,
 													stroke: stroke
 /*   cerrar */									});
 											return style;
