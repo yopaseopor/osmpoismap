@@ -227,7 +227,7 @@ style: function (feature) {
 												var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
 												var name = feature.get(name_key) || '';
 												/*@@ etiqueta para texto entre barras / / */	var key_regex2 = /^addr:housenumber$/
-												var name_key2 = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name2"
+												var name_key2 = feature.getKeys().filter(function(t){return t.match(key_regex2)}).pop() || "name2"
 												var name2 = feature.get(name_key2) || '';
 												var fill = new ol.style.Fill({
 /*@@ color del relleno (r,g,b,a) */					color: 'rgba(255,0,0,0.4)'
