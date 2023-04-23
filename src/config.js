@@ -215,7 +215,44 @@ style: function (feature) {
 				return style;
 			}
 
-				},
+/*@@ inicio de copia */				},
+			
+									{
+/*@@ nombre del grupo al que pertenecen */	group: 'Test',
+/*@@ título de la opción */					title: 'Banco Sabadell',
+/*@@ consulta overpass */					query: '(nwr["brand:wikidata"="Q762330"]({{bbox}});node(w););out meta;',
+/*@@ ruta del icono (URL o relativa) */		iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/BSabadell_Logo.svg/220px-BSabadell_Logo.svg.png',
+/*@@ color del fondo del icono (r,g,b,a) */	iconStyle: 'background-color:rgba(255,255,255,0.4)',
+											style: function (feature) {
+/*@@ etiqueta a mostrar en texto */			var key_regex = /^name$/
+											var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+											var name = feature.get(name_key) || '';
+											var fill = new ol.style.Fill({
+/*@@ color del relleno (r,g,b,a) */			color: 'rgba(255,0,0,0.4)'
+									});
+/*subrallado*/								var stroke = new ol.style.Stroke({
+/*@@ color de la línea (r,g,b,a) */			color: 'rgba(255,0,0,1)',
+/*@@ anchura de la línea */					width: 1
+									});
+											var style = new ol.style.Style({
+											image: new ol.style.Icon({
+/*@@ ruta del icono (URL o relativa) */		src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/BSabadell_Logo.svg/220px-BSabadell_Logo.svg.png',
+/*@@ tamaño (en relativo) */				scale:0.30
+									}),
+											text: new ol.style.Text({
+											text: name,
+/*@@ posición x texto relativa al punto */	offsetX : 7,
+/*@@ posición y texto relativa al punto */	offsetY : -12,
+											fill: new ol.style.Fill({
+/*@@ color del texto (r,g,b,a) */           color: 'rgba(255,255,255,1)'
+									}),
+									}),
+											fill: fill,
+											stroke: stroke
+									});
+											return style;
+									}
+/*@@ fin de copia */				},
 			
 		{
 			group: 'Marcas & Economía',
