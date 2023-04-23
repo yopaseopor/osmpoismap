@@ -224,7 +224,7 @@ style: function (feature) {
 /*@@ ruta del icono (URL o relativa) */		iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/BSabadell_Logo.svg/220px-BSabadell_Logo.svg.png',
 /*@@ color del fondo del icono (r,g,b,a) */	iconStyle: 'background-color:rgba(255,255,255,0.4)',
 											style: function (feature) {
-/*@@ etiqueta a mostrar en texto */			var key_regex = /^name$/
+/*@@ etiqueta a mostrar en texto */			var key_regex = /^name:ca$/
 											var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
 											var name = feature.get(name_key) || '';
 											var fill = new ol.style.Fill({
@@ -237,6 +237,8 @@ style: function (feature) {
 											var style = new ol.style.Style({
 											image: new ol.style.Icon({
 /*@@ ruta del icono (URL o relativa) */		src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/BSabadell_Logo.svg/220px-BSabadell_Logo.svg.png',
+				
+/*@@ rotación */							rotation:1.2,
 /*@@ tamaño (en relativo) */				scale:0.30
 									}),
 											text: new ol.style.Text({
