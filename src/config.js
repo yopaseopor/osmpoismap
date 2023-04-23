@@ -226,9 +226,6 @@ style: function (feature) {
 /*@@ etiqueta para texto entre barras / / */	var key_regex = /^name:ca$/
 												var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
 												var name = feature.get(name_key) || '';
-												/*@@ etiqueta para texto entre barras / / */	var key_regex2 = /^addr:housenumber$/
-												var name_key2 = feature.getKeys().filter(function(t){return t.match(key_regex2)}).pop() || "name2"
-												var name2 = feature.get(name_key2) || '';
 												var fill = new ol.style.Fill({
 /*@@ color del relleno (r,g,b,a) */					color: 'rgba(255,0,0,0.4)'
 /*   cerrar */									});
@@ -256,26 +253,6 @@ style: function (feature) {
 													stroke: stroke
 /*   cerrar */									});
 											return style;
-																							var style2 = new ol.style.Style({
-/*   icono */										image: new ol.style.Icon({
-/*@@ ruta del icono (URL o relativa) */					src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/BSabadell_Logo.svg/220px-BSabadell_Logo.svg.png',		
-/*@@ rotación */										rotation:0.9,
-/*@@ tamaño (en relativo) */							scale:0.50
-/*   cerrar */										}),
-/*   texto */												text: new ol.style.Text({
-																text: name2,
-/*@@ peso,tamaño y cuerpo del texto */							font: 'bold 13px Arial, Verdana, Helvetica, sans-serif',
-/*@@ rotación del texto */										rotation:0.9,
-/*@@ posición x texto relativa al punto */						offsetX : 7,
-/*@@ posición y texto relativa al punto */						offsetY : -5,
-/* "relleno" del texto */										fill: new ol.style.Fill({
-/*@@ color del texto (r,g,b,a) */           						color: 'rgba(255,255,255,1)'
-/*   cerrar */														}),
-/*   cerrar */												}),
-/*   texto */										fill: fill,
-													stroke: stroke
-/*   cerrar */									});
-											return style2;
 /*   cerrar */								}
 
 /*@@ fin-inicio de copia */			},
