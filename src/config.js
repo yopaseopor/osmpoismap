@@ -226,6 +226,9 @@ style: function (feature) {
 /*@@ etiqueta para texto entre barras / / */	var key_regex = /^name:ca$/
 												var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
 												var name = feature.get(name_key) || '';
+												/*@@ etiqueta para texto entre barras / / */	var key_regex2 = /^addr:housenumber$/
+												var name_key2 = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name2"
+												var name2 = feature.get(name_key2) || '';
 												var fill = new ol.style.Fill({
 /*@@ color del relleno (r,g,b,a) */					color: 'rgba(255,0,0,0.4)'
 /*   cerrar */									});
@@ -242,11 +245,21 @@ style: function (feature) {
 /*   texto */												text: new ol.style.Text({
 																text: name,
 /*@@ peso,tamaño y cuerpo del texto */							font: 'bold 13px Arial, Verdana, Helvetica, sans-serif',
-/*@@ rotación */										rotation:0.9,
+/*@@ rotación del texto */										rotation:0.9,
 /*@@ posición x texto relativa al punto */						offsetX : 7,
 /*@@ posición y texto relativa al punto */						offsetY : -12,
 /* "relleno" del texto */										fill: new ol.style.Fill({
 /*@@ color del texto (r,g,b,a) */           						color: 'rgba(255,255,255,1)'
+/*   cerrar */														}),
+/*   cerrar */												}),
+/*   texto */												text: new ol.style.Text({
+																text: name2,
+/*@@ peso,tamaño y cuerpo del texto */							font: 'bold 20px Arial, Verdana, Helvetica, sans-serif',
+/*@@ rotación del texto */										rotation:0.5,
+/*@@ posición x texto relativa al punto */						offsetX : 7,
+/*@@ posición y texto relativa al punto */						offsetY : -5,
+/* "relleno" del texto */										fill: new ol.style.Fill({
+/*@@ color del texto (r,g,b,a) */           						color: 'rgba(255,0,255,1)'
 /*   cerrar */														}),
 /*   cerrar */												}),
 													fill: fill,
