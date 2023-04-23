@@ -167,7 +167,7 @@ var config = {
 	* @type Array
 	* Overlay
 	* group: string nom del grup
-	* title: string titol de la capa
+	* title: string títol de la capa
 	* query: string consulta tal como https://overpass-turbo.eu
 	* iconSrc: string ruta de la imatge
 	* style: function see https://openlayers.org/en/latest/apidoc/module-ol_style_Style-Style.html
@@ -215,46 +215,143 @@ style: function (feature) {
 				return style;
 			}
 
-/*@@ inicio de copia */				},
-			
-									{
+/*@@ inicio-fin de copia */			},
+/*   abrir */						{
 /*@@ nombre del grupo al que pertenecen */	group: 'Test',
 /*@@ título de la opción */					title: 'Banco Sabadell',
 /*@@ consulta overpass */					query: '(nwr["brand:wikidata"="Q762330"]({{bbox}});node(w););out meta;',
 /*@@ ruta del icono (URL o relativa) */		iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/BSabadell_Logo.svg/220px-BSabadell_Logo.svg.png',
 /*@@ color del fondo del icono (r,g,b,a) */	iconStyle: 'background-color:rgba(255,255,255,0.4)',
 											style: function (feature) {
-/*@@ etiqueta a mostrar en texto */			var key_regex = /^name:ca$/
+/*@@ etiqueta para texto entre barras / / */var key_regex = /^name:ca$/
 											var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
 											var name = feature.get(name_key) || '';
 											var fill = new ol.style.Fill({
 /*@@ color del relleno (r,g,b,a) */			color: 'rgba(255,0,0,0.4)'
-									});
+/*   cerrar */						});
 /*subrallado*/								var stroke = new ol.style.Stroke({
 /*@@ color de la línea (r,g,b,a) */			color: 'rgba(255,0,0,1)',
 /*@@ anchura de la línea */					width: 1
-									});
+/*   cerrar */						});
 											var style = new ol.style.Style({
-											image: new ol.style.Icon({
-/*@@ ruta del icono (URL o relativa) */		src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/BSabadell_Logo.svg/220px-BSabadell_Logo.svg.png',
-				
+/*   icono */								image: new ol.style.Icon({
+/*@@ ruta del icono (URL o relativa) */		src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/BSabadell_Logo.svg/220px-BSabadell_Logo.svg.png',		
 /*@@ rotación */							rotation:0.9,
 /*@@ tamaño (en relativo) */				scale:0.30
-									}),
-											text: new ol.style.Text({
+/*   cerrar */						}),
+/*   texto */								text: new ol.style.Text({
 											text: name,
 /*@@ posición x texto relativa al punto */	offsetX : 7,
 /*@@ posición y texto relativa al punto */	offsetY : -12,
-											fill: new ol.style.Fill({
+/* "relleno" del texto */					fill: new ol.style.Fill({
 /*@@ color del texto (r,g,b,a) */           color: 'rgba(255,255,255,1)'
-									}),
-									}),
+/*   cerrar */						}),
+/*   cerrar */						}),
 											fill: fill,
 											stroke: stroke
-									});
+/*   cerrar */						});
 											return style;
-									}
-/*@@ fin de copia */				},
+/*   cerrar */						}
+
+/*@@ fin-inicio de copia */			},
+/*   abrir */						{	
+			group: 'Test',
+			title: 'Ja sense activitat',
+			geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/test_bcn.geojson',
+			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/closed.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+			style: function (feature) {
+				var key_regex = /^Nom_Local/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var styles = {
+					'Nom_Activitat': {
+						'Locals buits en venda i lloguer': new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/rent_sell.svg',
+							scale:1
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+							})
+						}),
+						'Locals buits en venda': new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/sell.svg',
+							scale:1
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+							})
+						}),
+						'Sense informació': new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/noinfo.svg',
+							scale:1
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+							})
+						}),
+						'Sense informació - Havia tingut activitat (rètol)': new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/noinfo.svg',
+							scale:1
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+							})
+						}),
+						'Locals buits en lloguer': new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/rent.svg',
+							scale:1
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+							})
+						}),
+					}
+				};
+				for (var key in styles) {
+					var value = feature.get(key);
+					if (value !== undefined) {
+						for (var regexp in styles[key]) {
+							if (new RegExp(regexp).test(value)) {
+								return styles[key][regexp];
+							}
+						}
+					}
+				}
+				return null;
+			} 
+		 
+},
 			
 		{
 			group: 'Marcas & Economía',
