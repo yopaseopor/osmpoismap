@@ -275,7 +275,7 @@ style: function (feature) {
 /*   texto */										fill: fill,
 													stroke: stroke
 /*   cerrar */									});
-											return style;
+											return style2;
 /*   cerrar */								}
 
 /*@@ fin-inicio de copia */			},
