@@ -238,7 +238,7 @@ style: function (feature) {
 											image: new ol.style.Icon({
 /*@@ ruta del icono (URL o relativa) */		src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/BSabadell_Logo.svg/220px-BSabadell_Logo.svg.png',
 				
-/*@@ rotación */							rotation:1.2,
+/*@@ rotación */							rotation:0.9,
 /*@@ tamaño (en relativo) */				scale:0.30
 									}),
 											text: new ol.style.Text({
