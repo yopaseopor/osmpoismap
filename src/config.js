@@ -257,45 +257,49 @@ style: function (feature) {
 
 /*@@ fin-inicio de copia */			},
 /*   abrir */							{	
-			group: 'Test',
-			title: 'Ja sense activitat',
-			geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/test_bcn.geojson',
-			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/closed.svg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+/*@@ nombre del grupo al que pertenecen */				group: 'Test',
+/*@@ título de la opción */								title: 'Ja sense activitat',
+/*@@ ruta del archivo geojson con datos */				geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/test_bcn.geojson',
+/*@@ ruta del icono (URL o relativa) */					iconSrc: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/closed.svg',
+/*@@ color del fondo del icono (r,g,b,a) */				iconStyle: 'background-color:rgba(255,255,255,0.4)',
 			style: function (feature) {
-				var key_regex = /^Nom_Local/
+/*@@ clave escogida entre barras / / para mostrar en texto sus valores  */					var key_regex = /^Nom_Local/
 				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
 				var name = feature.get(name_key) || '';
 				var styles = {
-					'Nom_Activitat': {
-						'Locals buits en venda i lloguer': new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/rent_sell.svg',
-							scale:1
-						}),
-							text: new ol.style.Text({
+/*@@ clave 1 para filtrar */						'Nom_Activitat': {
+/*@@ valor 1 de clave 1 para mostrar */							'Locals buits en venda i lloguer': new ol.style.Style({
+/*   icono */						image: new ol.style.Icon({
+/*@@ ruta del icono (URL o relativa) */								src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/rent_sell.svg',
+/*@@ tamaño (en relativo) */							scale:1
+/*   cerrar */							}),
+/*   texto */												text: new ol.style.Text({
+																text: name,
+/*@@ peso,tamaño y cuerpo del texto */							font: 'bold 13px Arial, Verdana, Helvetica, sans-serif',
+/*@@ rotación del texto */										rotation:0.9,
+/*@@ posición x texto relativa al punto */						offsetX : 7,
+/*@@ posición y texto relativa al punto */						offsetY : -12,
+/* "relleno" del texto */										fill: new ol.style.Fill({
+/*@@ color del texto (r,g,b,a) */           						color: 'rgba(255,255,255,1)'
+/*   cerrar */														}),
+/*   cerrar */							})
+/*   cerrar */						}),
+/*@@ valor 2 de clave 1 para mostrar */						'Locals buits en venda': new ol.style.Style({
+/*   icono */					image: new ol.style.Icon({
+/*@@ ruta del icono (URL o relativa) */							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/sell.svg',
+/*@@ tamaño (en relativo) */							scale:1
+/*   cerrar */						}),
+/*   texto */							text: new ol.style.Text({
 								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-							})
-						}),
-						'Locals buits en venda': new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/sell.svg',
-							scale:1
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-							})
-						}),
+/*@@ peso,tamaño y cuerpo del texto */							font: 'bold 13px Arial, Verdana, Helvetica, sans-serif',
+/*@@ rotación del texto */										rotation:0.9,
+/*@@ posición x texto relativa al punto */						offsetX : 7,
+/*@@ posición y texto relativa al punto */						offsetY : -12,
+/* "relleno" del texto */										fill: new ol.style.Fill({
+/*@@ color del texto (r,g,b,a) */                             color: 'rgba(0,0,0,1)'
+/*   cerrar */														}),
+/*   cerrar */							})
+/*   cerrar */						}),
 						'Sense informació': new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/noinfo.svg',
