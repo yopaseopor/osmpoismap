@@ -300,48 +300,54 @@ style: function (feature) {
 /*   cerrar */														}),
 /*   cerrar */							})
 /*   cerrar */						}),
-						'Sense informació': new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/noinfo.svg',
-							scale:1
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-							})
-						}),
-						'Sense informació - Havia tingut activitat (rètol)': new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/noinfo.svg',
-							scale:1
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-							})
-						}),
-						'Locals buits en lloguer': new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/rent.svg',
-							scale:1
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-							})
-						}),
+/*@@ valor 3 de clave 1 para mostrar */						'Sense informació': new ol.style.Style({
+/*   icono */					image: new ol.style.Icon({
+/*@@ ruta del icono (URL o relativa) */							src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/noinfo.svg',
+/*@@ tamaño (en relativo) */							scale:1
+/*   cerrar */							}),
+/*   texto */												text: new ol.style.Text({
+																text: name,
+/*@@ peso,tamaño y cuerpo del texto */							font: 'bold 13px Arial, Verdana, Helvetica, sans-serif',
+/*@@ rotación del texto */										rotation:0.9,
+/*@@ posición x texto relativa al punto */						offsetX : 7,
+/*@@ posición y texto relativa al punto */						offsetY : -12,
+/* "relleno" del texto */										fill: new ol.style.Fill({
+/*@@ color del texto (r,g,b,a) */                             color: 'rgba(0,0,0,1)'
+/*   cerrar */														}),
+/*   cerrar */							})
+/*   cerrar */						}),
+/*@@ valor 4 de clave 1 para mostrar */						'Sense informació - Havia tingut activitat (rètol)': new ol.style.Style({
+/*   icono */					image: new ol.style.Icon({
+/*@@ ruta del icono (URL o relativa) */								src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/noinfo.svg',
+/*@@ tamaño (en relativo) */							scale:1
+/*   cerrar */							}),
+/*   texto */												text: new ol.style.Text({
+																text: name,
+/*@@ peso,tamaño y cuerpo del texto */							font: 'bold 13px Arial, Verdana, Helvetica, sans-serif',
+/*@@ rotación del texto */										rotation:0.9,
+/*@@ posición x texto relativa al punto */						offsetX : 7,
+/*@@ posición y texto relativa al punto */						offsetY : -12,
+/* "relleno" del texto */										fill: new ol.style.Fill({
+/*@@ color del texto (r,g,b,a) */                             color: 'rgba(0,0,0,1)'
+/*   cerrar */														}),
+/*   cerrar */							})
+/*   cerrar */						}),
+/*@@ valor 5 de clave 1 para mostrar */							'Locals buits en lloguer': new ol.style.Style({
+/*   icono */					image: new ol.style.Icon({
+/*@@ ruta del icono (URL o relativa) */								src: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/rent.svg',
+/*@@ tamaño (en relativo) */							scale:1
+/*   cerrar */							}),
+/*   texto */												text: new ol.style.Text({
+																text: name,
+/*@@ peso,tamaño y cuerpo del texto */							font: 'bold 13px Arial, Verdana, Helvetica, sans-serif',
+/*@@ rotación del texto */										rotation:0.9,
+/*@@ posición x texto relativa al punto */						offsetX : 7,
+/*@@ posición y texto relativa al punto */						offsetY : -12,
+/* "relleno" del texto */										fill: new ol.style.Fill({
+/*@@ color del texto (r,g,b,a) */                             color: 'rgba(0,0,0,1)'
+/*   cerrar */														}),
+/*   cerrar */							})
+/*   cerrar */						}),
 					}
 				};
 				for (var key in styles) {
