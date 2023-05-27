@@ -1195,9 +1195,9 @@ style: function (feature) {
 				},
 		{
 			group: 'Marcas & Restauración',
-			title: 'Rodilla',
-			query: '(nwr["brand:wikidata"="Q7356777"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/suma.png',
+			title: 'Popeyes',
+			query: '(nwr["brand:wikidata"="Q1330910"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/popeyes.jpg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
 				var key_regex = /^name$/
@@ -1212,7 +1212,43 @@ style: function (feature) {
 				});
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'src/img/logos/suma.png',
+							src: 'src/img/logos/popeyes.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Restauración',
+			title: 'Rodilla',
+			query: '(nwr["brand:wikidata"="Q7356777"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/rodilla.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/rodilla.png',
 							scale:0.10
 						}),
 							text: new ol.style.Text({
