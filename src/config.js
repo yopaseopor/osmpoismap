@@ -1195,7 +1195,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Marcas & Restauración',
-			title: 'Pans&Company',
+			title: 'Pans & Company',
 			query: '(nwr["brand:wikidata"="Q11697586"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.pansandcompany.com/bundles/pans/images/logo.png',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -1213,6 +1213,42 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://www.pansandcompany.com/bundles/pans/images/logo.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Restauración',
+			title: 'Papizza',
+			query: '(nwr["name"="Papizza"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/papizza.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/papizza.jpg',
 							scale:0.10
 						}),
 							text: new ol.style.Text({
@@ -1285,6 +1321,42 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'src/img/logos/rodilla.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Restauración',
+			title: 'Taco Bell',
+			query: '(nwr["brand:wikidata"="Q752941"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/taco_bell.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/taco_bell.jpg',
 							scale:0.10
 						}),
 							text: new ol.style.Text({
