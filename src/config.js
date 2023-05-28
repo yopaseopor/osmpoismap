@@ -1231,7 +1231,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Marcas & Restauración',
-			title: 'Lizarrán',
+			title: 'Lizarran',
 			query: '(nwr["brand:wikidata"="Q1866620"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/lizarran.png',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
