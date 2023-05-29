@@ -2383,6 +2383,42 @@ style: function (feature) {
 				},
 		{
 			group: 'Marcas & Alimentación',
+			title: 'Coaliment',
+			query: '(nwr["name"="Coaliment"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/coaliment.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/coaliment.jpg',
+							scale:0.02
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Alimentación',
 			title: 'Condis',
 			query: '(nwr["brand:wikidata"="Q57417581"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.condis.es/images/header/logo.png',
@@ -2491,6 +2527,42 @@ style: function (feature) {
 				},
 		{
 			group: 'Marcas & Alimentación',
+			title: 'Dani',
+			query: '(nwr["name"="Dani"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/dani.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/dani.jpg',
+							scale:0.02
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Alimentación',
 			title: 'Dia',
 			query: '(nwr["brand:wikidata"="Q925132"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Dia_2019.svg/220px-Dia_2019.svg.png',
@@ -2510,6 +2582,42 @@ style: function (feature) {
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Dia_2019.svg/220px-Dia_2019.svg.png',
 							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Alimentación',
+			title: 'Dialprixani',
+			query: '(nwr["name"="Dialprix"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/dialprix.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/dialprix.jpg',
+							scale:0.02
 						}),
 							text: new ol.style.Text({
 								text: name,
