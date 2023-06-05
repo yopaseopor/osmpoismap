@@ -3033,7 +3033,7 @@ style: function (feature) {
 			group: 'Marcas & Alimentación',
 			title: 'minymas',
 			query: '(nwr["name"="minymas"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/proxim.png',
+			iconSrc: 'src/img/logos/minymas.jpg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
 				var key_regex = /^name$/
@@ -3048,7 +3048,7 @@ style: function (feature) {
 				});
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'src/img/logos/proxim.png',
+							src: 'src/img/logos/minymas.jpg',
 							scale:0.30
 						}),
 							text: new ol.style.Text({
@@ -3302,6 +3302,42 @@ style: function (feature) {
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Spar-logo.svg/220px-Spar-logo.svg.png',
 							scale:0.20
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Alimentación',
+			title: 'Tandy',
+			query: '(nwr["name"="Tandy"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/tandy.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/tandy.jpg',
+							scale:0.02
 						}),
 							text: new ol.style.Text({
 								text: name,
