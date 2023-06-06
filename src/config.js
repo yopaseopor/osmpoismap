@@ -1159,6 +1159,42 @@ style: function (feature) {
 				},
 		{
 			group: 'Marcas & Restauración',
+			title: 'BuenasMigas',
+			query: '(nwr["brand:wikidata"="Q115258266"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/buenasmigas.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/buenasmigas.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Restauración',
 			title: 'Carl`s Jr.',
 			query: '(nwr["brand:wikidata"="Q1043486"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/carlsjr.jpg',
@@ -3936,6 +3972,43 @@ style: function (feature) {
 		
 		{
 			group: 'Marcas & Moda',
+			title: 'Pull & Bear',
+			query: '(nwr["brand:wikidata"="Q691029]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/pull_and_bear.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/pull_and_bear.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Moda',
 			title: 'Springfield',
 			query: '(nwr["brand:wikidata"="Q958209"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/springfield.jpg',
@@ -4153,7 +4226,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Otros',
+			group: 'Marcas & Salud',
 			title: 'Alain Afflelou',
 			query: '(nwr["brand:wikidata"="Q2829511"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/alain_afflelou.jpg',
@@ -4172,6 +4245,43 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'src/img/logos/alain_afflelou.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Salud',
+			title: 'Asepeyo',
+			query: '(nwr["brand:wikidata"="Q11906879"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/asepeyo.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/aasepeyo.jpg',
 							scale:0.10
 						}),
 							text: new ol.style.Text({
