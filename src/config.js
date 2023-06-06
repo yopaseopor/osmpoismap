@@ -363,7 +363,79 @@ style: function (feature) {
 				return null;
 			} 
 		 
-},
+				},
+		{
+			group: 'Marcas & Economía',
+			title: 'Banca March',
+			query: '(nwr["brand:wikidata"="Q578252"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/banca_march.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/banca_march.jpg',
+							scale:0.02
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Economía',
+			title: 'Banca Pueyo',
+			query: '(nwr["brand:wikidata"="Q29895390"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/banca_pueyo.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/banca_pueyo.jpg',
+							scale:0.02
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
 			
 		{
 			group: 'Marcas & Economía',
@@ -547,6 +619,42 @@ style: function (feature) {
 				},
 		{
 			group: 'Marcas & Economía',
+			title: 'Deustche Bank',
+			query: '(nwr["brand:wikidata"="Q66048"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/deutsche_bank.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/deutsche_bank.png',
+							scale:0.02
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Economía',
 			title: 'Ibercaja',
 			query: '(nwr["brand:wikidata"="Q5907815"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Ibercajawordmark.svg/220px-Ibercajawordmark.svg.png',
@@ -688,7 +796,43 @@ style: function (feature) {
 				});
 				return style;
 			}
-},
+				},
+		{
+			group: 'Marcas & Economía',
+			title: 'Triodos Bank',
+			query: '(nwr["brand:wikidata"="Q688452"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/triodos_bank.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/triodos_bank.jpg',
+							scale:0.02
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
 		{
 			group: 'Marcas & Economía',
 			title: 'Unicaja',
