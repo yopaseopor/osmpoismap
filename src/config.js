@@ -2077,7 +2077,7 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://www.viena.es/wp-content/themes/viena/images/viena-logo.svg',
-							scale:0.010
+							scale:0.05
 						}),
 							text: new ol.style.Text({
 								text: name,
