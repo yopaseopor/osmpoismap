@@ -1269,7 +1269,7 @@ style: function (feature) {
 			group: 'Marcas & Restauración',
 			title: 'Foster`s Hollywood',
 			query: '(nwr["brand:wikidata"="Q5864366"]({{bbox}});node(w););out meta;',
-			iconSrc: 'https://fostershollywood.es/sites/all/themes/custom/fh_zen/logo_fosters.svg',
+			iconSrc: 'src/img/logos/fosters_hollywood.jpg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
 				var key_regex = /^name$/
@@ -1284,7 +1284,7 @@ style: function (feature) {
 				});
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://fostershollywood.es/sites/all/themes/custom/fh_zen/logo_fosters.svg',
+							src: 'src/img/logos/fosters_hollywood.jpg',
 							scale:0.20
 						}),
 							text: new ol.style.Text({
@@ -1519,7 +1519,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Marcas & Restauración',
-			title: 'McDonalds',
+			title: 'McDonald`s',
 			query: '(nwr["brand:wikidata"="Q38076"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/220px-McDonald%27s_Golden_Arches.svg.png',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -1609,6 +1609,42 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://www.pansandcompany.com/bundles/pans/images/logo.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Restauración',
+			title: 'Papa John`s',
+			query: '(nwr["brand:wikidata"="Q2759586"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/papa_johns.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/papizza.jpg',
 							scale:0.10
 						}),
 							text: new ol.style.Text({
@@ -3973,7 +4009,7 @@ style: function (feature) {
 		{
 			group: 'Marcas & Moda',
 			title: 'Pull & Bear',
-			query: '(nwr["brand:wikidata"="Q691029]({{bbox}});node(w););out meta;',
+			query: '(nwr["brand:wikidata"="Q691029"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/pull_and_bear.jpg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
@@ -3990,6 +4026,43 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'src/img/logos/pull_and_bear.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Moda',
+			title: 'Snipes',
+			query: '(nwr["brand:wikidata"="Q42306166"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/snipes.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/snipes.jpg',
 							scale:0.10
 						}),
 							text: new ol.style.Text({
