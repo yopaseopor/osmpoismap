@@ -4224,6 +4224,43 @@ style: function (feature) {
 		
 		{
 			group: 'Marcas & Moda',
+			title: 'Primark',
+			query: '(nwr["brand:wikidata"="Q137023"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/primark.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/primark.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Moda',
 			title: 'Pull & Bear',
 			query: '(nwr["brand:wikidata"="Q691029"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/pull_and_bear.jpg',
@@ -4590,6 +4627,43 @@ style: function (feature) {
 		
 		{
 			group: 'Marcas & Otros',
+			title: 'Cinesa',
+			query: '(nwr["brand:wikidata"="Q20732115"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/cinesa.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/cinesa.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Otros',
 			title: 'Clarel',
 			query: '(nwr["brand:wikidata"="Q48784350"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F-wFnuFi0Cic8%2FVfLfeBFeWtI%2FAAAAAAAACfU%2FdqSS4SunMg4%2Fs1600%2FHdtgoGacv83MwNx56I4G5PLgBzVR0jrX5G_QWRzE3C8.jpg&f=1&nofb=1&ipt=8c5860e5a5bbca8cb1dca6988b1402830eeb6591e09ad9cd819c7297e52c9166&ipo=images',
@@ -4646,6 +4720,43 @@ style: function (feature) {
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Conforama_logo.svg/220px-Conforama_logo.svg.png',
 							scale:0.20
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Otros',
+			title: 'IKEA',
+			query: '(nwr["brand:wikidata"="Q54078"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/ikea.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/ikea.jpg',
+							scale:0.10
 						}),
 							text: new ol.style.Text({
 								text: name,
