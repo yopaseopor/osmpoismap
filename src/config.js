@@ -4443,6 +4443,43 @@ style: function (feature) {
 				return style;
 			}
 				},
+		
+		{
+			group: 'Marcas & Moda',
+			title: 'Hollister',
+			query: '(nwr["brand:wikidata"="Q1257477"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/hollister.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/hollister.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
 		{
 			group: 'Marcas & Moda',
 			title: 'H&M',
@@ -4463,6 +4500,43 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/H%26M-Logo.svg/220px-H%26M-Logo.svg.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Moda',
+			title: 'Ikks',
+			query: '(nwr["brand:wikidata"="Q3146711"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/ikks.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/ikks.jpg',
 							scale:0.10
 						}),
 							text: new ol.style.Text({
@@ -4536,6 +4610,80 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Kiabi_logo.svg/220px-Kiabi_logo.svg.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Moda',
+			title: 'Köroshi',
+			query: '(nwr["brand:wikidata"="Q99775834"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/koroshi.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/koroshi.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Moda',
+			title: 'Levi`s',
+			query: '(nwr["brand:wikidata"="Q127962"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/levis.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/levis.jpg',
 							scale:0.10
 						}),
 							text: new ol.style.Text({
@@ -4887,6 +5035,43 @@ style: function (feature) {
 		
 		{
 			group: 'Marcas & Moda',
+			title: 'Clarks',
+			query: '(nwr["brand:wikidata"="Q1095857"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/clarks.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/clarks.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Moda',
 			title: 'Sketchers',
 			query: '(nwr["brand:wikidata"="Q2945643"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/sketchers.jpg',
@@ -5179,7 +5364,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Marcas & Cosmética',
 			title: 'KIKO Milano',
 			query: '(nwr["brand:wikidata"="Q3812045"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/kiko_milano.jpg',
@@ -5216,7 +5401,44 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Marcas & Cosmética',
+			title: 'Rituals',
+			query: '(nwr["brand:wikidata"="Q62874140"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/rituals.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/rituals.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Cosmética',
 			title: 'The Body Shop',
 			query: '(nwr["brand:wikidata"="Q837851"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/thebodyshop.jpg',
@@ -5253,7 +5475,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Marcas & Cosmética',
 			title: 'Yves Rocher',
 			query: '(nwr["brand:wikidata"="Q28496595"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/yves_rocher.jpg',
