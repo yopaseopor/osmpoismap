@@ -1591,6 +1591,42 @@ style: function (feature) {
 				},
 		{
 			group: 'Marcas & Restauración',
+			title: 'Granier',
+			query: '(nwr["brand:wikidata"="Q102311169"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/granier.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/granier.jpg',
+							scale:0.20
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Restauración',
 			title: 'KFC',
 			query: '(nwr["brand:wikidata"="Q524757"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/KFC_Logo.svg/220px-KFC_Logo.svg.png',
@@ -4151,6 +4187,43 @@ style: function (feature) {
 		
 		{
 			group: 'Marcas & Moda',
+			title: 'Desigual',
+			query: '(nwr["brand:wikidata"="Q83750"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/desigual.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/desigual.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Moda',
 			title: 'Calzedonia',
 			query: '(nwr["brand:wikidata"="Q1027874"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/calzedonia.jpg',
@@ -4169,6 +4242,80 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'src/img/logos/calzedonia.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Moda',
+			title: 'Lefties',
+			query: '(nwr["brand:wikidata"="Q12391713"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/lefties.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/lefties.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Moda',
+			title: 'Tezenis',
+			query: '(nwr["brand:wikidata"="Q28056374"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/tezenis.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/tezenis.jpg',
 							scale:0.10
 						}),
 							text: new ol.style.Text({
@@ -4316,6 +4463,43 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/H%26M-Logo.svg/220px-H%26M-Logo.svg.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Moda',
+			title: 'Jack & Jones',
+			query: '(nwr["brand:wikidata"="Q6077665"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/jack_jones.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/jack_jones.jpg',
 							scale:0.10
 						}),
 							text: new ol.style.Text({
@@ -4518,6 +4702,80 @@ style: function (feature) {
 		
 		{
 			group: 'Marcas & Moda',
+			title: 'Oysho',
+			query: '(nwr["brand:wikidata"="Q3327046"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/oysho.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/oysho.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Moda',
+			title: 'Pimkie',
+			query: '(nwr["brand:wikidata"="Q1758066"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/pimkie.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/pimkie.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Moda',
 			title: 'Primark',
 			query: '(nwr["brand:wikidata"="Q137023"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/primark.jpg',
@@ -4610,6 +4868,43 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'src/img/logos/sfera.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Moda',
+			title: 'Sketchers',
+			query: '(nwr["brand:wikidata"="Q2945643"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/sketchers.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/sketchers.jpg',
 							scale:0.10
 						}),
 							text: new ol.style.Text({
@@ -4773,6 +5068,43 @@ style: function (feature) {
 				return style;
 			}
 				},
+		
+		{
+			group: 'Marcas & Moda',
+			title: 'Yamamay',
+			query: '(nwr["brand:wikidata"="Q2599214"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/yamamay.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/yamamay.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
 		{
 			group: 'Marcas & Moda',
 			title: 'Zara',
@@ -4830,6 +5162,43 @@ style: function (feature) {
 					image: new ol.style.Icon({
 							src: 'https://www.zeeman.com/media/wysiwyg/Pers/Zeemanlogo.jpg',
 							scale:0.05
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Moda',
+			title: 'KIKO Milano',
+			query: '(nwr["brand:wikidata"="Q3812045"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/kiko_milano.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/kiko_milano.jpg',
+							scale:0.10
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -4941,6 +5310,42 @@ style: function (feature) {
 					image: new ol.style.Icon({
 							src: 'src/img/logos/bijou_brigitte.jpg',
 							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Moda',
+			title: 'Parfois',
+			query: '(nwr["brand:wikidata"="Q7136948"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/parfois.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/parfois.jpg',
+							scale:0.05
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -5087,6 +5492,80 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'src/img/logos/alain_afflelou.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Salud',
+			title: 'General Óptica',
+			query: '(nwr["brand:wikidata"="Q62391672"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/general_optica.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/general_optica.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Salud',
+			title: 'Multiópticas',
+			query: '(nwr["brand:wikidata"="Q62391719"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/multiopticas.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/multiopticas.jpg',
 							scale:0.10
 						}),
 							text: new ol.style.Text({
@@ -5328,6 +5807,43 @@ style: function (feature) {
 		
 		{
 			group: 'Marcas & Otros',
+			title: 'Adidas',
+			query: '(nwr["brand:wikidata"="Q3895"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/adidas.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/adidas.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Otros',
 			title: 'Decathlon',
 			query: '(nwr["brand:wikidata"="Q509349"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Decathlon_Logo.svg/220px-Decathlon_Logo.svg.png',
@@ -5365,6 +5881,43 @@ style: function (feature) {
 		
 		{
 			group: 'Marcas & Otros',
+			title: 'Decimas',
+			query: '(nwr["brand:wikidata"="Q107262020"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/decimas.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/decimas.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Otros',
 			title: 'El Corte Inglés',
 			query: '(nwr["brand:wikidata"="Q623133"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Logo_Corte_Ingl%C3%A9s.svg/220px-Logo_Corte_Ingl%C3%A9s.svg.png',
@@ -5383,6 +5936,43 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Logo_Corte_Ingl%C3%A9s.svg/220px-Logo_Corte_Ingl%C3%A9s.svg.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Otros',
+			title: 'Viajes El Corte Inglés',
+			query: '(nwr["brand:wikidata"="Q115268048"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/viajes_el_corte_ingles.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/viajes_el_corte_ingles.jpg',
 							scale:0.10
 						}),
 							text: new ol.style.Text({
@@ -5660,7 +6250,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Otros',
+			group: 'Marcas & Comunicaciones',
 			title: 'Orange',
 			query: '(nwr["brand:wikidata"="Q3359411"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/orange.png',
@@ -5790,6 +6380,43 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'src/img/logos/movistar.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Comunicaciones',
+			title: 'The Phone House',
+			query: '(nwr["brand:wikidata"="Q118046"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/the_phone_house.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/the_phone_house.png',
 							scale:0.10
 						}),
 							text: new ol.style.Text({
