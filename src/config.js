@@ -3787,6 +3787,42 @@ style: function (feature) {
 				},
 		{
 			group: 'Marcas & Alimentación',
+			title: 'Tea Shop',
+			query: '(nwr["brand:wikidata"="Q111730818"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/tea_shop.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/tea_shop.jpg',
+							scale:0.30
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Alimentación',
 			title: 'Proxim',
 			query: '(nwr["name"="Proxim"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/proxim.png',
@@ -4406,6 +4442,43 @@ style: function (feature) {
 		
 		{
 			group: 'Marcas & Moda',
+			title: 'Intimissimi',
+			query: '(nwr["brand:wikidata"="Q305404"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/intimissimi.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/intimissimi.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Moda',
 			title: 'Lefties',
 			query: '(nwr["brand:wikidata"="Q12391713"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/lefties.jpg',
@@ -4498,6 +4571,80 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'src/img/logos/womens_secret.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Moda',
+			title: 'El Ganso',
+			query: '(nwr["brand:wikidata"="Q51955203"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/el_ganso.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/el_ganso.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Moda',
+			title: 'Claire`s',
+			query: '(nwr["brand:wikidata"="Q2974996"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/claires.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/claires.jpg',
 							scale:0.10
 						}),
 							text: new ol.style.Text({
@@ -5069,6 +5216,43 @@ style: function (feature) {
 		
 		{
 			group: 'Marcas & Moda',
+			title: 'Pepe Jeans',
+			query: '(nwr["brand:wikidata"="Q426992"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/pepe_jeans.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/pepe_jeans.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Moda',
 			title: 'Pimkie',
 			query: '(nwr["brand:wikidata"="Q1758066"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/pimkie.jpg',
@@ -5584,6 +5768,43 @@ style: function (feature) {
 		
 		{
 			group: 'Marcas & Cosmética',
+			title: 'Equivalenza',
+			query: '(nwr["brand:wikidata"="Q104649798"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/equivalenza.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/equivalenza.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Cosmética',
 			title: 'KIKO Milano',
 			query: '(nwr["brand:wikidata"="Q3812045"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/kiko_milano.jpg',
@@ -5897,6 +6118,43 @@ style: function (feature) {
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Abacus_Cooperativa_logo.svg/220px-Abacus_Cooperativa_logo.svg.png',
 							scale:0.20
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Otros',
+			title: 'Amazon Locker',
+			query: '(nwr["brand:wikidata"="Q16974764"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/amazon_locker.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/amazon_locker.png',
+							scale:0.10
 						}),
 							text: new ol.style.Text({
 								text: name,
