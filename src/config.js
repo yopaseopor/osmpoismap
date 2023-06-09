@@ -1771,6 +1771,78 @@ style: function (feature) {
 				},
 		{
 			group: 'Marcas & Restauración',
+			title: 'Amorino',
+			query: '(nwr["brand:wikidata"="Q2843884"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/amorino.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/amorino.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Restauración',
+			title: 'Belros',
+			query: '(nwr["brand:wikidata"="Q100089059"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/belros.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/belros.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Restauración',
 			title: 'Llaollao',
 			query: '(nwr["brand:wikidata"="Q12163048"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/llaollao.jpg',
@@ -3266,6 +3338,42 @@ style: function (feature) {
 					image: new ol.style.Icon({
 							src: 'src/img/logos/dialprix.jpg',
 							scale:0.02
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Alimentación',
+			title: 'E.Leclerc',
+			query: '(nwr["brand:wikidata"="Q1273376"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/eleclerc.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/eleclerc.jpg',
+							scale:0.30
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -5879,6 +5987,43 @@ style: function (feature) {
 		
 		{
 			group: 'Marcas & Cosmética',
+			title: 'Sephora',
+			query: '(nwr["brand:wikidata"="Q2408041"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/sephora.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/sephora.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Cosmética',
 			title: 'The Body Shop',
 			query: '(nwr["brand:wikidata"="Q837851"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/thebodyshop.jpg',
@@ -5971,6 +6116,43 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'src/img/logos/bijou_brigitte.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Moda',
+			title: 'Pandora',
+			query: '(nwr["brand:wikidata"="Q2241604"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/pandora.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/pandora.jpg',
 							scale:0.10
 						}),
 							text: new ol.style.Text({
@@ -6727,6 +6909,43 @@ style: function (feature) {
 				},
 		
 		{
+			group: 'Marcas & Moda',
+			title: 'JD sports',
+			query: '(nwr["brand:wikidata"="Q6108019"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/jd_sports.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/jd_sports.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
 			group: 'Marcas & Otros',
 			title: 'El Corte Inglés',
 			query: '(nwr["brand:wikidata"="Q623133"]({{bbox}});node(w););out meta;',
@@ -6767,7 +6986,7 @@ style: function (feature) {
 			group: 'Marcas & Otros',
 			title: 'Viajes El Corte Inglés',
 			query: '(nwr["brand:wikidata"="Q115268048"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/viajes_el_corte_ingles.jpg',
+			iconSrc: 'src/img/logos/viajes_el_corte_ingles.png',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
 				var key_regex = /^name$/
@@ -6782,7 +7001,7 @@ style: function (feature) {
 				});
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'src/img/logos/viajes_el_corte_ingles.jpg',
+							src: 'src/img/logos/viajes_el_corte_ingles.png',
 							scale:0.10
 						}),
 							text: new ol.style.Text({
@@ -6915,7 +7134,7 @@ style: function (feature) {
 			group: 'Marcas & Otros',
 			title: 'Juguettos',
 			query: '(nwr["brand:wikidata"="Q105339592"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/yelmo.jpg',
+			iconSrc: 'src/img/logos/juguettos.jpg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
 				var key_regex = /^name$/
@@ -6930,7 +7149,44 @@ style: function (feature) {
 				});
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'src/img/logos/yelmo.jpg',
+							src: 'src/img/logos/juguettos.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Otros',
+			title: 'Toys `r` Us ',
+			query: '(nwr["brand:wikidata"="Q696334"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/toys_r_us.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/toys_r_us.svg',
 							scale:0.10
 						}),
 							text: new ol.style.Text({
