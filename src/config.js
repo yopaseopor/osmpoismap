@@ -956,80 +956,6 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Comunicaciones',
-			title: 'Orange',
-			query: '(nwr["brand:wikidata"="Q3359411"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/orange.png',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'src/img/logos/orange.png',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		
-		{
-			group: 'Marcas & Otros',
-			title: 'Sprinter',
-			query: '(nwr["brand:wikidata"="Q6133465"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/sprinter.png',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'src/img/logos/sprinter.png',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		
-		{
 			group: 'Marcas & Otros',
 			title: 'TEDi',
 			query: '(nwr["brand:wikidata"="Q1364603"]({{bbox}});node(w););out meta;',
@@ -1049,191 +975,6 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/TEDi-Logo.svg/220px-TEDi-Logo.svg.png',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		
-		{
-			group: 'Marcas & Comunicaciones',
-			title: 'Huawei',
-			query: '(nwr["brand:wikidata"="Q160120"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/huawei.png',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'src/img/logos/huawei.png',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		
-		{
-			group: 'Marcas & Comunicaciones',
-			title: 'Movistar',
-			query: '(nwr["brand:wikidata"="Q967735"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/movistar.png',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'src/img/logos/movistar.png',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		
-		{
-			group: 'Marcas & Comunicaciones',
-			title: 'The Phone House',
-			query: '(nwr["brand:wikidata"="Q118046"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/the_phone_house.png',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'src/img/logos/the_phone_house.png',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		
-		{
-			group: 'Marcas & Comunicaciones',
-			title: 'Vodafone',
-			query: '(nwr["brand:wikidata"="Q7939295"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/vodafone.png',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'src/img/logos/vodafone.png',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		
-		{
-			group: 'Marcas & Comunicaciones',
-			title: 'Yoigo',
-			query: '(nwr["brand:wikidata"="Q2630989"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/yoigo.png',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'src/img/logos/yoigo.png',
 							scale:0.10
 						}),
 							text: new ol.style.Text({
@@ -12605,6 +12346,228 @@ style: function (feature) {
 				return style;
 			}
 				},
+		
+		{
+			group: 'Electrónica-Comunicaciones',
+			title: 'Huawei',
+			query: '(nwr["brand:wikidata"="Q160120"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/huawei.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/huawei.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Electrónica-Comunicaciones',
+			title: 'Movistar',
+			query: '(nwr["brand:wikidata"="Q967735"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/movistar.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/movistar.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Electrónica-Comunicaciones',
+			title: 'Orange',
+			query: '(nwr["brand:wikidata"="Q3359411"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/orange.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/orange.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Electrónica-Comunicaciones',
+			title: 'The Phone House',
+			query: '(nwr["brand:wikidata"="Q118046"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/the_phone_house.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/the_phone_house.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Electrónica-Comunicaciones',
+			title: 'Vodafone',
+			query: '(nwr["brand:wikidata"="Q7939295"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/vodafone.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/vodafone.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Electrónica-Comunicaciones',
+			title: 'Yoigo',
+			query: '(nwr["brand:wikidata"="Q2630989"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/yoigo.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/yoigo.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
 		{
 			group: 'Electrónica',
 			title: 'Gran electrodoméstico',
@@ -17558,7 +17521,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Deportes',
+			group: 'Deportes-Tiendas',
 			title: 'Tienda deportes',
 			query: '(nwr["shop"="sports"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -17595,7 +17558,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Otros',
+			group: 'Deportes-Tiendas',
 			title: 'Adidas',
 			query: '(nwr["brand:wikidata"="Q3895"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/adidas.jpg',
@@ -17632,7 +17595,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Otros',
+			group: 'Deportes-Tiendas',
 			title: 'Decathlon',
 			query: '(nwr["brand:wikidata"="Q509349"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Decathlon_Logo.svg/220px-Decathlon_Logo.svg.png',
@@ -17669,7 +17632,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Otros',
+			group: 'Deportes-Tiendas',
 			title: 'Decimas',
 			query: '(nwr["brand:wikidata"="Q107262020"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/decimas.jpg',
@@ -17706,7 +17669,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Otros',
+			group: 'Deportes-Tiendas',
 			title: 'Intersport',
 			query: '(nwr["brand:wikidata"="Q666888"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/intersport.jpg',
@@ -17743,7 +17706,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Deportes-Tiendas',
 			title: 'JD sports',
 			query: '(nwr["brand:wikidata"="Q6108019"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/jd_sports.png',
@@ -17780,7 +17743,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Otros',
+			group: 'Deportes-Tiendas',
 			title: 'Nike',
 			query: '(nwr["brand:wikidata"="Q483915"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/nike.jpg',
@@ -17817,7 +17780,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Otros',
+			group: 'Deportes-Tiendas',
 			title: 'Sports Direct',
 			query: '(nwr["brand:wikidata"="Q7579661"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/sports_direct.png',
@@ -17836,6 +17799,43 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'src/img/logos/sports_direct.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		
+		{
+			group: 'Marcas & Otros',
+			title: 'Sprinter',
+			query: '(nwr["brand:wikidata"="Q6133465"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/sprinter.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/sprinter.png',
 							scale:0.10
 						}),
 							text: new ol.style.Text({
@@ -17890,7 +17890,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Deportes',
+			group: 'Deportes-Tiendas',
 			title: 'Tiendas excursionismo',
 			query: '(nwr["shop"="outdoor"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
