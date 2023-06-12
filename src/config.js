@@ -1735,42 +1735,6 @@ style: function (feature) {
 				},
 		{
 			group: 'Marcas & Restauración',
-			title: 'KFC',
-			query: '(nwr["brand:wikidata"="Q524757"]({{bbox}});node(w););out meta;',
-			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/KFC_Logo.svg/220px-KFC_Logo.svg.png',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/KFC_Logo.svg/220px-KFC_Logo.svg.png',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
-			group: 'Marcas & Restauración',
 			title: 'La Sureña',
 			query: '(nwr["brand:wikidata"="Q5763573"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/lasurena.jpg',
@@ -1790,42 +1754,6 @@ style: function (feature) {
 					image: new ol.style.Icon({
 							src: 'src/img/logos/lasurena.jpg',
 							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
-			group: 'Marcas & Restauración',
-			title: 'La Tagliatella',
-			query: '(nwr["brand:wikidata"="Q113426257"]({{bbox}});node(w););out meta;',
-			iconSrc: 'https://www.amrest-franquicias.com/sites/default/files/logo_tagliatella_clean2x.png',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'https://www.amrest-franquicias.com/sites/default/files/logo_tagliatella_clean2x.png',
-							scale:0.05
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -1879,78 +1807,6 @@ style: function (feature) {
 				},
 		{
 			group: 'Marcas & Restauración',
-			title: 'Belros',
-			query: '(nwr["brand:wikidata"="Q100089059"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/belros.jpg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'src/img/logos/belros.jpg',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
-			group: 'Marcas & Restauración',
-			title: 'Llaollao',
-			query: '(nwr["brand:wikidata"="Q12163048"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/llaollao.jpg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'src/img/logos/llaollao.jpg',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
-			group: 'Marcas & Restauración',
 			title: 'Mister Noodles',
 			query: '(nwr["name"="Mister Noodles"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/mister_noodles.jpg',
@@ -1969,259 +1825,6 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'src/img/logos/mister_noodles.jpg',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-
-		{
-			group: 'Marcas & Restauración',
-			title: 'Taco Bell',
-			query: '(nwr["brand:wikidata"="Q752941"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/taco_bell.jpg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'src/img/logos/taco_bell.jpg',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
-			group: 'Marcas & Restauración',
-			title: 'Telepizza',
-			query: '(nwr["brand:wikidata"="Q2699863"]({{bbox}});node(w););out meta;',
-			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Logo_telepizza.svg/220px-Logo_telepizza.svg.png',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Logo_telepizza.svg/220px-Logo_telepizza.svg.png',
-							scale:0.20
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
-			group: 'Marcas & Restauración',
-			title: 'Tony Roma`s',
-			query: '(nwr["brand:wikidata"="Q2213883"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/tony_romas.jpg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'src/img/logos/tony_romas.jpg',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
-			group: 'Marcas & Restauración',
-			title: 'The Good Burger',
-			query: '(nwr["brand:wikidata"="Q20962086"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/thegoodburger.jpg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'src/img/logos/thegoodburger.jpg',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
-			group: 'Marcas & Restauración',
-			title: 'UDON',
-			query: '(nwr["brand:wikidata"="Q115679798"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/udon.jpg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'src/img/logos/udon.jpg',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
-			group: 'Marcas & Restauración',
-			title: 'Viena',
-			query: '(nwr["brand:wikidata"="Q11954717"]({{bbox}});node(w););out meta;',
-			iconSrc: 'https://www.viena.es/wp-content/themes/viena/images/viena-logo.svg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'https://www.viena.es/wp-content/themes/viena/images/viena-logo.svg',
-							scale:0.05
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
-			group: 'Marcas & Restauración',
-			title: 'Vips',
-			query: '(nwr["brand:wikidata"="Q66087862"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/vips.png',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'src/img/logos/vips.png',
 							scale:0.10
 						}),
 							text: new ol.style.Text({
@@ -10185,6 +9788,78 @@ style: function (feature) {
 			}
 				},
 		{
+			group: 'Marcas & Restauración',
+			title: 'Belros',
+			query: '(nwr["brand:wikidata"="Q100089059"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/belros.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/belros.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Restauración',
+			title: 'Llaollao',
+			query: '(nwr["brand:wikidata"="Q12163048"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/llaollao.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/llaollao.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
 			group: 'Alimentación',
 			title: 'Ultramarinos',
 			query: '(nwr["shop"="frozen_food"]({{bbox}});node(w););out meta;',
@@ -16305,7 +15980,7 @@ style: function (feature) {
 			}
 		},
 		{
-			group: 'Turismo',
+			group: 'Turismo-Restauración',
 			title: 'Restaurantes',
 			query: '(nwr["amenity"="restaurant"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -16341,7 +16016,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Turismo-Restauración',
 			title: 'Sitio para comer',
 			query: '(nwr["amenity"="food_court"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -16377,7 +16052,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Turismo-Restauración',
 			title: 'Cafés',
 			query: '(nwr["amenity"="cafe"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -16413,7 +16088,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Turismo-Restauración',
 			title: 'Starbucks',
 			query: '(nwr["brand:wikidata"="Q37158"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/starbucks.jpg',
@@ -16449,7 +16124,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Turismo-Restauración',
 			title: 'Comida rápida',
 			query: '(nwr["amenity"="fast_food"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -16485,7 +16160,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Turismo-Restauración',
 			title: 'McDonald`s',
 			query: '(nwr["brand:wikidata"="Q38076"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/220px-McDonald%27s_Golden_Arches.svg.png',
@@ -16521,7 +16196,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Turismo-Restauración',
 			title: 'Pans & Company',
 			query: '(nwr["brand:wikidata"="Q11697586"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.pansandcompany.com/bundles/pans/images/logo.png',
@@ -16557,7 +16232,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Restauración',
+			group: 'Turismo-Restauración',
 			title: 'Rodilla',
 			query: '(nwr["brand:wikidata"="Q7356777"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/rodilla.png',
@@ -16593,7 +16268,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Restauración',
+			group: 'Turismo-Restauración',
 			title: 'SandwiChez',
 			query: '(nwr["name"="SandwiChez"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/sandwichez.jpg',
@@ -16629,7 +16304,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Restauración',
+			group: 'Turismo-Restauración',
 			title: 'Subway',
 			query: '(nwr["brand:wikidata"="Q244457"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/subway.png',
@@ -16665,7 +16340,43 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Turismo-Restauración',
+			title: 'KFC',
+			query: '(nwr["brand:wikidata"="Q524757"]({{bbox}});node(w););out meta;',
+			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/KFC_Logo.svg/220px-KFC_Logo.svg.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/KFC_Logo.svg/220px-KFC_Logo.svg.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Turismo-Restauración',
 			title: 'Popeyes',
 			query: '(nwr["brand:wikidata"="Q1330910"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/popeyes.jpg',
@@ -16700,8 +16411,225 @@ style: function (feature) {
 				return style;
 			}
 				},
+
 		{
-			group: 'Turismo',
+			group: 'Turismo-Restauración',
+			title: 'Taco Bell',
+			query: '(nwr["brand:wikidata"="Q752941"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/taco_bell.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/taco_bell.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+},
+		{
+			group: 'Turismo-Restauración',
+			title: 'Tony Roma`s',
+			query: '(nwr["brand:wikidata"="Q2213883"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/tony_romas.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/tony_romas.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Turismo-Restauración',
+			title: 'The Good Burger',
+			query: '(nwr["brand:wikidata"="Q20962086"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/thegoodburger.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/thegoodburger.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Turismo-Restauración',
+			title: 'UDON',
+			query: '(nwr["brand:wikidata"="Q115679798"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/udon.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/udon.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Turismo-Restauración',
+			title: 'Viena',
+			query: '(nwr["brand:wikidata"="Q11954717"]({{bbox}});node(w););out meta;',
+			iconSrc: 'https://www.viena.es/wp-content/themes/viena/images/viena-logo.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://www.viena.es/wp-content/themes/viena/images/viena-logo.svg',
+							scale:0.05
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Turismo-Restauración',
+			title: 'Vips',
+			query: '(nwr["brand:wikidata"="Q66087862"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/vips.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/vips.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Turismo-Restauración',
 			title: 'Pizzería',
 			query: '(nwr["cuisine"="pizza"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -16735,10 +16663,46 @@ style: function (feature) {
 				});
 				return style;
 			}
-},
+				},
+		{
+			group: 'Turismo-Restauración',
+			title: 'La Tagliatella',
+			query: '(nwr["brand:wikidata"="Q113426257"]({{bbox}});node(w););out meta;',
+			iconSrc: 'https://www.amrest-franquicias.com/sites/default/files/logo_tagliatella_clean2x.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://www.amrest-franquicias.com/sites/default/files/logo_tagliatella_clean2x.png',
+							scale:0.05
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
 
 		{
-			group: 'Marcas & Restauración',
+			group: 'Turismo-Restauración',
 			title: 'Papa John`s',
 			query: '(nwr["brand:wikidata"="Q2759586"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/papa_johns.jpg',
@@ -16774,7 +16738,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Restauración',
+			group: 'Turismo-Restauración',
 			title: 'Papizza',
 			query: '(nwr["name"="Papizza"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/papizza.jpg',
@@ -16810,7 +16774,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Restauración',
+			group: 'Turismo-Restauración',
 			title: 'Pizzeria Carlos',
 			query: '(nwr["name"="Pizzeria Carlos"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/pizzeria_carlos.jpg',
@@ -16846,7 +16810,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Restauración',
+			group: 'Turismo-Restauración',
 			title: 'Pizza Hut',
 			query: '(nwr["brand:wikidata"="Q191615"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/pizza_hut.jpg',
@@ -16882,7 +16846,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Restauración',
+			group: 'Turismo-Restauración',
 			title: 'Pizza Tutto',
 			query: '(nwr["brand:wikidata"="Q72115627"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/pizza_tutto.jpg',
@@ -16916,9 +16880,45 @@ style: function (feature) {
 				});
 				return style;
 			}
+},
+		{
+			group: 'Turismo-Restauración',
+			title: 'Telepizza',
+			query: '(nwr["brand:wikidata"="Q2699863"]({{bbox}});node(w););out meta;',
+			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Logo_telepizza.svg/220px-Logo_telepizza.svg.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Logo_telepizza.svg/220px-Logo_telepizza.svg.png',
+							scale:0.20
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
 				},		
 				{
-			group: 'Turismo',
+			group: 'Turismo-Restauración',
 			title: 'Bares',
 			query: '(nwr["amenity"="pub"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -16954,7 +16954,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Turismo-Restauración',
 			title: 'Pubs',
 			query: '(nwr["amenity"="bar"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
