@@ -362,44 +362,6 @@ style: function (feature) {
 /*   cerrar */				}
 				return null;
 			}
-
-				},
-		{
-			group: 'Marcas & Restauración',
-			title: 'Granier',
-			query: '(nwr["brand:wikidata"="Q102311169"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/granier.png',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'src/img/logos/granier.png',
-							scale:0.20
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-
 				},
 		{
 			group: 'Marcas & Alimentación',
@@ -15247,7 +15209,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Restauración',
+			group: 'Turismo-Restauración',
 			title: '100 Montaditos',
 			query: '(nwr["brand:wikidata"="Q8355805"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/100montaditos.jpg',
@@ -15283,7 +15245,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Restauración',
+			group: 'Turismo-Restauración',
 			title: 'BuenasMigas',
 			query: '(nwr["brand:wikidata"="Q115258266"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/buenasmigas.jpg',
@@ -15319,7 +15281,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Restauración',
+			group: 'Turismo-Restauración',
 			title: 'Carl`s Jr.',
 			query: '(nwr["brand:wikidata"="Q1043486"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/carlsjr.jpg',
@@ -15355,7 +15317,7 @@ style: function (feature) {
 			}
 },
 		{
-			group: 'Marcas & Restauración',
+			group: 'Turismo-Restauración',
 			title: 'Foster`s Hollywood',
 			query: '(nwr["brand:wikidata"="Q5864366"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/fosters_hollywood.jpg',
@@ -15391,7 +15353,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Restauración',
+			group: 'Turismo-Restauración',
 			title: 'Goiko Grill',
 			query: '(nwr["name"="Goiko Grill"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/goiko.jpg',
@@ -15427,7 +15389,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Restauración',
+			group: 'Turismo-Restauración',
 			title: 'Ginos',
 			query: '(nwr["brand:wikidata"="Q98503664"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/ginos.jpg',
@@ -15463,7 +15425,7 @@ style: function (feature) {
 			}
 },
 		{
-			group: 'Marcas & Restauración',
+			group: 'Turismo-Restauración',
 			title: 'La Sureña',
 			query: '(nwr["brand:wikidata"="Q5763573"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/lasurena.jpg',
@@ -15499,7 +15461,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Restauración',
+			group: 'Turismo-Restauración',
 			title: 'Lizarran',
 			query: '(nwr["brand:wikidata"="Q1866620"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/lizarran.png',
@@ -15535,7 +15497,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Restauración',
+			group: 'Turismo-Restauración',
 			title: 'Mister Noodles',
 			query: '(nwr["name"="Mister Noodles"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/mister_noodles.jpg',
@@ -15643,7 +15605,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Restauración',
+			group: 'Turismo-Restauración',
 			title: 'Dunkin` Coffee',
 			query: '(nwr["brand:wikidata"="Q847743"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/dunkin.jpg',
@@ -15677,6 +15639,43 @@ style: function (feature) {
 				});
 				return style;
 			}
+				},
+		{
+			group: 'Turismo-Restauración',
+			title: 'Granier',
+			query: '(nwr["brand:wikidata"="Q102311169"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/granier.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/granier.png',
+							scale:0.20
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+
 				},
 		{
 			group: 'Turismo-Restauración',
@@ -15749,7 +15748,8 @@ style: function (feature) {
 				});
 				return style;
 			}
-		{	
+				},
+		{
 			group: 'Turismo-Restauración',
 			title: 'Burger King',
 			query: '(nwr["brand:wikidata"="Q177054"]({{bbox}});node(w););out meta;',
