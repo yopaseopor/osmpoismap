@@ -13475,7 +13475,7 @@ style: function (feature) {
 				});
 				return style;
 			}
-
+				},
 		
 		{
 			group: 'Moda-Zapatería',
