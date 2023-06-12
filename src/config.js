@@ -362,150 +362,7 @@ style: function (feature) {
 /*   cerrar */				}
 				return null;
 			}
-				},
-		{
-			group: 'Marcas & Restauración',
-			title: '100 Montaditos',
-			query: '(nwr["brand:wikidata"="Q8355805"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/100montaditos.jpg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'src/img/logos/100montaditos.jpg',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
-			group: 'Marcas & Restauración',
-			title: 'Foster`s Hollywood',
-			query: '(nwr["brand:wikidata"="Q5864366"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/fosters_hollywood.jpg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'src/img/logos/fosters_hollywood.jpg',
-							scale:0.20
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
-			group: 'Marcas & Restauración',
-			title: 'Ginos',
-			query: '(nwr["brand:wikidata"="Q98503664"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/ginos.jpg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'src/img/logos/ginos.jpg',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
-			group: 'Marcas & Restauración',
-			title: 'Goiko Grill',
-			query: '(nwr["name"="Goiko Grill"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/goiko.jpg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'src/img/logos/goiko.jpg',
-							scale:0.20
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
+
 				},
 		{
 			group: 'Marcas & Restauración',
@@ -542,114 +399,7 @@ style: function (feature) {
 				});
 				return style;
 			}
-				},
-		{
-			group: 'Marcas & Restauración',
-			title: 'La Sureña',
-			query: '(nwr["brand:wikidata"="Q5763573"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/lasurena.jpg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'src/img/logos/lasurena.jpg',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
-			group: 'Marcas & Restauración',
-			title: 'Lizarran',
-			query: '(nwr["brand:wikidata"="Q1866620"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/lizarran.png',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'src/img/logos/lizarran.png',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
-			group: 'Marcas & Restauración',
-			title: 'Mister Noodles',
-			query: '(nwr["name"="Mister Noodles"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/mister_noodles.jpg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'src/img/logos/mister_noodles.jpg',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
+
 				},
 		{
 			group: 'Marcas & Alimentación',
@@ -15498,6 +15248,42 @@ style: function (feature) {
 				},
 		{
 			group: 'Marcas & Restauración',
+			title: '100 Montaditos',
+			query: '(nwr["brand:wikidata"="Q8355805"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/100montaditos.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/100montaditos.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Restauración',
 			title: 'BuenasMigas',
 			query: '(nwr["brand:wikidata"="Q115258266"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/buenasmigas.jpg',
@@ -15552,6 +15338,222 @@ style: function (feature) {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 							src: 'src/img/logos/carlsjr.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+},
+		{
+			group: 'Marcas & Restauración',
+			title: 'Foster`s Hollywood',
+			query: '(nwr["brand:wikidata"="Q5864366"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/fosters_hollywood.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/fosters_hollywood.jpg',
+							scale:0.20
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Restauración',
+			title: 'Goiko Grill',
+			query: '(nwr["name"="Goiko Grill"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/goiko.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/goiko.jpg',
+							scale:0.20
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Restauración',
+			title: 'Ginos',
+			query: '(nwr["brand:wikidata"="Q98503664"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/ginos.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/ginos.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+},
+		{
+			group: 'Marcas & Restauración',
+			title: 'La Sureña',
+			query: '(nwr["brand:wikidata"="Q5763573"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/lasurena.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/lasurena.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Restauración',
+			title: 'Lizarran',
+			query: '(nwr["brand:wikidata"="Q1866620"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/lizarran.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/lizarran.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Restauración',
+			title: 'Mister Noodles',
+			query: '(nwr["name"="Mister Noodles"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/mister_noodles.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/mister_noodles.jpg',
 							scale:0.10
 						}),
 							text: new ol.style.Text({
