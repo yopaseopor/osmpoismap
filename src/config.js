@@ -401,150 +401,6 @@ style: function (feature) {
 				},
 		{
 			group: 'Marcas & Restauración',
-			title: 'BuenasMigas',
-			query: '(nwr["brand:wikidata"="Q115258266"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/buenasmigas.jpg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'src/img/logos/buenasmigas.jpg',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
-			group: 'Marcas & Restauración',
-			title: 'Carl`s Jr.',
-			query: '(nwr["brand:wikidata"="Q1043486"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/carlsjr.jpg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'src/img/logos/carlsjr.jpg',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
-			group: 'Marcas & Restauración',
-			title: 'Domino`s Pizza',
-			query: '(nwr["brand:wikidata"="Q839466"]({{bbox}});node(w););out meta;',
-			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Dominos_pizza_logo.svg/220px-Dominos_pizza_logo.svg.png',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Dominos_pizza_logo.svg/220px-Dominos_pizza_logo.svg.png',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
-			group: 'Marcas & Restauración',
-			title: 'Dunkin` Coffee',
-			query: '(nwr["brand:wikidata"="Q847743"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/dunkin.jpg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'src/img/logos/dunkin.jpg',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
-			group: 'Marcas & Restauración',
 			title: 'Foster`s Hollywood',
 			query: '(nwr["brand:wikidata"="Q5864366"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/fosters_hollywood.jpg',
@@ -15641,6 +15497,78 @@ style: function (feature) {
 			}
 				},
 		{
+			group: 'Marcas & Restauración',
+			title: 'BuenasMigas',
+			query: '(nwr["brand:wikidata"="Q115258266"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/buenasmigas.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/buenasmigas.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Restauración',
+			title: 'Carl`s Jr.',
+			query: '(nwr["brand:wikidata"="Q1043486"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/carlsjr.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/carlsjr.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
 			group: 'Turismo-Restauración',
 			title: 'Sitio para comer',
 			query: '(nwr["amenity"="food_court"]({{bbox}});node(w););out meta;',
@@ -15697,6 +15625,42 @@ style: function (feature) {
 					image: new ol.style.Icon({
 							src: imgSrc + 'icones/maxspeed_empty.svg',
 							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Marcas & Restauración',
+			title: 'Dunkin` Coffee',
+			query: '(nwr["brand:wikidata"="Q847743"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/dunkin.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/dunkin.jpg',
+							scale:0.10
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -16310,6 +16274,42 @@ style: function (feature) {
 					image: new ol.style.Icon({
 							src: imgSrc + 'icones/maxspeed_empty.svg',
 							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+},
+		{
+			group: 'Marcas & Restauración',
+			title: 'Domino`s Pizza',
+			query: '(nwr["brand:wikidata"="Q839466"]({{bbox}});node(w););out meta;',
+			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Dominos_pizza_logo.svg/220px-Dominos_pizza_logo.svg.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Dominos_pizza_logo.svg/220px-Dominos_pizza_logo.svg.png',
+							scale:0.10
 						}),
 							text: new ol.style.Text({
 								text: name,
@@ -20120,7 +20120,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Salud',
+			group: 'Salud',
 			title: 'Asepeyo',
 			query: '(nwr["brand:wikidata"="Q11906879"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/asepeyo.jpg',
