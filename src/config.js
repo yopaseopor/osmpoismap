@@ -4090,7 +4090,7 @@ style: function (feature) {
 			}
 			},
 		{
-			group: 'Marcas & Economía',
+			group: 'Economía-Bancos',
 			title: 'Banca March',
 			query: '(nwr["brand:wikidata"="Q578252"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/banca_march.jpg',
@@ -4126,7 +4126,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Economía',
+			group: 'Economía-Bancos',
 			title: 'Banca Pueyo',
 			query: '(nwr["brand:wikidata"="Q29895390"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/banca_pueyo.jpg',
@@ -4163,7 +4163,7 @@ style: function (feature) {
 				},
 			
 		{
-			group: 'Marcas & Economía',
+			group: 'Economía-Bancos',
 			title: 'Banco Sabadell',
 			query: '(nwr["brand:wikidata"="Q762330"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/BSabadell_Logo.svg/220px-BSabadell_Logo.svg.png',
@@ -4199,7 +4199,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Economía',
+			group: 'Economía-Bancos',
 			title: 'BBVA',
 			query: '(nwr["brand:wikidata"="Q806189"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/BBVA_2019.svg/220px-BBVA_2019.svg.png',
@@ -4235,7 +4235,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Economía',
+			group: 'Economía-Bancos',
 			title: 'Caixabank',
 			query: '(nwr["brand:wikidata"="Q847225"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Logo_CaixaBank.svg/220px-Logo_CaixaBank.svg.png',
@@ -4271,7 +4271,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Economía',
+			group: 'Economía-Bancos',
 			title: 'Caixa d`Enginyers',
 			query: '(nwr["brand:wikidata"="Q8254967"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.caixaenginyers.com/documents/20143/693294/Logo_Caja_Ingenieros_55a_CA.jpg/a6940b19-a18a-4686-4c81-2308c211f1a1?t=1665070571476',
@@ -4307,7 +4307,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Economía',
+			group: 'Economía-Bancos',
 			title: 'Caja Rural',
 			query: '(nwr["brand:wikidata"="Q3649971"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Caja_Rural.png/220px-Caja_Rural.png',
@@ -4343,7 +4343,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Economía',
+			group: 'Economía-Bancos',
 			title: 'Deustche Bank',
 			query: '(nwr["brand:wikidata"="Q66048"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/deutsche_bank.png',
@@ -4379,7 +4379,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Economía',
+			group: 'Economía-Bancos',
 			title: 'Ibercaja',
 			query: '(nwr["brand:wikidata"="Q5907815"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Ibercajawordmark.svg/220px-Ibercajawordmark.svg.png',
@@ -4415,7 +4415,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Economía',
+			group: 'Economía-Bancos',
 			title: 'Kutxabank',
 			query: '(nwr["brand:wikidata"="Q5139377"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Kutxabank.svg/220px-Kutxabank.svg.png',
@@ -4451,7 +4451,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Economía',
+			group: 'Economía-Bancos',
 			title: 'Liberbank',
 			query: '(nwr["brand:wikidata"="Q2891018"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Liberbank_logo.svg/220px-Liberbank_logo.svg.png',
@@ -4487,7 +4487,7 @@ style: function (feature) {
 			}
 },
 		{
-			group: 'Marcas & Economía',
+			group: 'Economía-Bancos',
 			title: 'Santander',
 			query: '(nwr["brand:wikidata"="Q6496310"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Banco_Santander_Logotipo.svg/220px-Banco_Santander_Logotipo.svg.png',
@@ -4523,7 +4523,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Economía',
+			group: 'Economía-Bancos',
 			title: 'Triodos Bank',
 			query: '(nwr["brand:wikidata"="Q688452"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/triodos_bank.jpg',
@@ -4559,7 +4559,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Economía',
+			group: 'Economía-Bancos',
 			title: 'Unicaja',
 			query: '(nwr["brand:wikidata"="Q2543704"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Unicaja_logo.svg/220px-Unicaja_logo.svg.png',
@@ -7258,150 +7258,6 @@ style: function (feature) {
 				return style;
 			}
 		},
-		{
-			group: 'Alimentación',
-			title: 'Heladería',
-			query: '(nwr["shop"="ice_cream"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: imgSrc + 'icones/maxspeed_empty.svg',
-							scale:0.03
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
-			group: 'Alimentación',
-			title: 'Amorino',
-			query: '(nwr["brand:wikidata"="Q2843884"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/amorino.jpg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'src/img/logos/amorino.jpg',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
-			group: 'Marcas & Restauración',
-			title: 'Belros',
-			query: '(nwr["brand:wikidata"="Q100089059"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/belros.jpg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'src/img/logos/belros.jpg',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
-			group: 'Marcas & Restauración',
-			title: 'Llaollao',
-			query: '(nwr["brand:wikidata"="Q12163048"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/llaollao.jpg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'src/img/logos/llaollao.jpg',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
 		{
 			group: 'Alimentación',
 			title: 'Ultramarinos',
@@ -14957,6 +14813,150 @@ style: function (feature) {
 			}
 		},
 		{
+			group: 'Ocio-Restauración',
+			title: 'Heladería',
+			query: '(nwr["shop"="ice_cream"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Ocio-Restauración',
+			title: 'Amorino',
+			query: '(nwr["brand:wikidata"="Q2843884"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/amorino.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/amorino.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Ocio-Restauración',
+			title: 'Belros',
+			query: '(nwr["brand:wikidata"="Q100089059"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/belros.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/belros.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Ocio-Restauración',
+			title: 'Llaollao',
+			query: '(nwr["brand:wikidata"="Q12163048"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/llaollao.jpg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/llaollao.jpg',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
 			group: 'Turismo',
 			title: 'Biergarten',
 			query: '(nwr["amenity"="biergarten"]({{bbox}});node(w););out meta;',
@@ -14993,7 +14993,7 @@ style: function (feature) {
 			}
 		},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Restaurantes',
 			query: '(nwr["amenity"="restaurant"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -15029,7 +15029,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: '100 Montaditos',
 			query: '(nwr["brand:wikidata"="Q8355805"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/100montaditos.jpg',
@@ -15065,7 +15065,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'BuenasMigas',
 			query: '(nwr["brand:wikidata"="Q115258266"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/buenasmigas.jpg',
@@ -15101,7 +15101,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Carl`s Jr.',
 			query: '(nwr["brand:wikidata"="Q1043486"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/carlsjr.jpg',
@@ -15137,7 +15137,7 @@ style: function (feature) {
 			}
 },
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Foster`s Hollywood',
 			query: '(nwr["brand:wikidata"="Q5864366"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/fosters_hollywood.jpg',
@@ -15173,7 +15173,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Goiko Grill',
 			query: '(nwr["name"="Goiko Grill"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/goiko.jpg',
@@ -15209,7 +15209,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Ginos',
 			query: '(nwr["brand:wikidata"="Q98503664"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/ginos.jpg',
@@ -15245,7 +15245,7 @@ style: function (feature) {
 			}
 },
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'La Sureña',
 			query: '(nwr["brand:wikidata"="Q5763573"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/lasurena.jpg',
@@ -15281,7 +15281,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Lizarran',
 			query: '(nwr["brand:wikidata"="Q1866620"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/lizarran.png',
@@ -15317,7 +15317,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Mister Noodles',
 			query: '(nwr["name"="Mister Noodles"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/mister_noodles.jpg',
@@ -15353,7 +15353,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Sitio para comer',
 			query: '(nwr["amenity"="food_court"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -15389,7 +15389,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Cafés',
 			query: '(nwr["amenity"="cafe"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -15425,7 +15425,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Dunkin` Coffee',
 			query: '(nwr["brand:wikidata"="Q847743"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/dunkin.jpg',
@@ -15461,7 +15461,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Granier',
 			query: '(nwr["brand:wikidata"="Q102311169"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/granier.png',
@@ -15498,7 +15498,7 @@ style: function (feature) {
 
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Starbucks',
 			query: '(nwr["brand:wikidata"="Q37158"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/starbucks.jpg',
@@ -15534,7 +15534,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Comida rápida',
 			query: '(nwr["amenity"="fast_food"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -15570,7 +15570,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Burger King',
 			query: '(nwr["brand:wikidata"="Q177054"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Burger_King_2020.svg/220px-Burger_King_2020.svg.png',
@@ -15607,7 +15607,7 @@ style: function (feature) {
 
 	},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'McDonald`s',
 			query: '(nwr["brand:wikidata"="Q38076"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/220px-McDonald%27s_Golden_Arches.svg.png',
@@ -15643,7 +15643,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Pans & Company',
 			query: '(nwr["brand:wikidata"="Q11697586"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.pansandcompany.com/bundles/pans/images/logo.png',
@@ -15679,7 +15679,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Rodilla',
 			query: '(nwr["brand:wikidata"="Q7356777"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/rodilla.png',
@@ -15715,7 +15715,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'SandwiChez',
 			query: '(nwr["name"="SandwiChez"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/sandwichez.jpg',
@@ -15751,7 +15751,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Subway',
 			query: '(nwr["brand:wikidata"="Q244457"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/subway.png',
@@ -15787,7 +15787,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'KFC',
 			query: '(nwr["brand:wikidata"="Q524757"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/KFC_Logo.svg/220px-KFC_Logo.svg.png',
@@ -15823,7 +15823,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Popeyes',
 			query: '(nwr["brand:wikidata"="Q1330910"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/popeyes.jpg',
@@ -15860,7 +15860,7 @@ style: function (feature) {
 				},
 
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Taco Bell',
 			query: '(nwr["brand:wikidata"="Q752941"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/taco_bell.jpg',
@@ -15896,7 +15896,7 @@ style: function (feature) {
 			}
 },
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Tony Roma`s',
 			query: '(nwr["brand:wikidata"="Q2213883"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/tony_romas.jpg',
@@ -15932,7 +15932,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'The Good Burger',
 			query: '(nwr["brand:wikidata"="Q20962086"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/thegoodburger.jpg',
@@ -15968,7 +15968,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'UDON',
 			query: '(nwr["brand:wikidata"="Q115679798"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/udon.jpg',
@@ -16004,7 +16004,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Viena',
 			query: '(nwr["brand:wikidata"="Q11954717"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.viena.es/wp-content/themes/viena/images/viena-logo.svg',
@@ -16040,7 +16040,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Vips',
 			query: '(nwr["brand:wikidata"="Q66087862"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/vips.png',
@@ -16076,7 +16076,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Pizzería',
 			query: '(nwr["cuisine"="pizza"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -16148,7 +16148,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'La Tagliatella',
 			query: '(nwr["brand:wikidata"="Q113426257"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.amrest-franquicias.com/sites/default/files/logo_tagliatella_clean2x.png',
@@ -16185,7 +16185,7 @@ style: function (feature) {
 				},
 
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Papa John`s',
 			query: '(nwr["brand:wikidata"="Q2759586"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/papa_johns.jpg',
@@ -16221,7 +16221,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Papizza',
 			query: '(nwr["name"="Papizza"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/papizza.jpg',
@@ -16257,7 +16257,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Pizzeria Carlos',
 			query: '(nwr["name"="Pizzeria Carlos"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/pizzeria_carlos.jpg',
@@ -16293,7 +16293,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Pizza Hut',
 			query: '(nwr["brand:wikidata"="Q191615"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/pizza_hut.jpg',
@@ -16329,7 +16329,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Pizza Tutto',
 			query: '(nwr["brand:wikidata"="Q72115627"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/pizza_tutto.jpg',
@@ -16365,7 +16365,7 @@ style: function (feature) {
 			}
 },
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Telepizza',
 			query: '(nwr["brand:wikidata"="Q2699863"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Logo_telepizza.svg/220px-Logo_telepizza.svg.png',
@@ -16401,7 +16401,7 @@ style: function (feature) {
 			}
 				},		
 				{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Bares',
 			query: '(nwr["amenity"="pub"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -16437,7 +16437,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo-Restauración',
+			group: 'Ocio-Restauración',
 			title: 'Pubs',
 			query: '(nwr["amenity"="bar"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
