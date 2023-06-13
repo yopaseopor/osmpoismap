@@ -365,7 +365,7 @@ style: function (feature) {
 
 				},
 		{
-			group: 'Marcas & Otros',
+			group: 'Otros',
 			title: 'Flying Tiger',
 			query: '(nwr["brand:wikidata"="Q2786319"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Fliyingtiger.svg/220px-Fliyingtiger.svg.png',
@@ -402,7 +402,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Otros',
+			group: 'Otros',
 			title: 'Mister Minit',
 			query: '(nwr["brand:wikidata"="Q1939269"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/mister_minit.png',
@@ -438,7 +438,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Otros',
+			group: 'Otros',
 			title: 'TEDi',
 			query: '(nwr["brand:wikidata"="Q1364603"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/TEDi-Logo.svg/220px-TEDi-Logo.svg.png',
@@ -5267,7 +5267,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Bershka',
 			query: '(nwr["brand:wikidata"="Q827258"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Bershka_logo.svg/220px-Bershka_logo.svg.png',
@@ -5304,7 +5304,7 @@ style: function (feature) {
 
 				},
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'C&A',
 			query: '(nwr["brand:wikidata"="Q701338"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/C%26A_logo.svg/220px-C%26A_logo.svg.png',
@@ -5342,7 +5342,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Celio',
 			query: '(nwr["brand:wikidata"="Q2672003"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/celio.jpg',
@@ -5379,7 +5379,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Cortefiel',
 			query: '(nwr["brand:wikidata"="Q117351825"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/cortefiel.jpg',
@@ -5416,7 +5416,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Desigual',
 			query: '(nwr["brand:wikidata"="Q83750"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/desigual.jpg',
@@ -5453,7 +5453,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'El Ganso',
 			query: '(nwr["brand:wikidata"="Q51955203"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/el_ganso.jpg',
@@ -5490,7 +5490,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Etam',
 			query: '(nwr["brand:wikidata"="Q3059202"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/etam.jpg',
@@ -5527,7 +5527,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Guess',
 			query: '(nwr["brand:wikidata"="Q2470307"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/guess.jpg',
@@ -5564,7 +5564,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Hollister',
 			query: '(nwr["brand:wikidata"="Q1257477"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/hollister.jpg',
@@ -5600,7 +5600,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'H&M',
 			query: '(nwr["brand:wikidata"="Q188326"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/H%26M-Logo.svg/220px-H%26M-Logo.svg.png',
@@ -5637,7 +5637,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Ikks',
 			query: '(nwr["brand:wikidata"="Q3146711"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/ikks.jpg',
@@ -5674,7 +5674,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Jack & Jones',
 			query: '(nwr["brand:wikidata"="Q6077665"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/jack_jones.jpg',
@@ -5710,7 +5710,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Kiabi',
 			query: '(nwr["brand:wikidata"="Q3196299"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Kiabi_logo.svg/220px-Kiabi_logo.svg.png',
@@ -5747,7 +5747,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Köroshi',
 			query: '(nwr["brand:wikidata"="Q99775834"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/koroshi.jpg',
@@ -5784,7 +5784,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Lefties',
 			query: '(nwr["brand:wikidata"="Q12391713"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/lefties.jpg',
@@ -5821,7 +5821,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Levi`s',
 			query: '(nwr["brand:wikidata"="Q127962"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/levis.jpg',
@@ -5857,7 +5857,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Mango',
 			query: '(nwr["brand:wikidata"="Q136503"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Mango-logo.jpg/220px-Mango-logo.jpg',
@@ -5894,7 +5894,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Massimo Dutti',
 			query: '(nwr["brand:wikidata"="Q788231"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/massimodutti.jpg',
@@ -5931,7 +5931,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Mayoral',
 			query: '(nwr["brand:wikidata"="Q691029"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/mayoral.jpg',
@@ -5968,7 +5968,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Oysho',
 			query: '(nwr["brand:wikidata"="Q3327046"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/oysho.jpg',
@@ -6005,7 +6005,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Pepco',
 			query: '(nwr["brand:wikidata"="Q11815580"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/pepco.png',
@@ -6042,7 +6042,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Pepe Jeans',
 			query: '(nwr["brand:wikidata"="Q426992"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/pepe_jeans.jpg',
@@ -6079,7 +6079,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Pimkie',
 			query: '(nwr["brand:wikidata"="Q1758066"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/pimkie.jpg',
@@ -6116,7 +6116,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Primark',
 			query: '(nwr["brand:wikidata"="Q137023"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/primark.jpg',
@@ -6153,7 +6153,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Pull & Bear',
 			query: '(nwr["brand:wikidata"="Q691029"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/pull_and_bear.jpg',
@@ -6190,7 +6190,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Sergent Major',
 			query: '(nwr["brand:wikidata"="Q62521738"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/sergent_major.jpg',
@@ -6227,7 +6227,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Sfera',
 			query: '(nwr["brand:wikidata"="Q110065666"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/sfera.jpg',
@@ -6264,7 +6264,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Springfield',
 			query: '(nwr["brand:wikidata"="Q958209"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/springfield.jpg',
@@ -6300,7 +6300,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Stradivarius',
 			query: '(nwr["brand:wikidata"="Q3322945"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Stradivarius_logo.svg/220px-Stradivarius_logo.svg.png',
@@ -6337,7 +6337,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Uniqlo',
 			query: '(nwr["brand:wikidata"="Q26070"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/uniqlo.jpg',
@@ -6374,7 +6374,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'United Colors of Benetton',
 			query: '(nwr["brand:wikidata"="Q817139"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/united_colors.jpg',
@@ -6411,7 +6411,7 @@ style: function (feature) {
 },
 
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Zara',
 			query: '(nwr["brand:wikidata"="Q147662"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Zara_Logo.svg/220px-Zara_Logo.svg.png',
@@ -6447,7 +6447,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Zeeman',
 			query: '(nwr["brand:wikidata"="Q184399"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.zeeman.com/media/wysiwyg/Pers/Zeemanlogo.jpg',
@@ -6632,7 +6632,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Yamamay',
 			query: '(nwr["brand:wikidata"="Q2599214"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/yamamay.jpg',
@@ -12680,7 +12680,7 @@ style: function (feature) {
 
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda',
 			title: 'Vans',
 			query: '(nwr["brand:wikidata"="Q1135366"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/vans.jpg',
