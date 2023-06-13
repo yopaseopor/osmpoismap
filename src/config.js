@@ -12753,7 +12753,7 @@ style: function (feature) {
 		
 		
 		{
-			group: 'Marcas & Moda',
+			group: 'Moda-Zapatería',
 			title: 'Deichmann',
 			query: '(nwr["brand:wikidata"="Q664543"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/deichmann.jpg',
@@ -12938,7 +12938,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Moda',
+			group: 'Moda-Complementos',
 			title: 'Complementos',
 			query: '(nwr["shop"="fashion_accesories"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -12975,7 +12975,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Complementos',
 			title: 'Claire`s',
 			query: '(nwr["brand:wikidata"="Q2974996"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/claires.jpg',
