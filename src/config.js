@@ -474,7 +474,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercados',
+			group: 'Alimentación-Supermercado',
 			title: 'Supermercados',
 			query: '(nwr["shop"="supermarket"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
