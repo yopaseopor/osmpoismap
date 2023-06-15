@@ -5016,7 +5016,7 @@ style: function (feature) {
 			}
 		},
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Ropa (general)',
 			query: '(nwr["shop"="clothes"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -5052,7 +5052,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Bershka',
 			query: '(nwr["brand:wikidata"="Q827258"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Bershka_logo.svg/220px-Bershka_logo.svg.png',
@@ -5089,7 +5089,7 @@ style: function (feature) {
 
 				},
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'C&A',
 			query: '(nwr["brand:wikidata"="Q701338"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/C%26A_logo.svg/220px-C%26A_logo.svg.png',
@@ -5127,7 +5127,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Celio',
 			query: '(nwr["brand:wikidata"="Q2672003"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/celio.jpg',
@@ -5164,7 +5164,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Cortefiel',
 			query: '(nwr["brand:wikidata"="Q117351825"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/cortefiel.jpg',
@@ -5201,7 +5201,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Desigual',
 			query: '(nwr["brand:wikidata"="Q83750"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/desigual.jpg',
@@ -5238,7 +5238,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'El Ganso',
 			query: '(nwr["brand:wikidata"="Q51955203"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/el_ganso.jpg',
@@ -5275,7 +5275,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Etam',
 			query: '(nwr["brand:wikidata"="Q3059202"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/etam.jpg',
@@ -5312,7 +5312,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Guess',
 			query: '(nwr["brand:wikidata"="Q2470307"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/guess.jpg',
@@ -5349,7 +5349,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Hollister',
 			query: '(nwr["brand:wikidata"="Q1257477"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/hollister.jpg',
@@ -5385,7 +5385,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'H&M',
 			query: '(nwr["brand:wikidata"="Q188326"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/H%26M-Logo.svg/220px-H%26M-Logo.svg.png',
@@ -5422,7 +5422,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Ikks',
 			query: '(nwr["brand:wikidata"="Q3146711"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/ikks.jpg',
@@ -5459,7 +5459,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Jack & Jones',
 			query: '(nwr["brand:wikidata"="Q6077665"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/jack_jones.jpg',
@@ -5495,7 +5495,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Kiabi',
 			query: '(nwr["brand:wikidata"="Q3196299"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Kiabi_logo.svg/220px-Kiabi_logo.svg.png',
@@ -5532,7 +5532,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Köroshi',
 			query: '(nwr["brand:wikidata"="Q99775834"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/koroshi.jpg',
@@ -5569,7 +5569,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Lefties',
 			query: '(nwr["brand:wikidata"="Q12391713"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/lefties.jpg',
@@ -5606,7 +5606,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Levi`s',
 			query: '(nwr["brand:wikidata"="Q127962"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/levis.jpg',
@@ -5642,7 +5642,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Mango',
 			query: '(nwr["brand:wikidata"="Q136503"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Mango-logo.jpg/220px-Mango-logo.jpg',
@@ -5679,7 +5679,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Massimo Dutti',
 			query: '(nwr["brand:wikidata"="Q788231"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/massimodutti.jpg',
@@ -5716,7 +5716,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Mayoral',
 			query: '(nwr["brand:wikidata"="Q691029"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/mayoral.jpg',
@@ -5753,7 +5753,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Oysho',
 			query: '(nwr["brand:wikidata"="Q3327046"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/oysho.jpg',
@@ -5790,7 +5790,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Pepco',
 			query: '(nwr["brand:wikidata"="Q11815580"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/pepco.png',
@@ -5827,7 +5827,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Pepe Jeans',
 			query: '(nwr["brand:wikidata"="Q426992"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/pepe_jeans.jpg',
@@ -5864,7 +5864,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Pimkie',
 			query: '(nwr["brand:wikidata"="Q1758066"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/pimkie.jpg',
@@ -5901,7 +5901,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Primark',
 			query: '(nwr["brand:wikidata"="Q137023"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/primark.jpg',
@@ -5938,7 +5938,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Pull & Bear',
 			query: '(nwr["brand:wikidata"="Q691029"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/pull_and_bear.jpg',
@@ -5975,7 +5975,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Sergent Major',
 			query: '(nwr["brand:wikidata"="Q62521738"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/sergent_major.jpg',
@@ -6012,7 +6012,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Sfera',
 			query: '(nwr["brand:wikidata"="Q110065666"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/sfera.jpg',
@@ -6049,7 +6049,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Springfield',
 			query: '(nwr["brand:wikidata"="Q958209"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/springfield.jpg',
@@ -6085,7 +6085,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Stradivarius',
 			query: '(nwr["brand:wikidata"="Q3322945"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Stradivarius_logo.svg/220px-Stradivarius_logo.svg.png',
@@ -6122,7 +6122,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Uniqlo',
 			query: '(nwr["brand:wikidata"="Q26070"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/uniqlo.jpg',
@@ -6159,7 +6159,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'United Colors of Benetton',
 			query: '(nwr["brand:wikidata"="Q817139"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/united_colors.jpg',
@@ -6196,7 +6196,7 @@ style: function (feature) {
 },
 
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Zara',
 			query: '(nwr["brand:wikidata"="Q147662"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Zara_Logo.svg/220px-Zara_Logo.svg.png',
@@ -6232,7 +6232,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Zeeman',
 			query: '(nwr["brand:wikidata"="Q184399"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.zeeman.com/media/wysiwyg/Pers/Zeemanlogo.jpg',
@@ -6270,7 +6270,7 @@ style: function (feature) {
 		
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Calzedonia',
 			query: '(nwr["brand:wikidata"="Q1027874"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/calzedonia.jpg',
@@ -6307,7 +6307,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Intimissimi',
 			query: '(nwr["brand:wikidata"="Q305404"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/intimissimi.png',
@@ -6344,7 +6344,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Tezenis',
 			query: '(nwr["brand:wikidata"="Q28056374"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/tezenis.jpg',
@@ -6381,7 +6381,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Women`s secret',
 			query: '(nwr["brand:wikidata"="Q16648226"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/womens_secret.jpg',
@@ -6417,7 +6417,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Yamamay',
 			query: '(nwr["brand:wikidata"="Q2599214"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/yamamay.jpg',
@@ -6454,7 +6454,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Tintorería',
 			query: '(nwr["shop"="dry_cleaning"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -6490,7 +6490,7 @@ style: function (feature) {
 			}
 		},
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Bolsos',
 			query: '(nwr["shop"="bag"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -6886,7 +6886,7 @@ style: function (feature) {
 			}
 		},
 		{
-			group: 'Belleza',
+			group: 'Moda-Belleza',
 			title: 'Peluquería',
 			query: '(nwr["shop"="hairdresser"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -6922,7 +6922,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Belleza',
+			group: 'Moda-Belleza',
 			title: 'Jean Louis David',
 			query: '(nwr["brand:wikidata"="Q64445174"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/jean_louis_david.jpg',
@@ -6959,7 +6959,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Belleza',
+			group: 'Moda-Belleza',
 			title: 'Marco Aldany',
 			query: '(nwr["brand:wikidata"="Q112095114"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/marco_aldany.png',
@@ -6995,7 +6995,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Belleza',
+			group: 'Moda-Belleza',
 			title: 'Tatuajes',
 			query: '(nwr["shop"="tattoo"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -7031,7 +7031,7 @@ style: function (feature) {
 			}
 		},
 		{
-			group: 'Belleza',
+			group: 'Moda-Belleza',
 			title: 'Cosmética',
 			query: '(nwr["shop"="cosmetics"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -7067,7 +7067,7 @@ style: function (feature) {
 			}
 		},
 		{
-			group: 'Belleza',
+			group: 'Moda-Belleza',
 			title: 'Perfumerías',
 			query: '(nwr["shop"="perfumery"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -7104,7 +7104,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Belleza',
+			group: 'Moda-Belleza',
 			title: 'Equivalenza',
 			query: '(nwr["brand:wikidata"="Q104649798"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/equivalenza.jpg',
@@ -7141,7 +7141,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Belleza',
+			group: 'Moda-Belleza',
 			title: 'KIKO Milano',
 			query: '(nwr["brand:wikidata"="Q3812045"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/kiko_milano.jpg',
@@ -7178,7 +7178,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Belleza',
+			group: 'Moda-Belleza',
 			title: 'Primor',
 			query: '(nwr["brand:wikidata"="Q101113141"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/primor.jpg',
@@ -7215,7 +7215,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Belleza',
+			group: 'Moda-Belleza',
 			title: 'Rituals',
 			query: '(nwr["brand:wikidata"="Q62874140"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/rituals.png',
@@ -7252,7 +7252,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Belleza',
+			group: 'Moda-Belleza',
 			title: 'Sephora',
 			query: '(nwr["brand:wikidata"="Q2408041"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/sephora.jpg',
@@ -7289,7 +7289,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Belleza',
+			group: 'Moda-Belleza',
 			title: 'The Body Shop',
 			query: '(nwr["brand:wikidata"="Q837851"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/thebodyshop.jpg',
@@ -7326,7 +7326,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Belleza',
+			group: 'Moda-Belleza',
 			title: 'Yves Rocher',
 			query: '(nwr["brand:wikidata"="Q28496595"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/yves_rocher.jpg',
@@ -7362,7 +7362,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Joyería',
 			query: '(nwr["shop"="jewelry"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -7399,7 +7399,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Bijou Brigitte',
 			query: '(nwr["brand:wikidata"="Q599545"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/bijou_brigitte.jpg',
@@ -7436,7 +7436,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Pandora',
 			query: '(nwr["brand:wikidata"="Q2241604"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/pandora.jpg',
@@ -7472,7 +7472,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Parfois',
 			query: '(nwr["brand:wikidata"="Q7136948"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/parfois.jpg',
@@ -7509,7 +7509,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Swarovski',
 			query: '(nwr["brand:wikidata"="Q611115"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/swarovski.jpg',
@@ -7545,7 +7545,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Tous',
 			query: '(nwr["brand:wikidata"="Q3815128"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://static.tous.com/21202/pub/directus/7f19acb0-66c5-4e91-90c7-1ad9b723d323.png',
@@ -7581,7 +7581,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Relojería',
 			query: '(nwr["shop"="watches"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -8879,7 +8879,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Belleza',
+			group: 'Moda-Belleza',
 			title: 'Salón de belleza',
 			query: '(nwr["shop"="beauty"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -12241,7 +12241,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Peletería',
 			query: '(nwr["shop"="leather"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -12277,7 +12277,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Zapatería',
 			query: '(nwr["shop"="shoes"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -12314,7 +12314,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'AW Lab',
 			query: '(nwr["brand:wikidata"="Q116774749"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/aw_lab.png',
@@ -12351,7 +12351,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Clarks',
 			query: '(nwr["brand:wikidata"="Q1095857"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/clarks.jpg',
@@ -12389,7 +12389,7 @@ style: function (feature) {
 		
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Deichmann',
 			query: '(nwr["brand:wikidata"="Q664543"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/deichmann.jpg',
@@ -12427,7 +12427,7 @@ style: function (feature) {
 		
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Marypaz',
 			query: '(nwr["brand:wikidata"="Q98497264"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/marypaz.svg',
@@ -12464,7 +12464,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Sketchers',
 			query: '(nwr["brand:wikidata"="Q2945643"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/sketchers.jpg',
@@ -12502,7 +12502,7 @@ style: function (feature) {
 
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Vans',
 			query: '(nwr["brand:wikidata"="Q1135366"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/vans.jpg',
@@ -12538,7 +12538,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Zapatería (arreglo)',
 			query: '(nwr["shop"="shoe_repair"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -12574,7 +12574,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Complementos',
 			query: '(nwr["shop"="fashion_accesories"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -12611,7 +12611,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Claire`s',
 			query: '(nwr["brand:wikidata"="Q2974996"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/claires.jpg',
@@ -12647,7 +12647,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Cortinas',
 			query: '(nwr["shop"="curtain"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -12683,7 +12683,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Tejidos',
 			query: '(nwr["shop"="fabric"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -12719,7 +12719,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Mercería',
 			query: '(nwr["shop"="sewing"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -12755,7 +12755,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Moda',
+			group: 'Moda-Belleza',
 			title: 'Sastrería',
 			query: '(nwr["shop"="tailor"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
