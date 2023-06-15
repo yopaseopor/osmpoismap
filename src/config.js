@@ -2527,7 +2527,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria',
+			group: 'Servicios-Asociaciones',
 			title: 'Trasteros',
 			query: '(nwr["shop"="storage_rental"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -2563,7 +2563,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria',
+			group: 'Servicios-Asociaciones',
 			title: 'Paquetería',
 			query: '(nwr["amenity"="post_depot"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -2599,7 +2599,7 @@ style: function (feature) {
 			}
 },
 		{
-			group: 'Vida diaria',
+			group: 'Servicios-Asociaciones',
 			title: 'Correos',
 			query: '(nwr["brand:wikidata"="Q776605"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Logo_Correos_2019.svg/220px-Logo_Correos_2019.svg.png',
@@ -2635,7 +2635,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria',
+			group: 'Servicios-Asociaciones',
 			title: 'DHL',
 			query: '(nwr["brand:wikidata"="Q489815"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/dhl.jpg',
@@ -2671,7 +2671,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria',
+			group: 'Servicios-Asociaciones',
 			title: 'Fedex',
 			query: '(nwr["brand:wikidata"="Q459477"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/fedex.png',
@@ -2707,7 +2707,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria',
+			group: 'Servicios-Asociaciones',
 			title: 'MRW',
 			query: '(nwr["brand:wikidata"="Q23767821"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/mrw.png',
@@ -2743,7 +2743,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria',
+			group: 'Servicios-Asociaciones',
 			title: 'Nacex',
 			query: '(nwr["name"="Nacex"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/nacex.jpg',
@@ -2779,7 +2779,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria',
+			group: 'Servicios-Asociaciones',
 			title: 'SEUR',
 			query: '(nwr["brand:wikidata"="Q9076554"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/seur.jpg',
@@ -2815,7 +2815,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria',
+			group: 'Servicios-Asociaciones',
 			title: 'UPS',
 			query: '(nwr["brand:wikidata"="Q155026"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/ups.png',
@@ -2851,7 +2851,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria',
+			group: 'Servicios-Asociaciones',
 			title: 'Consigna recogida',
 			query: '(nwr["amenity"="parcel_locker"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -2888,7 +2888,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Vida diaria',
+			group: 'Servicios-Asociaciones',
 			title: 'Amazon Locker',
 			query: '(nwr["brand:wikidata"="Q16974764"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/amazon_locker.png',
@@ -2924,7 +2924,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria',
+			group: 'Servicios-Asociaciones',
 			title: 'Logística',
 			query: '(nwr["office"="logistics"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -2960,7 +2960,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria',
+			group: 'Servicios-Asociaciones',
 			title: 'Muelle de carga',
 			query: '(nwr["amenity"="loading_dock"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -2996,7 +2996,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria',
+			group: 'Servicios-Asociaciones',
 			title: 'Transportistas',
 			query: '(nwr["office"="courier"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -3032,7 +3032,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria',
+			group: 'Servicios-Asociaciones',
 			title: 'Recogida internet',
 			query: '(nwr["shop"="outpost"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -4439,7 +4439,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria',
+			group: 'Servicios-Asociaciones',
 			title: 'Abogados',
 			query: '(nwr["office"="lawyer"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -4475,7 +4475,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria',
+			group: 'Servicios-Asociaciones',
 			title: 'Notarías',
 			query: '(nwr["office"="notary"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -4511,7 +4511,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria',
+			group: 'Servicios-Asociaciones',
 			title: 'Trabajo',
 			query: '(nwr["office"="employment_agency"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -4547,7 +4547,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Educación',
+			group: 'Servicios-Asociaciones',
 			title: 'Escuela de música',
 			query: '(nwr["amenity"="music_school"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -4583,7 +4583,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Educación',
+			group: 'Servicios-Asociaciones',
 			title: 'Universidades',
 			query: '(nwr["amenity"="university"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -4619,7 +4619,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Educación',
+			group: 'Servicios-Asociaciones',
 			title: 'Facultades',
 			query: '(nwr["amenity"="college"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -4655,7 +4655,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Educación',
+			group: 'Servicios-Asociaciones',
 			title: 'Oficinas',
 			query: '(nwr["office"="educational_institution"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -4691,7 +4691,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Educación',
+			group: 'Servicios-Asociaciones',
 			title: 'Ludotecas',
 			query: '(nwr["amenity"="childcare"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -4727,7 +4727,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Educación',
+			group: 'Servicios-Asociaciones',
 			title: 'Guarderías',
 			query: '(nwr["amenity"="kindergarten"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -4763,7 +4763,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Educación',
+			group: 'Servicios-Asociaciones',
 			title: 'Escuelas/Institutos',
 			query: '(nwr["amenity"="school"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -4799,7 +4799,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Educación',
+			group: 'Servicios-Asociaciones',
 			title: 'Investigación',
 			query: '(nwr["office"="research"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -14450,7 +14450,7 @@ style: function (feature) {
 		},
 		{
 			group: 'Ocio',
-			title: 'Heladería',
+			title: 'Tienda helados',
 			query: '(nwr["shop"="ice_cream"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -18177,7 +18177,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria',
+			group: 'Servicios-Asociaciones',
 			title: 'Área de drenaje',
 			query: '(nwr["amenity"="sanitary_dump_station"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -18213,7 +18213,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria',
+			group: 'Servicios-Asociaciones',
 			title: 'Relleno agua',
 			query: '(nwr["amenity"="water_point"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -18249,7 +18249,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria',
+			group: 'Servicios-Asociaciones',
 			title: 'Oficina correos',
 			query: '(nwr["amenity"="post_office"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -18285,7 +18285,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria',
+			group: 'Servicios-Asociaciones',
 			title: 'Lavadero',
 			query: '(nwr["amenity"="lavoir"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -18321,7 +18321,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria',
+			group: 'Servicios-Asociaciones',
 			title: 'Lavandería',
 			query: '(nwr["shop"="laundry"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -18357,7 +18357,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria',
+			group: 'Servicios-Asociaciones',
 			title: 'Bomberos <b><a href="https://yopaseopor.github.io/osmffmap">Ampliar</a></b>',
 			query: '(nwr["amenity"="fire_station"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -18393,7 +18393,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria',
+			group: 'Servicios-Asociaciones',
 			title: 'Policía',
 			query: '(nwr["amenity"="police"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -18429,7 +18429,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria',
+			group: 'Servicios-Asociaciones',
 			title: 'Prisión',
 			query: '(nwr["amenity"="prison"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -18465,7 +18465,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria',
+			group: 'Servicios-Asociaciones',
 			title: 'Seguridad privada',
 			query: '(nwr["office"="security"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -18501,7 +18501,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria',
+			group: 'Servicios-Asociaciones',
 			title: 'Sedes partidos políticos',
 			query: '(nwr["office"="political_party"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -18537,7 +18537,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria',
+			group: 'Servicios-Asociaciones',
 			title: 'Sindicatos',
 			query: '(nwr["office"="union"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
