@@ -10391,7 +10391,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Cultura',
+			group: 'Ocio',
 			title: 'Buzón de libros',
 			query: '(nwr["amenity"="public_bookcase"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10427,7 +10427,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Cultura',
+			group: 'Ocio',
 			title: 'Biblioteca <b><a href="https://yopaseopor.github.io/osmlibrarymap">Ampliar</a></b>',
 			query: '(nwr["amenity"="library"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10716,7 +10716,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Otros',
+			group: 'Casa-Bricolaje',
 			title: 'Bauhaus',
 			query: '(nwr["brand:wikidata"="Q672043"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/bauhaus.png',
@@ -10753,7 +10753,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Otros',
+			group: 'Casa-Bricolaje',
 			title: 'Leroy Merlin',
 			query: '(nwr["brand:wikidata"="Q889624"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Leroy_Merlin.svg/220px-Leroy_Merlin.svg.png',
@@ -11980,7 +11980,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Otros',
+			group: 'Electrónica-Comunicación',
 			title: 'MediaMarkt',
 			query: '(nwr["brand:wikidata"="Q2381223"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Media_Markt_logo.svg/220px-Media_Markt_logo.svg.png',
@@ -16791,7 +16791,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Cultura',
+			group: 'Ocio',
 			title: 'Cines',
 			query: '(nwr["amenity"="cinema"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -16829,7 +16829,7 @@ style: function (feature) {
 		
 		
 		{
-			group: 'Otros',
+			group: 'Ocio',
 			title: 'Cinesa',
 			query: '(nwr["brand:wikidata"="Q20732115"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/cinesa.jpg',
@@ -16866,7 +16866,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Otros',
+			group: 'Ocio',
 			title: 'Kinepolis',
 			query: '(nwr["brand:wikidata"="Q1741993"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/kinepolis.jpg',
@@ -16903,7 +16903,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Otros',
+			group: 'Ocio',
 			title: 'Yelmo',
 			query: '(nwr["brand:wikidata"="Q21030996"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/yelmo.jpg',
@@ -16939,7 +16939,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Cultura',
+			group: 'Ocio',
 			title: 'Teatros',
 			query: '(nwr["amenity"="theatre"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -16975,7 +16975,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Cultura',
+			group: 'Ocio',
 			title: 'Librería',
 			query: '(nwr["shop"="books"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -17011,7 +17011,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Cultura',
+			group: 'Ocio',
 			title: 'Tienda de música',
 			query: '(nwr["shop"="music"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
