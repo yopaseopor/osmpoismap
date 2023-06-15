@@ -7905,7 +7905,7 @@ style: function (feature) {
 			}
 		},
 		{
-			group: 'Calle',
+			group: 'Exterior',
 			title: 'Stops <b><a href="https://yopaseopor.github.io/traffic_signs_map">Ampliar</a></b>',
 			query: '(nwr["highway"="stop"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -7941,7 +7941,7 @@ style: function (feature) {
 			}
 		},
 		{
-			group: 'Calle',
+			group: 'Exterior',
 			title: 'Ceda el paso <b><a href="https://yopaseopor.github.io/traffic_signs_map">Ampliar</a></b>',
 			query: '(nwr["highway"="give_way"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -7977,7 +7977,7 @@ style: function (feature) {
 			}
 		},
 		{
-			group: 'Calle',
+			group: 'Exterior',
 			title: 'Semáforos <b><a href="https://yopaseopor.github.io/traffic_signs_map">Ampliar</a></b>',
 			query: '(nwr["highway"="traffic_signals"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -8013,7 +8013,7 @@ style: function (feature) {
 			}
 		},
 		{
-			group: 'Calle',
+			group: 'Exterior',
 			title: 'Pasos peatones <b><a href="https://yopaseopor.github.io/traffic_signs_map">Ampliar</a></b>',
 			query: '(nwr["highway"="crossing"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -8049,7 +8049,7 @@ style: function (feature) {
 			}
 		},
 		{
-			group: 'Calle',
+			group: 'Exterior',
 			title: 'Espejo',
 			query: '(nwr["highway"="traffic_mirror"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10393,7 +10393,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Energía',
+			group: 'Servicios-Asociaciones',
 			title: 'Oficinas luz',
 			query: '(nwr["office"="energy_supplier"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10429,7 +10429,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Energía',
+			group: 'Servicios-Asociaciones',
 			title: 'Oficinas agua',
 			query: '(nwr["office"="water_utility"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10465,7 +10465,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Energía',
+			group: 'Servicios-Asociaciones',
 			title: 'Gas',
 			query: '(nwr["shop"="gas"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -11082,7 +11082,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Calle',
+			group: 'Exterior',
 			title: 'Ascensores',
 			query: '(nwr["highway"="elevator"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -11118,7 +11118,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Calle',
+			group: 'Exterior',
 			title: 'Farolas <b><a href="https://yopaseopor.github.io/osmlitmap">Ampliar</a></b>',
 			query: '(nwr["highway"="street_lamp"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -11154,7 +11154,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Calle',
+			group: 'Exterior',
 			title: 'Teléfono público',
 			query: '(nwr["amenity"="telephone"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -11190,7 +11190,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Calle',
+			group: 'Exterior',
 			title: 'Estacionamiento',
 			query: '(nwr["amenity"="parking_space"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -11226,7 +11226,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Calle',
+			group: 'Exterior',
 			title: 'Fuente',
 			query: '(nwr["amenity"="drinking_water"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -11262,7 +11262,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Calle',
+			group: 'Exterior',
 			title: 'Máquina expendedora',
 			query: '(nwr["amenity"="vending_machine"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -12097,7 +12097,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Natural',
+			group: 'Servicios-Asociaciones',
 			title: 'Vertedero',
 			query: '(nwr["amenity"="waste_dump_site"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -12133,7 +12133,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Natural',
+			group: 'Servicios-Asociaciones',
 			title: 'Veterinarios',
 			query: '(nwr["amenity"="veterinary"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -12169,7 +12169,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Natural',
+			group: 'Servicios-Asociaciones',
 			title: 'Floristería',
 			query: '(nwr["shop"="florist"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -12205,7 +12205,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Natural',
+			group: 'Servicios-Asociaciones',
 			title: 'Forestal (oficina)',
 			query: '(nwr["office"="forestry"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -14270,7 +14270,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Ocio',
-			title: 'Reserva natural',
+			title: 'Reserva Servicios-Asociaciones',
 			query: '(nwr["tourism"="nature_reserve"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -17997,7 +17997,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Calle',
+			group: 'Exterior',
 			title: 'Reloj',
 			query: '(nwr["amenity"="clock"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -18033,7 +18033,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Calle',
+			group: 'Exterior',
 			title: 'Papeleras',
 			query: '(nwr["amenity"="waste_basket"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -18069,7 +18069,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Calle',
+			group: 'Exterior',
 			title: 'Contenedores <b> <a href="https://yopaseopor.github.io/osmrecyclingmap/#map=8/41.69689/1.59647/0"> Ampliar</a></b>',
 			query: '(nwr["amenity"="recycling"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -18105,7 +18105,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Calle',
+			group: 'Exterior',
 			title: 'Contenedores privados',
 			query: '(nwr["amenity"="waste_disposal"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -18141,7 +18141,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Calle',
+			group: 'Exterior',
 			title: 'Buzones',
 			query: '(nwr["amenity"="post_box"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -18573,7 +18573,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Natural',
+			group: 'Servicios-Asociaciones',
 			title: 'Criadero',
 			query: '(nwr["amenity"="animal_breeding"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -18609,7 +18609,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Natural',
+			group: 'Servicios-Asociaciones',
 			title: 'Abrevadero',
 			query: '(nwr["amenity"="watering_place"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -18645,7 +18645,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Natural',
+			group: 'Servicios-Asociaciones',
 			title: 'Plataforma cazadores',
 			query: '(nwr["amenity"="hunting_stand"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -18681,7 +18681,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Natural',
+			group: 'Servicios-Asociaciones',
 			title: 'Mascotas',
 			query: '(nwr["shop"="pet"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -18717,7 +18717,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Natural',
+			group: 'Servicios-Asociaciones',
 			title: 'Higiene mascotas',
 			query: '(nwr["shop"="pet_grooming"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -18753,7 +18753,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Natural',
+			group: 'Servicios-Asociaciones',
 			title: 'Agricultura (granja)',
 			query: '(nwr["shop"="farm"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -18789,7 +18789,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Natural',
+			group: 'Servicios-Asociaciones',
 			title: 'Agricultura',
 			query: '(nwr["shop"="agrarian"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -18825,7 +18825,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Natural',
+			group: 'Servicios-Asociaciones',
 			title: 'Jardinería',
 			query: '(nwr["shop"="garden_centre"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -19402,7 +19402,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Calle',
+			group: 'Exterior',
 			title: 'Bancos (sentarse)',
 			query: '(nwr["amenity"="bench"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
