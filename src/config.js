@@ -474,7 +474,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Supermercados',
 			query: '(nwr["shop"="supermarket"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -618,7 +618,7 @@ style: function (feature) {
 			}
 		},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Ahorramás',
 			query: '(nwr["brand:wikidata"="Q58221883"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/ahorramas.png',
@@ -654,7 +654,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Alcampo',
 			query: '(nwr["brand:wikidata"="Q2832081"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.alcampo.es/media/images/h2d/h66/9470439555102.png',
@@ -690,7 +690,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'ALDI',
 			query: '(nwr["brand:wikidata"="Q41171373"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/aldi.jpg',
@@ -726,7 +726,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Alimerka',
 			query: '(nwr["brand:wikidata"="Q16482738"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Alimerka_logo.svg/220px-Alimerka_logo.svg.png',
@@ -762,7 +762,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Aliprox',
 			query: '(nwr["name"="Aliprox"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/aliprox.jpg',
@@ -798,7 +798,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Alsara',
 			query: '(nwr["name"="Alsara"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/alsara.jpg',
@@ -834,7 +834,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Alteza',
 			query: '(nwr["name"="Alteza"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/alteza.jpg',
@@ -870,7 +870,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Ametller Origen',
 			query: '(nwr["name"="Ametller Origen"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/ametller_origen.jpg',
@@ -906,7 +906,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Bip Bip',
 			query: '(nwr["name"="Bip Bip"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/bipbip.jpg',
@@ -942,7 +942,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'bonÀrea',
 			query: '(nwr["brand:wikidata"="Q11924743"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.bonarea-agrupa.com/Content/img/logo-caixa-guissona-agrupa.png',
@@ -978,7 +978,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'BonPreu/Esclat',
 			query: '(nwr["brand:wikidata"="Q11924747"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://pbs.twimg.com/profile_images/1103993935419068416/f8FkyYcp_400x400.png',
@@ -1014,7 +1014,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Caprabo',
 			query: '(nwr["brand:wikidata"="Q1980781"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Caprabo_logo.svg/220px-Caprabo_logo.svg.png',
@@ -1050,7 +1050,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Carrefour',
 			query: '(nwr["brand:wikidata"="Q217599"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Carrefour_logo.svg/220px-Carrefour_logo.svg.png',
@@ -1086,7 +1086,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Cash Fresh',
 			query: '(nwr["brand:wikidata"="Q111805558"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/cashfresh.jpg',
@@ -1122,7 +1122,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Claudio',
 			query: '(nwr["name"="Claudio"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/claudio.jpg',
@@ -1158,7 +1158,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Coaliment',
 			query: '(nwr["name"="Coaliment"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/coaliment.jpg',
@@ -1194,7 +1194,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Condis',
 			query: '(nwr["brand:wikidata"="Q57417581"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.condis.es/images/header/logo.png',
@@ -1230,7 +1230,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Consum',
 			query: '(nwr["brand:wikidata"="Q8350308"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Consum_Cooperativa.jpg/220px-Consum_Cooperativa.jpg',
@@ -1266,7 +1266,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Covirán',
 			query: '(nwr["brand:wikidata"="Q61070539"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.coviran.es/SiteAssets/logo.png',
@@ -1302,7 +1302,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Dani',
 			query: '(nwr["name"="Dani"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/dani.jpg',
@@ -1338,7 +1338,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Dia',
 			query: '(nwr["brand:wikidata"="Q925132"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/dia.png',
@@ -1374,7 +1374,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'La Plaza de Dia',
 			query: '(nwr["brand:wikidata"="Q58904673"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/dia.png',
@@ -1410,7 +1410,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Dialprix',
 			query: '(nwr["name"="Dialprix"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/dialprix.jpg',
@@ -1446,7 +1446,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'E.Leclerc',
 			query: '(nwr["brand:wikidata"="Q1273376"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/eleclerc.jpg',
@@ -1482,7 +1482,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Eroski',
 			query: '(nwr["brand:wikidata"="Q1361349"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Eroski_logo.svg/220px-Eroski_logo.svg.png',
@@ -1518,7 +1518,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Familia',
 			query: '(nwr["name"="Familia"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/familia.png',
@@ -1554,7 +1554,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Hiber',
 			query: '(nwr["name"="Hiber"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/hiber.png',
@@ -1590,7 +1590,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Hiperber',
 			query: '(nwr["brand:wikidata"="Q5898257"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/hiperber.jpg',
@@ -1626,7 +1626,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Hipercor',
 			query: '(nwr["brand:wikidata"="Q191574"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Hipercor_logo.svg/220px-Hipercor_logo.svg.png',
@@ -1662,7 +1662,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'HiperDino',
 			query: '(nwr["brand:wikidata"="Q5278478"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/hiperdino.jpg',
@@ -1698,7 +1698,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'La despensa',
 			query: '(nwr["name"="La despensa"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/ladespensa.jpg',
@@ -1734,7 +1734,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'La Sirena',
 			query: '(nwr["brand:wikidata"="Q21034458"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://web-cdne-lasirena-prod.azureedge.net/themes/lasirena/img/logo-header-la-sirena.svg',
@@ -1770,7 +1770,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Lidl',
 			query: '(nwr["brand:wikidata"="Q151954"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Lidl-Logo.svg/220px-Lidl-Logo.svg.png',
@@ -1806,7 +1806,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'MAS',
 			query: '(nwr["name"="MAS"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/mas.png',
@@ -1842,7 +1842,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Mas y mas',
 			query: '(nwr["brand:wikidata"="Q11936008"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fyt3.ggpht.com%2Fa%2FAATXAJx5tO0SEYUL1XhsSE9UzA_FQf_I4ciFvY1mUQ%3Ds900-c-k-c0xffffffff-no-rj-mo&f=1&nofb=1&ipt=10ca34f003b937b33427fdd6d01dbe7b70d542fc514f560f34cc26474f7b3673&ipo=images',
@@ -1878,7 +1878,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'minymas',
 			query: '(nwr["name"="minymas"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/minymas.jpg',
@@ -1914,7 +1914,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Mercadona',
 			query: '(nwr["brand:wikidata"="Q377705"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Logo_Mercadona_%28color-300-alpha%29.png/640px-Logo_Mercadona_%28color-300-alpha%29.png',
@@ -1950,7 +1950,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Nespresso',
 			query: '(nwr["brand:wikidata"="Q301301"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/nespresso.jpg',
@@ -1986,7 +1986,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Tea Shop',
 			query: '(nwr["brand:wikidata"="Q111730818"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/tea_shop.jpg',
@@ -2022,7 +2022,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Proxim',
 			query: '(nwr["name"="Proxim"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/proxim.png',
@@ -2058,7 +2058,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Suma',
 			query: '(nwr["brand:wikidata"="Q58012362"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/suma.png',
@@ -2094,7 +2094,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Super Cor',
 			query: '(nwr["brand:wikidata"="Q6135841"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/supercor.png',
@@ -2130,7 +2130,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'SuperDino',
 			query: '(nwr["name"="SuperDino"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/superdino.png',
@@ -2166,7 +2166,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Sorli Discau',
 			query: '(nwr["brand:wikidata"="Q20103935"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.sorli.com/wp-content/uploads/2017/05/logo-sorli.png',
@@ -2202,7 +2202,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Spar',
 			query: '(nwr["brand:wikidata"="Q610492"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Spar-logo.svg/220px-Spar-logo.svg.png',
@@ -2238,7 +2238,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Tandy',
 			query: '(nwr["name"="Tandy"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/tandy.jpg',
@@ -2274,7 +2274,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Trady`s',
 			query: '(nwr["name"~"^Trady"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/tradys.jpg',
@@ -2310,7 +2310,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Udaco',
 			query: '(nwr["name"="Udaco"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/udaco.jpg',
@@ -2346,7 +2346,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Unide',
 			query: '(nwr["name"="Unide"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/unide.jpg',
@@ -2382,7 +2382,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Alimentación-Supermercado',
+			group: 'Alimentación',
 			title: 'Veritas',
 			query: '(nwr["name"="Veritas"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/veritas.jpg',
@@ -2670,7 +2670,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria-Logística',
+			group: 'Vida diaria',
 			title: 'Paquetería',
 			query: '(nwr["amenity"="post_depot"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -2706,7 +2706,7 @@ style: function (feature) {
 			}
 },
 		{
-			group: 'Vida diaria-Logística',
+			group: 'Vida diaria',
 			title: 'Correos',
 			query: '(nwr["brand:wikidata"="Q776605"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Logo_Correos_2019.svg/220px-Logo_Correos_2019.svg.png',
@@ -2742,7 +2742,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria-Logística',
+			group: 'Vida diaria',
 			title: 'DHL',
 			query: '(nwr["brand:wikidata"="Q489815"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/dhl.jpg',
@@ -2778,7 +2778,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria-Logística',
+			group: 'Vida diaria',
 			title: 'Fedex',
 			query: '(nwr["brand:wikidata"="Q459477"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/fedex.png',
@@ -2814,7 +2814,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria-Logística',
+			group: 'Vida diaria',
 			title: 'MRW',
 			query: '(nwr["brand:wikidata"="Q23767821"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/mrw.png',
@@ -2850,7 +2850,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria-Logística',
+			group: 'Vida diaria',
 			title: 'Nacex',
 			query: '(nwr["name"="Nacex"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/nacex.jpg',
@@ -2886,7 +2886,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria-Logística',
+			group: 'Vida diaria',
 			title: 'SEUR',
 			query: '(nwr["brand:wikidata"="Q9076554"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/seur.jpg',
@@ -2922,7 +2922,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria-Logística',
+			group: 'Vida diaria',
 			title: 'UPS',
 			query: '(nwr["brand:wikidata"="Q155026"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/ups.png',
@@ -2958,7 +2958,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria-Logística',
+			group: 'Vida diaria',
 			title: 'Consigna recogida',
 			query: '(nwr["amenity"="parcel_locker"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -2995,7 +2995,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Vida diaria-Logística',
+			group: 'Vida diaria',
 			title: 'Amazon Locker',
 			query: '(nwr["brand:wikidata"="Q16974764"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/amazon_locker.png',
@@ -3031,7 +3031,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Vida diaria-Logística',
+			group: 'Vida diaria',
 			title: 'Logística',
 			query: '(nwr["office"="logistics"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -3609,6 +3609,42 @@ style: function (feature) {
 				},
 		{
 			group: 'Economía',
+			title: 'Consultorías',
+			query: '(nwr["office"="consulting"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Economía',
 			title: 'Bancos',
 			query: '(nwr["amenity"="bank"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -3681,42 +3717,6 @@ style: function (feature) {
 				},
 		{
 			group: 'Economía',
-			title: 'Consultorías',
-			query: '(nwr["office"="consulting"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: imgSrc + 'icones/maxspeed_empty.svg',
-							scale:0.03
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-			},
-		{
-			group: 'Economía-Bancos',
 			title: 'Banca March',
 			query: '(nwr["brand:wikidata"="Q578252"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/banca_march.jpg',
@@ -3752,7 +3752,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Economía-Bancos',
+			group: 'Economía',
 			title: 'Banca Pueyo',
 			query: '(nwr["brand:wikidata"="Q29895390"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/banca_pueyo.jpg',
@@ -3789,7 +3789,7 @@ style: function (feature) {
 				},
 			
 		{
-			group: 'Economía-Bancos',
+			group: 'Economía',
 			title: 'Banco Sabadell',
 			query: '(nwr["brand:wikidata"="Q762330"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/BSabadell_Logo.svg/220px-BSabadell_Logo.svg.png',
@@ -3825,7 +3825,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Economía-Bancos',
+			group: 'Economía',
 			title: 'BBVA',
 			query: '(nwr["brand:wikidata"="Q806189"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/BBVA_2019.svg/220px-BBVA_2019.svg.png',
@@ -3861,7 +3861,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Economía-Bancos',
+			group: 'Economía',
 			title: 'Caixabank',
 			query: '(nwr["brand:wikidata"="Q847225"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Logo_CaixaBank.svg/220px-Logo_CaixaBank.svg.png',
@@ -3897,7 +3897,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Economía-Bancos',
+			group: 'Economía',
 			title: 'Caixa d`Enginyers',
 			query: '(nwr["brand:wikidata"="Q8254967"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.caixaenginyers.com/documents/20143/693294/Logo_Caja_Ingenieros_55a_CA.jpg/a6940b19-a18a-4686-4c81-2308c211f1a1?t=1665070571476',
@@ -3933,7 +3933,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Economía-Bancos',
+			group: 'Economía',
 			title: 'Caja Rural',
 			query: '(nwr["brand:wikidata"="Q3649971"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Caja_Rural.png/220px-Caja_Rural.png',
@@ -3969,7 +3969,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Economía-Bancos',
+			group: 'Economía',
 			title: 'Deustche Bank',
 			query: '(nwr["brand:wikidata"="Q66048"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/deutsche_bank.png',
@@ -4005,7 +4005,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Economía-Bancos',
+			group: 'Economía',
 			title: 'Ibercaja',
 			query: '(nwr["brand:wikidata"="Q5907815"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Ibercajawordmark.svg/220px-Ibercajawordmark.svg.png',
@@ -4041,7 +4041,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Economía-Bancos',
+			group: 'Economía',
 			title: 'Kutxabank',
 			query: '(nwr["brand:wikidata"="Q5139377"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Kutxabank.svg/220px-Kutxabank.svg.png',
@@ -4077,7 +4077,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Economía-Bancos',
+			group: 'Economía',
 			title: 'Liberbank',
 			query: '(nwr["brand:wikidata"="Q2891018"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Liberbank_logo.svg/220px-Liberbank_logo.svg.png',
@@ -4113,7 +4113,7 @@ style: function (feature) {
 			}
 },
 		{
-			group: 'Economía-Bancos',
+			group: 'Economía',
 			title: 'Santander',
 			query: '(nwr["brand:wikidata"="Q6496310"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Banco_Santander_Logotipo.svg/220px-Banco_Santander_Logotipo.svg.png',
@@ -4149,7 +4149,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Economía-Bancos',
+			group: 'Economía',
 			title: 'Triodos Bank',
 			query: '(nwr["brand:wikidata"="Q688452"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/triodos_bank.jpg',
@@ -4185,7 +4185,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Economía-Bancos',
+			group: 'Economía',
 			title: 'Unicaja',
 			query: '(nwr["brand:wikidata"="Q2543704"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Unicaja_logo.svg/220px-Unicaja_logo.svg.png',
@@ -6485,7 +6485,7 @@ style: function (feature) {
 		
 		
 		{
-			group: 'Moda-Lencería',
+			group: 'Moda',
 			title: 'Calzedonia',
 			query: '(nwr["brand:wikidata"="Q1027874"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/calzedonia.jpg',
@@ -6522,7 +6522,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda-Lencería',
+			group: 'Moda',
 			title: 'Intimissimi',
 			query: '(nwr["brand:wikidata"="Q305404"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/intimissimi.png',
@@ -6559,7 +6559,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda-Lencería',
+			group: 'Moda',
 			title: 'Tezenis',
 			query: '(nwr["brand:wikidata"="Q28056374"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/tezenis.jpg',
@@ -6596,7 +6596,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda-Lencería',
+			group: 'Moda',
 			title: 'Women`s secret',
 			query: '(nwr["brand:wikidata"="Q16648226"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/womens_secret.jpg',
@@ -6741,7 +6741,7 @@ style: function (feature) {
 			}
 		},
 		{
-			group: 'Comunicación',
+			group: 'Electrónica-Electrónica-Comunicación',
 			title: 'Estudio de grabación',
 			query: '(nwr["amenity"="studio"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -6777,7 +6777,7 @@ style: function (feature) {
 			}
 		},
 		{
-			group: 'Comunicación',
+			group: 'Electrónica-Electrónica-Comunicación',
 			title: 'Fotos',
 			query: '(nwr["shop"="photos"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -7577,7 +7577,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Moda-Complementos',
+			group: 'Moda',
 			title: 'Joyería',
 			query: '(nwr["shop"="jewelry"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -7614,7 +7614,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda-Complementos',
+			group: 'Moda',
 			title: 'Bijou Brigitte',
 			query: '(nwr["brand:wikidata"="Q599545"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/bijou_brigitte.jpg',
@@ -7651,7 +7651,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda-Complementos',
+			group: 'Moda',
 			title: 'Pandora',
 			query: '(nwr["brand:wikidata"="Q2241604"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/pandora.jpg',
@@ -7687,7 +7687,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Moda-Complementos',
+			group: 'Moda',
 			title: 'Parfois',
 			query: '(nwr["brand:wikidata"="Q7136948"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/parfois.jpg',
@@ -7724,7 +7724,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda-Complementos',
+			group: 'Moda',
 			title: 'Swarovski',
 			query: '(nwr["brand:wikidata"="Q611115"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/swarovski.jpg',
@@ -7760,7 +7760,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Moda-Complementos',
+			group: 'Moda',
 			title: 'Tous',
 			query: '(nwr["brand:wikidata"="Q3815128"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://static.tous.com/21202/pub/directus/7f19acb0-66c5-4e91-90c7-1ad9b723d323.png',
@@ -7796,7 +7796,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Moda-Complementos',
+			group: 'Moda',
 			title: 'Relojería',
 			query: '(nwr["shop"="watches"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -8516,7 +8516,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Movilidad-Talleres',
+			group: 'Movilidad',
 			title: 'Feu Vert',
 			query: '(nwr["brand:wikidata"="Q3070922"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/feu_vert.jpg',
@@ -8553,7 +8553,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Movilidad-Talleres',
+			group: 'Movilidad',
 			title: 'Norauto',
 			query: '(nwr["brand:wikidata"="Q3317698"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Logo_actuel_de_Norauto.png/220px-Logo_actuel_de_Norauto.png',
@@ -8625,7 +8625,7 @@ style: function (feature) {
 			}
 },
 		{
-			group: 'Marcas & Movilidad',
+			group: 'Movilidad',
 			title: 'BP',
 			query: '(nwr["brand:wikidata"="Q152057"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Bp_textlogo.svg/220px-Bp_textlogo.svg.png',
@@ -8661,7 +8661,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Movilidad',
+			group: 'Movilidad',
 			title: 'Cepsa',
 			query: '(nwr["brand:wikidata"="Q608819"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Cepsa.svg/220px-Cepsa.svg.png',
@@ -8697,7 +8697,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Movilidad',
+			group: 'Movilidad',
 			title: 'DISA',
 			query: '(nwr["brand:wikidata"="Q5797102"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.disagrupo.es/assets/img/logodisa2014.png',
@@ -8733,7 +8733,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Movilidad',
+			group: 'Movilidad',
 			title: 'Galp',
 			query: '(nwr["brand:wikidata"="Q1492739"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Galp.png/220px-Galp.png',
@@ -8769,7 +8769,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Movilidad',
+			group: 'Movilidad',
 			title: 'Repsol',
 			query: '(nwr["brand:wikidata"="Q174747"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Repsol_logo.svg/220px-Repsol_logo.svg.png',
@@ -9022,7 +9022,7 @@ style: function (feature) {
 },	
 		
 		{
-			group: 'Marcas & Movilidad',
+			group: 'Movilidad',
 			title: 'Citroën',
 			query: '(nwr["brand:wikidata"="Q6746"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/logos/citroen.png',
@@ -9058,7 +9058,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Movilidad',
+			group: 'Movilidad',
 			title: 'Kia',
 			query: '(nwr["brand:wikidata"="Q35349"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/kia.png',
@@ -9599,7 +9599,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Comunicación',
+			group: 'Electrónica-Electrónica-Comunicación',
 			title: 'Móviles',
 			query: '(nwr["shop"="mobile_phone"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -9635,7 +9635,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Comunicación',
+			group: 'Electrónica-Electrónica-Comunicación',
 			title: 'Sedes medios',
 			query: '(nwr["office"="newspaper"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -9671,7 +9671,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Comunicación',
+			group: 'Electrónica-Electrónica-Comunicación',
 			title: 'Oficinas IT',
 			query: '(nwr["office"="it"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -9707,7 +9707,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Comunicación',
+			group: 'Electrónica-Electrónica-Comunicación',
 			title: 'Oficinas',
 			query: '(nwr["office"="telecommunication"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -9743,7 +9743,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Comunicación',
+			group: 'Electrónica-Electrónica-Comunicación',
 			title: 'Informática',
 			query: '(nwr["shop"="computer"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10067,7 +10067,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa',
+			group: 'Casa-Casa-Bricolaje',
 			title: 'Arquitectos',
 			query: '(nwr["office"="architect"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10103,7 +10103,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa',
+			group: 'Casa-Casa-Bricolaje',
 			title: 'Buzones particulares',
 			query: '(nwr["amenity"="letter_box"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10139,7 +10139,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa',
+			group: 'Casa-Casa-Bricolaje',
 			title: 'Constructores',
 			query: '(nwr["office"="construction_company"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10175,7 +10175,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa',
+			group: 'Casa-Casa-Bricolaje',
 			title: 'Mudanzas',
 			query: '(nwr["office"="moving_company"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10211,7 +10211,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa',
+			group: 'Casa-Casa-Bricolaje',
 			title: 'Puertas',
 			query: '(nwr["shop"="doors"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10247,7 +10247,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa',
+			group: 'Casa-Casa-Bricolaje',
 			title: 'Inmobiliaria',
 			query: '(nwr["office"="estate_agent"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10283,7 +10283,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa',
+			group: 'Casa-Casa-Bricolaje',
 			title: 'Inmobiliaria (oficina)',
 			query: '(nwr["office"="property_management"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10319,7 +10319,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa',
+			group: 'Casa-Casa-Bricolaje',
 			title: 'Azulejos',
 			query: '(nwr["shop"="tiles"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10355,7 +10355,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa',
+			group: 'Casa-Casa-Bricolaje',
 			title: 'Suelos',
 			query: '(nwr["shop"="flooring"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10463,7 +10463,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Bricolaje',
+			group: 'Casa-Bricolaje',
 			title: 'Marcos',
 			query: '(nwr["shop"="frame"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10535,7 +10535,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa',
+			group: 'Casa-Casa-Bricolaje',
 			title: 'Lámparas',
 			query: '(nwr["shop"="lighting"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10679,7 +10679,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Bricolaje',
+			group: 'Casa-Bricolaje',
 			title: 'Hazlotúmismo',
 			query: '(nwr["shop"="doityourself"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10716,7 +10716,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Otros',
+			group: 'Otros',
 			title: 'Bauhaus',
 			query: '(nwr["brand:wikidata"="Q672043"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/bauhaus.png',
@@ -10753,7 +10753,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Otros',
+			group: 'Otros',
 			title: 'Leroy Merlin',
 			query: '(nwr["brand:wikidata"="Q889624"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Leroy_Merlin.svg/220px-Leroy_Merlin.svg.png',
@@ -10789,7 +10789,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Bricolaje',
+			group: 'Casa-Bricolaje',
 			title: 'Pinturas',
 			query: '(nwr["shop"="paint"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10825,7 +10825,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa',
+			group: 'Casa-Casa-Bricolaje',
 			title: 'Decoración',
 			query: '(nwr["shop"="interior_decoration"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10861,7 +10861,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa',
+			group: 'Casa-Casa-Bricolaje',
 			title: 'Alfombras',
 			query: '(nwr["shop"="carpet"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10897,7 +10897,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa',
+			group: 'Casa-Casa-Bricolaje',
 			title: 'Cocinas',
 			query: '(nwr["shop"="kitchen"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10933,7 +10933,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa',
+			group: 'Casa-Casa-Bricolaje',
 			title: 'Baño',
 			query: '(nwr["shop"="bathroom_furnishing"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10969,7 +10969,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa',
+			group: 'Casa-Casa-Bricolaje',
 			title: 'Camas',
 			query: '(nwr["shop"="bed"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -11005,7 +11005,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa',
+			group: 'Casa-Casa-Bricolaje',
 			title: 'Muebles',
 			query: '(nwr["shop"="furniture"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -11042,7 +11042,7 @@ style: function (feature) {
 			},
 		
 		{
-			group: 'Casa',
+			group: 'Casa-Casa-Bricolaje',
 			title: 'Conforama',
 			query: '(nwr["brand:wikidata"="Q541134"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Conforama_logo.svg/220px-Conforama_logo.svg.png',
@@ -11079,7 +11079,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Casa',
+			group: 'Casa-Casa-Bricolaje',
 			title: 'IKEA',
 			query: '(nwr["brand:wikidata"="Q54078"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/ikea.jpg',
@@ -11116,7 +11116,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Casa',
+			group: 'Casa-Casa-Bricolaje',
 			title: 'Zara Home',
 			query: '(nwr["brand:wikidata"="Q3114054"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/zarahome.jpg',
@@ -11584,7 +11584,7 @@ style: function (feature) {
 			}
 /*@@ fin-inicio de copia */			},	
 		{
-			group: 'Marcas & Movilidad',
+			group: 'Movilidad',
 			title: 'EDP',
 			query: '(nwr["brand:wikidata"="Q1341222"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/edp.svg',
@@ -11872,7 +11872,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Electrónica',
+			group: 'Electrónica-Comunicación',
 			title: 'Audio',
 			query: '(nwr["shop"="hifi"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -11908,7 +11908,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Electrónica',
+			group: 'Electrónica-Comunicación',
 			title: 'Videoclub',
 			query: '(nwr["shop"="video"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -11944,7 +11944,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Electrónica',
+			group: 'Electrónica-Comunicación',
 			title: 'Pequeño electrodoméstico',
 			query: '(nwr["shop"="electronics"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -11980,7 +11980,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Otros',
+			group: 'Otros',
 			title: 'MediaMarkt',
 			query: '(nwr["brand:wikidata"="Q2381223"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Media_Markt_logo.svg/220px-Media_Markt_logo.svg.png',
@@ -12018,7 +12018,7 @@ style: function (feature) {
 		
 		
 		{
-			group: 'Electrónica-Comunicaciones',
+			group: 'Electrónica-Comunicación',
 			title: 'Huawei',
 			query: '(nwr["brand:wikidata"="Q160120"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/huawei.png',
@@ -12055,7 +12055,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Electrónica-Comunicaciones',
+			group: 'Electrónica-Comunicación',
 			title: 'Movistar',
 			query: '(nwr["brand:wikidata"="Q967735"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/movistar.png',
@@ -12092,7 +12092,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Electrónica-Comunicaciones',
+			group: 'Electrónica-Comunicación',
 			title: 'Orange',
 			query: '(nwr["brand:wikidata"="Q3359411"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/orange.png',
@@ -12129,7 +12129,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Electrónica-Comunicaciones',
+			group: 'Electrónica-Comunicación',
 			title: 'The Phone House',
 			query: '(nwr["brand:wikidata"="Q118046"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/the_phone_house.png',
@@ -12166,7 +12166,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Electrónica-Comunicaciones',
+			group: 'Electrónica-Comunicación',
 			title: 'Vodafone',
 			query: '(nwr["brand:wikidata"="Q7939295"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/vodafone.png',
@@ -12203,7 +12203,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Electrónica-Comunicaciones',
+			group: 'Electrónica-Comunicación',
 			title: 'Yoigo',
 			query: '(nwr["brand:wikidata"="Q2630989"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/yoigo.png',
@@ -12239,7 +12239,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Electrónica',
+			group: 'Electrónica-Comunicación',
 			title: 'Gran electrodoméstico',
 			query: '(nwr["shop"="appliance"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -12455,7 +12455,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Moda-Zapatería',
+			group: 'Moda',
 			title: 'Zapatería',
 			query: '(nwr["shop"="shoes"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -12492,7 +12492,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda-Zapatería',
+			group: 'Moda',
 			title: 'AW Lab',
 			query: '(nwr["brand:wikidata"="Q116774749"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/aw_lab.png',
@@ -12529,7 +12529,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda-Zapatería',
+			group: 'Moda',
 			title: 'Clarks',
 			query: '(nwr["brand:wikidata"="Q1095857"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/clarks.jpg',
@@ -12567,7 +12567,7 @@ style: function (feature) {
 		
 		
 		{
-			group: 'Moda-Zapatería',
+			group: 'Moda',
 			title: 'Deichmann',
 			query: '(nwr["brand:wikidata"="Q664543"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/deichmann.jpg',
@@ -12605,7 +12605,7 @@ style: function (feature) {
 		
 		
 		{
-			group: 'Moda-Zapatería',
+			group: 'Moda',
 			title: 'Marypaz',
 			query: '(nwr["brand:wikidata"="Q98497264"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/marypaz.svg',
@@ -12642,7 +12642,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda-Zapatería',
+			group: 'Moda',
 			title: 'Sketchers',
 			query: '(nwr["brand:wikidata"="Q2945643"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/sketchers.jpg',
@@ -12716,7 +12716,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Moda-Zapatería',
+			group: 'Moda',
 			title: 'Zapatería (arreglo)',
 			query: '(nwr["shop"="shoe_repair"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -12752,7 +12752,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Moda-Complementos',
+			group: 'Moda',
 			title: 'Complementos',
 			query: '(nwr["shop"="fashion_accesories"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -12789,7 +12789,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Moda-Complementos',
+			group: 'Moda',
 			title: 'Claire`s',
 			query: '(nwr["brand:wikidata"="Q2974996"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/claires.jpg',
@@ -12969,7 +12969,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Salud-Óptica',
+			group: 'Salud',
 			title: 'Óptica',
 			query: '(nwr["shop"="optician"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -13005,7 +13005,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Salud-Óptica',
+			group: 'Salud',
 			title: 'Alain Afflelou',
 			query: '(nwr["brand:wikidata"="Q2829511"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/alain_afflelou.jpg',
@@ -13042,7 +13042,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Salud-Óptica',
+			group: 'Salud',
 			title: 'General Óptica',
 			query: '(nwr["brand:wikidata"="Q62391672"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/general_optica.png',
@@ -13078,7 +13078,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Salud-Óptica',
+			group: 'Salud',
 			title: 'Multiópticas',
 			query: '(nwr["brand:wikidata"="Q62391719"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/multiopticas.jpg',
@@ -13115,7 +13115,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Salud-Óptica',
+			group: 'Salud',
 			title: 'SpecSavers',
 			query: '(nwr["brand:wikidata"="Q2000610"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/specsavers.jpg',
@@ -13295,7 +13295,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Museo',
 			query: '(nwr["tourism"="museum"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -13331,7 +13331,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Centro artístico',
 			query: '(nwr["amenity"="arts_centre"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -13367,7 +13367,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Monumento',
 			query: '(nwr["tourism"="artwork"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -13403,7 +13403,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Galería de arte',
 			query: '(nwr["tourism"="gallery"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -13439,7 +13439,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Parque temático',
 			query: '(nwr["tourism"="theme_park"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -13475,7 +13475,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Parque acuático',
 			query: '(nwr["leisure"="water_park"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -13511,7 +13511,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Zoo',
 			query: '(nwr["tourism"="zoo"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -13547,7 +13547,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Acuario',
 			query: '(nwr["tourism"="aquarium"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -13583,7 +13583,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Mirador',
 			query: '(nwr["tourism"="viewpoint"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -13619,7 +13619,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Información',
 			query: '(nwr["tourism"="information"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -13655,7 +13655,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Bodegas',
 			query: '(nwr["tourism"="wine_cellar"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -13691,7 +13691,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Sauna',
 			query: '(nwr["tourism"="sauna"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -13727,7 +13727,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Hotel',
 			query: '(nwr["tourism"="hotel"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -13763,7 +13763,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Albergue',
 			query: '(nwr["tourism"="hostel"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -13799,7 +13799,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Motel',
 			query: '(nwr["tourism"="motel"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -13835,7 +13835,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Casa de huéspedes',
 			query: '(nwr["tourism"="gest_house"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -13871,7 +13871,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Apartamento rural',
 			query: '(nwr["tourism"="chalet"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -13907,7 +13907,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Apartamento',
 			query: '(nwr["tourism"="apartment"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -13943,7 +13943,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Punto de interés',
 			query: '(nwr["tourism"="attraction"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -13979,7 +13979,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Parque',
 			query: '(nwr["leisure"="park"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -14015,7 +14015,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Parque pequeño',
 			query: '(nwr["landuse"="recreational_ground"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -14051,7 +14051,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Parque perros',
 			query: '(nwr["leisure"="dog_park"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -14087,7 +14087,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Jardín',
 			query: '(nwr["leisure"="garden"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -14123,7 +14123,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Parque infantil',
 			query: '(nwr["leisure"="playground"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -14159,7 +14159,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Pícnic',
 			query: '(nwr["tourism"="picnic_site"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -14195,7 +14195,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Pícnic (mesa)',
 			query: '(nwr["leisure"="picnic_table"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -14231,7 +14231,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Cámping',
 			query: '(nwr["tourism"="camp_site"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -14267,7 +14267,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Cámping (parcela)',
 			query: '(nwr["tourism"="camp_pitch"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -14303,7 +14303,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Caravanas',
 			query: '(nwr["tourism"="caravan_site"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -14339,7 +14339,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Fuente decorativa',
 			query: '(nwr["amenity"="fountain"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -14375,7 +14375,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Lavabos',
 			query: '(nwr["amenity"="toilets"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -14411,7 +14411,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Techado',
 			query: '(nwr["amenity"="shelter"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -14447,7 +14447,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Reserva natural',
 			query: '(nwr["tourism"="nature_reserve"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -14483,7 +14483,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Refugio de montaña',
 			query: '(nwr["tourism"="alpine_hut"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -14519,7 +14519,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Refugio',
 			query: '(nwr["tourism"="wilderness_hut"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -14555,7 +14555,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Souvenirs',
 			query: '(nwr["shop"="gift"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -14591,7 +14591,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Heladerías',
 			query: '(nwr["amenity"="ice_cream"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -14627,7 +14627,7 @@ style: function (feature) {
 			}
 		},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Heladería',
 			query: '(nwr["shop"="ice_cream"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -14663,7 +14663,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Amorino',
 			query: '(nwr["brand:wikidata"="Q2843884"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/amorino.jpg',
@@ -14699,7 +14699,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Belros',
 			query: '(nwr["brand:wikidata"="Q100089059"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/belros.jpg',
@@ -14735,7 +14735,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Llaollao',
 			query: '(nwr["brand:wikidata"="Q12163048"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/llaollao.jpg',
@@ -14771,7 +14771,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Biergarten',
 			query: '(nwr["amenity"="biergarten"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -14807,7 +14807,7 @@ style: function (feature) {
 			}
 		},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Restaurantes',
 			query: '(nwr["amenity"="restaurant"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -14843,7 +14843,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: '100 Montaditos',
 			query: '(nwr["brand:wikidata"="Q8355805"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/100montaditos.jpg',
@@ -14879,7 +14879,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'BuenasMigas',
 			query: '(nwr["brand:wikidata"="Q115258266"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/buenasmigas.jpg',
@@ -14915,7 +14915,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Carl`s Jr.',
 			query: '(nwr["brand:wikidata"="Q1043486"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/carlsjr.jpg',
@@ -14951,7 +14951,7 @@ style: function (feature) {
 			}
 },
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Foster`s Hollywood',
 			query: '(nwr["brand:wikidata"="Q5864366"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/fosters_hollywood.jpg',
@@ -14987,7 +14987,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Goiko Grill',
 			query: '(nwr["name"="Goiko Grill"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/goiko.jpg',
@@ -15023,7 +15023,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Ginos',
 			query: '(nwr["brand:wikidata"="Q98503664"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/ginos.jpg',
@@ -15059,7 +15059,7 @@ style: function (feature) {
 			}
 },
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'La Sureña',
 			query: '(nwr["brand:wikidata"="Q5763573"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/lasurena.jpg',
@@ -15095,7 +15095,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Lizarran',
 			query: '(nwr["brand:wikidata"="Q1866620"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/lizarran.png',
@@ -15131,7 +15131,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Mister Noodles',
 			query: '(nwr["name"="Mister Noodles"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/mister_noodles.jpg',
@@ -15167,7 +15167,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Sitio para comer',
 			query: '(nwr["amenity"="food_court"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -15203,7 +15203,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Cafés',
 			query: '(nwr["amenity"="cafe"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -15239,7 +15239,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Dunkin` Coffee',
 			query: '(nwr["brand:wikidata"="Q847743"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/dunkin.jpg',
@@ -15275,7 +15275,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Granier',
 			query: '(nwr["brand:wikidata"="Q102311169"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/granier.png',
@@ -15312,7 +15312,7 @@ style: function (feature) {
 
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Starbucks',
 			query: '(nwr["brand:wikidata"="Q37158"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/starbucks.jpg',
@@ -15348,7 +15348,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Comida rápida',
 			query: '(nwr["amenity"="fast_food"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -15384,7 +15384,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Burger King',
 			query: '(nwr["brand:wikidata"="Q177054"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Burger_King_2020.svg/220px-Burger_King_2020.svg.png',
@@ -15421,7 +15421,7 @@ style: function (feature) {
 
 	},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'McDonald`s',
 			query: '(nwr["brand:wikidata"="Q38076"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/220px-McDonald%27s_Golden_Arches.svg.png',
@@ -15457,7 +15457,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Pans & Company',
 			query: '(nwr["brand:wikidata"="Q11697586"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.pansandcompany.com/bundles/pans/images/logo.png',
@@ -15493,7 +15493,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Rodilla',
 			query: '(nwr["brand:wikidata"="Q7356777"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/rodilla.png',
@@ -15529,7 +15529,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'SandwiChez',
 			query: '(nwr["name"="SandwiChez"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/sandwichez.jpg',
@@ -15565,7 +15565,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Subway',
 			query: '(nwr["brand:wikidata"="Q244457"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/subway.png',
@@ -15601,7 +15601,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'KFC',
 			query: '(nwr["brand:wikidata"="Q524757"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/KFC_Logo.svg/220px-KFC_Logo.svg.png',
@@ -15637,7 +15637,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Popeyes',
 			query: '(nwr["brand:wikidata"="Q1330910"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/popeyes.jpg',
@@ -15674,7 +15674,7 @@ style: function (feature) {
 				},
 
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Taco Bell',
 			query: '(nwr["brand:wikidata"="Q752941"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/taco_bell.jpg',
@@ -15710,7 +15710,7 @@ style: function (feature) {
 			}
 },
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Tony Roma`s',
 			query: '(nwr["brand:wikidata"="Q2213883"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/tony_romas.jpg',
@@ -15746,7 +15746,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'The Good Burger',
 			query: '(nwr["brand:wikidata"="Q20962086"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/thegoodburger.jpg',
@@ -15782,7 +15782,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'UDON',
 			query: '(nwr["brand:wikidata"="Q115679798"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/udon.jpg',
@@ -15818,7 +15818,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Viena',
 			query: '(nwr["brand:wikidata"="Q11954717"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.viena.es/wp-content/themes/viena/images/viena-logo.svg',
@@ -15854,7 +15854,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Vips',
 			query: '(nwr["brand:wikidata"="Q66087862"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/vips.png',
@@ -15890,7 +15890,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Pizzería',
 			query: '(nwr["cuisine"="pizza"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -15962,7 +15962,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'La Tagliatella',
 			query: '(nwr["brand:wikidata"="Q113426257"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.amrest-franquicias.com/sites/default/files/logo_tagliatella_clean2x.png',
@@ -15999,7 +15999,7 @@ style: function (feature) {
 				},
 
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Papa John`s',
 			query: '(nwr["brand:wikidata"="Q2759586"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/papa_johns.jpg',
@@ -16035,7 +16035,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Papizza',
 			query: '(nwr["name"="Papizza"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/papizza.jpg',
@@ -16071,7 +16071,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Pizzeria Carlos',
 			query: '(nwr["name"="Pizzeria Carlos"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/pizzeria_carlos.jpg',
@@ -16107,7 +16107,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Pizza Hut',
 			query: '(nwr["brand:wikidata"="Q191615"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/pizza_hut.jpg',
@@ -16143,7 +16143,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Pizza Tutto',
 			query: '(nwr["brand:wikidata"="Q72115627"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/pizza_tutto.jpg',
@@ -16179,7 +16179,7 @@ style: function (feature) {
 			}
 },
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Telepizza',
 			query: '(nwr["brand:wikidata"="Q2699863"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Logo_telepizza.svg/220px-Logo_telepizza.svg.png',
@@ -16215,7 +16215,7 @@ style: function (feature) {
 			}
 				},		
 				{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Bares',
 			query: '(nwr["amenity"="pub"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -16251,7 +16251,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Ocio-Restauración',
+			group: 'Ocio',
 			title: 'Pubs',
 			query: '(nwr["amenity"="bar"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -16287,7 +16287,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Discos',
 			query: '(nwr["amenity"="nightclub"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -16323,7 +16323,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Terrazas',
 			query: '(nwr["leisure"="outdoor_seating"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -16359,7 +16359,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Marina',
 			query: '(nwr["leisure"="marina"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -16395,7 +16395,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Pesca',
 			query: '(nwr["leisure"="fishing"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -16431,7 +16431,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Resort',
 			query: '(nwr["leisure"="resort"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -16467,7 +16467,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Resort (playa)',
 			query: '(nwr["leisure"="beach_resort"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -16503,7 +16503,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Minigolf',
 			query: '(nwr["leisure"="miniature_golf"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -16539,7 +16539,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Pista de hielo',
 			query: '(nwr["leisure"="ice_rink"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -16575,7 +16575,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Boleras',
 			query: '(nwr["leisure"="bowling_alley"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -16611,7 +16611,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Sala de videojuegos',
 			query: '(nwr["leisure"="amusement_arcade"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -16647,7 +16647,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Escaperooms',
 			query: '(nwr["leisure"="escape_game"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -16755,7 +16755,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Guías',
 			query: '(nwr["office"="guide"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -16829,7 +16829,7 @@ style: function (feature) {
 		
 		
 		{
-			group: 'Marcas & Otros',
+			group: 'Otros',
 			title: 'Cinesa',
 			query: '(nwr["brand:wikidata"="Q20732115"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/cinesa.jpg',
@@ -16866,7 +16866,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Otros',
+			group: 'Otros',
 			title: 'Kinepolis',
 			query: '(nwr["brand:wikidata"="Q1741993"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/kinepolis.jpg',
@@ -16903,7 +16903,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Otros',
+			group: 'Otros',
 			title: 'Yelmo',
 			query: '(nwr["brand:wikidata"="Q21030996"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/yelmo.jpg',
@@ -17373,7 +17373,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Deportes-Tiendas',
+			group: 'Deportes',
 			title: 'Tienda deportes',
 			query: '(nwr["shop"="sports"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -17410,7 +17410,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Deportes-Tiendas',
+			group: 'Deportes',
 			title: 'Adidas',
 			query: '(nwr["brand:wikidata"="Q3895"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/adidas.jpg',
@@ -17447,7 +17447,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Deportes-Tiendas',
+			group: 'Deportes',
 			title: 'Decathlon',
 			query: '(nwr["brand:wikidata"="Q509349"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Decathlon_Logo.svg/220px-Decathlon_Logo.svg.png',
@@ -17484,7 +17484,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Deportes-Tiendas',
+			group: 'Deportes',
 			title: 'Decimas',
 			query: '(nwr["brand:wikidata"="Q107262020"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/decimas.jpg',
@@ -17521,7 +17521,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Deportes-Tiendas',
+			group: 'Deportes',
 			title: 'Intersport',
 			query: '(nwr["brand:wikidata"="Q666888"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/intersport.jpg',
@@ -17558,7 +17558,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Deportes-Tiendas',
+			group: 'Deportes',
 			title: 'JD sports',
 			query: '(nwr["brand:wikidata"="Q6108019"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/jd_sports.png',
@@ -17595,7 +17595,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Deportes-Tiendas',
+			group: 'Deportes',
 			title: 'Nike',
 			query: '(nwr["brand:wikidata"="Q483915"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/nike.jpg',
@@ -17632,7 +17632,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Deportes-Tiendas',
+			group: 'Deportes',
 			title: 'Sports Direct',
 			query: '(nwr["brand:wikidata"="Q7579661"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/sports_direct.png',
@@ -17669,7 +17669,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Otros',
+			group: 'Otros',
 			title: 'Sprinter',
 			query: '(nwr["brand:wikidata"="Q6133465"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/sprinter.png',
@@ -17706,7 +17706,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Deportes-Tiendas',
+			group: 'Deportes',
 			title: 'Snipes',
 			query: '(nwr["brand:wikidata"="Q42306166"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/snipes.jpg',
@@ -17742,7 +17742,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Deportes-Tiendas',
+			group: 'Deportes',
 			title: 'Tiendas excursionismo',
 			query: '(nwr["shop"="outdoor"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -17995,7 +17995,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Otros',
+			group: 'Otros',
 			title: 'Clarel',
 			query: '(nwr["brand:wikidata"="Q48784350"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F-wFnuFi0Cic8%2FVfLfeBFeWtI%2FAAAAAAAACfU%2FdqSS4SunMg4%2Fs1600%2FHdtgoGacv83MwNx56I4G5PLgBzVR0jrX5G_QWRzE3C8.jpg&f=1&nofb=1&ipt=8c5860e5a5bbca8cb1dca6988b1402830eeb6591e09ad9cd819c7297e52c9166&ipo=images',
@@ -18067,7 +18067,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Agencias de viajes',
 			query: '(nwr["shop"="travel_agency"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -18103,7 +18103,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Marcas & Otros',
+			group: 'Otros',
 			title: 'Viajes El Corte Inglés',
 			query: '(nwr["brand:wikidata"="Q115268048"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/viajes_el_corte_ingles.png',
@@ -18139,7 +18139,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Turismo',
+			group: 'Ocio',
 			title: 'Agentes de viajes',
 			query: '(nwr["office"="travel_agent"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -19148,7 +19148,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Otros',
+			group: 'Otros',
 			title: 'Abacus',
 			query: '(nwr["brand:wikidata"="Q11903664"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Abacus_Cooperativa_logo.svg/220px-Abacus_Cooperativa_logo.svg.png',
@@ -19869,7 +19869,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Marcas & Otros',
+			group: 'Ocio',
 			title: 'ONCE',
 			query: '(nwr["brand:wikidata"="Q1750397"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://www.once.es/logo.png',
