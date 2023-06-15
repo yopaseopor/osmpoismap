@@ -6741,7 +6741,7 @@ style: function (feature) {
 			}
 		},
 		{
-			group: 'Electrónica-Electrónica-Comunicación',
+			group: 'Electrónica-Comunicación',
 			title: 'Estudio de grabación',
 			query: '(nwr["amenity"="studio"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -6777,7 +6777,7 @@ style: function (feature) {
 			}
 		},
 		{
-			group: 'Electrónica-Electrónica-Comunicación',
+			group: 'Electrónica-Comunicación',
 			title: 'Fotos',
 			query: '(nwr["shop"="photos"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -9599,7 +9599,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Electrónica-Electrónica-Comunicación',
+			group: 'Electrónica-Comunicación',
 			title: 'Móviles',
 			query: '(nwr["shop"="mobile_phone"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -9635,7 +9635,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Electrónica-Electrónica-Comunicación',
+			group: 'Electrónica-Comunicación',
 			title: 'Sedes medios',
 			query: '(nwr["office"="newspaper"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -9671,7 +9671,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Electrónica-Electrónica-Comunicación',
+			group: 'Electrónica-Comunicación',
 			title: 'Oficinas IT',
 			query: '(nwr["office"="it"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -9707,7 +9707,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Electrónica-Electrónica-Comunicación',
+			group: 'Electrónica-Comunicación',
 			title: 'Oficinas',
 			query: '(nwr["office"="telecommunication"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -9743,7 +9743,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Electrónica-Electrónica-Comunicación',
+			group: 'Electrónica-Comunicación',
 			title: 'Informática',
 			query: '(nwr["shop"="computer"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
