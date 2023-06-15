@@ -7282,7 +7282,7 @@ style: function (feature) {
 			}
 		},
 		{
-			group: 'Belleza-Cosmética',
+			group: 'Belleza',
 			title: 'Perfumerías',
 			query: '(nwr["shop"="perfumery"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -7319,7 +7319,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Belleza-Cosmética',
+			group: 'Belleza',
 			title: 'Equivalenza',
 			query: '(nwr["brand:wikidata"="Q104649798"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/equivalenza.jpg',
@@ -7356,7 +7356,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Belleza-Cosmética',
+			group: 'Belleza',
 			title: 'KIKO Milano',
 			query: '(nwr["brand:wikidata"="Q3812045"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/kiko_milano.jpg',
@@ -7393,7 +7393,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Belleza-Cosmética',
+			group: 'Belleza',
 			title: 'Primor',
 			query: '(nwr["brand:wikidata"="Q101113141"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/primor.jpg',
@@ -7430,7 +7430,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Belleza-Cosmética',
+			group: 'Belleza',
 			title: 'Rituals',
 			query: '(nwr["brand:wikidata"="Q62874140"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/rituals.png',
@@ -7467,7 +7467,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Belleza-Cosmética',
+			group: 'Belleza',
 			title: 'Sephora',
 			query: '(nwr["brand:wikidata"="Q2408041"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/sephora.jpg',
@@ -7504,7 +7504,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Belleza-Cosmética',
+			group: 'Belleza',
 			title: 'The Body Shop',
 			query: '(nwr["brand:wikidata"="Q837851"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/thebodyshop.jpg',
@@ -7541,7 +7541,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Belleza-Cosmética',
+			group: 'Belleza',
 			title: 'Yves Rocher',
 			query: '(nwr["brand:wikidata"="Q28496595"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/yves_rocher.jpg',
@@ -10067,7 +10067,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa-Casa-Bricolaje',
+			group: 'Casa-Bricolaje',
 			title: 'Arquitectos',
 			query: '(nwr["office"="architect"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10103,7 +10103,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa-Casa-Bricolaje',
+			group: 'Casa-Bricolaje',
 			title: 'Buzones particulares',
 			query: '(nwr["amenity"="letter_box"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10139,7 +10139,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa-Casa-Bricolaje',
+			group: 'Casa-Bricolaje',
 			title: 'Constructores',
 			query: '(nwr["office"="construction_company"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10175,7 +10175,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa-Casa-Bricolaje',
+			group: 'Casa-Bricolaje',
 			title: 'Mudanzas',
 			query: '(nwr["office"="moving_company"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10211,7 +10211,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa-Casa-Bricolaje',
+			group: 'Casa-Bricolaje',
 			title: 'Puertas',
 			query: '(nwr["shop"="doors"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10247,7 +10247,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa-Casa-Bricolaje',
+			group: 'Casa-Bricolaje',
 			title: 'Inmobiliaria',
 			query: '(nwr["office"="estate_agent"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10283,7 +10283,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa-Casa-Bricolaje',
+			group: 'Casa-Bricolaje',
 			title: 'Inmobiliaria (oficina)',
 			query: '(nwr["office"="property_management"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10319,7 +10319,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa-Casa-Bricolaje',
+			group: 'Casa-Bricolaje',
 			title: 'Azulejos',
 			query: '(nwr["shop"="tiles"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10355,7 +10355,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa-Casa-Bricolaje',
+			group: 'Casa-Bricolaje',
 			title: 'Suelos',
 			query: '(nwr["shop"="flooring"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10535,7 +10535,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa-Casa-Bricolaje',
+			group: 'Casa-Bricolaje',
 			title: 'Lámparas',
 			query: '(nwr["shop"="lighting"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10825,7 +10825,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa-Casa-Bricolaje',
+			group: 'Casa-Bricolaje',
 			title: 'Decoración',
 			query: '(nwr["shop"="interior_decoration"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10861,7 +10861,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa-Casa-Bricolaje',
+			group: 'Casa-Bricolaje',
 			title: 'Alfombras',
 			query: '(nwr["shop"="carpet"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10897,7 +10897,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa-Casa-Bricolaje',
+			group: 'Casa-Bricolaje',
 			title: 'Cocinas',
 			query: '(nwr["shop"="kitchen"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10933,7 +10933,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa-Casa-Bricolaje',
+			group: 'Casa-Bricolaje',
 			title: 'Baño',
 			query: '(nwr["shop"="bathroom_furnishing"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10969,7 +10969,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa-Casa-Bricolaje',
+			group: 'Casa-Bricolaje',
 			title: 'Camas',
 			query: '(nwr["shop"="bed"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -11005,7 +11005,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Casa-Casa-Bricolaje',
+			group: 'Casa-Bricolaje',
 			title: 'Muebles',
 			query: '(nwr["shop"="furniture"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -11042,7 +11042,7 @@ style: function (feature) {
 			},
 		
 		{
-			group: 'Casa-Casa-Bricolaje',
+			group: 'Casa-Bricolaje',
 			title: 'Conforama',
 			query: '(nwr["brand:wikidata"="Q541134"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Conforama_logo.svg/220px-Conforama_logo.svg.png',
@@ -11079,7 +11079,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Casa-Casa-Bricolaje',
+			group: 'Casa-Bricolaje',
 			title: 'IKEA',
 			query: '(nwr["brand:wikidata"="Q54078"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/ikea.jpg',
@@ -11116,7 +11116,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Casa-Casa-Bricolaje',
+			group: 'Casa-Bricolaje',
 			title: 'Zara Home',
 			query: '(nwr["brand:wikidata"="Q3114054"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/zarahome.jpg',
@@ -15926,7 +15926,7 @@ style: function (feature) {
 			}
 },
 		{
-			group: 'Marcas & Restauración',
+			group: 'Ocio',
 			title: 'Domino`s Pizza',
 			query: '(nwr["brand:wikidata"="Q839466"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Dominos_pizza_logo.svg/220px-Dominos_pizza_logo.svg.png',
