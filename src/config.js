@@ -18861,7 +18861,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Oficina',
+			group: 'Servicios-Asociaciones',
 			title: 'Administrativas',
 			query: '(nwr["office"="administrative"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -18897,7 +18897,7 @@ style: function (feature) {
 			}
 },
 		{
-			group: 'Oficina',
+			group: 'Servicios-Asociaciones',
 			title: 'Juzgados',
 			query: '(nwr["amenity"="court_house"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -18933,7 +18933,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Oficina',
+			group: 'Servicios-Asociaciones',
 			title: 'Edificios públicos',
 			query: '(nwr["amenity"="public_building"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -18969,7 +18969,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Oficina',
+			group: 'Servicios-Asociaciones',
 			title: 'Oficinas',
 			query: '(nwr["office"="government"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -19005,7 +19005,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Oficina',
+			group: 'Servicios-Asociaciones',
 			title: 'Ayuntamientos',
 			query: '(nwr["amenity"="townhall"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -19041,7 +19041,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Oficina',
+			group: 'Servicios-Asociaciones',
 			title: 'Diplomacia',
 			query: '(nwr["office"="diplomatic"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -19077,7 +19077,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Oficina',
+			group: 'Servicios-Asociaciones',
 			title: 'Publicidad',
 			query: '(nwr["office"="advertising_agency"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -19113,7 +19113,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Oficina',
+			group: 'Servicios-Asociaciones',
 			title: 'Papelería',
 			query: '(nwr["shop"="stationery"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -19150,7 +19150,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Oficina',
+			group: 'Servicios-Asociaciones',
 			title: 'Abacus',
 			query: '(nwr["brand:wikidata"="Q11903664"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Abacus_Cooperativa_logo.svg/220px-Abacus_Cooperativa_logo.svg.png',
@@ -19186,7 +19186,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Oficina',
+			group: 'Servicios-Asociaciones',
 			title: 'Copistería',
 			query: '(nwr["shop"="copyshop"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -19222,7 +19222,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Oficina',
+			group: 'Servicios-Asociaciones',
 			title: 'Imprenta',
 			query: '(nwr["shop"="bookmaker"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
