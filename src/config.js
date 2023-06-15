@@ -363,116 +363,9 @@ style: function (feature) {
 				return null;
 			}
 
-				},
-		{
-			group: 'Otros',
-			title: 'Flying Tiger',
-			query: '(nwr["brand:wikidata"="Q2786319"]({{bbox}});node(w););out meta;',
-			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Fliyingtiger.svg/220px-Fliyingtiger.svg.png',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Fliyingtiger.svg/220px-Fliyingtiger.svg.png',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
+
 				},
 		
-		{
-			group: 'Otros',
-			title: 'Mister Minit',
-			query: '(nwr["brand:wikidata"="Q1939269"]({{bbox}});node(w););out meta;',
-			iconSrc: 'src/img/logos/mister_minit.png',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'src/img/logos/mister_minit.png',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
-			group: 'Otros',
-			title: 'TEDi',
-			query: '(nwr["brand:wikidata"="Q1364603"]({{bbox}});node(w););out meta;',
-			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/TEDi-Logo.svg/220px-TEDi-Logo.svg.png',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/TEDi-Logo.svg/220px-TEDi-Logo.svg.png',
-							scale:0.10
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
 		{
 			group: 'Alimentación',
 			title: 'Supermercados',
@@ -3356,7 +3249,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Tiendas',
+			group: 'Comercio',
 			title: 'Caridad',
 			query: '(nwr["shop"="charity"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -3392,7 +3285,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Tiendas',
+			group: 'Comercio',
 			title: 'Mayoristas',
 			query: '(nwr["shop"="wholesale"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -3428,7 +3321,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Tiendas',
+			group: 'Comercio',
 			title: 'Boutique',
 			query: '(nwr["shop"="boutique"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -3464,7 +3357,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Tiendas',
+			group: 'Comercio',
 			title: 'Anticuarios',
 			query: '(nwr["shop"="antiques"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -4437,186 +4330,6 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Administración',
-			title: 'Juzgados',
-			query: '(nwr["amenity"="court_house"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: imgSrc + 'icones/maxspeed_empty.svg',
-							scale:0.03
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
-			group: 'Administración',
-			title: 'Edificios públicos',
-			query: '(nwr["amenity"="public_building"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: imgSrc + 'icones/maxspeed_empty.svg',
-							scale:0.03
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
-			group: 'Administración',
-			title: 'Oficinas',
-			query: '(nwr["office"="government"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: imgSrc + 'icones/maxspeed_empty.svg',
-							scale:0.03
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
-			group: 'Administración',
-			title: 'Ayuntamientos',
-			query: '(nwr["amenity"="townhall"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: imgSrc + 'icones/maxspeed_empty.svg',
-							scale:0.03
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
-			group: 'Administración',
-			title: 'Diplomacia',
-			query: '(nwr["office"="diplomatic"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
-			iconStyle: 'background-color:rgba(255,255,255,0.4)',
-style: function (feature) {
-				var key_regex = /^name$/
-				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
-				var name = feature.get(name_key) || '';
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(255,0,0,1)',
-					width: 1
-				});
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-							src: imgSrc + 'icones/maxspeed_empty.svg',
-							scale:0.03
-						}),
-							text: new ol.style.Text({
-								text: name,
-								offsetX : 7,
-								offsetY : -12,
-								fill: new ol.style.Fill({
-                            color: 'rgba(0,0,0,1)'
-                        }),
-						}),
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-				},
-		{
 			group: 'Economía',
 			title: 'Coworking',
 			query: '(nwr["office"="coworking"]({{bbox}});node(w););out meta;',
@@ -5123,7 +4836,7 @@ style: function (feature) {
 				},
 
 		{
-			group: 'Tiendas',
+			group: 'Comercio',
 			title: 'Centro comercial',
 			query: '(nwr["shop"="mall"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -5159,7 +4872,7 @@ style: function (feature) {
 			}
 		},
 		{
-			group: 'Tiendas',
+			group: 'Comercio',
 			title: 'Bazar (multiprecio)',
 			query: '(nwr["shop"="variety_store"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -5193,9 +4906,81 @@ style: function (feature) {
 				});
 				return style;
 			}
-		},
+				},
 		{
-			group: 'Tiendas',
+			group: 'Comercio',
+			title: 'Flying Tiger',
+			query: '(nwr["brand:wikidata"="Q2786319"]({{bbox}});node(w););out meta;',
+			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Fliyingtiger.svg/220px-Fliyingtiger.svg.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Fliyingtiger.svg/220px-Fliyingtiger.svg.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Comercio',
+			title: 'TEDi',
+			query: '(nwr["brand:wikidata"="Q1364603"]({{bbox}});node(w););out meta;',
+			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/TEDi-Logo.svg/220px-TEDi-Logo.svg.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/TEDi-Logo.svg/220px-TEDi-Logo.svg.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Comercio',
 			title: 'Bazar',
 			query: '(nwr["shop"="houseware"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -9130,7 +8915,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Tiendas',
+			group: 'Comercio',
 			title: 'Kiosko',
 			query: '(nwr["shop"="kiosk"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -9491,7 +9276,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Tiendas',
+			group: 'Comercio',
 			title: 'Vacía',
 			query: '(nwr["shop"="vacant"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -9527,7 +9312,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Tiendas',
+			group: 'Comercio',
 			title: 'Puericultura',
 			query: '(nwr["shop"="baby_goods"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -9563,7 +9348,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Tiendas',
+			group: 'Comercio',
 			title: 'Instrumentos musicales',
 			query: '(nwr["shop"="musical_instrument"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -9959,7 +9744,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Tiendas',
+			group: 'Comercio',
 			title: 'Ferretería',
 			query: '(nwr["shop"="hardware"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -9995,7 +9780,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Tiendas',
+			group: 'Comercio',
 			title: 'Cerrajería',
 			query: '(nwr["shop"="locksmith"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10030,8 +9815,45 @@ style: function (feature) {
 				return style;
 			}
 				},
+		
 		{
-			group: 'Tiendas',
+			group: 'Comercio',
+			title: 'Mister Minit',
+			query: '(nwr["brand:wikidata"="Q1939269"]({{bbox}});node(w););out meta;',
+			iconSrc: 'src/img/logos/mister_minit.png',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: 'src/img/logos/mister_minit.png',
+							scale:0.10
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Comercio',
 			title: 'Carpintería/Lampistería',
 			query: '(nwr["shop"="craft"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -10499,7 +10321,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Tiendas',
+			group: 'Comercio',
 			title: 'Electricidad',
 			query: '(nwr["shop"="electrical"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -17669,7 +17491,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Otros',
+			group: 'Deportes',
 			title: 'Sprinter',
 			query: '(nwr["brand:wikidata"="Q6133465"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/sprinter.png',
@@ -17743,7 +17565,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Deportes',
-			title: 'Tiendas excursionismo',
+			title: 'Comercio excursionismo',
 			query: '(nwr["shop"="outdoor"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
@@ -17850,7 +17672,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Tiendas',
+			group: 'Comercio',
 			title: 'Mercados',
 			query: '(nwr["amenity"="marketplace"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -17886,7 +17708,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Tiendas',
+			group: 'Comercio',
 			title: 'Grandes almacenes',
 			query: '(nwr["shop"="department_store"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -17923,7 +17745,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Tiendas',
+			group: 'Comercio',
 			title: 'El Corte Inglés',
 			query: '(nwr["brand:wikidata"="Q623133"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Logo_Corte_Ingl%C3%A9s.svg/220px-Logo_Corte_Ingl%C3%A9s.svg.png',
@@ -17959,7 +17781,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Tiendas',
+			group: 'Comercio',
 			title: 'Droguería',
 			query: '(nwr["shop"="chemist"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -18031,7 +17853,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Tiendas',
+			group: 'Comercio',
 			title: 'Alquiler',
 			query: '(nwr["shop"="rental"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -18103,7 +17925,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Otros',
+			group: 'Ocio',
 			title: 'Viajes El Corte Inglés',
 			query: '(nwr["brand:wikidata"="Q115268048"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/viajes_el_corte_ingles.png',
@@ -19073,6 +18895,186 @@ style: function (feature) {
 				});
 				return style;
 			}
+},
+		{
+			group: 'Oficina',
+			title: 'Juzgados',
+			query: '(nwr["amenity"="court_house"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Oficina',
+			title: 'Edificios públicos',
+			query: '(nwr["amenity"="public_building"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Oficina',
+			title: 'Oficinas',
+			query: '(nwr["office"="government"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Oficina',
+			title: 'Ayuntamientos',
+			query: '(nwr["amenity"="townhall"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Oficina',
+			title: 'Diplomacia',
+			query: '(nwr["office"="diplomatic"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
 				},
 		{
 			group: 'Oficina',
@@ -19148,7 +19150,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Otros',
+			group: 'Oficina',
 			title: 'Abacus',
 			query: '(nwr["brand:wikidata"="Q11903664"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Abacus_Cooperativa_logo.svg/220px-Abacus_Cooperativa_logo.svg.png',
@@ -20776,7 +20778,7 @@ style: function (feature) {
 },
 
 		{
-			group: 'Tiendas',
+			group: 'Comercio',
 			title: 'Segunda mano',
 			query: '(nwr["shop"="second_hand"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
