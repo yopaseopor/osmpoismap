@@ -17817,7 +17817,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Otros',
+			group: 'Comercio',
 			title: 'Clarel',
 			query: '(nwr["brand:wikidata"="Q48784350"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F-wFnuFi0Cic8%2FVfLfeBFeWtI%2FAAAAAAAACfU%2FdqSS4SunMg4%2Fs1600%2FHdtgoGacv83MwNx56I4G5PLgBzVR0jrX5G_QWRzE3C8.jpg&f=1&nofb=1&ipt=8c5860e5a5bbca8cb1dca6988b1402830eeb6591e09ad9cd819c7297e52c9166&ipo=images',
