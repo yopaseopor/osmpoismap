@@ -6526,7 +6526,7 @@ style: function (feature) {
 			}
 		},
 		{
-			group: 'Electrónica-Comunicación',
+			group: 'Comercio',
 			title: 'Estudio de grabación',
 			query: '(nwr["amenity"="studio"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -6562,7 +6562,7 @@ style: function (feature) {
 			}
 		},
 		{
-			group: 'Electrónica-Comunicación',
+			group: 'Comercio',
 			title: 'Fotos',
 			query: '(nwr["shop"="photos"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -9384,7 +9384,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Electrónica-Comunicación',
+			group: 'Comercio',
 			title: 'Móviles',
 			query: '(nwr["shop"="mobile_phone"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -9420,7 +9420,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Electrónica-Comunicación',
+			group: 'Comercio',
 			title: 'Sedes medios',
 			query: '(nwr["office"="newspaper"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -9456,7 +9456,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Electrónica-Comunicación',
+			group: 'Comercio',
 			title: 'Oficinas IT',
 			query: '(nwr["office"="it"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -9492,7 +9492,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Electrónica-Comunicación',
+			group: 'Comercio',
 			title: 'Oficinas',
 			query: '(nwr["office"="telecommunication"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -9528,7 +9528,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Electrónica-Comunicación',
+			group: 'Comercio',
 			title: 'Informática',
 			query: '(nwr["shop"="computer"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -11694,7 +11694,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Electrónica-Comunicación',
+			group: 'Comercio',
 			title: 'Audio',
 			query: '(nwr["shop"="hifi"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -11730,7 +11730,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Electrónica-Comunicación',
+			group: 'Comercio',
 			title: 'Videoclub',
 			query: '(nwr["shop"="video"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -11766,7 +11766,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Electrónica-Comunicación',
+			group: 'Comercio',
 			title: 'Pequeño electrodoméstico',
 			query: '(nwr["shop"="electronics"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
@@ -11802,7 +11802,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Electrónica-Comunicación',
+			group: 'Comercio',
 			title: 'MediaMarkt',
 			query: '(nwr["brand:wikidata"="Q2381223"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Media_Markt_logo.svg/220px-Media_Markt_logo.svg.png',
@@ -11840,7 +11840,7 @@ style: function (feature) {
 		
 		
 		{
-			group: 'Electrónica-Comunicación',
+			group: 'Comercio',
 			title: 'Huawei',
 			query: '(nwr["brand:wikidata"="Q160120"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/huawei.png',
@@ -11877,7 +11877,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Electrónica-Comunicación',
+			group: 'Comercio',
 			title: 'Movistar',
 			query: '(nwr["brand:wikidata"="Q967735"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/movistar.png',
@@ -11914,7 +11914,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Electrónica-Comunicación',
+			group: 'Comercio',
 			title: 'Orange',
 			query: '(nwr["brand:wikidata"="Q3359411"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/orange.png',
@@ -11951,7 +11951,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Electrónica-Comunicación',
+			group: 'Comercio',
 			title: 'The Phone House',
 			query: '(nwr["brand:wikidata"="Q118046"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/the_phone_house.png',
@@ -11988,7 +11988,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Electrónica-Comunicación',
+			group: 'Comercio',
 			title: 'Vodafone',
 			query: '(nwr["brand:wikidata"="Q7939295"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/vodafone.png',
@@ -12025,7 +12025,7 @@ style: function (feature) {
 				},
 		
 		{
-			group: 'Electrónica-Comunicación',
+			group: 'Comercio',
 			title: 'Yoigo',
 			query: '(nwr["brand:wikidata"="Q2630989"]({{bbox}});node(w););out meta;',
 			iconSrc: 'src/img/logos/yoigo.png',
@@ -12061,7 +12061,7 @@ style: function (feature) {
 			}
 				},
 		{
-			group: 'Electrónica-Comunicación',
+			group: 'Comercio',
 			title: 'Gran electrodoméstico',
 			query: '(nwr["shop"="appliance"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
