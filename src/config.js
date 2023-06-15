@@ -257,7 +257,7 @@ style: function (feature) {
 
 /*@@ fin-inicio de copia */			},
 /*   abrir */							{	
-/*@@ nombre del grupo al que pertenecen */				group: 'Test',
+/*@@ nombre del grupo al que pertenecen */				group: 'BCN (CC 4.0 Dades Ajuntament BCN)',
 /*@@ título de la opción */								title: 'Ja sense activitat',
 /*@@ ruta del archivo geojson con datos */				geojson: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/test_bcn.geojson',
 /*@@ ruta del icono (URL o relativa) */					iconSrc: 'https://raw.githubusercontent.com/yopaseopor/osmpoismap/main/src/img/icones/closed.svg',
@@ -20240,7 +20240,7 @@ style: function (feature) {
    
 },
 		{	
-			group: 'Test',
+			group: 'Exterior',
 			title: 'ES:R2',
 			query: '(nwr[~"^traffic_sign"~"ES:R2"]({{bbox}});node(w););out meta;',
 			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_R2.png',
