@@ -365,8 +365,7 @@ style: function (feature) {
 
 
 				},
-		
-		},
+
 		{
 			group: 'Alimentación',
 			title: 'Colmados',
