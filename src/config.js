@@ -10325,6 +10325,42 @@ style: function (feature) {
 			}
 				},
 		{
+			group: 'Comercio',
+			title: 'Electrónica',
+			query: '(nwr["shop"="radiotechnics"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
 			group: 'Casa-Bricolaje',
 			title: 'Lámparas',
 			query: '(nwr["shop"="lighting"]({{bbox}});node(w););out meta;',
@@ -12726,6 +12762,42 @@ style: function (feature) {
 			group: 'Moda-Belleza',
 			title: 'Sastrería',
 			query: '(nwr["shop"="tailor"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
+			iconStyle: 'background-color:rgba(255,255,255,0.4)',
+style: function (feature) {
+				var key_regex = /^name$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(255,0,0,1)',
+					width: 1
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+							src: imgSrc + 'icones/maxspeed_empty.svg',
+							scale:0.03
+						}),
+							text: new ol.style.Text({
+								text: name,
+								offsetX : 7,
+								offsetY : -12,
+								fill: new ol.style.Fill({
+                            color: 'rgba(0,0,0,1)'
+                        }),
+						}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+				},
+		{
+			group: 'Moda-Belleza',
+			title: 'Arreglos',
+			query: '(nwr["craft"="tailor"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
