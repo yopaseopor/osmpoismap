@@ -20425,7 +20425,7 @@ style: function (feature) {
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
-				var key_regex = /^name$/
+				var key_regex = /^addr:housenumber$/
 				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
 				var name = feature.get(name_key) || '';
 				var fill = new ol.style.Fill({
