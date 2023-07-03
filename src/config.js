@@ -20962,7 +20962,7 @@ style: function (feature) {
 },
 
 		{
-			group: 'Funciones plano',
+			group: 'Funciones mapa',
 			title: 'Número portal',
 			query: '(nwr["addr:housenumber"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
