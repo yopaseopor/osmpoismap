@@ -20420,7 +20420,7 @@ style: function (feature) {
 				},
 		{
 			group: 'Comunitat Catalana',
-			title: 'Refugi climàtic',
+			title: 'Ombres-Refugi climàtic',
 			query: '(nwr["shelter_type"="sun_shelter"]({{bbox}});node(w);nwr["amenity"="harbourmaster"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/maxspeed_empty.svg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
