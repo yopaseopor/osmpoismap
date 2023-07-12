@@ -21263,7 +21263,7 @@ style: function (feature) {
 
 		$.each(feature.getProperties(), function (index, value) {
 			if (typeof value !== 'object') {
-				node.append([$('<a>').attr({href: 'https://wiki.openstreetmap.org/wiki/Key:' + index + '?uselang=ca', target: '_blank'}).html(index), ': ', value, '<br/>']);
+				node.append([$('<a>').attr({href: 'https://wiki.openstreetmap.org/wiki/Key:' + index + '?uselang=ca', target: '_blank'}).html(index), '=', value, '<br/>']);
 			}
 		});
 
