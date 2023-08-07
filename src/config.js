@@ -21284,7 +21284,7 @@ style: function (feature) {
 		show.append($('<a>').css('marginLeft', 5).attr({title: 'OpenStreetBrowser', href: 'https://www.openstreetbrowser.org/#map=' + Math.min(view.getZoom(), 20) + '/' + coordinateLL[1] + '/' + coordinateLL[0] , target: '_blank'}).html($('<img>').attr({src: imgSrc + 'osb_logo.png', height: 20, width: 20})));
 		
 				//Tracesmap
-		show.append($('<a>').css('marginLeft', 5).attr({title: 'Tracesmap', href: 'https://www.tracesmap.com/#' + Math.min(view.getZoom(), 20) + '/' + coordinateLL[1] + '/' + coordinateLL[0] + '/normal', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'tracesmap.png', height: 20, width: 20})));
+		show.append($('<a>').css('marginLeft', 5).attr({title: 'Tracesmap', href: 'https://tracesmap.com/#' + Math.min(view.getZoom(), 20) + '/' + coordinateLL[1] + '/' + coordinateLL[0] , target: '_blank'}).html($('<img>').attr({src: imgSrc + 'tracesmap.png', height: 20, width: 20})));
 		
 		var show2 = $('<div>').html(config.i18n.show2With);
 		
