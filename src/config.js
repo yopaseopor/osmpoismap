@@ -20515,7 +20515,7 @@ style: function (feature) {
 							text: new ol.style.Text({
 								text: name,
 								offsetX : 7,
-								offsetY : -6,
+								offsetY : -1,
 								fill: new ol.style.Fill({
                             color: 'rgba(0,0,0,1)'
                         }),
@@ -20551,7 +20551,7 @@ style: function (feature) {
 							text: new ol.style.Text({
 								text: name,
 								offsetX : 7,
-								offsetY : -12,
+								offsetY : -11,
 								fill: new ol.style.Fill({
                             color: 'rgba(0,0,0,1)'
                         }),
@@ -20587,7 +20587,7 @@ style: function (feature) {
 							text: new ol.style.Text({
 								text: name,
 								offsetX : 7,
-								offsetY : -18,
+								offsetY : -21,
 								fill: new ol.style.Fill({
                             color: 'rgba(0,0,0,1)'
                         }),
