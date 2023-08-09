@@ -387,6 +387,34 @@ $(function () {
 	map.addControl(new ol.control.Control({
 		element: permalinkControlBuild()
 	}));
+	
+		// geocoder?
+			var geocoderControlBuild = function () {
+				var container = $('<div>').addClass('ol-control ol-unselectable osmcat-geocoder').html($('<button type="button"><i class="fa fa-undo"></i></button>').on('click', function () {
+		var geocoder = new Geocoder('nominatim', {
+  provider: 'osm',
+  key: '__some_key__',
+  lang: 'pt-BR', //en-US, fr-FR
+  placeholder: 'Search for ...',
+  targetType: 'text-input',
+  limit: 5,
+  keepOpen: true
+});
+map.addControl(geocoder);
+
+geocoder.on('addresschosen', function(evt){
+  var feature = evt.feature,
+      coord = evt.coordinate,
+      address = evt.address;
+  // some popup solution
+  content.innerHTML = '<p>'+ address.formatted +'</p>';
+  overlay.setPosition(coord);
+});
+		return container[0];
+	};
+	map.addControl(new ol.control.Control({
+		element: geocoderControlBuild()
+	}));
 
 	// Rotate left button
 	var rotateleftControlBuild = function () {
