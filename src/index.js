@@ -399,7 +399,7 @@ $(function () {
   targetType: 'text-input',
   limit: 5,
   keepOpen: true
-});
+}));
 map.addControl(geocoder);
 
 geocoder.on('addresschosen', function(evt){
@@ -409,7 +409,7 @@ geocoder.on('addresschosen', function(evt){
   // some popup solution
   content.innerHTML = '<p>'+ address.formatted +'</p>';
   overlay.setPosition(coord);
-});
+}));
 		return container[0];
 	};
 	map.addControl(new ol.control.Control({
