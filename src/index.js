@@ -387,38 +387,7 @@ $(function () {
 	map.addControl(new ol.control.Control({
 		element: permalinkControlBuild()
 	}));
-	
- // Set the search control 
- var searchControlBuild = function () {
-		var container = $('<div>').addClass('ol-control ol-unselectable osmcat-search').html($('<button type="button"><i class="fa fa-undo"></i></button>').on('click', function () {
-  var search = new ol.control.SearchNominatim({
-    //target: $(".options").get(0),
-    polygon: $("#polygon").prop("checked"),
-    reverse: true,
-    position: true	// Search, with priority to geo position
-  });
-  
-   // Select feature when click on the reference index
-  search.on('select', function(e) {
-    // console.log(e);
-    sLayer.getSource().clear();
-    // Check if we get a geojson to describe the search
-    if (e.search.geojson) {
-      var format = new ol.format.GeoJSON();
-      var f = format.readFeature(e.search.geojson, { dataProjection: "EPSG:4326", featureProjection: map.getView().getProjection() });
-      sLayer.getSource().addFeature(f);
-      var view = map.getView();
-      var resolution = view.getResolutionForExtent(f.getGeometry().getExtent(), map.getSize());
-      var zoom = view.getZoomForResolution(resolution);
-      var center = ol.extent.getCenter(f.getGeometry().getExtent());
-}));
-		return container[0];
-	};
-	map.addControl(new ol.control.Control({
-		element: searchControlBuild()
-	}));
 
- 
 
 	// Rotate left button
 	var rotateleftControlBuild = function () {
