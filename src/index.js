@@ -389,15 +389,16 @@ $(function () {
 	}));
 	
  // Set the search control 
+ var searchControlBuild = function () {
+		var container = $('<div>').addClass('ol-control ol-unselectable osmcat-search').html($('<button type="button"><i class="fa fa-undo"></i></button>').on('click', function () {
   var search = new ol.control.SearchNominatim({
     //target: $(".options").get(0),
     polygon: $("#polygon").prop("checked"),
     reverse: true,
     position: true	// Search, with priority to geo position
   });
-  map.addControl (search);
-
-  // Select feature when click on the reference index
+  
+   // Select feature when click on the reference index
   search.on('select', function(e) {
     // console.log(e);
     sLayer.getSource().clear();
@@ -410,6 +411,14 @@ $(function () {
       var resolution = view.getResolutionForExtent(f.getGeometry().getExtent(), map.getSize());
       var zoom = view.getZoomForResolution(resolution);
       var center = ol.extent.getCenter(f.getGeometry().getExtent());
+}));
+		return container[0];
+	};
+	map.addControl(new ol.control.Control({
+		element: searchControlBuild()
+	}));
+
+ 
 
 	// Rotate left button
 	var rotateleftControlBuild = function () {
