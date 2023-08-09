@@ -388,33 +388,28 @@ $(function () {
 		element: permalinkControlBuild()
 	}));
 	
-		// geocoder?
-			var geocoderControlBuild = function () {
-				var container = $('<div>').addClass('ol-control ol-unselectable osmcat-geocoder').html($('<button type="button"><i class="fa fa-undo"></i></button>').on('click', function () {
-		var geocoder = new Geocoder('nominatim', {
-  provider: 'osm',
-  key: '__some_key__',
-  lang: 'pt-BR', //en-US, fr-FR
-  placeholder: 'Search for ...',
-  targetType: 'text-input',
-  limit: 5,
-  keepOpen: true
-}));
-map.addControl(geocoder);
+ // Set the search control 
+  var search = new ol.control.SearchNominatim({
+    //target: $(".options").get(0),
+    polygon: $("#polygon").prop("checked"),
+    reverse: true,
+    position: true	// Search, with priority to geo position
+  });
+  map.addControl (search);
 
-geocoder.on('addresschosen', function(evt){
-  var feature = evt.feature,
-      coord = evt.coordinate,
-      address = evt.address;
-  // some popup solution
-  content.innerHTML = '<p>'+ address.formatted +'</p>';
-  overlay.setPosition(coord);
-}));
-		return container[0];
-	};
-	map.addControl(new ol.control.Control({
-		element: geocoderControlBuild()
-	}));
+  // Select feature when click on the reference index
+  search.on('select', function(e) {
+    // console.log(e);
+    sLayer.getSource().clear();
+    // Check if we get a geojson to describe the search
+    if (e.search.geojson) {
+      var format = new ol.format.GeoJSON();
+      var f = format.readFeature(e.search.geojson, { dataProjection: "EPSG:4326", featureProjection: map.getView().getProjection() });
+      sLayer.getSource().addFeature(f);
+      var view = map.getView();
+      var resolution = view.getResolutionForExtent(f.getGeometry().getExtent(), map.getSize());
+      var zoom = view.getZoomForResolution(resolution);
+      var center = ol.extent.getCenter(f.getGeometry().getExtent());
 
 	// Rotate left button
 	var rotateleftControlBuild = function () {
