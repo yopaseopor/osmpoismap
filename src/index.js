@@ -136,6 +136,8 @@ $(function () {
 		window.location.hash.replace(/[#?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) {
 			vars[key] = value;
 		});
+		
+		
 
 		// map = zoom, center (lon, lat), [rotation]
 		var mapParam = getUrlParam('map', ''), parts;
@@ -297,6 +299,27 @@ $(function () {
 	}));
 	map.addControl(new ol.control.ScaleLine({units: config.initialConfig.units}));
 	map.addControl(new ol.control.ZoomSlider());
+	
+	var geocoder = new Geocoder('nominatim', {
+  provider: 'osm',
+  key: '__some_key__',
+  lang: 'pt-BR', //en-US, fr-FR
+  placeholder: 'Search for ...',
+  targetType: 'text-input',
+  limit: 5,
+  keepOpen: true
+});
+map.addControl(geocoder);
+
+geocoder.on('addresschosen', function(evt){
+  var feature = evt.feature,
+      coord = evt.coordinate,
+      address = evt.address;
+  // some popup solution
+  content.innerHTML = '<p>'+ address.formatted +'</p>';
+  overlay.setPosition(coord);
+});
+
 
 	// Geolocation Control
 	// In some browsers, this feature is available only in secure contexts (HTTPS)
