@@ -21303,6 +21303,12 @@ style: function (feature) {
 		//Latest OpenStreetMap Edits per Tile
 		tool.append($('<a>').css('marginLeft', 5).attr({title: 'Latest OpenStreetMap Edits per Tile', href: 'https://resultmaps.neis-one.org/osm-change-tiles#' + view.getZoom() + '/' + coordinateLL[1] + '/' + coordinateLL[0], target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones_web/neis-one_logo.png', height: 20, width: 20})));
 		
+		//OSMose
+		tool.append($('<a>').css('marginLeft', 5).attr({title: 'OSMose', href: 'https://osmose.openstreetmap.fr/ca/map/#zoom=' + view.getZoom() + '&lat=' + coordinateLL[1] + '&lon=' + coordinateLL[0], target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones_web/osmose_logo.png', height: 20, width: 20})));
+		
+		
+		https://osmose.openstreetmap.fr/ca/map/#zoom=14&lat=41.34762&lon=2.15486
+		
 		var show = $('<div>').html(config.i18n.showWith);
 		//OpenLevelUp
 		show.append($('<a>').css('marginLeft', 5).attr({title: 'OpenLevelUp!', href: 'https://openlevelup.net/#' + Math.min(view.getZoom(), 20) + '/' + coordinateLL[1] + '/' + coordinateLL[0] , target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones_web/openlevelup_logo.png', height: 20, width: 20})));
