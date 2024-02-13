@@ -21270,8 +21270,6 @@ style: function (feature) {
 		//@@RapiD editor
 		edit.append($('<a>').css('marginLeft', 5).attr({title: 'iD', href: 'https://rapideditor.org/edit#background=Bing&datasets=fbRoads,msBuildings&disable_features=boundaries&map=' + view.getZoom() + '/' + coordinateLL[1] + '/' + coordinateLL[0], target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones_web/rapid_logo.png', height: 20, width: 20})));
 		
-
-
 		var open = $('<div>').html(config.i18n.openWith);
 		//@@OSM
 		open.append($('<a>').css('marginLeft', 5).attr({title: 'OSM', href: 'https://www.openstreetmap.org/?lon=' + coordinateLL[0] + '&lat=' + coordinateLL[1] + '&zoom=' + view.getZoom(), target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones_web/osm_logo-layer.svg', height: 20, width: 20})));
@@ -21306,9 +21304,6 @@ style: function (feature) {
 		//OSMose
 		tool.append($('<a>').css('marginLeft', 5).attr({title: 'OSMose', href: 'https://osmose.openstreetmap.fr/map/#zoom=' + view.getZoom() + '&lat=' + coordinateLL[1] + '&lon=' + coordinateLL[0], target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones_web/osmose_logo.png', height: 20, width: 20})));
 		
-		
-		https://osmose.openstreetmap.fr/ca/map/#zoom=14&lat=41.34762&lon=2.15486
-		
 		var show = $('<div>').html(config.i18n.showWith);
 		//OpenLevelUp
 		show.append($('<a>').css('marginLeft', 5).attr({title: 'OpenLevelUp!', href: 'https://openlevelup.net/#' + Math.min(view.getZoom(), 20) + '/' + coordinateLL[1] + '/' + coordinateLL[0] , target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones_web/openlevelup_logo.png', height: 20, width: 20})));
@@ -21337,6 +21332,9 @@ style: function (feature) {
 		//F4 Map 3D
 		show.append($('<a>').css('marginLeft', 5).attr({title: 'F4 Map 3D', href: 'https://demo.f4map.com/#lat=' + coordinateLL[1] + '&lon=' + coordinateLL[0] + '&zoom=' + Math.min(view.getZoom(), 20) + '&view=tagging', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones_web/f4map_logo.png', height: 20, width: 20})));
 		
+		//Streets.gl
+		show.append($('<a>').css('marginLeft', 5).attr({title: 'F4 Map 3D', href: 'https://streets.gl/#' + coordinateLL[1] + ',' + coordinateLL[0] + ',45.00,0.00,535.89', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones_web/sgl_logo.png', height: 20, width: 20})));
+			
 		//Qwant
 		show.append($('<a>').css('marginLeft', 5).attr({title: 'Qwant', href: 'https://www.qwant.com/maps/place/latlon:' + coordinateLL[1] + ':' + coordinateLL[0] , target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones_web/qwantmaps_logo.svg', height: 20, width: 20})));
 		
