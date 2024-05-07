@@ -1019,7 +1019,7 @@ style: function (feature) {
 			group: 'Alimentación',
 			title: 'Carrefour',
 			query: '(nwr["brand:wikidata"="Q217599"]({{bbox}});node(w););out meta;',
-			iconSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Carrefour_logo.svg/220px-Carrefour_logo.svg.png',
+			iconSrc: 'src/img/logos/carrefour.jpg',
 			iconStyle: 'background-color:rgba(255,255,255,0.4)',
 style: function (feature) {
 				var key_regex = /^name$/
@@ -1034,7 +1034,7 @@ style: function (feature) {
 				});
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
-							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Carrefour_logo.svg/220px-Carrefour_logo.svg.png',
+							src: 'src/img/logos/carrefour.jpg',
 							scale:0.20
 						}),
 							text: new ol.style.Text({
