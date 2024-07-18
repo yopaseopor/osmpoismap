@@ -21251,6 +21251,9 @@ style: function (feature) {
 		//Mapcomplete eat & drink
 		complete.append($('<a>').css('marginLeft', 5).attr({title: 'Eat & drink', href: 'https://mapcomplete.org/index.html?z=' + view.getZoom() +'&lat='+ coordinateLL[1] +'&lon='+ coordinateLL[0] +'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmain%2Featdrink.json&language=en#welcome', target: '_blank'}).html($('<img>').attr({src:'https://raw.githubusercontent.com/yopaseopor/osmeatdrinkmap/main/src/img/icones/eat_drink.svg', height: 20, width: 20})));
 		
+				//Mapcomplete dietes
+		complete.append($('<a>').css('marginLeft', 5).attr({title: 'Dietas', href: 'https://mapcomplete.org/index.html?z=' + view.getZoom() +'&lat='+ coordinateLL[1] +'&lon='+ coordinateLL[0] +'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmain%2Fdiets.json&language=en#welcome', target: '_blank'}).html($('<img>').attr({src:'https://raw.githubusercontent.com/yopaseopor/osmeatdrinkmap/main/src/img/icones_web/osmeatdrink_logo.svg', height: 20, width: 20})));
+		
 				//Mapcomplete parques
 		complete.append($('<a>').css('marginLeft', 5).attr({title: 'Parques infantiles', href: 'https://mapcomplete.org/index.html?z=' + view.getZoom() +'&lat='+ coordinateLL[1] +'&lon='+ coordinateLL[0] +'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmain%2Fplayground_types.json&language=en#welcome', target: '_blank'}).html($('<img>').attr({src:'https://wiki.openstreetmap.org/w/images/3/31/Playground-16.svg', height: 20, width: 20})));
 		
@@ -21359,7 +21362,7 @@ style: function (feature) {
 		show2.append($('<a>').css('marginLeft', 5).attr({title: 'OSM Baby Map', href: 'https://yopaseopor.github.io/osmbabymap/#map=' + Math.min(view.getZoom(), 18) + '/' + coordinateLL[1] + '/' + coordinateLL[0] + '&view=tagging', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones_web/osmbabymap_logo.svg', height: 20, width: 20})));
 		
 								//OSM Eat & Drink Map
-		show2.append($('<a>').css('marginLeft', 5).attr({title: 'OSM Eat & Drink Map', href: 'https://yopaseopor.github.io/osmeatdrink/#map=' + Math.min(view.getZoom(), 18) + '/' + coordinateLL[1] + '/' + coordinateLL[0] + '&view=tagging', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones_web/osmeatdrink_logo.svg', height: 20, width: 20})));
+		show2.append($('<a>').css('marginLeft', 5).attr({title: 'OSM Eat & Drink Map', href: 'https://yopaseopor.github.io/osmeatdrinkmap/#map=' + Math.min(view.getZoom(), 18) + '/' + coordinateLL[1] + '/' + coordinateLL[0] + '&view=tagging', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones_web/osmeatdrink_logo.svg', height: 20, width: 20})));
 		
 				//OSM FireFighters Map
 		show2.append($('<a>').css('marginLeft', 5).attr({title: 'OSM Fire Fighters Map', href: 'https://yopaseopor.github.io/osmffmap/#map=' + Math.min(view.getZoom(), 18) + '/' + coordinateLL[1] + '/' + coordinateLL[0] + '&view=tagging', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones_web/osmffmap_logo.svg', height: 20, width: 20})));
