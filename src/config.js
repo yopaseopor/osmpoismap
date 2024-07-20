@@ -21368,13 +21368,10 @@ style: function (feature) {
 		show2.append($('<a>').css('marginLeft', 5).attr({title: 'OSM Fire Fighters Map', href: 'https://yopaseopor.github.io/osmffmap/#map=' + Math.min(view.getZoom(), 18) + '/' + coordinateLL[1] + '/' + coordinateLL[0] + '&view=tagging', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones_web/osmffmap_logo.svg', height: 20, width: 20})));
 		
 				//OSM Historic Map
-		show2.append($('<a>').css('marginLeft', 5).attr({title: 'OSM Historic Map', href: 'https://yopaseopor.github.io/osmhistoricmap/#map=' + Math.min(view.getZoom(), 18) + '/' + coordinateLL[1] + '/' + coordinateLL[0] + '&view=tagging', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones_web/osmhistoricmap_logo.png', height: 20, width: 20})));
+		show2.append($('<a>').css('marginLeft', 5).attr({title: 'OSM Historic Map', href: 'https://yopaseopor.github.io/osmhistoricmap/#map=' + Math.min(view.getZoom(), 18) + '/' + coordinateLL[1] + '/' + coordinateLL[0] + '&view=tagging', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones_web/osmhistoricmap_logo.svg', height: 20, width: 20})));
 		
 						//OSM Indoor Map
-		show2.append($('<a>').css('marginLeft', 5).attr({title: 'OSM Indoor Map', href: 'https://yopaseopor.github.io/osmindoormap/#map=' + Math.min(view.getZoom(), 18) + '/' + coordinateLL[1] + '/' + coordinateLL[0] + '&view=tagging', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones_web/osmindoormap_logo.png', height: 20, width: 20})));
-		
-								//OSM Indoor Map
-		show2.append($('<a>').css('marginLeft', 5).attr({title: 'OSM Indoor Map', href: 'https://yopaseopor.github.io/osmindoormap/#map=' + Math.min(view.getZoom(), 18) + '/' + coordinateLL[1] + '/' + coordinateLL[0] + '&view=tagging', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones_web/osmindoormap_logo.png', height: 20, width: 20})));
+		show2.append($('<a>').css('marginLeft', 5).attr({title: 'OSM Indoor Map', href: 'https://yopaseopor.github.io/osmindoormap/#map=' + Math.min(view.getZoom(), 18) + '/' + coordinateLL[1] + '/' + coordinateLL[0] + '&view=tagging', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones_web/osmindoormap_logo.svg', height: 20, width: 20})));
 				
 				//OSM Lit Map
 		show2.append($('<a>').css('marginLeft', 5).attr({title: 'OSM Lit Map', href: 'https://yopaseopor.github.io/osmlitmap/#map=' + Math.min(view.getZoom(), 18) + '/' + coordinateLL[1] + '/' + coordinateLL[0] + '&view=tagging', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones_web/osmlitmap_logo.svg', height: 20, width: 20})));
