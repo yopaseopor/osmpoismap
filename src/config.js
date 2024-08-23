@@ -21418,6 +21418,9 @@ style: function (feature) {
 				//OSM Library Map
 		show2.append($('<a>').css('marginLeft', 5).attr({title: 'OSM Library Map', href: 'https://yopaseopor.github.io/osmlibrarymap/#map=' + Math.min(view.getZoom(), 18) + '/' + coordinateLL[1] + '/' + coordinateLL[0] + '&view=tagging', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones_web/osmlibrarymap_logo.svg', height: 20, width: 20})));
 		
+						//OSM Pets Map
+		show2.append($('<a>').css('marginLeft', 5).attr({title: 'OSM Pets Map', href: 'https://yopaseopor.github.io/osmpetsmap/#map=' + Math.min(view.getZoom(), 18) + '/' + coordinateLL[1] + '/' + coordinateLL[0] + '&view=tagging', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones_web/osmpetsmap_logo.svg', height: 20, width: 20})));
+		
 				//OSM Sports Map
 		show2.append($('<a>').css('marginLeft', 5).attr({title: 'OSM Sports Map', href: 'https://yopaseopor.github.io/osmsportsmap/#map=' + Math.min(view.getZoom(), 18) + '/' + coordinateLL[1] + '/' + coordinateLL[0] + '&view=tagging', target: '_blank'}).html($('<img>').attr({src: imgSrc + 'icones_web/osmsportsmap_logo.svg', height: 20, width: 20})));
 		
