@@ -137,8 +137,8 @@ var config = {
 			iconSrc: imgSrc + 'icones_web/logo_icgc.png',
 			source: new ol.source.TileWMS({
 				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; ICGC &mdash; Source: ICGC',
-				url: 'https://geoserveis.icgc.cat/icc_mapesbase/wms/service?',
-				params: {'LAYERS': 'orto25c', 'VERSION': '1.1.1'}
+				url: 'https://geoserveis.icgc.cat/servei/catalunya/orto-territorial/wms?',
+				params: {'LAYERS': 'ortofoto_color_vigent', 'VERSION': '1.3.0'}
 			}),
 			visible: false
 
