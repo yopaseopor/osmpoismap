@@ -282,3 +282,134 @@ a:hover {
 		background-color: rgba(36,0,136,.3);
 	}
 }
+
+/* PanoraMax Viewer Styles */
+.panoramax-viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: none;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.panoramax-viewer.active {
+    display: block;
+}
+
+.panoramax-viewer iframe {
+    width: 100%;
+    height: calc(100% - 30px);
+    border: none;
+    margin-top: -80px; /* Adjust for mobile */
+    position: relative;
+    z-index: 1;
+}
+
+.panoramax-viewer .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.panoramax-viewer .credits {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 12px;
+    padding: 0 10px;
+    z-index: 1001;
+}
+
+.panoramax-viewer .credits .credit {
+    display: flex;
+    align-items: center;
+}
+
+.panoramax-viewer .credits a {
+    color: #00447B;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.panoramax-viewer .credits a:hover {
+    color: #40F;
+}
+
+/* Responsive styles */
+@media only screen and (min-width: 600px) {
+    .panoramax-viewer {
+        top: 50%;
+        left: auto;
+        right: 0;
+        width: 40%;
+        height: 100%;
+        transform: translate(100%, -50%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .panoramax-viewer.active {
+        transform: translate(0, -50%);
+    }
+
+    .panoramax-viewer iframe {
+        margin-top: -60px; /* Adjust for desktop */
+    }
+
+    .map.viewer-active {
+        width: 60% !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .panoramax-viewer {
+        width: 50%;
+    }
+
+    .panoramax-viewer iframe {
+        margin-top: -40px; /* Adjust for larger screens */
+    }
+
+    .map.viewer-active {
+        width: 50% !important;
+    }
+}
+
+/* Adjust map when viewer is active */
+.map.viewer-active {
+    height: 100% !important;
+}
+
+.osmcat-panoramax button {
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 2px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.osmcat-panoramax button:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+.osmcat-panoramax button.active {
+    background: #00447B;
+    color: white;
+}
