@@ -183,6 +183,9 @@ $(function () {
 		target: 'map',
 		view: view
 	});
+	
+		// Initialize Nominatim search
+	initNominatimSearch(map);
 
 	var layersControlBuild = function () {
 		var visibleLayer,
