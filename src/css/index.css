@@ -169,6 +169,93 @@ a:hover {
   border-color: #555 transparent transparent transparent;
 }
 
+
+/* Nominatim Search Styles */
+.nominatim-search {
+	top: 30px;
+	left: 44px;
+}
+
+.nominatim-search button {
+    background-color: rgba(255,255,255,0.4);
+    border: none;
+    border-radius: 2px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.nominatim-search button:hover {
+    background-color: rgba(255,255,255,0.6);
+}
+
+.nominatim-search input {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    width: 250px;
+    padding: 5px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.nominatim-search .search-results {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 250px;
+    max-height: 300px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.nominatim-search .search-results li {
+    padding: 8px 12px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.nominatim-search .search-results li:hover {
+    background-color: rgba(0,60,136,0.3);
+}
+
+.nominatim-search .search-results li.no-results {
+    font-style: italic;
+    color: #666;
+    cursor: default;
+}
+
+.nominatim-search .search-results li.no-results:hover {
+    background-color: transparent;
+}
+
+.nominatim-search.loading button i {
+    animation: spin 1s linear infinite;
+}
+
+.nominatim-marker {
+    color: #ff0000;
+    font-size: 24px;
+    text-shadow: 0 0 3px white;
+    animation: pulse 1s ease-in-out;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+
 /* Big screen */
 @media only screen and (min-width:600px) {
 	.flex-row{
