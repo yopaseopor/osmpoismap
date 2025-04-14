@@ -183,12 +183,15 @@ $(function () {
 		target: 'map',
 		view: view
 	});
-	
-		// Initialize Nominatim search
+
+	// Initialize Nominatim search
 	initNominatimSearch(map);
 
 	// Initialize PanoraMax viewer
 	initPanoraMaxViewer(map);
+
+	// Initialize Router
+	initRouter(map);
 
 	var layersControlBuild = function () {
 		var visibleLayer,
