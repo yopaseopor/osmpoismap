@@ -1,5 +1,203 @@
 /* global config, ol */
 $(function () {
+    // --- Layer Searcher Integration ---
+    // 1. Flatten base layers into window.layers
+    window.layers = [];
+    if (config && Array.isArray(config.layers)) {
+        window.layers = config.layers.filter(function(layerGroup) {
+            return layerGroup.get && layerGroup.get('type') !== 'overlay';
+        }).map(function(layerGroup) {
+            return {
+                title: layerGroup.get('title') || '',
+                group: layerGroup.get('group') || '',
+                id: layerGroup.get('id') || '',
+                _olLayerGroup: layerGroup
+            };
+        });
+    }
+    // 2. Define window.renderLayerList
+    window.renderLayerList = function(filtered, query) {
+        var $list = $('#layer-list');
+        if (!$list.length) {
+            $list = $('<div id="layer-list"></div>');
+            $('#menu').find('#layer-search-container').after($list);
+        }
+        $list.empty();
+        if (!query || !filtered || !filtered.length) {
+            // Only show message if there is a query
+            if (query && (!filtered || !filtered.length)) {
+                $list.append('<div style="padding:8px;color:#888;">No layers found.</div>');
+            }
+            return;
+        }
+        var activeLayer = null;
+        $.each(config.layers, function(indexLayer, layerGroup) {
+            if (layerGroup.get && layerGroup.get('type') !== 'overlay' && layerGroup.getVisible && layerGroup.getVisible()) {
+                activeLayer = layerGroup;
+            }
+        });
+        filtered.forEach(function(layer, idx) {
+            var isActive = activeLayer && ((layer.id && activeLayer.get('id') === layer.id) || (activeLayer.get('title') === layer.title && activeLayer.get('group') === layer.group));
+            var $item = $('<div>').addClass('layer-list-item').text((layer.group ? layer.group + ': ' : '') + layer.title);
+            if (isActive) $item.addClass('active').attr('tabindex', 0);
+            $item.css({cursor:'pointer'}).on('click', function() {
+                window.activateLayer(layer);
+            });
+            $list.append($item);
+            if (isActive) {
+                setTimeout(function(){
+                    $item[0].scrollIntoView({block:'nearest'});
+                    $item.focus();
+                }, 10);
+            }
+        });
+    };
+
+
+    // 3. Define window.activateLayer
+    window.activateLayer = function(layer) {
+        var activated = false;
+        // Hide all base layers and overlays, show only selected base layer
+        $.each(config.layers, function(indexLayer, layerGroup) {
+            if (layerGroup.get && layerGroup.get('type') !== 'overlay') {
+                // If _olLayerGroup exists and matches, activate directly
+                if (!activated && layer._olLayerGroup && layerGroup === layer._olLayerGroup) {
+                    layerGroup.setVisible(true);
+                    activated = true;
+                } else if (!activated && ((layer.id && layerGroup.get('id') === layer.id) ||
+                    (layerGroup.get('title') === layer.title && layerGroup.get('group') === layer.group))) {
+                    layerGroup.setVisible(true);
+                    activated = true;
+                } else {
+                    layerGroup.setVisible(false);
+                }
+            } else if (layerGroup.get && layerGroup.get('type') === 'overlay') {
+                // Hide all overlays
+                $.each(layerGroup.getLayers().getArray(), function(idx, olayer) {
+                    olayer.setVisible(false);
+                });
+            }
+        });
+        // If not found by id/title/group, try to activate by index fallback (for robustness)
+        if (!activated && typeof layer._olLayerGroup !== 'undefined') {
+            layer._olLayerGroup.setVisible(true);
+        }
+        // Optionally, update the layer list to show only this layer
+        window.renderLayerList([layer], layer.title);
+    };
+
+
+
+    // Render all layers initially
+    $(document).ready(function() {
+        window.renderLayerList(window.layers);
+    });
+    // --- End Layer Searcher Integration ---
+
+    // --- Overlay Searcher Integration ---
+    // 1. Flatten overlays into window.overlays
+    window.overlays = [];
+    if (config && Array.isArray(config.overlays)) {
+        window.overlays = config.overlays.map(function(overlay) {
+            return {
+                title: overlay.title || '',
+                group: overlay.group || '',
+                id: overlay.id || '',
+                ...overlay
+            };
+        });
+    }
+    // 2. Define window.renderOverlayList
+    window.renderOverlayList = function(filtered, query) {
+        var $list = $('#overlay-list');
+        $list.empty();
+        // Ensure Clear Overlay button is always at the bottom of the menu, not inside the overlay list
+        if (!$('#clear-overlay-container').length) {
+            var $clearContainer = $('<div id="clear-overlay-container"></div>');
+            $('.menu').append($clearContainer);
+        }
+        var $clearBtn = $('<div>')
+            .addClass('clear-active-overlay-btn')
+            .text('✖ Clear Active Overlay')
+            .css({cursor:'pointer',padding:'6px 10px',background:'#ffeaea',color:'#b00',fontWeight:'bold',margin:'12px 8px'})
+            .attr('tabindex', 0)
+            .on('click', function() {
+                // Hide all overlays
+                $.each(config.layers, function(indexLayer, layerGroup) {
+                    if (layerGroup.get && layerGroup.get('type') === 'overlay') {
+                        $.each(layerGroup.getLayers().getArray(), function(idx, olayer) {
+                            if (olayer.setVisible) olayer.setVisible(false);
+                        });
+                    }
+                });
+                if (window.renderOverlayList) window.renderOverlayList([], '');
+                $('#overlay-search').val('');
+            });
+        $('#clear-overlay-container').empty().append($clearBtn);
+        var $list = $('#overlay-list');
+        $list.empty();
+        if (!query || !filtered || !filtered.length) {
+            if (query && (!filtered || !filtered.length)) {
+                $list.append('<div style="padding:8px;color:#888;">No overlays found.</div>');
+            }
+            return;
+        }
+        var activeOverlay = null;
+        // Group overlays by first letter only, show max 10 per letter
+        var letterMap = {};
+        filtered.forEach(function(overlay) {
+            var titleOrGroup = (overlay.title || overlay.group || '').trim();
+            var firstLetter = titleOrGroup.charAt(0) ? titleOrGroup.charAt(0).toUpperCase() : '_';
+            if (!letterMap[firstLetter]) letterMap[firstLetter] = [];
+            if (letterMap[firstLetter].length < 10) {
+                letterMap[firstLetter].push(overlay);
+            }
+        });
+        // Render overlays (max 10 per letter)
+        Object.keys(letterMap).sort().forEach(function(letter) {
+            letterMap[letter].forEach(function(overlay) {
+                var isActive = activeOverlay && ((overlay.id && activeOverlay.get('id') === overlay.id) || (activeOverlay.get('title') === overlay.title && activeOverlay.get('group') === overlay.group));
+                var $item = $('<div>').addClass('overlay-list-item').text((overlay.group ? overlay.group + ': ' : '') + overlay.title);
+                if (isActive) $item.addClass('active').attr('tabindex', 0);
+                $item.css({cursor:'pointer'}).on('click', function() {
+                    window.activateOverlay(overlay);
+                });
+                $list.append($item);
+                if (isActive) {
+                    setTimeout(function(){
+                        $item[0].scrollIntoView({block:'nearest'});
+                        $item.focus();
+                    }, 10);
+                }
+            });
+        });
+    };
+
+
+
+    // Toggle the chosen overlay independently
+    window.activateOverlay = function(overlay) {
+        // Toggle visibility of the selected overlay (by id or by group/title)
+        $.each(config.layers, function(indexLayer, layerGroup) {
+            if (layerGroup.get && layerGroup.get('type') === 'overlay') {
+                $.each(layerGroup.getLayers().getArray(), function(idx, olayer) {
+                    if ((overlay.id && olayer.get('id') === overlay.id) ||
+                        (olayer.get('title') === overlay.title && olayer.get('group') === overlay.group)) {
+                        olayer.setVisible(!olayer.getVisible());
+                    }
+                });
+            }
+        });
+        // Optionally, update the overlay list UI
+        if (window.renderOverlayList) window.renderOverlayList([], '');
+    };
+
+    // Render all overlays initially
+    $(document).ready(function() {
+        window.renderOverlayList(window.overlays);
+    });
+    // --- End Overlay Searcher Integration ---
+
 	$('#map').empty(); // Remove Javascript required message
 	var baseLayerIndex = 0;
 	
@@ -190,6 +388,9 @@ $(function () {
 	// Initialize PanoraMax viewer
 	initPanoraMaxViewer(map);
 
+	// Initialize Mapillary viewer
+	initMapillaryViewer(map);
+
 	// Initialize Router
 	initRouter(map);
 
@@ -228,20 +429,24 @@ $(function () {
 							var visible = overlay.getVisible();
 							overlay.setVisible(!visible);
 							updatePermalink();
-						});
-					overlayDivContent.append(overlayButton);
-					if (overlay.getVisible()) {
-						overlayButton.addClass('active');
-					}
+						}),
+						checkbox = $('<input type="checkbox">').css({marginRight:'6px'});
+					checkbox.prop('checked', overlay.getVisible());
+					checkbox.on('change', function() {
+						overlay.setVisible(this.checked);
+						updatePermalink();
+					});
+					overlayButton.prepend(checkbox);
 					overlay.on('change:visible', function () {
+						checkbox.prop('checked', overlay.getVisible());
 						if (overlay.getVisible()) {
 							overlayButton.addClass('active');
 						} else {
 							overlayButton.removeClass('active');
 						}
 					});
+					overlayDivContent.append(overlayButton);
 				});
-
 				overlayDiv.append(overlayDivContent);
 				overlayDiv.show();
 				overlayIndex++;
@@ -271,23 +476,23 @@ $(function () {
 
 					layer.set('layerIndex', layerIndex);
 
-				content.append(layerButton);
-				if (layer.getVisible()) {
-					if (visibleLayer === undefined) {
-						layerButton.addClass('active');
-						visibleLayer = layer;
-						baseLayerIndex = layerIndex;
-					} else {
-						layer.setVisible(false);
-					}
-				}
-				layer.on('change:visible', function () {
-					if (layer.getVisible()) {
-						layerButton.addClass('active');
-					} else {
-						layerButton.removeClass('active');
-					}
-				});
+					// Add checkbox for enabling/disabling layer
+					var checkbox = $('<input type="checkbox">').css({marginRight:'6px'});
+					checkbox.prop('checked', layer.getVisible());
+					checkbox.on('change', function() {
+						layer.setVisible(this.checked);
+					});
+					layerButton.prepend(checkbox);
+
+					content.append(layerButton);
+					layer.on('change:visible', function () {
+						checkbox.prop('checked', layer.getVisible());
+						if (layer.getVisible()) {
+							layerButton.addClass('active');
+						} else {
+							layerButton.removeClass('active');
+						}
+					});
 				layerIndex++;
 			}
 		});
@@ -298,7 +503,11 @@ $(function () {
 		return container;
 	};
 
-	$('#menu').append(layersControlBuild());
+    $('#menu').append(layersControlBuild());
+    // Optionally, re-render layers after layersControl if needed
+    if (window.renderLayerList && window.layers) window.renderLayerList(window.layers);
+    // Optionally, re-render overlays after overlaysControl if needed
+    if (window.renderOverlayList && window.overlays) window.renderOverlayList(window.overlays);
 
 	map.addControl(new ol.control.MousePosition({
 		coordinateFormat: function (coordinate) {
