@@ -21212,6 +21212,8 @@ style: function (feature) {
    } 
    
 },
+   // --- NSI Brand Overlays (auto-generated) ---
+
 
 		{
 			group: 'Comercio',
