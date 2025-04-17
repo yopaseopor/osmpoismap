@@ -48,10 +48,61 @@ a:hover {
 	width: 100%;
 }
 
-.menu{
-	height: 20%;
-	width: 100%;
+.menu {
+    height: 100vh;
+    width: 320px;
+    min-width: 260px;
+    max-width: 400px;
+    background: #f8f9fa;
+    border-right: 1px solid #ddd;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.03);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
 }
+
+#clear-overlay-container {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    background: #f8f9fa;
+    border-top: 1px solid #eee;
+    padding-bottom: 8px;
+}
+
+#overlay-list {
+    margin-bottom: 56px;
+}
+
+#overlay-list {
+    background: #fff;
+    border-radius: 6px;
+    margin: 0 8px 8px 8px;
+    padding: 8px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    min-height: 40px;
+    flex: 1 1 0%;
+    max-height: none;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#overlay-search-container {
+    margin: 8px 8px 4px 8px;
+    padding: 0 0 2px 0;
+    background: #f4f7fb;
+    border-radius: 4px;
+}
+
+.clear-active-overlay-btn {
+    margin: 8px 8px 0 8px;
+}
+
 
 .osmcat-geobutton {
 	bottom: 30px;
@@ -1024,4 +1075,67 @@ a:hover {
     stroke: #fff;
     stroke-width: 2px;
     r: 6;  /* Make active dot slightly larger */
+}
+
+.clear-active-overlay-btn {
+  cursor: pointer;
+  padding: 6px 10px;
+  background: #ffeaea;
+  color: #b00;
+  font-weight: bold;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  text-align: left;
+  transition: background 0.2s;
+}
+.clear-active-overlay-btn:hover, .clear-active-overlay-btn:focus {
+  background: #ffcccc;
+  outline: none;
+}
+
+/* Overlay search bar styles */
+#overlay-search-container, #layer-search-container {
+  position: relative;
+}
+#overlay-search, #layer-search {
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+.overlay-search-dropdown, #layer-search-dropdown {
+  position: absolute;
+  left: 0; right: 0;
+  top: 100%;
+  z-index: 100;
+  background: #fff;
+  border: 1px solid #bbb;
+  border-top: none;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  display: none;
+}
+.overlay-search-option, .layer-search-option {
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #222;
+}
+.overlay-search-option:hover, .overlay-search-option:focus,
+.layer-search-option:hover, .layer-search-option:focus {
+  background: #f0f0f0;
+  outline: none;
+}
+.overlay-search-option {
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #222;
+}
+.overlay-search-option:hover, .overlay-search-option:focus {
+  background: #f0f0f0;
+  outline: none;
 }
