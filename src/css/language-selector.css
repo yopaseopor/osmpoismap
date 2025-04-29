@@ -1,0 +1,31 @@
+.language-selector-wrapper {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+.language-selector {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.language-selector select {
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.language-selector select:hover {
+    border-color: #666;
+}
+
+.language-selector select:focus {
+    outline: none;
+    border-color: #0066cc;
+    box-shadow: 0 0 2px 2px rgba(0, 102, 204, 0.2);
+} 

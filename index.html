@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ca">
 <head>
 	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<!--@@ Título a modificar -->
 	<title>OpenStreetMap POIs Map</title>
 	<!--@@ Título a modificar para la descripción -->
@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="src/api/openlayers/v6.2.2-custom/ol.css" type="text/css"/>
 	<link rel="stylesheet" href="src/css/font-awesome.css" type="text/css"/>
 	<link rel="stylesheet" href="src/css/index.css" type="text/css"/>
+	<link rel="stylesheet" href="src/css/language-selector.css" type="text/css"/>
 	
 	<link rel="icon" href="favicon.ico"/>
 </head>
@@ -20,31 +21,49 @@
 	<!--@@ Modificar comentario de Javascript -->
 		<div id="map" class="map">Loading... You need Javascript...Cargando necesitas Javascript...Carregant...necessites Javascript</div>
 		<div id="menu" class="menu">
+			<!-- Language Selector -->
+			<div id="language-selector-container" class="language-selector-wrapper"></div>
 			<!-- Layer Searcher (at the top) -->
 			<div id="layer-search-container" style="margin: 10px 0;">
-			  <input type="text" id="layer-search" placeholder="Search layers..." style="width: 100%; padding: 5px;">
+			  <input type="text" id="layer-search" data-i18n="layersLabel" placeholder="Search layers..." style="width: 100%; padding: 5px;">
 			  <div id="layer-search-dropdown"></div>
 			</div>
 			<!-- Layers section -->
 			<!-- Overlay Searcher (between Layers and Overlays) -->
 			<div id="overlay-search-container" style="margin: 10px 0;">
-			  <input type="text" id="overlay-search" placeholder="Search overlays..." style="width: 100%; padding: 5px;">
+			  <input type="text" id="overlay-search" data-i18n="overlaysLabel" placeholder="Search overlays..." style="width: 100%; padding: 5px;">
 			  <div id="overlay-search-dropdown"></div>
 			</div>
 			<!-- Overlays section -->
 			<div id="overlay-list"></div>
 		</div>
 	</div>
-	<script src="src/api/jquery/3.4.1/jquery.min.js" defer=""></script>
-	<script src="src/api/jquery-ui-1.12.1.custom/jquery-ui.min.js" defer=""></script>
-	<script src="src/api/openlayers/v6.2.2-custom/ol.js" defer=""></script>
-	<script src="src/config.js" defer=""></script>
-	<script src="src/layer_search.js" defer=""></script>
-	<script src="src/overlay_search.js" defer=""></script>
-	<script src="src/index.js" defer=""></script>
-	<script src="src/nominatim_search.js" defer=""></script>
-	<script src="src/panoramax_viewer.js" defer=""></script>
-	<script src="src/mapillary_viewer.js" defer=""></script>
-	<script src="src/router.js" defer=""></script>
+	<!-- Core Libraries -->
+	<script src="src/api/jquery/3.4.1/jquery.min.js"></script>
+	<script src="src/api/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="src/api/openlayers/v6.2.2-custom/ol.js"></script>
+	<script src="https://unpkg.com/osmtogeojson@3.0.0-beta.5/osmtogeojson.js"></script>
+
+	<!-- Configuration -->
+	<script src="src/config.js"></script>
+
+	<!-- Modules -->
+	<script type="module" src="src/i18n/index.js"></script>
+	<script type="module" src="src/components/LanguageSelector.js"></script>
+	<script type="module" src="src/language_init.js"></script>
+	<script type="module" src="src/overlays/translated_overlays.js"></script>
+	<script type="module" src="src/overlays/external/loader.js"></script>
+	<script type="module" src="src/overlays/index.js"></script>
+	<script type="module" src="src/overlay_integration.js"></script>
+	<script type="module" src="src/init.js"></script>
+
+	<!-- Application Logic -->
+	<script src="src/layer_search.js"></script>
+	<script src="src/overlay_search.js"></script>
+	<script src="src/nominatim_search.js"></script>
+	<script src="src/panoramax_viewer.js"></script>
+	<script src="src/mapillary_viewer.js"></script>
+	<script src="src/router.js"></script>
+	<script src="src/index.js"></script>
 </body>
 </html>

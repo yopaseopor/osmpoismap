@@ -172,12 +172,12 @@ var config = {
 	* iconSrc: string ruta de la imatge
 	* style: function see https://openlayers.org/en/latest/apidoc/module-ol_style_Style-Style.html
 	*/
-	overlays: [], // Will be filled after loading overlay category files
+	overlays: [
 
-		// Overlay categories are now loaded from separate files in src/overlays/
-		// Example: overlays/alimentacion.js, overlays/economia.js, etc.
-		// Each file should define a global array like window.overlayCategory_alimentacion
-		// After all category files are loaded, we combine them below.
+
+
+		
+				
 		
 {
 			group: 'Alimentación',
@@ -21212,8 +21212,6 @@ style: function (feature) {
    } 
    
 },
-   // --- NSI Brand Overlays (auto-generated) ---
-
 
 		{
 			group: 'Comercio',

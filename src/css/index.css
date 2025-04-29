@@ -56,26 +56,18 @@ a:hover {
     background: #f8f9fa;
     border-right: 1px solid #ddd;
     box-shadow: 2px 0 8px rgba(0,0,0,0.03);
-    padding: 0;
+    padding: 10px 0 0 0;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     position: relative;
 }
 
-#clear-overlay-container {
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 10;
-    background: #f8f9fa;
-    border-top: 1px solid #eee;
-    padding-bottom: 8px;
-}
-
-#overlay-list {
-    margin-bottom: 56px;
+#language-selector-container {
+    padding: 0 10px 10px 10px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+    background: #fff;
 }
 
 #overlay-list {
@@ -86,21 +78,77 @@ a:hover {
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
     min-height: 40px;
     flex: 1 1 0%;
-    max-height: none;
+    max-height: calc(100% - 16px);
     overflow-y: auto;
     display: flex;
     flex-direction: column;
 }
 
+
 #overlay-search-container {
     margin: 8px 8px 4px 8px;
-    padding: 0 0 2px 0;
-    background: #f4f7fb;
-    border-radius: 4px;
-}
+    padding: 0 0 2px 0;/*
+====================================
+CLEAR ACTIVE OVERLAY BUTTON
+====================================
+*/
+
+
 
 .clear-active-overlay-btn {
+    width: 40px;
+    height: 40px;
+    background: #ffeaea;
+    color: #b00;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4em;
+    border: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    cursor: pointer;
+    transition: background 0.2s;
+    padding: 0;
+    margin: 0;
+}
+
+
+.clear-active-overlay-btn i {
+    color: #b00;
+    font-size: 1.2em;
+    line-height: 1;
+    width: 1em;
+    height: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clear-active-overlay-btn i {
+    color: #b00;
+    font-size: 1.2em;
+}
+.clear-active-overlay-btn:hover, .clear-active-overlay-btn:focus {
+    background: #ffcccc;
+    outline: none;
+}
+@media only screen and (max-width: 599px) {
+    .clear-active-overlay-btn {
+        width: 40px;
+        height: 40px;
+        margin: 0 4px;
+    }
+}
+
     margin: 8px 8px 0 8px;
+}
+
+.osmcat-clearoverlaybutton {
+    position: absolute;
+    left: 44px;
+    top: 5px;
+    z-index: 1002;
 }
 
 
@@ -119,10 +167,33 @@ a:hover {
 	right: 44px;
 }
 
-.osmcat-menu{
-	display: flex;
-	flex-wrap: wrap;
-	height: 100%;
+.osmcat-menu {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 0;
+    max-height: 80vh; /* Limit height to 80% of viewport */
+    overflow-y: auto; /* Enable vertical scrollbar when needed */
+    scrollbar-width: thin; /* For Firefox */
+}
+
+/* Custom scrollbar for WebKit browsers */
+.osmcat-menu::-webkit-scrollbar {
+    width: 8px;
+}
+
+.osmcat-menu::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.osmcat-menu::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.osmcat-menu::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 .osmcat-select {
@@ -133,32 +204,24 @@ a:hover {
 }
 
 .osmcat-layer {
-	border: 1px solid #BBB;
-	padding-left: 5px;
-	width: 100%;
-	height: 100%;  /* Default height when router is not active */
-	overflow-y: auto;
+    border: 1px solid #BBB;
+    padding-left: 5px;
+    width: 100%;
+    flex: 1 1 0;
+    min-height: 0;
+    max-height: 100%;
+    overflow-y: auto;
+    max-height: 70vh; /* Slightly less than parent to avoid double scroll */
 }
 
-/* Height adjustments when router is active */
-.osmcat-menu.router-active .osmcat-layer {
-	height: 33.33%;
-}
-
-/* Specific height adjustments for layers when router is not active */
-.osmcat-menu:not(.router-active) .osmcat-layer:first-child {
-	height: 50%;
-}
-
-.osmcat-menu:not(.router-active) .osmcat-layer:nth-child(2) {
-	height: 50%;
-}
 
 .osmcat-layer > div {
 	width: 100%;
 }
 .osmcat-content {
 	border-top: 1px solid;
+    max-height: 70vh; /* Slightly less than parent to avoid double scroll */
+    overflow-y: auto;
 }
 .osmcat-content > div {
 	margin-top: 3px;
@@ -243,15 +306,21 @@ a:hover {
 }
 
 .nominatim-search button {
-    background-color: rgba(255,255,255,0.4);
+    background-color: #567CAC;
     border: none;
     border-radius: 2px;
     padding: 2px;
     cursor: pointer;
 }
-
+.nominatim-search button i {
+    color: #FFFFFF;
+}
 .nominatim-search button:hover {
-    background-color: rgba(255,255,255,0.6);
+    background-color: #34587C;
+}
+.nominatim-search button.active {
+    background-color: #34587C;
+    color: #fff;
 }
 
 .nominatim-search input {
@@ -287,7 +356,7 @@ a:hover {
 }
 
 .nominatim-search .search-results li:hover {
-    background-color: rgba(0,60,136,0.3);
+    background-color: rgba(0,60,136,.3);
 }
 
 .nominatim-search .search-results li.no-results {
@@ -331,13 +400,13 @@ a:hover {
     }
 
     .map {
-        height: 70vh;
+        height: 50vh;
         border: none;
         position: relative;
     }
 
     .menu {
-        height: 30vh;
+        height: 50vh;
         width: 100%;
         position: relative;
         z-index: 1;
@@ -355,6 +424,24 @@ a:hover {
         overflow-x: auto;
         overflow-y: hidden;
         -webkit-overflow-scrolling: touch;
+    }
+
+    /* CSS-only: Layer menu width (not active) */
+    .osmcat-menu .osmcat-layer {
+        width: 260px;
+        max-width: 100vw;
+        min-width: 0;
+        flex: 0 0 260px;
+    }
+
+    /* CSS-only: Overlay menu width (not active) */
+    .osmcat-menu .osmcat-overlay {
+        width: 220px;
+        max-width: 100vw;
+        min-width: 0;
+        flex: 0 0 220px;
+        max-height: 60vh;
+        overflow-y: auto;
     }
 
     .osmcat-layer {
@@ -390,8 +477,18 @@ a:hover {
         right: 44px;
     }
 
-    /* Ensure proper menu height in router mode */
+    /* Set specific widths for each menu type on mobile */
+    .osmcat-menu.layer-active {
+        width: 320px !important;
+        max-width: 100vw;
+    }
+    .osmcat-menu.overlay-active {
+        width: 280px !important;
+        max-width: 100vw;
+    }
     .osmcat-menu.router-active {
+        width: 360px !important;
+        max-width: 100vw;
         height: 100%;
     }
 
@@ -622,239 +719,43 @@ a:hover {
     }
 }
 
-/* Adjust map when viewer is active */
-.map.viewer-active {
-    height: 100% !important;
-}
-
 .osmcat-panoramax button {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #567CAC;
     border: none;
     border-radius: 2px;
     padding: 5px 10px;
     cursor: pointer;
     margin: 2px;
 }
-
-.osmcat-panoramax button:hover {
-    background: rgba(255, 255, 255, 1);
+.osmcat-panoramax button i {
+    color: #FFFFFF;
 }
-
+.osmcat-panoramax button:hover {
+    background: #34587C;
+}
 .osmcat-panoramax button.active {
-    background: #00447B;
-    color: white;
+    background: #34587C;
+    color: #fff;
 }
 
 /* Router Styles */
 .osmcat-router {
     top: .5em;
     right: 8em;
-}
-
-.osmcat-button {
-    background-color: rgba(255,255,255,0.4);
+	background-color: #567CAC;
+    color: #fff;
     border: none;
     border-radius: 2px;
     padding: 2px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
     margin: 2px;
-    border: none;
-    cursor: pointer;
-    width: 1.375em;
-    height: 1.375em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-}
-
-.osmcat-button:hover {
-    background-color: rgba(255,255,255,0.6);
-}
-
-.osmcat-button.active {
-    background-color: rgba(0,60,136,.7);
-}
-
-.osmcat-button i {
-    font-size: 1.2em;
-    color: black;
-}
-
-.osmcat-button.active i {
-    color: white;
-}
-
-.router-form {
-    padding: 10px;
-}
-
-.router-input {
-    margin-bottom: 15px;
-}
-
-.router-input label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-}
-
-.router-input .location-input {
-    display: flex;
-    gap: 5px;
-}
-
-.router-input .location-input input {
-    flex: 1;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-}
-
-.router-input .search-button {
-    position: relative;
-    padding: 2px;
-    width: 1.375em;
-    height: 1.375em;
-}
-
-.router-input .search-button:hover {
-    background-color: rgba(255,255,255,0.6);
-}
-
-.router-input select {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-}
-
-.router-input .search-results {
-    max-height: 150px;
-    overflow-y: auto;
-    border: 1px solid #ccc;
-    margin-top: 5px;
-    display: none;
-    background-color: white;
-    border-radius: 2px;
-}
-
-.router-input .search-result {
-    padding: 5px;
-    cursor: pointer;
-    border-bottom: 1px solid #eee;
-}
-
-.router-input .search-result:hover {
-    background-color: rgba(0,60,136,.3);
-    color: white;
-}
-
-.router-input .click-hint {
-    margin: 10px 0;
-    color: #666;
-    font-style: italic;
-}
-
-.router-input .calculate-route {
-    width: 100%;
-    padding: 8px;
-    background-color: rgba(0,60,136,.7);
-    color: white;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.router-input .calculate-route:hover {
-    background-color: rgba(0,60,136,.9);
-}
-
-.route-marker {
-    font-size: 24px;
-    color: #4a90e2;
-    text-shadow: 0 0 3px white;
-    cursor: move;
-    -webkit-user-select: none;
-    user-select: none;
-    -webkit-user-drag: element;
-}
-
-.route-marker:hover {
-    color: #357abd;
-}
-
-.route-marker i {
-    background-color: white;
-    border-radius: 50%;
-    padding: 5px;
-    pointer-events: auto;
-}
-
-/* Adjust router content in menu */
-.osmcat-layer .router-form {
-    max-height: calc(100% - 30px);  /* Account for header */
-    overflow-y: auto;
-}
-
-@media only screen and (min-width:600px) {
-    .osmcat-menu {
-        height: 100%;
-        width: 100%;
-    }
-
-    .osmcat-layer {
-        width: 100%;
-    }
-}
-
-/* Standardize button sizes and colors */
-.osmcat-button,
-.nominatim-search button,
-.osmcat-panoramax button,
-.router-input .search-button {
-    background-color: rgba(255,255,255,0.4);
-    border: none;
-    border-radius: 2px;
-    padding: 2px;
-    cursor: pointer;
-    width: 1.375em;
-    height: 1.375em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.osmcat-button:hover,
-.nominatim-search button:hover,
-.osmcat-panoramax button:hover,
-.router-input .search-button:hover {
-    background-color: rgba(255,255,255,0.6);
-}
-
-.osmcat-button.active,
-.osmcat-panoramax button.active {
-    background-color: rgba(0,60,136,.7);
-    color: white;
-}
-
-.osmcat-button i,
-.nominatim-search button i,
-.osmcat-panoramax button i,
-.router-input .search-button i {
-    font-size: 1.2em;
-    color: black;
-}
-
-.osmcat-button.active i,
-.osmcat-panoramax button.active i {
-    color: white;
-}
-
-/* Router specific styles */
-.osmcat-router {
-    top: .5em;
-    right: 8em;
+    transition: background 0.2s, color 0.2s;
 }
 
 /* PanoraMax viewer styles update */
@@ -1021,28 +922,67 @@ a:hover {
     .mapillary-viewer {
         width: 50%;
     }
-    
+
     .map.viewer-active {
         width: 50% !important;
     }
 }
 
 .osmcat-mapillary button {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #567CAC;
     border: none;
     border-radius: 2px;
     padding: 5px 10px;
     cursor: pointer;
     margin: 2px;
 }
-
+.osmcat-mapillary button i {
+    color: #FFFFFF;
+}
 .osmcat-mapillary button:hover {
-    background: rgba(255, 255, 255, 1);
+    background: #34587C;
+}
+.osmcat-mapillary button.active {
+    background: #34587C;
+    color: #fff;
 }
 
-.osmcat-mapillary button.active {
-    background: #00447B;
-    color: white;
+/* ====================================
+   ROUTER BUTTON (osmcat-router)
+   ====================================
+   This section styles the .osmcat-router button, which is always visible and active.
+   It matches the appearance and UX of other OpenLayers/map control buttons.
+*/
+.osmcat-router {
+    top: 80px;
+    left: 40px;
+	background-color: #567CAC;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    padding: 2px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+    margin: 2px;
+    transition: background 0.2s, color 0.2s;
+    position: absolute;
+    z-index: 1001;
+}
+.osmcat-router.active,
+.osmcat-router:focus,
+.osmcat-router:hover {
+    background-color: #34587C;
+    color: #fff;
+    outline: none;
+}
+.osmcat-router i {
+    color: #fff;
+    font-size: 1.2em;
 }
 
 /* PanoraMax viewer button position */
@@ -1138,4 +1078,199 @@ a:hover {
 .overlay-search-option:hover, .overlay-search-option:focus {
   background: #f0f0f0;
   outline: none;
+}
+
+/* Standardize button sizes and colors */
+.osmcat-button,
+.nominatim-search button,
+.osmcat-panoramax button,
+.router-input .search-button,
+.osmcat-routerbutton button {
+    background-color: rgba(255,255,255,0.4);
+    border: none;
+    border-radius: 2px;
+    padding: 2px;
+    cursor: pointer;
+    width: 1.375em;
+    height: 1.375em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.osmcat-routerbutton .router-btn.blue {
+    background-color: #34587C;
+    color: #fff;
+}
+.osmcat-routerbutton .router-btn.blue i {
+    color: #fff;
+}
+
+.osmcat-routerbutton {
+    display: inline-block;
+    margin-left: 4px;
+    vertical-align: middle;
+}
+
+.osmcat-routerbutton button:hover,
+.osmcat-routerbutton button.active {
+    background-color: #34587C;
+    color: #fff;
+}
+
+.osmcat-routerbutton button i {
+    color: #567CAC;
+}
+
+.osmcat-routerbutton button.active i {
+    color: #fff;
+}
+
+    background-color: rgba(255,255,255,0.4);
+    border: none;
+    border-radius: 2px;
+    padding: 2px;
+    cursor: pointer;
+    width: 1.375em;
+    height: 1.375em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.osmcat-button:hover,
+.nominatim-search button:hover,
+.osmcat-panoramax button:hover,
+.router-input .search-button:hover {
+    background-color: rgba(255,255,255,0.6);
+}
+
+.osmcat-button.active,
+.osmcat-panoramax button.active {
+    background-color: rgba(0,60,136,.7);
+    color: white;
+}
+
+.osmcat-button i,
+.nominatim-search button i,
+.osmcat-panoramax button i,
+.router-input .search-button i {
+    font-size: 1.2em;
+    color: black;
+}
+
+.osmcat-button.active i,
+.osmcat-panoramax button.active i {
+    color: white;
+}
+
+/* Router specific styles */
+.osmcat-router {
+    top: 80px;
+    left: 40px;
+	background-color: #567CAC;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    padding: 2px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+    margin: 2px;
+    transition: background 0.2s, color 0.2s;
+}
+
+/* PanoraMax viewer styles update */
+.panoramax-viewer .close-button {
+    background-color: rgba(255,255,255,0.4);
+    border: none;
+    border-radius: 2px;
+    padding: 2px;
+    width: 1.375em;
+    height: 1.375em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.panoramax-viewer .close-button:hover {
+    background-color: rgba(255,255,255,0.6);
+}
+
+.panoramax-viewer .credits a {
+    color: rgba(0,60,136,.7);
+}
+
+.panoramax-viewer .credits a:hover {
+    color: rgba(0,60,136,1);
+}
+
+/* Search button in router form */
+.router-input .search-button {
+    position: relative;
+    padding: 2px;
+    width: 1.375em;
+    height: 1.375em;
+}
+
+/* Calculate route button */
+.router-input .calculate-route {
+    width: 100%;
+    padding: 8px;
+    background-color: rgba(0,60,136,.7);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.router-input .calculate-route:hover {
+    background-color: rgba(0,60,136,.9);
+}
+
+@media only screen and (min-width: 1200px) {
+    .mapillary-viewer {
+        width: 50%;
+    }
+
+    .map.viewer-active {
+        width: 50% !important;
+    }
+}
+
+/* Overlay container styles */
+.osmcat-overlay-container {
+    max-height: 70vh;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.osmcat-overlay-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.osmcat-overlay-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.osmcat-overlay-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.osmcat-overlay-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Remove individual overlay scrolling */
+.osmcat-overlay {
+    overflow-y: visible;
+    max-height: none;
 }

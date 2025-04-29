@@ -1,6 +1,8 @@
 /* global config, ol */
 $(function () {
     // --- Layer Searcher Integration ---
+    // Remove early addition of 'Translated' overlay group here. It will be added after all overlays are loaded.
+
     // 1. Flatten base layers into window.layers
     window.layers = [];
     if (config && Array.isArray(config.layers)) {
@@ -95,45 +97,48 @@ $(function () {
     // --- End Layer Searcher Integration ---
 
     // --- Overlay Searcher Integration ---
-    // 1. Flatten overlays into window.overlays
-    window.overlays = [];
-    if (config && Array.isArray(config.overlays)) {
-        window.overlays = config.overlays.map(function(overlay) {
-            return {
-                title: overlay.title || '',
-                group: overlay.group || '',
-                id: overlay.id || '',
-                ...overlay
-            };
-        });
+    // 1. Initialize window.allOverlays
+    // window.allOverlays is initialized in overlays/index.js and overlays are imported as arrays, not functions.
+    // Do not re-initialize overlays here. Use window.allOverlays as the source of truth.
+    if (!window.allOverlays) {
+        console.error('window.allOverlays is not defined. Make sure overlays/index.js is loaded before index.js.');
+        window.allOverlays = {};
     }
+    window.overlays = [];
+    function updateWindowOverlays() {
+        // Only flatten overlays for the overlay searcher
+        window.overlays = Object.entries(window.allOverlays).reduce((acc, [groupName, overlays]) => {
+            if (Array.isArray(overlays)) {
+                return acc.concat(overlays.map(overlay => ({
+                    // Use already translated values
+                    title: overlay.title || '',
+                    group: overlay.group || '',
+                    id: overlay.id || '',
+                    ...overlay
+                })));
+            }
+            return acc;
+        }, []);
+    }
+
+    // Update overlays when they change
+    window.addEventListener('overlaysUpdated', function() {
+        // Overlays are updated by overlays/index.js
+        updateTranslatedOverlayGroup();
+        if (window.updateTranslations) window.updateTranslations();
+        updateWindowOverlays(); // Refresh overlays for searcher
+        if (window.renderOverlayList && window.overlays) window.renderOverlayList(window.overlays);
+    });
+
+    // Initial update
+    updateWindowOverlays();
+
     // 2. Define window.renderOverlayList
     window.renderOverlayList = function(filtered, query) {
         var $list = $('#overlay-list');
         $list.empty();
-        // Ensure Clear Overlay button is always at the bottom of the menu, not inside the overlay list
-        if (!$('#clear-overlay-container').length) {
-            var $clearContainer = $('<div id="clear-overlay-container"></div>');
-            $('.menu').append($clearContainer);
-        }
-        var $clearBtn = $('<div>')
-            .addClass('clear-active-overlay-btn')
-            .text('✖ Clear Active Overlay')
-            .css({cursor:'pointer',padding:'6px 10px',background:'#ffeaea',color:'#b00',fontWeight:'bold',margin:'12px 8px'})
-            .attr('tabindex', 0)
-            .on('click', function() {
-                // Hide all overlays
-                $.each(config.layers, function(indexLayer, layerGroup) {
-                    if (layerGroup.get && layerGroup.get('type') === 'overlay') {
-                        $.each(layerGroup.getLayers().getArray(), function(idx, olayer) {
-                            if (olayer.setVisible) olayer.setVisible(false);
-                        });
-                    }
-                });
-                if (window.renderOverlayList) window.renderOverlayList([], '');
-                $('#overlay-search').val('');
-            });
-        $('#clear-overlay-container').empty().append($clearBtn);
+        // (Removed: clear overlay button is now a map control, not injected here)
+
         var $list = $('#overlay-list');
         $list.empty();
         if (!query || !filtered || !filtered.length) {
@@ -197,6 +202,7 @@ $(function () {
         window.renderOverlayList(window.overlays);
     });
     // --- End Overlay Searcher Integration ---
+
 
 	$('#map').empty(); // Remove Javascript required message
 	var baseLayerIndex = 0;
@@ -391,10 +397,33 @@ $(function () {
 	// Initialize Mapillary viewer
 	initMapillaryViewer(map);
 
-	// Initialize Router
-	initRouter(map);
+    // Ensure window.initRouter is set after router.js loads
+    if (typeof window.initRouter !== 'function' && typeof initRouter === 'function') {
+        window.initRouter = initRouter;
+    }
+
+    // Always show and activate the .osmcat-router button (no random button)
+    $(".osmcat-routerbutton").remove(); // Remove any previous router controls
+    // Ensure the router menu is always shown and active
+    if (typeof window.initRouter === 'function') {
+        window.initRouter(map);
+    } else {
+        alert('Router module is not loaded.');
+    }
+    $('.osmcat-menu').addClass('router-active');
+    $('.osmcat-router').addClass('active');
+
 
 	var layersControlBuild = function () {
+    // Only register overlaysUpdated handler once
+    if (!window._classicSelectorPatched) {
+        window._classicSelectorPatched = true;
+        window.addEventListener('overlaysUpdated', function() {
+            var $menu = $('#menu');
+            $menu.find('.osmcat-menu').remove();
+            $menu.append(layersControlBuild());
+        });
+    }
 		var visibleLayer,
 			previousLayer,
 			layerIndex = 0,
@@ -413,13 +442,52 @@ $(function () {
 			}),
 			content = $('<div>').addClass('osmcat-content');
 
-		config.layers.forEach(layer => {
+		// Use latest overlays from config, which have translated group titles
+    // Use overlays from window.overlays for translated group titles (same as overlay searcher)
+    var overlaysByGroup = {};
+    if (window.overlays && Array.isArray(window.overlays)) {
+        window.overlays.forEach(function(overlay) {
+            if (!overlaysByGroup[overlay.group]) overlaysByGroup[overlay.group] = [];
+            overlaysByGroup[overlay.group].push(overlay);
+        });
+    }
+    var layers = (window.config && window.config.layers) ? window.config.layers : config.layers;
+    layers.forEach(layer => {
 			if (layer.get('type') === 'overlay') {
-				var title = layer.get('title'),
-					layerButton = $('<h3>').html(title),
-					overlayDivContent = $('<div>').addClass('osmcat-content osmcat-overlay overlay' + overlayIndex);
+                // Use translated group title if available, matching overlay searcher logic
+                // Always display a TRANSLATED group title: use getTranslation on the group key from overlaysByGroup if possible
+                // Use the original group key for translation (not the possibly already-translated string)
+                var groupKey = null;
+                var foundOverlayGroup = null;
+                Object.keys(overlaysByGroup).forEach(function(translatedGroup) {
+                    if (
+                        overlaysByGroup[translatedGroup][0] &&
+                        overlaysByGroup[translatedGroup][0]._groupKey &&
+                        (overlaysByGroup[translatedGroup][0].group === layer.get('title') ||
+                         overlaysByGroup[translatedGroup][0].group === layer.get('group') ||
+                         layer.get('title') === translatedGroup ||
+                         layer.get('group') === translatedGroup)
+                    ) {
+                        foundOverlayGroup = translatedGroup;
+                        groupKey = overlaysByGroup[translatedGroup][0]._groupKey;
+                    }
+                });
+                var groupTitle = null;
+                if (foundOverlayGroup && typeof window.getTranslation === 'function') {
+                    groupTitle = window.getTranslation(groupKey || foundOverlayGroup);
+                } else if (layer.get('group') && typeof window.getTranslation === 'function') {
+                    groupTitle = window.getTranslation(layer.get('group'));
+                } else if (layer.get('title')) {
+                    groupTitle = layer.get('title');
+                } else if (layer.get('group')) {
+                    groupTitle = layer.get('group');
+                } else {
+                    groupTitle = 'Overlay';
+                }
+                var layerButton = $('<h3>').html(groupTitle),
+                    overlayDivContent = $('<div>').addClass('osmcat-content osmcat-overlay overlay' + overlayIndex);
 
-				overlaySelect.append($('<option>').val('overlay' + overlayIndex).text(title));
+				overlaySelect.append($('<option>').val('overlay' + overlayIndex).text(groupTitle));
 
 				layer.getLayers().forEach(overlay => {
 					var overlaySrc = overlay.get('iconSrc'),
@@ -547,9 +615,42 @@ $(function () {
 		}));
 		return container[0];
 	};
+
+	// Clear Overlay Control
+	var clearOverlayControlBuild = function () {
+		var container = $('<div>').addClass('ol-control ol-unselectable osmcat-clearoverlaybutton').html(
+			$('<button type="button" class="clear-active-overlay-btn" title="Clear Active Overlay"><i class="fa fa-times"></i></button>').on('click', function () {
+				// Hide all overlays
+				$.each(config.layers, function(indexLayer, layerGroup) {
+					if (layerGroup.get && layerGroup.get('type') === 'overlay') {
+						$.each(layerGroup.getLayers().getArray(), function(idx, olayer) {
+							if (olayer.setVisible) olayer.setVisible(false);
+						});
+					}
+				});
+				if (window.renderOverlayList) window.renderOverlayList([], '');
+				$('#overlay-search').val('');
+			})
+		);
+		return container[0];
+	};
+
 	map.addControl(new ol.control.Control({
-		element: geolocationControlBuild()
-	}));
+        element: geolocationControlBuild()
+    }));
+    // Add Clear Overlay control just after Rotate control (if present)
+    // Try to find the rotate control element and insert after it
+    setTimeout(function() {
+        var rotateControl = $('.ol-rotate');
+        var clearOverlayControl = $(clearOverlayControlBuild());
+        if (rotateControl.length) {
+            rotateControl.after(clearOverlayControl);
+        } else {
+            // fallback: add to map as usual
+            $('#map').append(clearOverlayControl);
+        }
+    }, 0);
+
 	
 	
 	// Como crear un control
